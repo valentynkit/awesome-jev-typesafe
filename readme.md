@@ -231,6 +231,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [pg-jev](https://github.com/realZachi/pg-jev) - PostgreSQL extension that answers plain-language questions about your tables.
 - [vgi-typesafe](https://github.com/Query-farm/vgi-typesafe) - DuckDB worker that exposes choice, noul, and score as lateral-joinable table functions in SQL.
 - [jevsql](https://github.com/EugeneBoondock/jevsql) - SQL with natural-language predicates over SQLite: filter, rank, and classify rows by meaning, batched and cost-guarded.
+- [sqlite-jev](https://github.com/mgaitan/sqlite-jev) - Adds Jev Noul, Choice, and Score judgments to SQLite through a loadable C extension and Python wrapper, with scalar functions and batched virtual-table queries.
 - [jevlogs](https://github.com/reachjalil/jevlogs) - Scores OpenTelemetry log signal before paying for LLM analysis.
 - [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) - Sifts Parquet and JSONL training data at more than 1,500 rows a second.
 - [HA-Jev](https://github.com/AboveColin/HA-Jev) - Home Assistant integration: ask a question about your house, get a probability, choice, or score as an entity.
