@@ -260,6 +260,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [notra](https://github.com/usenotra/notra) - Turns work into content, with Jev deciding what is worth posting.
 - [slidepilot](https://github.com/harshil1712/slidepilot) - Voice-driven auto-advance for Slidev on Cloudflare Agents.
 - [should-ai-kill-us-all](https://github.com/hellogumbo/should-ai-kill-us-all) - Asks Jev the question every ten minutes, using the actual headlines.
+- [Privacy Facts](https://github.com/thenewpotato/privacy-facts) - Turns privacy policies into nutrition-style labels with plain-language answers, Jev confidence scores, and suggested source clauses.
 
 ## Games, robotics and simulation
 
