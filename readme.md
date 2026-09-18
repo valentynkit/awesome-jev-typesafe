@@ -236,6 +236,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [HA-Jev](https://github.com/AboveColin/HA-Jev) - Home Assistant integration: ask a question about your house, get a probability, choice, or score as an entity.
 - [typesafe-migration-guard](https://github.com/opaielsheikh/typesafe-migration-guard) - Reviews database migrations for safety before they run.
 - [jev-for-engineers](https://github.com/Foadsf/jev-for-engineers) - Eight small examples from mechanical and electrical engineering: CAD routing, FEM triage, DFM screening, BOM alignment.
+- [jlink](https://github.com/keltokhy/jlink) - Links records across two datasets from a match rule written in plain English, from Python, the shell, Stata, or R, and reports F1 0.73 against 0.69 for tuned string matching on NBER patent assignees to Compustat.
 
 ## Safety, moderation and verification
 
@@ -320,6 +321,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [every](https://github.com/sufianetaouil/every) - Ask a yes/no question of every function in a codebase; grep whose pattern is a question.
 - [typesafe-cli](https://github.com/y0usaf/typesafe-cli) - Noul, choice, and score answers as numbers from the shell.
 - [jev-shell-history](https://github.com/mrnugget/jev-shell-history) - Fish-style zsh history suggestions, ranked by Jev.
+- [jgrep](https://github.com/keltokhy/jgrep) - Prints the lines that fit a plain-English description, streaming from `tail -f` under a spend cap, and reports F1 0.91 on SMS spam against 0.72 for a keyword grep.
 
 ## Community clients
 
