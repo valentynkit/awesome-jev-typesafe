@@ -122,6 +122,7 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [jev-skillful](https://github.com/bestagentkits/jev-skillful) - Per-prompt router over skills, MCP servers, agents, and commands, and it measures whether the injection helped.
 - [limpet](https://github.com/noplan-inc/limpet) - A Stop hook that keeps the agent from stopping too early, judged against plain-language rules.
 - [jevwire](https://github.com/Brainwires/jevwire) - MCP server, embeddable decision model, and an escalate-only plugin that can make the harness stricter but never looser.
+- [jev-code](https://github.com/devagrawal09/jev-code) - Command-line toolkit that coding agents hand judgment-heavy work to, one typed Jev workflow per request.
 
 ### Codex
 
@@ -135,6 +136,9 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [pi-jev by TheoOliveira](https://github.com/TheoOliveira/pi-jev) - Semantic tool routing and typed decisions as Pi tools.
 - [pi-jev-router](https://github.com/mejiasd3v/pi-jev-router) - Automatic model routing for Pi through the Vercel AI Gateway.
 - [pi-fast-jev-compaction](https://github.com/joelhooks/pi-fast-jev-compaction) - The verbatim compaction idea, ported to Pi.
+- [bicameral](https://github.com/AbdelStark/bicameral) - Hybrid harness for Pi: an LLM writes the code, Jev reflexes gate every call as allow, confirm, block, warn, or steer.
+- [pi-quiet-ask](https://github.com/HyunjunJeon/pi-quiet-ask) - Jev as the Pi coding agent's quiet decision layer.
+- [pi-typesafe-jev](https://github.com/legacybridge-tech/pi-typesafe-jev) - Pi extension exposing Jev judgments as five Pi tools.
 
 ### Hermes
 
@@ -160,6 +164,7 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [building-with-jev-skill](https://github.com/dbreunig/building-with-jev-skill) - Skill for writing and improving programs that call Jev.
 - [jev-system-architect](https://github.com/samtay32/jev-system-architect) - Finds the fuzzy judgment in a system and turns it into small Choice, Score, and Noul primitives.
 - [jev-judgment](https://github.com/HyunjunJeon/jev-judgment) - Sends a coding agent's closed judgments to Jev instead of the chat model.
+- [skills by fabricioctelles](https://github.com/fabricioctelles/skills) - Agent-skill directory that can score subjective evaluation criteria with Jev.
 
 ## Browser and computer use
 
@@ -172,6 +177,8 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [jev-voice-browser](https://github.com/moritzkremb/jev-voice-browser) - Intent and target decided per spoken word in about 300 ms, often before the sentence ends.
 - [jev-browser by Ying-Kai-Liao](https://github.com/Ying-Kai-Liao/jev-browser) - An LLM plans, Jev decides; library, CLI, and MCP server.
 - [jev-browser by tontoko](https://github.com/tontoko/jev-browser) - One grounded Jev and Playwright core behind a typed SDK, a persistent CLI, and an MCP server.
+- [jev-mobile](https://github.com/friedjof/jev-mobile) - Android sub-agent over USB running observe, normalize, decide, mutate, verify, with Jev deciding.
+- [jev-ego](https://github.com/romaluev/jev-ego) - Browser agent that spends one Jev request per step to pick the action.
 
 ## Open models and replicas
 
@@ -197,6 +204,10 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-on-a-laptop](https://github.com/rorshopping/jev-on-a-laptop) - Study of Jev-style decisions on stock 1.5B to 8B models on a laptop, with a Hugging Face demo.
 - [typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) - LLM gateway that mimics the TypeSafe response shape, useful as a stand-in while you wait for a key.
 - [Parallel constrained decoding](https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding) - Hugging Face Space demonstrating RLCD-style parallel decoding on Qwen2.5-1B.
+- [openvons](https://github.com/genai-craft/openvons) - Open decision layer answering a finite option set with probabilities split into execute, confirm, and reject. Independent replica, not TypeSafe weights.
+- [von](https://github.com/wfzyx/von) - Non-autoregressive open decision model reporting under 15 ms locally, as a drop-in alternative to Jev.
+- [litjev](https://github.com/zhengxuyu/litjev) - Turns any off-the-shelf LLM into a Jev-style decision layer.
+- [open-jev](https://github.com/JoshuaSP/open-jev) - Typed JSON inference with DiffusionGemma, benchmarked against Jev.
 
 ## Code review and quality
 
@@ -208,6 +219,8 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [clean-code-review](https://github.com/frostney/clean-code-review) - Every file in a PR judged against Clean Code rules, then reviewed by an LLM.
 - [JevLint](https://github.com/huntedman/JevLint) - Configurable semantic linting with file-level Noul judgments.
 - [commit-miner](https://github.com/devanshbatham/commit-miner) - Classifies commit diffs and messages: bug fixes, security fixes with CWEs, change types.
+- [jev-review-action](https://github.com/fatwang2/jev-review-action) - GitHub Action for submission review and PR classification with Jev, no text-generation model in the loop.
+- [jev-triage](https://github.com/cephalization/jev-triage) - Pulls large repositories and triages their issues with typed Jev questions.
 
 ## Routing and gateways
 
@@ -238,6 +251,9 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [typesafe-migration-guard](https://github.com/opaielsheikh/typesafe-migration-guard) - Reviews database migrations for safety before they run.
 - [jev-for-engineers](https://github.com/Foadsf/jev-for-engineers) - Eight small examples from mechanical and electrical engineering: CAD routing, FEM triage, DFM screening, BOM alignment.
 - [jlink](https://github.com/keltokhy/jlink) - Links records across two datasets from a match rule written in plain English, from Python, the shell, Stata, or R, and reports F1 0.73 against 0.69 for tuned string matching on NBER patent assignees to Compustat.
+- [pg_typesafe](https://github.com/giuliosmall/pg_typesafe) - Pre-alpha PostgreSQL extension for categorical classification with Jev.
+- [jev-mode](https://github.com/ddfeyes/jev-mode) - Ticket triage and file tagging on a typed-judgment model; reports 78 percent fewer tokens and 96.1 percent accuracy against a 93.7 percent baseline.
+- [jev-reviewer](https://github.com/choxos/jev-reviewer) - Asks a clinical trial report for systematic-review data by voice, text, or a questions file; every answer is a verbatim quote with its file and place.
 
 ## Safety, moderation and verification
 
@@ -248,6 +264,8 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [human-compiler](https://github.com/asfarsadewa/human-compiler) - Paste text, get diagnostics, like a compiler for prose.
 - [snifftest](https://github.com/DanRWilloughby/snifftest) - Prose linter for AI writing tells: countable rules plus one judgment model.
 - [riff](https://github.com/scale-venture-partners/riff) - Ruff-style rule codes for writing.
+- [jev-secret-detection](https://github.com/teyhouse/jev-secret-detection) - Measures how well Jev spots real credentials in file snippets, with the hard config-shaped cases scored separately.
+- [jev-audio-beeper](https://github.com/santos-sanz/jev-audio-beeper) - Low-latency audio censorship proof of concept: Jev typed decisions drive ffmpeg.
 
 ## Applications and extensions
 
@@ -262,6 +280,11 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [slidepilot](https://github.com/harshil1712/slidepilot) - Voice-driven auto-advance for Slidev on Cloudflare Agents.
 - [should-ai-kill-us-all](https://github.com/hellogumbo/should-ai-kill-us-all) - Asks Jev the question every ten minutes, using the actual headlines.
 - [Privacy Facts](https://github.com/thenewpotato/privacy-facts) - Turns privacy policies into nutrition-style labels with plain-language answers, Jev confidence scores, and suggested source clauses.
+- [jev-voice-control](https://github.com/chris-wozniczek/jev-voice-control) - Menu-bar Swift app turning spoken commands into Jev typed decisions and macOS actions.
+- [got-jev](https://github.com/phureewat29/got-jev) - Game of Thrones roleplay where a story model writes each scene and Jev answers five typed questions that drive the header, soundtrack, art, and next prompt.
+- [typesafe-jev](https://github.com/gtaras7/typesafe-jev) - Jev experiments starting with a local CV-screening workbench, each with its own measured results.
+- [super-jev](https://github.com/kevthetech143/super-jev) - Small harness connecting evidence, Jev judgments, permitted actions, and verified outcomes.
+- [safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) - Neon Function proxy for the Neon AI Gateway with Jev routing in front.
 
 ## Games, robotics and simulation
 
@@ -277,6 +300,8 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [OneVOneJev](https://github.com/emrickgarrett/OneVOneJev) - 1v1 quickscope arena in Three.js.
 - [JevPlaysPokemon](https://github.com/anxkhn/JevPlaysPokemon) - Generation 3 Pokémon through Showdown and a real FireRed ROM.
 - [jev-askable-arm](https://github.com/TarunTomar122/jev-askable-arm) - Zero-shot English goals on a simulated Franka arm; Jev chains hardcoded primitives.
+- [quackd](https://github.com/rokbenko/quackd) - Command line for LLM-piloted robots across seven bodies, with an optional Jev stepper that picks among calls without ever writing a joint angle.
+- [snake-jev](https://github.com/siroccomask/snake-jev) - Snake controlled by parallel Jev assessments, one API call per tick.
 
 ## Finance and trading
 
@@ -300,6 +325,10 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-korean-benchmark](https://github.com/mahlernim/jev-korean-benchmark) - Korean understanding and medical text, with runtime and cost evidence.
 - [jev-behavior-study](https://github.com/RINNECODER/jev-behavior-study) - Controlled prompt experiments on jev-1.13.0, raw results and offline verification.
 - [jev-report](https://github.com/HackSing/jev-report) - Independent Chinese research report: 52 pages, 50 reproducible tests, 143 traceable data rows.
+- [jev-benchmark](https://github.com/wondertwins/jev-benchmark) - Two benchmarks, chess and predator identification, one inside Jev's lane and one outside, both with results.
+- [jev-dspy-lab](https://github.com/jmanhype/jev-dspy-lab) - Reproducible calibration and selective-risk benchmarks for Jev decisions in DSPy.
+- [jev-eval-agent](https://github.com/vinilana/jev-eval-agent) - Personal-assistant agent with 100 mocked tools, measuring how many steps a Jev-gated agent needs.
+- [jev-synergy-screening](https://github.com/PistachioAIHQ/jev-synergy-screening) - Choice and Noul questions scored against ASReview SYNERGY gold labels for abstract screening.
 
 ## Playgrounds and demos
 
@@ -315,6 +344,14 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [Hollow Creek](https://hollow-creek-sigma.vercel.app) - Village NPCs that judge you each tick instead of chatting.
 - [Crowdcheck](https://crowdcheck-ai.vercel.app/) - Test a post against 10,000 synthetic personas before you publish it.
 - [Magic-8-Jev](https://github.com/willprout/magic-8-ball) - Ask a question, one choice over twenty answers picks the reply and shows the click-to-answer latency; [live demo](https://willprout.github.io/magic-8-ball/).
+- [typesafe-ai-playground by markjaquith](https://github.com/markjaquith/typesafe-ai-playground) - Rust CLI playground for experiments around Jev.
+- [jev-playground by wustep](https://github.com/wustep/jev-playground) - Can a System One model steer a music composition through typed classify, score, and pick decisions alone.
+- [typesafe-jev-workflow](https://github.com/GiesN/typesafe-jev-workflow) - LangGraph demo that sends a mocked email to Jev and routes on the typed Choice it returns.
+- [jev-little-airways](https://github.com/lbotinelly/jev-little-airways) - Show-and-tell capability study for Jev.
+- [jev-demos](https://github.com/bud-ro/jev-demos) - Demos built to test what Jev is good at.
+- [Jev Classifier](https://jevclassifier.vercel.app) - Hosted demo filing posts by type, quality, sentiment, and tone.
+- [Jev Guard demo](https://guard-jev.vercel.app) - Hosted comment-moderation playground.
+- [Companion](https://jev-demo.vercel.app) - Hosted robot interface answering nine typed questions per turn to decide act, ask, or shrug, no generated text.
 
 ## Command line
 
@@ -324,6 +361,8 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [typesafe-cli](https://github.com/y0usaf/typesafe-cli) - Noul, choice, and score answers as numbers from the shell.
 - [jev-shell-history](https://github.com/mrnugget/jev-shell-history) - Fish-style zsh history suggestions, ranked by Jev.
 - [jgrep](https://github.com/keltokhy/jgrep) - Prints the lines that fit a plain-English description, streaming from `tail -f` under a spend cap, and reports F1 0.91 on SMS spam against 0.72 for a keyword grep.
+- [jev-cli by jtsang4](https://github.com/jtsang4/jev-cli) - Typed questions in, structured JSON answers out.
+- [jev-cli by tumf](https://github.com/tumf/jev-cli) - Dependency-free Python CLI wrapping Choice, Score, and Noul.
 
 ## Community clients
 
@@ -343,6 +382,13 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [advocaat](https://github.com/pithings/advocaat) - Small TypeScript client for asking questions about your own data.
 - [jod](https://github.com/mateonunez/jod) - Zod-style schemas over Jev: validate the state locally, then project typed answers.
 - [n8n-nodes-typesafe-ai](https://github.com/DomMonte/n8n-nodes-typesafe-ai) - n8n community node for yes/no, choice, and score questions.
+- [jevclient](https://github.com/AboveColin/jevclient) - Async Python client, probabilities and choices out, no prose to parse.
+- [s1-rs](https://github.com/AbdelStark/s1-rs) - Turns Rust enums and structs into Choice, Score, and Noul questions with compile-time-checked, confidence-gated answers.
+- [typesafe-rs](https://github.com/AbdelStark/typesafe-rs) - Latency-first Rust client, on crates.io.
+- [kunobi-jev](https://github.com/kunobi-ninja/kunobi-jev) - Rust client for the System One API.
+- [jev-go by Stumble](https://github.com/Stumble/jev-go) - Go client for Jev.
+- [typesafe-ai-rails](https://github.com/GenieRobot/typesafe-ai-rails) - Rails integration built on the community Ruby gem.
+- [typesafe_sdk by nshkrdotcom](https://github.com/nshkrdotcom/typesafe_sdk) - Elixir port of the TypeScript AI SDK with a TypeSafe provider.
 
 ## Articles and talks
 
