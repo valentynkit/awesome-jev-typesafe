@@ -1,0 +1,7 @@
+{"message":"Missing pages directory: src/pages","label":null,"level":"warn"}
+[preview] The output directory /Users/vkit/Projects/mine/awesome-jev-typesafe/dist/ does not exist. Did you run `astro build`?
+  Location:
+    /Users/vkit/.npm/_npx/aa98e6899c6baff3/node_modules/astro/dist/core/preview/index.js:38:13
+  Stack trace:
+    at preview (file:///Users/vkit/.npm/_npx/aa98e6899c6baff3/node_modules/astro/dist/core/preview/index.js:38:13)
+    at async runCommand (file:///Users/vkit/.npm/_npx/aa98e6899c6baff3/node_modules/astro/dist/cli/index.js:197:22)

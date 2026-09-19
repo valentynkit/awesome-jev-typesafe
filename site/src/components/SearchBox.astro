@@ -1,0 +1,85 @@
+---
+import { t, sect, localePath } from "../lib/i18n";
+import { jevText } from "../lib/data";
+interface Props { lang: string; total: number; facets: Record<string, [string, number][]> }
+const { lang, total, facets } = Astro.props;
+// Section chips carry readme headings; the Jev facets carry keys with their own labels.
+const label = (key: string, v: string) =>
+  key === "maintainer" ? t(lang, v === "yes" ? "yes" : "no")
+  : key === "section" ? sect(lang, v)
+  : key === "useCase" ? jevText(lang, "useCase", v)
+  : key === "form" ? jevText(lang, "form", v)
+  : key === "host" ? jevText(lang, "host", v)
+  : v;
+---
+<search class="searchbox" data-results={t(lang, "results")} data-no-results={t(lang, "noResults")}>
+  <div class="search-row">
+    <span class="search-icon" aria-hidden="true">
+      <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.6" /><path d="m10.6 10.6 3.4 3.4" /></svg>
+    </span>
+    <input id="q" type="search" placeholder={t(lang, "search")} aria-label={t(lang, "search")} autocomplete="off" />
+    <span class="muted hint"><kbd>/</kbd> {t(lang, "searchHint")}</span>
+  </div>
+  <div class="search-meta">
+    <span class="mark" title={t(lang, "searchByJevHint")}>
+      <span class="mark-dot" aria-hidden="true"></span>{t(lang, "searchByJev")}
+    </span>
+    <button class="why" type="button" id="why-jev" aria-label={t(lang, "searchByJevHint")}>?</button>
+    <span id="ranked-by-jev" class="tag accent" hidden>{t(lang, "rankedByJev")}</span>
+    <label class="sort" for="sort">{t(lang, "sort")}
+      <select id="sort">
+        <option value="relevance">{t(lang, "relevance")}</option>
+        <option value="stars">{t(lang, "stars")}</option>
+        <option value="newest">{t(lang, "newest")}</option>
+        <option value="recent">{t(lang, "recent")}</option>
+        <option value="az">{t(lang, "az")}</option>
+      </select>
+    </label>
+    <span id="count" class="num muted">{t(lang, "results", { n: total, total })}</span>
+  </div>
+</search>
+
+<details class="filters" open>
+  <summary><span class="funnel" aria-hidden="true"></span>{t(lang, "filters")}</summary>
+  <div class="facets">
+    {Object.entries(facets).map(([key, vals]) => (
+      <details class="facet" open={key === "section"}>
+        <summary>{t(lang, `facets.${key}`)}</summary>
+        <div class="chips">
+          {vals.map(([v, n]) => (
+            <button class="chip" type="button" aria-pressed="false" data-facet={key} data-value={v}>
+              {label(key, v)} <span class="num muted">{n}</span>
+            </button>
+          ))}
+        </div>
+      </details>
+    ))}
+  </div>
+</details>
+
+<dialog id="jev-dialog" class="sheet">
+  <h2>{t(lang, "searchByJev")}</h2>
+  <p>{t(lang, "searchByJevHint")}</p>
+  <div class="actions">
+    <a class="btn" href={localePath(lang, "/about/")}>{t(lang, "about")}</a>
+    <button class="btn primary" type="button" id="jev-close">{t(lang, "dismiss")}</button>
+  </div>
+</dialog>
+
+<script>
+  import { mount } from "../scripts/search";
+  const lang = document.documentElement.lang;
+  mount(lang.startsWith("zh") ? "zh" : lang);
+
+  const dialog = document.getElementById("jev-dialog") as HTMLDialogElement | null;
+  document.getElementById("why-jev")?.addEventListener("click", () => dialog?.showModal());
+  document.getElementById("jev-close")?.addEventListener("click", () => dialog?.close());
+  dialog?.addEventListener("click", (e) => { if (e.target === dialog) dialog.close(); });
+
+  // One filter drawer on phones, an always-open panel from 700px up.
+  const wide = matchMedia("(min-width: 700px)");
+  const filters = document.querySelector<HTMLDetailsElement>(".filters");
+  const sync = () => { if (filters && wide.matches) filters.open = true; };
+  wide.addEventListener("change", sync);
+  sync();
+</script>

@@ -1,0 +1,194 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Bar from "../../../components/Bar.astro";
+import { entries, byId, describe, image, hostOfJev, useCasesOf, jevText, readmePath, slug } from "../../../lib/data";
+import { t, sect, localePath, langFromParams, locales } from "../../../lib/i18n";
+
+export function getStaticPaths() {
+  const langs = [undefined, ...locales.filter((l) => l !== "en")];
+  return langs.flatMap((lang) => entries.map((e) => ({ params: { lang, id: e.id } })));
+}
+
+const lang = langFromParams(Astro.params);
+const e = byId[Astro.params.id!];
+const g = e.github;
+const desc = describe(e, lang);
+const shot = image(e);
+// Anything Jev was at least a third sure about is worth showing with its number attached.
+const uses = useCasesOf(e, 0.35).slice(0, 5);
+const raw = (e.github as any)?.readmeExcerpt as string | undefined;
+const excerpt = raw ? raw.slice(0, 360).replace(/\s+\S*$/, "") + (raw.length > 360 ? " …" : "") : null;
+const jevHost = hostOfJev(e);
+// A five-level score answers 0 to 4, and a meter reads better with a lit segment at the bottom.
+const segments = (v: number | undefined) => (v == null ? 0 : Math.min(5, Math.max(1, Math.round(v) + 1)));
+const notes = [
+  (e.jev?.hasNumbers ?? 0) >= 0.6 ? "reportsNumbers" : null,
+  (e.jev?.looksTemplated ?? 0) >= 0.6 ? "looksTemplated" : null,
+  e.jev?.callsJevForReal != null && e.jev.callsJevForReal <= 0.25 ? "jevCallUnclear" : null,
+].filter((n): n is string => n !== null);
+const intents = Object.entries(e.jev?.intents ?? {}).sort((a, b) => b[1] - a[1]).slice(0, 5);
+
+const site = Astro.site!.origin;
+const here = site + localePath(lang, `/p/${e.id}/`);
+const xShare = `https://x.com/intent/post?text=${encodeURIComponent(`${e.name} — ${e.description}`)}&url=${encodeURIComponent(here)}`;
+const badge = `[![Listed in Awesome Jev](${site}/badge.svg)](${here})`;
+const repo = "https://github.com/valentynkit/awesome-jev-typesafe";
+
+const pkg = (() => {
+  const topics = g?.topics ?? [];
+  const home = g?.homepage ?? "";
+  if (topics.includes("npm") || /npmjs\.com/.test(home)) return `npm i ${e.repo}`;
+  if (topics.includes("pypi") || /pypi\.org/.test(home)) return `pip install ${e.repo}`;
+  if (topics.includes("crates") || /crates\.io/.test(home)) return `cargo add ${e.repo}`;
+  return null;
+})();
+
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  name: e.name,
+  description: e.description,
+  codeRepository: e.url,
+  ...(g?.language ? { programmingLanguage: g.language } : {}),
+  ...(g?.license ? { license: g.license } : {}),
+};
+---
+<Base title={`${e.name} · Awesome Jev`} description={desc} lang={lang} path={`/p/${e.id}/`} image={`/og/${e.id}.png`} jsonld={jsonld}>
+  <p class="crumbs">
+    <a href={localePath(lang, "/")}>{t(lang, "home")}</a> /
+    <a href={localePath(lang, `/c/${slug(e.section)}/`)}>{sect(lang, e.section)}</a> /
+    <span>{e.name}</span>
+  </p>
+
+  <div class="detail">
+    <div>
+      <h1>{e.name}</h1>
+      <p class="lede">{desc}</p>
+      {lang !== "en" && <p class="micro">{t(lang, "generated")}</p>}
+      <div class="actions">
+        <a class="btn primary" href={e.url} rel="noopener">{t(lang, "openOnGithub")}</a>
+        <a class="btn" href={readmePath(e)} rel="noopener">{t(lang, "sourceLine", { n: e.line })}</a>
+      </div>
+
+      {shot ? (
+        <div class="shot"><img src={shot} alt={e.name} width="1200" height="750" loading="lazy" /></div>
+      ) : excerpt ? (
+        <div class="ticker no-shot">
+          <p class="ticker-head micro">{t(lang, "fromReadme")}</p>
+          <p class="excerpt">{excerpt}</p>
+        </div>
+      ) : (
+        <div class="ticker no-shot">
+          <p class="ticker-head micro">{t(lang, "gallery")}</p>
+          <p class="empty-note">
+            No screenshot yet. <a href={localePath(lang, "/submit/")}>{t(lang, "submit")}</a> to add one.
+          </p>
+        </div>
+      )}
+
+      {pkg && (
+        <div class="install">
+          <code id="pkg">{pkg}</code>
+          <button class="btn" type="button" id="copy" data-copied={t(lang, "copied")}>{t(lang, "copy")}</button>
+        </div>
+      )}
+
+      <div class="share">
+        <span class="micro">{t(lang, "share")}</span>
+        <button class="btn" type="button" data-copy={here} data-copied={t(lang, "copied")}>{t(lang, "copy")} link</button>
+        <a class="btn" href={xShare} rel="noopener">Post on X</a>
+        <button class="btn" type="button" data-copy={badge} data-copied={t(lang, "copied")}>{t(lang, "copyBadge")}</button>
+      </div>
+    </div>
+
+    <div class="side">
+      <div class="panel">
+        <h2>{t(lang, "details")}</h2>
+        <dl class="facts">
+          <dt>{t(lang, "section")}</dt>
+          <dd><a href={localePath(lang, `/c/${slug(e.section)}/`)}>{sect(lang, e.section)}</a></dd>
+          {e.owner && <><dt>owner</dt><dd><a href={`https://github.com/${e.owner}`} rel="noopener">{e.owner}</a></dd></>}
+          {g && <><dt>{t(lang, "stars")}</dt><dd class="num">{g.stars.toLocaleString("en-US")}</dd></>}
+          {g && <><dt>{t(lang, "forks")}</dt><dd class="num">{g.forks.toLocaleString("en-US")}</dd></>}
+          {g?.pushedAt && <><dt>{t(lang, "pushed")}</dt><dd class="num">{g.pushedAt.slice(0, 10)}</dd></>}
+          {g?.language && <><dt>{t(lang, "facets.language")}</dt><dd>{g.language}</dd></>}
+          {g?.license && <><dt>{t(lang, "facets.license")}</dt><dd>{g.license}</dd></>}
+          {e.languageHint && <><dt>readme</dt><dd>{e.languageHint}</dd></>}
+          {e.trustPhrase && <><dt>claim</dt><dd class="muted">{e.trustPhrase}</dd></>}
+        </dl>
+        <div class="card-meta">
+          {g?.archived && <span class="tag danger">{t(lang, "archived")}</span>}
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>{t(lang, "whatItIs")}</h2>
+        {!e.jev && <p class="empty-note">{t(lang, "noJevYet")}</p>}
+        {e.jev && (
+          <>
+            <dl class="what-facts">
+              {e.jev.form && <><dt>{t(lang, "facets.form")}</dt><dd>{jevText(lang, "form", e.jev.form)}</dd></>}
+              {jevHost && <><dt>{t(lang, "facets.host")}</dt><dd>{jevText(lang, "host", jevHost)}</dd></>}
+              {e.jev.audience && <><dt>{t(lang, "facets.audience")}</dt><dd>{jevText(lang, "audience", e.jev.audience)}</dd></>}
+            </dl>
+            <div class="meter-row">
+              <span class="meter-label">{t(lang, "maturity")}</span>
+              <span class="meter" role="img" aria-label={`${t(lang, "maturity")} ${segments(e.jev.maturity)}/5`}>
+                {[1, 2, 3, 4, 5].map((i) => <span class:list={["seg", { on: i <= segments(e.jev!.maturity) }]}></span>)}
+              </span>
+            </div>
+            {e.jev.docsQuality != null && (
+              <div class="meter-row">
+                <span class="meter-label">{t(lang, "docsQuality")}</span>
+                <span class="meter" role="img" aria-label={`${t(lang, "docsQuality")} ${segments(e.jev.docsQuality)}/5`}>
+                  {[1, 2, 3, 4, 5].map((i) => <span class:list={["seg", { on: i <= segments(e.jev!.docsQuality) }]}></span>)}
+                </span>
+              </div>
+            )}
+            {notes.length > 0 && (
+              <div class="notes">
+                {notes.map((n) => <span class:list={["tag", { warn: n !== "reportsNumbers", accent: n === "reportsNumbers" }]}>{t(lang, n)}</span>)}
+              </div>
+            )}
+          </>
+        )}
+      </div>
+
+      {uses.length > 0 && (
+        <div class="panel">
+          <h2>{t(lang, "usefulFor")}</h2>
+          {uses.map(([k, p]) => <Bar p={p} label={jevText(lang, "useCase", k)} small />)}
+        </div>
+      )}
+
+      {intents.length > 0 && (
+        <div class="panel">
+          <h2>{t(lang, "intentMatches")}</h2>
+          {intents.map(([k, p]) => <Bar p={p} label={k} small />)}
+        </div>
+      )}
+
+      <div class="panel side-cta">
+        <a class="btn primary" href={localePath(lang, "/submit/")}>+ {t(lang, "submit")}</a>
+        <a class="btn" href={repo} rel="noopener">★ {t(lang, "starRepo")}</a>
+      </div>
+    </div>
+  </div>
+</Base>
+<script>
+  const btn = document.getElementById("copy");
+  btn?.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(document.getElementById("pkg")?.textContent ?? "");
+    const was = btn.textContent;
+    btn.textContent = btn.dataset.copied ?? "Copied";
+    setTimeout(() => (btn.textContent = was), 1500);
+  });
+
+  for (const el of document.querySelectorAll<HTMLButtonElement>("[data-copy]"))
+    el.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(el.dataset.copy ?? "");
+      const was = el.textContent;
+      el.textContent = el.dataset.copied ?? "Copied";
+      setTimeout(() => (el.textContent = was), 1500);
+    });
+</script>

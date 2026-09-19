@@ -1,0 +1,10 @@
+---
+interface Props { p: number; label?: string; small?: boolean }
+const { p, label, small } = Astro.props;
+const pct = Math.round(p * 100);
+---
+<div class:list={["bar", { small }]} role="img" aria-label={`${label ?? "probability"} ${pct}%`}>
+  {label && <span class="bar-label">{label}</span>}
+  <span class="bar-track"><span class="bar-fill" style={`width:${pct}%`}></span></span>
+  <span class="bar-num num">{p.toFixed(2)}</span>
+</div>

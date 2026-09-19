@@ -1,0 +1,19 @@
+---
+interface Props { values: number[]; width?: number; height?: number; label?: string }
+const { values, width = 76, height = 20, label = "" } = Astro.props;
+
+const min = Math.min(...values);
+const span = Math.max(...values) - min || 1;
+const pts = values.map((v, i) => [
+  1 + (i / (values.length - 1 || 1)) * (width - 2),
+  height - 2 - ((v - min) / span) * (height - 4),
+]);
+const d = pts.map(([x, y], i) => `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
+const last = pts[pts.length - 1];
+---
+{values.length > 1 && (
+  <svg class="spark" viewBox={`0 0 ${width} ${height}`} width={width} height={height} role="img" aria-label={label} focusable="false">
+    <path d={d} fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx={last[0].toFixed(1)} cy={last[1].toFixed(1)} r="2.5" />
+  </svg>
+)}

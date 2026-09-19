@@ -1,0 +1,31 @@
+{
+  "framework": "astro",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "headers": [
+    {
+      "source": "/_astro/(.*)",
+      "headers": [{ "key": "cache-control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/projects.json",
+      "headers": [{ "key": "cache-control", "value": "public, max-age=600, s-maxage=3600, stale-while-revalidate=86400" }]
+    },
+    {
+      "source": "/search-index.(.*).json",
+      "headers": [{ "key": "cache-control", "value": "public, max-age=600, s-maxage=3600, stale-while-revalidate=86400" }]
+    },
+    {
+      "source": "/llms(.*).txt",
+      "headers": [{ "key": "cache-control", "value": "public, max-age=600, s-maxage=3600, stale-while-revalidate=86400" }]
+    },
+    {
+      "source": "/feed.xml",
+      "headers": [{ "key": "cache-control", "value": "public, max-age=600, s-maxage=3600, stale-while-revalidate=86400" }]
+    },
+    {
+      "source": "/og/(.*)",
+      "headers": [{ "key": "cache-control", "value": "public, max-age=600, s-maxage=3600, stale-while-revalidate=86400" }]
+    }
+  ]
+}

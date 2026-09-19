@@ -1,0 +1,62 @@
+---
+import { t, localePath } from "../lib/i18n";
+import { stats } from "../lib/data";
+interface Props { lang: string }
+const { lang } = Astro.props;
+const repo = "https://github.com/valentynkit/awesome-jev-typesafe";
+const links = [
+  [t(lang, "source"), repo],
+  [t(lang, "about"), localePath(lang, "/about/")],
+  [t(lang, "submit"), localePath(lang, "/submit/")],
+  [t(lang, "trending"), localePath(lang, "/trending/")],
+  [t(lang, "radar"), localePath(lang, "/radar/")],
+];
+const machine = ["llms.txt", "projects.json", "skill.md", "feed.xml"];
+---
+<footer class="ftr">
+  <div class="ftr-in">
+    <p class="ftr-stats">
+      <span class="num">{stats.entries.toLocaleString("en-US")}</span> {t(lang, "labelEntries")}
+      <span class="sep">·</span>
+      <span class="num">{stats.repos.toLocaleString("en-US")}</span> {t(lang, "reposIndexed")}
+      {stats.updated && <><span class="sep">·</span>{t(lang, "updated")} <span class="num">{stats.updated}</span></>}
+      <span class="sep">·</span> CC0
+    </p>
+    <nav class="ftr-links">
+      {links.map(([label, href]) => <a href={href} rel={href.startsWith("http") ? "noopener" : undefined}>{label}</a>)}
+    </nav>
+    <nav class="ftr-machine">
+      {machine.map((f) => <a class="tag" href={`/${f}`}>{f}</a>)}
+    </nav>
+  </div>
+</footer>
+
+<aside id="nudge" class="nudge" hidden>
+  <p>{t(lang, "starNudge")}</p>
+  <div class="nudge-row">
+    <a class="btn primary" href={repo} rel="noopener" data-close>★ {t(lang, "starRepo")}</a>
+    <button class="btn" type="button" data-close>{t(lang, "dismiss")}</button>
+  </div>
+</aside>
+<script>
+  const nudge = document.getElementById("nudge");
+  const KEY = "star-nudge";
+  if (nudge && !localStorage.getItem(KEY)) {
+    let timer = 0;
+    const show = () => {
+      clearTimeout(timer);
+      if (localStorage.getItem(KEY)) return;
+      localStorage.setItem(KEY, "shown");
+      nudge.hidden = false;
+    };
+    for (const el of nudge.querySelectorAll("[data-close]"))
+      el.addEventListener("click", () => {
+        localStorage.setItem(KEY, "done");
+        nudge.hidden = true;
+      });
+
+    const home = /^\/(zh\/|ja\/|ko\/)?$/.test(location.pathname);
+    if (home) timer = window.setTimeout(show, 20000);
+    document.getElementById("q")?.addEventListener("input", show, { once: true });
+  }
+</script>

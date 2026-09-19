@@ -1,0 +1,36 @@
+---
+import { describe, image, useCasesOf, formOf, jevText, type Entry } from "../lib/data";
+import { localePath, t } from "../lib/i18n";
+interface Props { e: Entry; lang: string }
+const { e, lang } = Astro.props;
+const uses = useCasesOf(e).slice(0, 2);
+const form = formOf(e);
+const href = localePath(lang, `/p/${e.id}/`);
+const shot = image(e);
+---
+<article class="card" data-id={e.id}>
+  {shot && (
+    <a class="card-img" href={href} tabindex="-1" aria-hidden="true">
+      <img src={shot} alt="" loading="lazy" decoding="async" width="640" height="400" />
+    </a>
+  )}
+  <div class="card-body">
+    <h3><a href={href}>{e.name}</a></h3>
+    <p>{describe(e, lang)}</p>
+    <div class="card-meta num">
+      {e.github && <span class="stars">★ {e.github.stars.toLocaleString("en-US")}</span>}
+      {e.github?.language && <span>{e.github.language}</span>}
+      {form && <span class="card-form">{jevText(lang, "form", form)}</span>}
+      {e.github?.archived && <span class="tag danger">{t(lang, "archived")}</span>}
+    </div>
+    <div class="bar bar-rerank small" hidden>
+      <span class="bar-label">jev</span>
+      <span class="bar-track"><span class="bar-fill"></span></span>
+    </div>
+    {uses.length > 0 && (
+      <div class="card-uses">
+        {uses.map(([k]) => <span class="tag accent">{jevText(lang, "useCase", k)}</span>)}
+      </div>
+    )}
+  </div>
+</article>

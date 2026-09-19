@@ -1,0 +1,188 @@
+---
+import Base from "../../layouts/Base.astro";
+import Card from "../../components/Card.astro";
+import Radar from "../../components/Radar.astro";
+import SearchBox from "../../components/SearchBox.astro";
+import {
+  projects, projectSections, resourceSections, gallery, entries, bySection,
+  newSince, hostOfJev, facetsFromJev, tally, starsBucket, stats, compact, topStarred, describe, type Entry,
+} from "../../lib/data";
+import { t, sect, localePath, langFromParams, staticLangs } from "../../lib/i18n";
+
+export const getStaticPaths = staticLangs;
+const lang = langFromParams(Astro.params);
+
+const jevFacets = facetsFromJev(projects);
+// Chip order is the order of this object. Use case first: it is the one a visitor
+// arrives with. A screenshot was never something anyone filtered by.
+const all: Record<string, [string, number][]> = {
+  section: tally(projects.map((e) => e.section)),
+  useCase: jevFacets.useCase,
+  form: jevFacets.form,
+  host: tally(projects.map((e) => hostOfJev(e))),
+  language: tally(projects.map((e) => e.github?.language ?? null)),
+  license: tally(projects.map((e) => e.github?.license ?? null)),
+  stars: tally(projects.map((e) => (e.github ? starsBucket(e.github.stars) : null))),
+};
+// Facets that GitHub metadata feeds are empty until the daily enrichment runs.
+const facets = Object.fromEntries(Object.entries(all).filter(([, v]) => v.length > 1));
+
+const fresh = newSince(7).filter((e) => e.type === "project").slice(-12).reverse();
+const trending = topStarred(6);
+const byUrl = new Map(entries.map((e) => [e.url, e]));
+const shots = gallery.map((g) => ({ g, e: byUrl.get(g.url) }));
+const learn = resourceSections.map((s) => ({ s, items: bySection(s.name).slice(0, 6) }));
+const repo = "https://github.com/valentynkit/awesome-jev-typesafe";
+
+const bignum = [
+  [stats.repos.toLocaleString("en-US"), t(lang, "reposIndexed")],
+  [stats.entries.toLocaleString("en-US"), t(lang, "labelEntries")],
+  [String(stats.sections), t(lang, "labelSections")],
+  [compact(stats.stars), t(lang, "stars")],
+];
+
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Awesome Jev",
+  numberOfItems: projects.length,
+  itemListElement: projects.slice(0, 50).map((e, i) => ({
+    "@type": "ListItem", position: i + 1, name: e.name, url: e.url, description: e.description,
+  })),
+};
+---
+<Base title="Awesome Jev" description={t(lang, "lede")} lang={lang} path="/" jsonld={jsonld}>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow micro">TypeSafe Jev <span class="dot">·</span> System One</p>
+      <h1>{t(lang, "heroTitle")}</h1>
+      <p class="lede">{t(lang, "heroLede", { entries: stats.entries, repos: stats.repos })}</p>
+
+      <div class="figures">
+        {bignum.map(([n, label]) => (
+          <div class="figure">
+            <b class="num">{n}</b>
+            <span class="micro">{label}</span>
+          </div>
+        ))}
+      </div>
+      {stats.updated && <p class="figures-note micro">{t(lang, "updated")} {stats.updated} <span class="dot">·</span> {t(lang, "checkedWeekly")}</p>}
+
+      <div class="hero-cta">
+        <button class="btn primary" type="button" id="hero-search">
+          <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="7" cy="7" r="4.6" /><path d="m10.6 10.6 3.4 3.4" /></svg>
+          {t(lang, "search")}
+        </button>
+        <a class="btn" href={localePath(lang, "/submit/")}>
+          <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M8 3v10M3 8h10" /></svg>
+          {t(lang, "submit")}
+        </a>
+        <button class="btn" type="button" data-shuffle>
+          <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M1 3.5h3l7 9h4M1 12.5h3l7-9h4" /><path d="M12.5 1.5 15 3.5l-2.5 2M12.5 10.5 15 12.5l-2.5 2" /></svg>
+          {t(lang, "surpriseMe")}
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-visual"><Radar lang={lang} size={520} labels={false} compact /></div>
+  </section>
+
+  <div class="search-panel">
+    <SearchBox lang={lang} total={projects.length} facets={facets} />
+  </div>
+
+  {trending.length > 0 && (
+    <>
+      <div class="rule">
+        <h2>{t(lang, "trending")}</h2>
+        <a class="rule-link" href={localePath(lang, "/trending/")}>{t(lang, "mostStarred")} →</a>
+      </div>
+      <div class="rail">
+        {trending.map((e: Entry) => (
+          <a class="tcard" href={localePath(lang, `/p/${e.id}/`)}>
+            <b>{e.name}</b>
+            <span class="num tcard-stars">★ {(e.github?.stars ?? 0).toLocaleString("en-US")}</span>
+            <small>{sect(lang, e.section)}</small>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+
+  <div class="rule" id="categories"><h2>{t(lang, "categories")}</h2></div>
+  <div class="tiles">
+    {projectSections.map((s) => {
+      const share = Math.round((s.count / projects.length) * 100);
+      return (
+        <a class="tile reveal" href={localePath(lang, `/c/${s.slug}/`)}>
+          <span class="tile-head"><b>{sect(lang, s.name)}</b><span class="num">{s.count}</span></span>
+          <small>{bySection(s.name).slice(0, 3).map((e: Entry) => e.name).join(" · ")}</small>
+          <span class="tile-bar" role="img" aria-label={`${share}%`}><span style={`width:${Math.max(share, 3)}%`}></span></span>
+        </a>
+      );
+    })}
+  </div>
+
+  {fresh.length > 0 && (
+    <>
+      <div class="rule"><h2>{t(lang, "newThisWeek")}</h2></div>
+      <div class="strip">
+        {fresh.map((e: Entry) => <a href={localePath(lang, `/p/${e.id}/`)}>{e.name}</a>)}
+      </div>
+    </>
+  )}
+
+  <div class="rule"><h2>{t(lang, "gallery")}</h2></div>
+  <div class="shots">
+    {shots.map(({ g, e }) => (
+      <a class="shot-tile" href={e ? localePath(lang, `/p/${e.id}/`) : g.url}>
+        <img src={`/media/${g.image.replace(/^media\//, "")}`} alt={e?.name ?? ""} loading="lazy" width="640" height="400" />
+        <span class="shot-cap">
+          <b>{e?.name ?? g.url.split("/").pop()}</b>
+          <small>{e ? describe(e, lang) : ""}</small>
+        </span>
+      </a>
+    ))}
+  </div>
+
+  <div class="rule"><h2>{t(lang, "allProjects")}</h2></div>
+  <div id="results" class="grid">
+    {projects.map((e: Entry) => <Card e={e} lang={lang} />)}
+  </div>
+  <p class="no-results" hidden>
+    <span class="echo"></span> <button class="btn clear-filters" type="button">{t(lang, "clear")}</button>
+  </p>
+
+  <div class="rule"><h2>{t(lang, "learn")}</h2></div>
+  <div class="learn">
+    {learn.map(({ s, items }) => (
+      <section class="panel learn-panel">
+        <h3><a href={localePath(lang, `/c/${s.slug}/`)}>{sect(lang, s.name)}</a> <span class="num muted">{s.count}</span></h3>
+        <ul>
+          {items.map((e: Entry) => (
+            <li><a href={e.url} rel="noopener">{e.name}</a> <small>{describe(e, lang)}</small></li>
+          ))}
+        </ul>
+        <a class="learn-more micro" href={localePath(lang, `/c/${s.slug}/`)}>{t(lang, "details")} →</a>
+      </section>
+    ))}
+  </div>
+
+  <section class="banner">
+    <div>
+      <h2>{t(lang, "submitTitle")}</h2>
+      <p>{t(lang, "submitLede")}</p>
+    </div>
+    <div class="banner-cta">
+      <a class="btn primary" href={localePath(lang, "/submit/")}>+ {t(lang, "submit")}</a>
+      <a class="btn" href={repo} rel="noopener">★ {t(lang, "starRepo")}</a>
+    </div>
+  </section>
+</Base>
+<script>
+  document.getElementById("hero-search")?.addEventListener("click", () => {
+    const q = document.getElementById("q") as HTMLInputElement | null;
+    q?.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    q?.focus({ preventScroll: true });
+  });
+</script>

@@ -1,0 +1,14 @@
+{
+  "name": "awesome-jev-promo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cards": "node cards.mjs",
+    "record": "node record.mjs",
+    "build": "sh build.sh",
+    "all": "node cards.mjs && node record.mjs && sh build.sh"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}

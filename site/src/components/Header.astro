@@ -1,0 +1,121 @@
+---
+import { t, names, locales, localePath } from "../lib/i18n";
+import { compact, repoStars } from "../lib/data";
+interface Props { lang: string; path: string }
+const { lang, path } = Astro.props;
+const nav = [
+  ["categories", localePath(lang, "/") + "#categories"],
+  ["trending", localePath(lang, "/trending/")],
+  ["radar", localePath(lang, "/radar/")],
+  ["about", localePath(lang, "/about/")],
+] as const;
+const repo = "https://github.com/valentynkit/awesome-jev-typesafe";
+const stars = await repoStars();
+const here = (href: string) => (path === href.replace(/^\/(zh|ja|ko)/, "") ? "page" : undefined);
+---
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="logo" href={localePath(lang, "/")}>
+      <svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M8.22 23.78 A11 11 0 1 1 23.78 23.78" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity=".25"></path>
+        <path d="M8.22 23.78 A11 11 0 0 1 12.8 6.2" fill="none" stroke="#4CC9F0" stroke-width="2.5" stroke-linecap="round"></path>
+        <line x1="16" y1="16" x2="23.39" y2="12.94" stroke="#FFB454" stroke-width="2" stroke-linecap="round"></line>
+      </svg>
+      <span class="logo-text">Awesome Jev</span>
+    </a>
+
+    <details class="hdr-menu" open>
+      <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
+      <div class="hdr-drawer">
+        <nav class="hdr-nav">
+          {nav.map(([key, href]) => <a href={href} aria-current={here(href)}>{t(lang, key)}</a>)}
+          <a href={repo} rel="noopener">GitHub</a>
+        </nav>
+        <div class="hdr-tools">
+          <button class="icon-btn" type="button" data-shuffle aria-label={t(lang, "surpriseMe")} title={t(lang, "surpriseMe")}>
+            <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M1 3.5h3l7 9h4M1 12.5h3l7-9h4" /><path d="M12.5 1.5 15 3.5l-2.5 2M12.5 10.5 15 12.5l-2.5 2" />
+            </svg>
+          </button>
+          <button id="theme" class="icon-btn" type="button" aria-label={t(lang, "theme")} title={t(lang, "theme")}>◐</button>
+          <label class="skip" for="lang">{t(lang, "language")}</label>
+          <select id="lang" data-path={path}>
+            {locales.map((l) => <option value={l} selected={l === lang}>{names[l]}</option>)}
+          </select>
+        </div>
+      </div>
+    </details>
+
+    <div class="hdr-cta">
+      <a class="btn btn-star" href={repo} rel="noopener" aria-label={t(lang, "starRepo")} title={t(lang, "starRepo")}>
+        <span aria-hidden="true">★</span>
+        <span class="btn-text">{t(lang, "starRepo")}</span>
+        <span id="star-count" class="num">{stars == null ? "" : compact(stars)}</span>
+      </a>
+      <a class="btn primary" href={localePath(lang, "/submit/")} aria-label={t(lang, "submit")} title={t(lang, "submit")}>
+        <span aria-hidden="true">+</span><span class="btn-text">{t(lang, "submit")}</span>
+      </a>
+    </div>
+  </div>
+</header>
+<script>
+  const root = document.documentElement;
+  document.getElementById("theme")?.addEventListener("click", () => {
+    const next = (root.dataset.theme ?? "dark") === "light" ? "dark" : "light";
+    root.dataset.theme = next;
+    localStorage.setItem("theme", next);
+  });
+
+  const select = document.getElementById("lang") as HTMLSelectElement | null;
+  if (select) {
+    const path = select.dataset.path ?? "/";
+    select.addEventListener("change", () => {
+      localStorage.setItem("lang", select.value);
+      location.href = select.value === "en" ? path : `/${select.value}${path}`;
+    });
+    // First visit to the English home page: follow the stored choice, else the browser language.
+    if (location.pathname === "/" && !sessionStorage.getItem("redirected")) {
+      sessionStorage.setItem("redirected", "1");
+      const stored = localStorage.getItem("lang");
+      const guess = (navigator.language || "").slice(0, 2);
+      const want = stored ?? (["zh", "ja", "ko"].includes(guess) ? guess : null);
+      if (want && want !== select.value) location.replace(want === "en" ? "/" : `/${want}/`);
+    }
+  }
+
+  // One nav row from 900px up, a drawer below it. The drawer closes on a link or Escape.
+  const menu = document.querySelector<HTMLDetailsElement>(".hdr-menu");
+  const wide = matchMedia("(min-width: 900px)");
+  const sync = () => { if (menu) menu.open = wide.matches; };
+  wide.addEventListener("change", sync);
+  sync();
+  menu?.addEventListener("click", (e) => {
+    if (!wide.matches && (e.target as HTMLElement).closest("a")) menu.open = false;
+  });
+  addEventListener("keydown", (e) => { if (e.key === "Escape" && menu?.open && !wide.matches) menu.open = false; });
+
+  // Surprise me: every card on the page already links to a project, so pick one and follow it.
+  for (const b of document.querySelectorAll("[data-shuffle]"))
+    b.addEventListener("click", () => {
+      const cards = [...document.querySelectorAll<HTMLElement>("article.card[data-id]")];
+      const href = cards[Math.floor(Math.random() * cards.length)]?.querySelector<HTMLAnchorElement>("h3 a")?.href;
+      if (href) location.href = href;
+    });
+
+  const out = document.getElementById("star-count");
+  const short = (n: number) => (n >= 1000 ? `${(n / 1000).toFixed(n >= 10000 ? 1 : 2).replace(/\.?0+$/, "")}k` : String(n));
+  if (out) {
+    const cached = sessionStorage.getItem("stars");
+    if (cached) out.textContent = cached;
+    else
+      fetch("https://api.github.com/repos/valentynkit/awesome-jev-typesafe", { signal: AbortSignal.timeout(3000) })
+        .then((r) => (r.ok ? r.json() : null))
+        .then((d) => {
+          if (typeof d?.stargazers_count !== "number") return;
+          const text = short(d.stargazers_count);
+          sessionStorage.setItem("stars", text);
+          out.textContent = text;
+        })
+        .catch(() => {});
+  }
+</script>

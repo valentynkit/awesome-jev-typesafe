@@ -1,0 +1,121 @@
+---
+import Base from "../../layouts/Base.astro";
+import Sparkline from "../../components/Sparkline.astro";
+import { byId, describe, hostOf, dataFetchedAt } from "../../lib/data";
+import { risingWeek, mostStarred, recentlyPushed, newThisMonth, snapshots, sparkline } from "../../lib/trending";
+import { t, sect, localePath, langFromParams, staticLangs } from "../../lib/i18n";
+import "../../styles/pages.css";
+export const getStaticPaths = staticLangs;
+const lang = langFromParams(Astro.params);
+
+const snaps = snapshots();
+function known<T extends { id: string }>(rows: T[]) {
+  return rows.filter((r) => byId[r.id]);
+}
+const rising = known(risingWeek(12)).map((r) => ({ ...r, points: sparkline(r.id, snaps) }));
+const starred = known(mostStarred(12));
+const pushed = known(recentlyPushed(12));
+const fresh = known(newThisMonth());
+const freshTop = fresh.slice(0, 24);
+const rank = (i: number) => String(i + 1).padStart(2, "0");
+const chip = (id: string) => {
+  const e = byId[id];
+  return sect(lang, hostOf(e) ?? e.section);
+};
+---
+<Base title={`${t(lang, "trending")} · Awesome Jev`} description={t(lang, "trending")} lang={lang} path="/trending/">
+  <p class="crumbs"><a href={localePath(lang, "/")}>{t(lang, "home")}</a> / <span>{t(lang, "trending")}</span></p>
+  <h1>{t(lang, "trending")}</h1>
+  <p class="micro">{dataFetchedAt ? t(lang, "dataDate", { d: dataFetchedAt.slice(0, 10) }) : "GitHub metadata lands with the first daily refresh."}</p>
+
+  <section class="board-wrap">
+    <div class="rule"><h2>{t(lang, "rising")}</h2></div>
+    <p class="note">Stars gained since the oldest snapshot of the last seven days.</p>
+    {rising.length === 0 ? (
+      <p class="empty-note">{t(lang, "risingNeedsData")}</p>
+    ) : (
+      <ol class="board">
+        {rising.map((r, i) => (
+          <li class="brow">
+            <span class="rank num">{rank(i)}</span>
+            <span class="bmain">
+              <a href={localePath(lang, `/p/${r.id}/`)}>{byId[r.id].name}</a>
+              <small>{describe(byId[r.id], lang)}</small>
+            </span>
+            <span class="bmeta">
+              <span class="tag">{chip(r.id)}</span>
+              <Sparkline values={r.points} label={`${byId[r.id].name} stars`} />
+              <b class="delta num">+{r.delta}</b>
+              <span class="num muted">{r.stars}</span>
+            </span>
+          </li>
+        ))}
+      </ol>
+    )}
+  </section>
+
+  <section class="board-wrap">
+    <div class="rule"><h2>{t(lang, "mostStarred")}</h2></div>
+    <p class="note">Every GitHub-hosted project on the list, by star count.</p>
+    <ol class="board">
+      {starred.map((r, i) => (
+        <li class="brow">
+          <span class="rank num">{rank(i)}</span>
+          <span class="bmain">
+            <a href={localePath(lang, `/p/${r.id}/`)}>{byId[r.id].name}</a>
+            <small>{describe(byId[r.id], lang)}</small>
+          </span>
+          <span class="bmeta">
+            <span class="tag">{chip(r.id)}</span>
+            <b class="num">{r.stars}</b>
+            <span class="micro">{t(lang, "stars")}</span>
+          </span>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="board-wrap">
+    <div class="rule"><h2>{t(lang, "recentlyPushed")}</h2></div>
+    <p class="note">Last commit to the default branch, as GitHub reports it.</p>
+    <ol class="board">
+      {pushed.map((r, i) => (
+        <li class="brow">
+          <span class="rank num">{rank(i)}</span>
+          <span class="bmain">
+            <a href={localePath(lang, `/p/${r.id}/`)}>{byId[r.id].name}</a>
+            <small>{describe(byId[r.id], lang)}</small>
+          </span>
+          <span class="bmeta">
+            <span class="tag">{chip(r.id)}</span>
+            <b class="num">{r.pushedAt?.slice(0, 10)}</b>
+            <span class="num muted">{r.stars}</span>
+          </span>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="board-wrap">
+    <div class="rule"><h2>{t(lang, "newThisMonth")}</h2></div>
+    <p class="note">
+      First time each entry appeared in the readme.
+      {fresh.length > freshTop.length && <> Newest {freshTop.length} of {fresh.length}, the rest are in <a href={localePath(lang, "/")}>the full list</a>.</>}
+    </p>
+    <ol class="board">
+      {freshTop.map((r, i) => (
+        <li class="brow">
+          <span class="rank num">{rank(i)}</span>
+          <span class="bmain">
+            <a href={localePath(lang, `/p/${r.id}/`)}>{byId[r.id].name}</a>
+            <small>{describe(byId[r.id], lang)}</small>
+          </span>
+          <span class="bmeta">
+            <span class="tag">{chip(r.id)}</span>
+            <b class="num">{r.firstSeen}</b>
+          </span>
+        </li>
+      ))}
+    </ol>
+  </section>
+</Base>

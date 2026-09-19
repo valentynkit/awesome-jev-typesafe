@@ -1,0 +1,33 @@
+---
+interface Props { p: number; label: string }
+const { p, label } = Astro.props;
+const C = 100, R = 78, TAU = Math.PI / 180;
+const at = (deg: number, r: number) => [C + r * Math.sin(deg * TAU), C - r * Math.cos(deg * TAU)] as const;
+const [sx, sy] = at(-135, R);
+const [ex, ey] = at(135, R);
+const arc = `M${sx.toFixed(2)} ${sy.toFixed(2)} A${R} ${R} 0 1 1 ${ex.toFixed(2)} ${ey.toFixed(2)}`;
+const len = 2 * Math.PI * R * 0.75;
+const ticks = Array.from({ length: 11 }, (_, i) => {
+  const frac = i / 10;
+  const deg = -135 + 270 * frac;
+  const [x1, y1] = at(deg, R + 8);
+  const [x2, y2] = at(deg, R + (i % 5 === 0 ? 17 : 13));
+  return { x1, y1, x2, y2, on: frac <= p, major: i % 5 === 0 };
+});
+---
+<div class="gauge">
+  <svg viewBox="0 0 200 200" role="img" aria-label={`${label} ${p.toFixed(2)}`}>
+    {ticks.map((t) => (
+      <line class:list={["tick", { on: t.on }]} x1={t.x1.toFixed(2)} y1={t.y1.toFixed(2)} x2={t.x2.toFixed(2)} y2={t.y2.toFixed(2)} stroke-width={t.major ? 2 : 1} />
+    ))}
+    <path class="track" d={arc} fill="none" stroke-width="10" stroke-linecap="round" />
+    <path class="fill" d={arc} fill="none" stroke-width="10" stroke-linecap="round"
+      style={`--len:${len.toFixed(2)};stroke-dasharray:${len.toFixed(2)};stroke-dashoffset:${(len * (1 - p)).toFixed(2)}`} />
+    <g class="needle" style={`rotate:${(-135 + 270 * p).toFixed(2)}deg`}>
+      <line x1="100" y1="100" x2="100" y2="48" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+    <circle class="hub" cx="100" cy="100" r="4" />
+    <text class="val" x="100" y="176" text-anchor="middle">{p.toFixed(2)}</text>
+    <text class="cap" x="100" y="194" text-anchor="middle">{label.toUpperCase()}</text>
+  </svg>
+</div>

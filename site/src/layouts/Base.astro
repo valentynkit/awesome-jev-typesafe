@@ -1,0 +1,48 @@
+---
+import "../styles/global.css";
+import "../styles/cjk.css";
+import "../styles/pages.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { locales, localePath, htmlLang, t } from "../lib/i18n";
+
+interface Props { title: string; description: string; lang: string; path: string; image?: string; jsonld?: unknown }
+const { title, description, lang, path, image = "/og/site.png", jsonld } = Astro.props;
+const site = Astro.site!.origin;
+const md = path === "/" ? "/llms.txt" : path.replace(/\/$/, "") + ".md";
+// A description carrying </script> would close the tag, so the three characters that can
+// start markup leave as JSON escapes instead.
+const ld = jsonld
+  ? JSON.stringify(jsonld).replace(/[<>&]/g, (c) => ({ "<": "\\u003c", ">": "\\u003e", "&": "\\u0026" })[c]!)
+  : null;
+---
+<!doctype html>
+<html lang={htmlLang(lang)}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href={site + localePath(lang, path)} />
+  {locales.map((l) => <link rel="alternate" hreflang={htmlLang(l)} href={site + localePath(l, path)} />)}
+  <link rel="alternate" hreflang="x-default" href={site + path} />
+  <link rel="alternate" type="text/markdown" href={site + md} />
+  <link rel="alternate" type="application/atom+xml" href={site + "/feed.xml"} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={site + image} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={site + localePath(lang, path)} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0B0E11" />
+  <script is:inline>const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;</script>
+  {ld && <script type="application/ld+json" set:html={ld} />}
+</head>
+<body>
+  <a class="skip" href="#main">{t(lang, "skip")}</a>
+  <Header lang={lang} path={path} />
+  <main class="wrap" id="main"><slot /></main>
+  <Footer lang={lang} />
+</body>
+</html>

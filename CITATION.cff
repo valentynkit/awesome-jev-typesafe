@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: If you use this list in a paper or a post, cite it as below.
+title: "Awesome Jev: a curated list of what people build on TypeSafe's Jev"
+authors:
+  - family-names: Kit
+    given-names: Valentyn
+repository-code: https://github.com/valentynkit/awesome-jev-typesafe
+url: https://awesomejev.vercel.app
+license: CC0-1.0
+date-released: 2026-09-18

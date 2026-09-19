@@ -1,0 +1,16 @@
+/* Per-language font stacks. The Latin body face has no CJK coverage, so without
+   these the browser falls back per glyph and the mixed runs look ragged. */
+:lang(zh) { font-family: "PingFang SC", "Noto Sans CJK SC", "Noto Sans SC", var(--body); }
+:lang(ja) { font-family: "Hiragino Sans", "Noto Sans CJK JP", "Noto Sans JP", var(--body); }
+:lang(ko) { font-family: "Apple SD Gothic Neo", "Noto Sans CJK KR", "Noto Sans KR", var(--body); word-break: keep-all; }
+
+:lang(zh) h1, :lang(zh) h2, :lang(zh) h3,
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3,
+:lang(ko) h1, :lang(ko) h2, :lang(ko) h3 {
+  font-family: "PingFang SC", "Hiragino Sans", "Apple SD Gothic Neo", "Noto Sans CJK SC", var(--body);
+  text-wrap: balance;
+}
+
+:lang(zh) p, :lang(zh) .tag,
+:lang(ja) p, :lang(ja) .tag,
+:lang(ko) p, :lang(ko) .tag { line-break: strict; }

@@ -1,0 +1,92 @@
+---
+import Base from "../../layouts/Base.astro";
+import Radar from "../../components/Radar.astro";
+import { projects, categories, firstSeen, dataFetchedAt, hostOf, entries } from "../../lib/data";
+import { bars, histogram, line, isoWeek } from "../../lib/charts";
+import { t, sect, localePath, langFromParams, staticLangs } from "../../lib/i18n";
+import "../../styles/pages.css";
+export const getStaticPaths = staticLangs;
+const lang = langFromParams(Astro.params);
+
+const count = (vals: (string | null)[], top = 0) => {
+  const m = new Map<string, number>();
+  for (const v of vals) if (v) m.set(v, (m.get(v) ?? 0) + 1);
+  const list = [...m].sort((a, b) => b[1] - a[1]) as [string, number][];
+  return top ? list.slice(0, top) : list;
+};
+
+const perSection = categories.map((s) => [sect(lang, s.name), projects.filter((e) => e.section === s.name).length] as [string, number])
+  .filter((d) => d[1] > 0).sort((a, b) => b[1] - a[1]);
+const langs = count(projects.map((e) => e.github?.language ?? null), 10);
+const hosts = count(projects.map((e) => hostOf(e))).map(([k, n]) => [sect(lang, k), n] as [string, number]);
+const withGithub = projects.filter((e) => e.github);
+const day = 864e5;
+const recency: [string, number][] = [
+  ["7d", withGithub.filter((e) => Date.now() - Date.parse(e.github!.pushedAt) < 7 * day).length],
+  ["30d", withGithub.filter((e) => { const d = Date.now() - Date.parse(e.github!.pushedAt); return d >= 7 * day && d < 30 * day; }).length],
+  ["90d", withGithub.filter((e) => { const d = Date.now() - Date.parse(e.github!.pushedAt); return d >= 30 * day && d < 90 * day; }).length],
+  ["stale", withGithub.filter((e) => Date.now() - Date.parse(e.github!.pushedAt) >= 90 * day).length],
+  ["archived", withGithub.filter((e) => e.github!.archived).length],
+];
+const starEdges = [0, 10, 50, 100, 500, 1000, 5000];
+const starLabels = ["0-9", "10-49", "50-99", "100-499", "500-999", "1k-5k", "5k+"];
+const weeks = (() => {
+  const m = new Map<string, number>();
+  for (const e of entries) { const d = firstSeen[e.id]; if (d) m.set(isoWeek(d), (m.get(isoWeek(d)) ?? 0) + 1); }
+  return [...m].sort((a, b) => a[0].localeCompare(b[0])) as [string, number][];
+})();
+const topPer = categories
+  .map((s) => [s, projects.filter((e) => e.section === s.name && e.github).sort((a, b) => b.github!.stars - a.github!.stars).slice(0, 3)] as const)
+  .filter(([, list]) => list.length);
+
+const charts: { title: string; note: string; svg: string | null }[] = [
+  { title: "Entries per section", note: "Counted from the readme itself.", svg: bars(perSection) },
+  { title: "Language mix", note: "Primary language reported by GitHub, top ten.", svg: langs.length ? bars(langs) : null },
+  { title: "Activity", note: "Time since the last push, buckets are exclusive.", svg: withGithub.length ? bars(recency, { warn: recency.map((r) => r[0]).filter((k) => /stale|archived|90/i.test(k)) }) : null },
+  { title: "Stars", note: "Every GitHub-hosted project, linear buckets.", svg: withGithub.length ? histogram(withGithub.map((e) => e.github!.stars), starEdges, starLabels) : null },
+  { title: "Host agent", note: "From the subsection an entry sits under in Coding agents.", svg: hosts.length ? bars(hosts) : null },
+  { title: "Additions per week", note: "First time each entry appeared in the readme.", svg: weeks.length > 1 ? line(weeks) : bars(weeks) },
+];
+---
+<Base title={`${t(lang, "radar")} · Awesome Jev`} description={t(lang, "radarLede")} lang={lang} path="/radar/">
+  <p class="crumbs"><a href={localePath(lang, "/")}>{t(lang, "home")}</a> / <span>{t(lang, "radar")}</span></p>
+  <h1>{t(lang, "radar")}</h1>
+  <p class="lede">{t(lang, "radarLede")}</p>
+  <p class="muted radar-hint">{t(lang, "radarHint")}</p>
+  <p class="micro">{dataFetchedAt ? t(lang, "dataDate", { d: dataFetchedAt.slice(0, 10) }) : "GitHub metadata lands with the first daily refresh."}</p>
+
+  <section class="panel scope">
+    <Radar lang={lang} size={900} dotLabels={300} period={12} />
+    <p class="scope-note micro">Rings are stars: 1k+ at the centre, then 100 to 1k, 10 to 100, under 10 on the rim. Wedges follow the readme order.</p>
+  </section>
+
+  <div class="rule"><span class="micro">{t(lang, "insights")}</span></div>
+  <div class="charts">
+    {charts.map((c) => (
+      <section class="panel card-chart">
+        <h2>{c.title}</h2>
+        <p class="micro">{c.note}</p>
+        {c.svg ? <Fragment set:html={c.svg} /> : <p class="empty-note">Waiting on the first GitHub refresh.</p>}
+      </section>
+    ))}
+  </div>
+
+  {topPer.length > 0 && (
+    <>
+      <div class="rule"><h2>{t(lang, "topBySection")}</h2></div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>{t(lang, "facets.section")}</th><th>1</th><th>2</th><th>3</th></tr></thead>
+          <tbody>
+            {topPer.map(([s, list]) => (
+              <tr>
+                <td><a href={localePath(lang, `/c/${s.slug}/`)}>{sect(lang, s.name)}</a></td>
+                {list.map((e) => <td><a href={localePath(lang, `/p/${e.id}/`)}>{e.name}</a> <span class="num muted">{e.github!.stars}</span></td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+</Base>

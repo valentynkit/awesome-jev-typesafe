@@ -1,0 +1,40 @@
+name: data
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm run parse
+      - run: node scripts/enrich-github.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      # tag-jev exits 0 with a message when its key is missing,
+      # so the refresh still runs before the secrets exist.
+      - run: node scripts/tag-jev.mjs
+        env:
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+      - run: node scripts/build-readme-i18n.mjs
+      - run: node scripts/build-banner.mjs
+      - name: Commit refreshed data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data media/banner-dark.svg media/banner-light.svg README.zh-CN.md README.ja.md README.ko.md
+          if ! git diff --cached --quiet; then
+            git commit -m "data: daily refresh"
+            git push origin HEAD:main
+          fi

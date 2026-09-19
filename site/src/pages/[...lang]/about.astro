@@ -1,0 +1,64 @@
+---
+import Base from "../../layouts/Base.astro";
+import { readmeBullets, repoText, entries, projects, categories } from "../../lib/data";
+import { t, localePath, langFromParams, staticLangs } from "../../lib/i18n";
+export const getStaticPaths = staticLangs;
+const lang = langFromParams(Astro.params);
+
+const bullets = readmeBullets("Know before you build");
+const onScreen = readmeBullets("Jev on one screen");
+
+// readme.md and media/sources.md are hand-edited, so the markup characters go out as entities
+// before the two markdown rules add the only tags this helper is allowed to produce.
+const md = (s: string) =>
+  s
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" rel="noopener">$1</a>');
+const credits = repoText("media/sources.md")
+  .split("\n")
+  .filter((l) => l.startsWith("|") && !/^\|[\s|:-]+\|$/.test(l))
+  .map((l) => l.slice(1, -1).split(" | ").map((c) => c.trim()));
+const [head, ...rows] = credits;
+---
+<Base title={`${t(lang, "about")} · Awesome Jev`} description={t(lang, "aboutLede")} lang={lang} path="/about/">
+  <p class="crumbs"><a href={localePath(lang, "/")}>{t(lang, "home")}</a> / <span>{t(lang, "about")}</span></p>
+  <h1>{t(lang, "about")}</h1>
+  <p class="lede">{t(lang, "aboutLede")}</p>
+
+  <div class="rule"><h2>{t(lang, "knowBefore")}</h2></div>
+  <ul class="prose">{bullets.map((b) => <li set:html={md(b)} />)}</ul>
+
+  <div class="rule"><h2>Jev on one screen</h2></div>
+  <ul class="prose">{onScreen.map((b) => <li set:html={md(b)} />)}</ul>
+
+  <div class="rule"><h2>{t(lang, "caveats")}</h2></div>
+  <div class="prose">
+    <p>Jev has no embeddings, cannot count or do arithmetic, and gets less accurate as the state fills with
+      unrelated text. It lands around 68 percent on the vendor's own four-workflow eval.</p>
+    <p>On this site Jev only reorders a shortlist a person is already scanning. The bars on a card are
+      build-time probabilities, not a verdict. Nothing here is gated on a Jev answer.</p>
+  </div>
+
+  <div class="rule"><h2>{t(lang, "contributing")}</h2></div>
+  <div class="prose">
+    <p>The readme is the only hand-edited source. This site, the JSON, the markdown twins, and the translated
+      readmes are all generated from it, so a pull request against
+      <a href="https://github.com/valentynkit/awesome-jev-typesafe/blob/main/readme.md">readme.md</a> is the whole
+      submission process. One entry per pull request, one sentence that says what it does and what it costs you,
+      and a link that resolves.</p>
+    <p>Every entry is read before it lands, links are checked weekly, and repos that look like bulk scaffolding
+      are flagged rather than quietly dropped. The rules live in
+      <a href="https://github.com/valentynkit/awesome-jev-typesafe/blob/main/contributing.md">contributing.md</a>.</p>
+    <p class="num muted">{entries.length} entries · {projects.length} projects · {categories.length} sections</p>
+  </div>
+
+  <div class="rule"><h2>{t(lang, "credits")}</h2></div>
+  <table>
+    <thead><tr>{head?.map((h) => <th>{h}</th>)}</tr></thead>
+    <tbody>{rows.map((r) => <tr>{r.map((c) => <td set:html={md(c)} />)}</tr>)}</tbody>
+  </table>
+</Base>

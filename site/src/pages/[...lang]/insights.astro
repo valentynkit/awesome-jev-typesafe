@@ -1,0 +1,19 @@
+---
+// The charts moved under the radar. Kept as a redirect because the old path is linked
+// from the readme and from the feed.
+import { localePath, htmlLang, langFromParams, staticLangs } from "../../lib/i18n";
+export const getStaticPaths = staticLangs;
+const lang = langFromParams(Astro.params);
+const to = localePath(lang, "/radar/");
+---
+<!doctype html>
+<html lang={htmlLang(lang)}>
+<head>
+  <meta charset="utf-8" />
+  <title>Radar · Awesome Jev</title>
+  <meta http-equiv="refresh" content={`0; url=${to}`} />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href={Astro.site!.origin + to} />
+</head>
+<body><p><a href={to}>Moved to the radar.</a></p></body>
+</html>

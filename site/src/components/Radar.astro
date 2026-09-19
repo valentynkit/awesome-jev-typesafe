@@ -1,0 +1,45 @@
+---
+import { radarSvg, radarDots, radarSectors, sectorHref } from "../lib/radar";
+import { t } from "../lib/i18n";
+
+interface Props { lang: string; size?: number; labels?: boolean; sweep?: boolean; compact?: boolean; dotLabels?: number; period?: number }
+const { lang, size = 800, labels = true, sweep = true, compact = false, dotLabels, period = 10 } = Astro.props;
+// The hero is half the width and gets no sector gutter, so it can only carry the
+// headline names; the full radar has room to go three times deeper.
+const names = dotLabels ?? (compact ? 500 : 300);
+
+const dots = radarDots(lang);
+const svg = radarSvg({
+  dots,
+  sectors: radarSectors,
+  size,
+  labels,
+  sweep,
+  dotLabels: names,
+  period,
+  // pages.css turns the beam, so it shares the blips' timeline instead of running a
+  // SMIL clock of its own that would slide out of step with them.
+  smil: false,
+  href: (d) => d.href ?? null,
+  labelHref: labels ? sectorHref(lang) : () => null,
+});
+const key: [string, string][] = [
+  ["active", t(lang, "active")],
+  ["quiet", t(lang, "quiet")],
+  ["archived", t(lang, "archived")],
+  ["rising", t(lang, "rising")],
+];
+---
+<figure class={compact ? "radar compact" : "radar"}>
+  <Fragment set:html={svg} />
+  {!compact && (
+    <figcaption>
+      <p class="radar-count"><b class="num">{dots.length}</b> <span class="micro">{t(lang, "reposIndexed")}</span></p>
+      <ul class="radar-key">
+        {key.map(([tone, label]) => (
+          <li><i class={`key-dot ${tone}`} aria-hidden="true"></i><span class="micro">{label}</span></li>
+        ))}
+      </ul>
+    </figcaption>
+  )}
+</figure>
