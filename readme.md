@@ -329,6 +329,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-dspy-lab](https://github.com/jmanhype/jev-dspy-lab) - Reproducible calibration and selective-risk benchmarks for Jev decisions in DSPy.
 - [jev-eval-agent](https://github.com/vinilana/jev-eval-agent) - Personal-assistant agent with 100 mocked tools, measuring how many steps a Jev-gated agent needs.
 - [jev-synergy-screening](https://github.com/PistachioAIHQ/jev-synergy-screening) - Choice and Noul questions scored against ASReview SYNERGY gold labels for abstract screening.
+- [jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) - Measures whether ORDER BY over a Jev probability is defensible: pairwise inversion, Score ordinality against a human grade, calibration, and wording invariants under a pre-registered gate; passes on 20 Newsgroups topics, fails four of six conditions on Amazon ESCI product relevance, and shows that a 40-row batched state through a DuckDB extension fails the ranking gate one row per request passes.
 
 ## Playgrounds and demos
 
