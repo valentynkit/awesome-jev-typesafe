@@ -38,6 +38,8 @@ const ld = jsonld
   <meta name="theme-color" content="#0B0E11" />
   <script is:inline>const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;</script>
   {ld && <script type="application/ld+json" set:html={ld} />}
+  <script is:inline defer src="/_vercel/insights/script.js"></script>
+  <script is:inline defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">{t(lang, "skip")}</a>
