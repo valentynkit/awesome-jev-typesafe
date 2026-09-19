@@ -248,6 +248,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jeff by Alurith](https://github.com/Alurith/jeff) - Read-only Go CLI that checks files against coded rules such as hidden side effects and weak error handling.
 - [jev-pref](https://github.com/doeixd/jev-pref) - Turns the preferences in your AGENTS.md into a linter that runs on code changes and reports back to the agent.
 - [jev-commit](https://github.com/valentynkit/jev-commit) - Pre-commit hook: one Jev call judges whether the commit message matches the staged diff, plus debug leftovers, unmentioned work, and a credential belt; warns except on a secret, which it blocks. By this list's maintainer.
+- [Blink](https://blink.review) - Code review CLI that coding agents run after every change, with Jev checking the diff in place of an LLM reviewer. Hosted product, closed source.
 
 ## Routing and gateways
 
