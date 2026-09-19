@@ -297,6 +297,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [reranker](https://github.com/hev/reranker) - Jev as a calibrated reranker: one call, up to 30 documents, a probability per document.
 - [llama-index-jev](https://github.com/WiktorB2004/llama-index-jev) - LlamaIndex reranker and router, cheaper than an LLM judge.
 - [jev-tree](https://github.com/reachjalil/jev-tree) - Recursive choice over a taxonomy, past the 255-option cap.
+- [jev-folio-recursive-classifier](https://github.com/mttrbrts/jev-folio-recursive-classifier) - Classifies OCR'd legal agreements through the FOLIO Document Types ontology with recursive Jev Choices, beam search, confidence-gated leaf stopping, and context-length benchmarking.
 - [neo4jev](https://github.com/jexp/neo4jev) - Walks a Neo4j graph by classifying neighbouring relationships.
 - [jev-sift](https://github.com/kbhuw/jev-sift) - MCP tool that scores a batch of files, URLs, or snippets for relevance so the agent opens only what matters.
 - [jev-scout](https://github.com/AkashPriyadarshii/jev-scout) - Rust CLI and MCP server that finds real, maintained repos and crates for a plain-language request, with Jev scoring the candidates.
