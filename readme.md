@@ -20,6 +20,10 @@ Typed decisions from TypeSafe's Jev, the first System One model: state in, calib
 
 Jev does not write. You hand it some state and a list of typed questions, and it answers each one with a probability, a pick from options you defined, or a position on a scale you defined. One request, about 100 ms, $0.042 per million input tokens, output free, every question scored in parallel. This list is where people are putting that to work, sorted by what you would install.
 
+<a href="https://awesomejev.vercel.app/radar/"><img src="media/awesome-jev-promo.gif" width="720" alt="Awesome Jev in seventeen seconds: the radar sweeping repos, a search reranked by Jev, the radar page, and the trending board"></a>
+
+Seventeen seconds of the site; the [full-size MP4](media/awesome-jev-promo.mp4) is in the repo.
+
 <table>
   <tr>
     <td align="center"><a href="https://github.com/browser-use/jev-ultrafast"><img src="media/jev-ultrafast.png" width="300" alt="jev-ultrafast booking a flight in 7.1 seconds"><br><sub>jev-ultrafast</sub></a></td>

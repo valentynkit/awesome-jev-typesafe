@@ -155,7 +155,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 102
+      "line": 106
     },
     {
       "id": "quick-start",
@@ -172,7 +172,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 103
+      "line": 107
     },
     {
       "id": "primitives",
@@ -189,7 +189,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 104
+      "line": 108
     },
     {
       "id": "state",
@@ -206,7 +206,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 105
+      "line": 109
     },
     {
       "id": "api-reference",
@@ -223,7 +223,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 106
+      "line": 110
     },
     {
       "id": "models",
@@ -240,7 +240,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 107
+      "line": 111
     },
     {
       "id": "model-jaggedness-jev-1-13",
@@ -257,7 +257,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 108
+      "line": 112
     },
     {
       "id": "system-one",
@@ -274,7 +274,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 109
+      "line": 113
     },
     {
       "id": "how-to-build-with-system-one",
@@ -291,7 +291,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 110
+      "line": 114
     },
     {
       "id": "confidence",
@@ -308,7 +308,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 111
+      "line": 115
     },
     {
       "id": "patterns",
@@ -325,7 +325,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 112
+      "line": 116
     },
     {
       "id": "use-case-map",
@@ -342,7 +342,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 113
+      "line": 117
     },
     {
       "id": "cookbooks",
@@ -359,7 +359,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 114
+      "line": 118
     },
     {
       "id": "workflow-evals",
@@ -376,7 +376,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 115
+      "line": 119
     },
     {
       "id": "manifesto",
@@ -393,7 +393,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 116
+      "line": 120
     },
     {
       "id": "llms-txt",
@@ -410,7 +410,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 117
+      "line": 121
     },
     {
       "id": "console",
@@ -427,7 +427,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 118
+      "line": 122
     },
     {
       "id": "jev-on-vercel-ai-gateway",
@@ -444,7 +444,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 119
+      "line": 123
     },
     {
       "id": "jev-on-cloudflare-workers-ai",
@@ -461,7 +461,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 120
+      "line": 124
     },
     {
       "id": "jev-on-openrouter",
@@ -478,7 +478,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 121
+      "line": 125
     },
     {
       "id": "jev-verified-cascade",
@@ -495,7 +495,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 122
+      "line": 126
     },
     {
       "id": "jev-on-netlify-ai-gateway",
@@ -512,7 +512,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 123
+      "line": 127
     },
     {
       "id": "litellm-pass-through",
@@ -529,7 +529,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 124
+      "line": 128
     },
     {
       "id": "discord",
@@ -546,7 +546,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 125
+      "line": 129
     },
     {
       "id": "typesafe-sdk-js",
@@ -563,7 +563,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 129
+      "line": 133
     },
     {
       "id": "typesafe-sdk-python",
@@ -580,7 +580,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 130
+      "line": 134
     },
     {
       "id": "system-one-adapter-python",
@@ -597,7 +597,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 131
+      "line": 135
     },
     {
       "id": "skills-typesafe-ai",
@@ -614,7 +614,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 132
+      "line": 136
     },
     {
       "id": "agent-skill",
@@ -631,7 +631,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 133
+      "line": 137
     },
     {
       "id": "vercel-ai-sdk-provider",
@@ -648,7 +648,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 134
+      "line": 138
     },
     {
       "id": "eve",
@@ -665,7 +665,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 135
+      "line": 139
     },
     {
       "id": "ai-cli",
@@ -682,7 +682,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 136
+      "line": 140
     },
     {
       "id": "fast-jev-compaction",
@@ -699,7 +699,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 144
+      "line": 148
     },
     {
       "id": "jev-router-gargpratyush",
@@ -716,7 +716,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 145
+      "line": 149
     },
     {
       "id": "winnow",
@@ -733,7 +733,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 146
+      "line": 150
     },
     {
       "id": "yoshi",
@@ -750,7 +750,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 147
+      "line": 151
     },
     {
       "id": "skillranker",
@@ -767,7 +767,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 148
+      "line": 152
     },
     {
       "id": "jcm-router",
@@ -784,7 +784,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 149
+      "line": 153
     },
     {
       "id": "jev-skillful",
@@ -801,7 +801,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 150
+      "line": 154
     },
     {
       "id": "limpet",
@@ -818,7 +818,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 151
+      "line": 155
     },
     {
       "id": "jevwire",
@@ -835,7 +835,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 152
+      "line": 156
     },
     {
       "id": "jev-code",
@@ -852,7 +852,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 153
+      "line": 157
     },
     {
       "id": "vexjoy-agent",
@@ -869,7 +869,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 154
+      "line": 158
     },
     {
       "id": "save-token-jev-clean",
@@ -886,7 +886,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 155
+      "line": 159
     },
     {
       "id": "jev-pruner",
@@ -903,7 +903,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 156
+      "line": 160
     },
     {
       "id": "jev-rules",
@@ -920,7 +920,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 157
+      "line": 161
     },
     {
       "id": "jev-belay",
@@ -937,7 +937,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 158
+      "line": 162
     },
     {
       "id": "jev-use",
@@ -954,7 +954,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 159
+      "line": 163
     },
     {
       "id": "jev-codex-router",
@@ -971,7 +971,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 163
+      "line": 167
     },
     {
       "id": "pi-jev-y0usaf",
@@ -988,7 +988,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 167
+      "line": 171
     },
     {
       "id": "pi-warden",
@@ -1005,7 +1005,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 168
+      "line": 172
     },
     {
       "id": "pi-jev-auto-mode",
@@ -1022,7 +1022,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 169
+      "line": 173
     },
     {
       "id": "pi-jev-theooliveira",
@@ -1039,7 +1039,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 170
+      "line": 174
     },
     {
       "id": "pi-jev-router",
@@ -1056,7 +1056,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 171
+      "line": 175
     },
     {
       "id": "pi-fast-jev-compaction",
@@ -1073,7 +1073,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 172
+      "line": 176
     },
     {
       "id": "bicameral",
@@ -1090,7 +1090,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 173
+      "line": 177
     },
     {
       "id": "pi-quiet-ask",
@@ -1107,7 +1107,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 174
+      "line": 178
     },
     {
       "id": "pi-typesafe-jev",
@@ -1124,7 +1124,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 175
+      "line": 179
     },
     {
       "id": "pi-typesafe",
@@ -1141,7 +1141,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 176
+      "line": 180
     },
     {
       "id": "pi-heed",
@@ -1158,7 +1158,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 177
+      "line": 181
     },
     {
       "id": "typesafe-skill-router",
@@ -1175,7 +1175,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 181
+      "line": 185
     },
     {
       "id": "jev-agent-skill-router",
@@ -1192,7 +1192,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 182
+      "line": 186
     },
     {
       "id": "hermes-jev",
@@ -1209,7 +1209,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 183
+      "line": 187
     },
     {
       "id": "ask-jev-skill",
@@ -1226,7 +1226,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 184
+      "line": 188
     },
     {
       "id": "a0-typesafe-ai",
@@ -1243,7 +1243,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 188
+      "line": 192
     },
     {
       "id": "skillbox",
@@ -1260,7 +1260,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 192
+      "line": 196
     },
     {
       "id": "jev-mcp-jkudish",
@@ -1277,7 +1277,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 193
+      "line": 197
     },
     {
       "id": "typesafe-mcp",
@@ -1294,7 +1294,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 194
+      "line": 198
     },
     {
       "id": "jev-mcp-blakestone-x",
@@ -1311,7 +1311,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 195
+      "line": 199
     },
     {
       "id": "jevbridge",
@@ -1328,7 +1328,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 196
+      "line": 200
     },
     {
       "id": "jev-mcp-byk",
@@ -1345,7 +1345,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 197
+      "line": 201
     },
     {
       "id": "azdaja",
@@ -1362,7 +1362,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 198
+      "line": 202
     },
     {
       "id": "building-with-jev-skill",
@@ -1379,7 +1379,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 202
+      "line": 206
     },
     {
       "id": "jev-system-architect",
@@ -1396,7 +1396,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 203
+      "line": 207
     },
     {
       "id": "jev-judgment",
@@ -1413,7 +1413,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 204
+      "line": 208
     },
     {
       "id": "skills-fabricioctelles",
@@ -1430,7 +1430,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 205
+      "line": 209
     },
     {
       "id": "augustus",
@@ -1447,7 +1447,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 206
+      "line": 210
     },
     {
       "id": "jev-ultrafast",
@@ -1464,7 +1464,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 212
+      "line": 216
     },
     {
       "id": "typesafe-computer-use",
@@ -1481,7 +1481,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 213
+      "line": 217
     },
     {
       "id": "mobile-jev",
@@ -1498,7 +1498,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 214
+      "line": 218
     },
     {
       "id": "jev-browser-jkudish",
@@ -1515,7 +1515,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 215
+      "line": 219
     },
     {
       "id": "jev-voice-browser",
@@ -1532,7 +1532,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 216
+      "line": 220
     },
     {
       "id": "jev-browser-ying-kai-liao",
@@ -1549,7 +1549,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 217
+      "line": 221
     },
     {
       "id": "jev-browser-tontoko",
@@ -1566,7 +1566,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 218
+      "line": 222
     },
     {
       "id": "jev-mobile",
@@ -1583,7 +1583,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 219
+      "line": 223
     },
     {
       "id": "jev-ego",
@@ -1600,7 +1600,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 220
+      "line": 224
     },
     {
       "id": "jev-browser-use",
@@ -1617,7 +1617,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 221
+      "line": 225
     },
     {
       "id": "jev-cu",
@@ -1634,7 +1634,7 @@
       "maintainer": false,
       "languageHint": "Chinese readme",
       "trustPhrase": null,
-      "line": 222
+      "line": 226
     },
     {
       "id": "jevscout",
@@ -1651,7 +1651,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 223
+      "line": 227
     },
     {
       "id": "semif",
@@ -1668,7 +1668,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": "independent replica",
-      "line": 231
+      "line": 235
     },
     {
       "id": "jevlike",
@@ -1685,7 +1685,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 232
+      "line": 236
     },
     {
       "id": "nanojev",
@@ -1702,7 +1702,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 233
+      "line": 237
     },
     {
       "id": "openjev-sglang",
@@ -1719,7 +1719,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 234
+      "line": 238
     },
     {
       "id": "jev-visual",
@@ -1736,7 +1736,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 235
+      "line": 239
     },
     {
       "id": "reflex",
@@ -1753,7 +1753,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 236
+      "line": 240
     },
     {
       "id": "decider",
@@ -1770,7 +1770,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 237
+      "line": 241
     },
     {
       "id": "jevmlx",
@@ -1787,7 +1787,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 238
+      "line": 242
     },
     {
       "id": "mini-jev",
@@ -1804,7 +1804,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 239
+      "line": 243
     },
     {
       "id": "system-one-open",
@@ -1821,7 +1821,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 240
+      "line": 244
     },
     {
       "id": "verdict-open-jev",
@@ -1838,7 +1838,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 241
+      "line": 245
     },
     {
       "id": "jevfire",
@@ -1855,7 +1855,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 242
+      "line": 246
     },
     {
       "id": "jevbetter",
@@ -1872,7 +1872,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 243
+      "line": 247
     },
     {
       "id": "open-alternative-jev",
@@ -1889,7 +1889,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 244
+      "line": 248
     },
     {
       "id": "openjev-zhihz",
@@ -1906,7 +1906,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 245
+      "line": 249
     },
     {
       "id": "jev-on-a-laptop",
@@ -1923,7 +1923,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 246
+      "line": 250
     },
     {
       "id": "typesafe-ai-benchmark",
@@ -1940,7 +1940,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 247
+      "line": 251
     },
     {
       "id": "parallel-constrained-decoding",
@@ -1957,7 +1957,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 248
+      "line": 252
     },
     {
       "id": "openvons",
@@ -1974,7 +1974,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": "Independent replica",
-      "line": 249
+      "line": 253
     },
     {
       "id": "von",
@@ -1991,7 +1991,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 250
+      "line": 254
     },
     {
       "id": "litjev",
@@ -2008,7 +2008,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 251
+      "line": 255
     },
     {
       "id": "open-jev-joshuasp",
@@ -2025,7 +2025,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 252
+      "line": 256
     },
     {
       "id": "kev",
@@ -2042,7 +2042,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 253
+      "line": 257
     },
     {
       "id": "simple-jev",
@@ -2059,7 +2059,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 254
+      "line": 258
     },
     {
       "id": "openjev-razorback16",
@@ -2076,7 +2076,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 255
+      "line": 259
     },
     {
       "id": "open-jev-daseinlabs",
@@ -2093,7 +2093,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 256
+      "line": 260
     },
     {
       "id": "jeff-logan-markewich",
@@ -2110,7 +2110,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 257
+      "line": 261
     },
     {
       "id": "jev-forge",
@@ -2127,7 +2127,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 258
+      "line": 262
     },
     {
       "id": "jev-review-devagrawal09",
@@ -2144,7 +2144,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 262
+      "line": 266
     },
     {
       "id": "jev-review-niazmorshed2007",
@@ -2161,7 +2161,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 263
+      "line": 267
     },
     {
       "id": "foreman",
@@ -2178,7 +2178,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 264
+      "line": 268
     },
     {
       "id": "supercov",
@@ -2195,7 +2195,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 265
+      "line": 269
     },
     {
       "id": "diffjury",
@@ -2212,7 +2212,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 266
+      "line": 270
     },
     {
       "id": "clean-code-review",
@@ -2229,7 +2229,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 267
+      "line": 271
     },
     {
       "id": "jevlint",
@@ -2246,7 +2246,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 268
+      "line": 272
     },
     {
       "id": "commit-miner",
@@ -2263,7 +2263,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 269
+      "line": 273
     },
     {
       "id": "jev-review-action",
@@ -2280,7 +2280,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 270
+      "line": 274
     },
     {
       "id": "jev-triage",
@@ -2297,7 +2297,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 271
+      "line": 275
     },
     {
       "id": "perch",
@@ -2314,7 +2314,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 272
+      "line": 276
     },
     {
       "id": "jeff-alurith",
@@ -2331,7 +2331,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 273
+      "line": 277
     },
     {
       "id": "jev-pref",
@@ -2348,7 +2348,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 274
+      "line": 278
     },
     {
       "id": "jev-commit",
@@ -2365,7 +2365,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 275
+      "line": 279
     },
     {
       "id": "tiershift",
@@ -2382,7 +2382,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 281
+      "line": 285
     },
     {
       "id": "jev-router-prismhq",
@@ -2399,7 +2399,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 282
+      "line": 286
     },
     {
       "id": "agent-router",
@@ -2416,7 +2416,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 283
+      "line": 287
     },
     {
       "id": "janus",
@@ -2433,7 +2433,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 284
+      "line": 288
     },
     {
       "id": "hono-jev-router",
@@ -2450,7 +2450,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 285
+      "line": 289
     },
     {
       "id": "jevrouter",
@@ -2467,7 +2467,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": "reports 44 percent first-five tool-call hits against 24 for DeepSeek on Toolathlon",
-      "line": 286
+      "line": 290
     },
     {
       "id": "jev-gateway",
@@ -2484,7 +2484,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 287
+      "line": 291
     },
     {
       "id": "jev-search",
@@ -2501,7 +2501,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 291
+      "line": 295
     },
     {
       "id": "blink",
@@ -2518,7 +2518,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 292
+      "line": 296
     },
     {
       "id": "reranker",
@@ -2535,7 +2535,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 293
+      "line": 297
     },
     {
       "id": "llama-index-jev",
@@ -2552,7 +2552,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 294
+      "line": 298
     },
     {
       "id": "jev-tree",
@@ -2569,7 +2569,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 295
+      "line": 299
     },
     {
       "id": "neo4jev",
@@ -2586,7 +2586,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 296
+      "line": 300
     },
     {
       "id": "jev-sift",
@@ -2603,7 +2603,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 297
+      "line": 301
     },
     {
       "id": "jev-scout",
@@ -2620,7 +2620,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 298
+      "line": 302
     },
     {
       "id": "pg-jev",
@@ -2637,7 +2637,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 304
+      "line": 308
     },
     {
       "id": "vgi-typesafe",
@@ -2654,7 +2654,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 305
+      "line": 309
     },
     {
       "id": "jevsql",
@@ -2671,7 +2671,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 306
+      "line": 310
     },
     {
       "id": "sqlite-jev",
@@ -2688,7 +2688,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 307
+      "line": 311
     },
     {
       "id": "jevlogs",
@@ -2705,7 +2705,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 308
+      "line": 312
     },
     {
       "id": "jev-curate",
@@ -2722,7 +2722,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 309
+      "line": 313
     },
     {
       "id": "ha-jev",
@@ -2739,7 +2739,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 310
+      "line": 314
     },
     {
       "id": "typesafe-migration-guard",
@@ -2756,7 +2756,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 311
+      "line": 315
     },
     {
       "id": "jev-for-engineers",
@@ -2773,7 +2773,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 312
+      "line": 316
     },
     {
       "id": "jlink",
@@ -2790,7 +2790,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 313
+      "line": 317
     },
     {
       "id": "pg-typesafe",
@@ -2807,7 +2807,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 314
+      "line": 318
     },
     {
       "id": "jev-mode",
@@ -2824,7 +2824,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": "reports 78 percent fewer tokens and 96",
-      "line": 315
+      "line": 319
     },
     {
       "id": "jev-reviewer",
@@ -2841,7 +2841,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 316
+      "line": 320
     },
     {
       "id": "tax-doc-classifier",
@@ -2858,7 +2858,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": "reports 100 percent on its corpus at $0",
-      "line": 317
+      "line": 321
     },
     {
       "id": "jevql",
@@ -2875,7 +2875,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 318
+      "line": 322
     },
     {
       "id": "duckdb-jev",
@@ -2892,7 +2892,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 319
+      "line": 323
     },
     {
       "id": "invalidate",
@@ -2909,7 +2909,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 320
+      "line": 324
     },
     {
       "id": "jev-shield",
@@ -2926,7 +2926,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": "reports 94 percent block recall at about $0",
-      "line": 326
+      "line": 330
     },
     {
       "id": "jev-guard",
@@ -2943,7 +2943,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 327
+      "line": 331
     },
     {
       "id": "jev-moderation-bot",
@@ -2960,7 +2960,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 328
+      "line": 332
     },
     {
       "id": "citation-verifier",
@@ -2977,7 +2977,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 329
+      "line": 333
     },
     {
       "id": "human-compiler",
@@ -2994,7 +2994,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 330
+      "line": 334
     },
     {
       "id": "snifftest",
@@ -3011,7 +3011,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 331
+      "line": 335
     },
     {
       "id": "riff",
@@ -3028,7 +3028,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 332
+      "line": 336
     },
     {
       "id": "jev-secret-detection",
@@ -3045,7 +3045,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 333
+      "line": 337
     },
     {
       "id": "jev-audio-beeper",
@@ -3062,7 +3062,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 334
+      "line": 338
     },
     {
       "id": "is-malicious",
@@ -3079,7 +3079,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 335
+      "line": 339
     },
     {
       "id": "tripwire",
@@ -3096,7 +3096,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 336
+      "line": 340
     },
     {
       "id": "unclutter",
@@ -3113,7 +3113,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 342
+      "line": 346
     },
     {
       "id": "typesafe-adblock",
@@ -3130,7 +3130,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 343
+      "line": 347
     },
     {
       "id": "vibecheck",
@@ -3147,7 +3147,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 344
+      "line": 348
     },
     {
       "id": "xtags",
@@ -3164,7 +3164,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 345
+      "line": 349
     },
     {
       "id": "jevibe-check",
@@ -3181,7 +3181,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 346
+      "line": 350
     },
     {
       "id": "jevmeter",
@@ -3198,7 +3198,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 347
+      "line": 351
     },
     {
       "id": "killmyidea",
@@ -3215,7 +3215,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 348
+      "line": 352
     },
     {
       "id": "notra",
@@ -3232,7 +3232,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 349
+      "line": 353
     },
     {
       "id": "slidepilot",
@@ -3249,7 +3249,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 350
+      "line": 354
     },
     {
       "id": "should-ai-kill-us-all",
@@ -3266,7 +3266,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 351
+      "line": 355
     },
     {
       "id": "privacy-facts",
@@ -3283,7 +3283,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 352
+      "line": 356
     },
     {
       "id": "jev-voice-control",
@@ -3300,7 +3300,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 353
+      "line": 357
     },
     {
       "id": "jev-got",
@@ -3317,7 +3317,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 354
+      "line": 358
     },
     {
       "id": "typesafe-jev-gtaras7",
@@ -3334,7 +3334,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 355
+      "line": 359
     },
     {
       "id": "super-jev",
@@ -3351,7 +3351,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 356
+      "line": 360
     },
     {
       "id": "safer-with-jev",
@@ -3368,7 +3368,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 357
+      "line": 361
     },
     {
       "id": "youtube-sponsor-detection",
@@ -3385,7 +3385,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 358
+      "line": 362
     },
     {
       "id": "jev-seo",
@@ -3402,7 +3402,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 359
+      "line": 363
     },
     {
       "id": "jev-nvim",
@@ -3419,7 +3419,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 360
+      "line": 364
     },
     {
       "id": "jev-skip",
@@ -3436,7 +3436,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": "reports 77 percent of SponsorBlock's sponsor seconds caught over 23 videos at $0",
-      "line": 361
+      "line": 365
     },
     {
       "id": "typesafe-mario",
@@ -3453,7 +3453,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 367
+      "line": 371
     },
     {
       "id": "jev-drone",
@@ -3470,7 +3470,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 368
+      "line": 372
     },
     {
       "id": "tsai-sc",
@@ -3487,7 +3487,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 369
+      "line": 373
     },
     {
       "id": "tsai-civ2",
@@ -3504,7 +3504,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 370
+      "line": 374
     },
     {
       "id": "heist-one",
@@ -3521,7 +3521,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 371
+      "line": 375
     },
     {
       "id": "typesafe-snake",
@@ -3538,7 +3538,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 372
+      "line": 376
     },
     {
       "id": "jev-doom-agent",
@@ -3555,7 +3555,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 373
+      "line": 377
     },
     {
       "id": "onevonejev",
@@ -3572,7 +3572,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 374
+      "line": 378
     },
     {
       "id": "jevplayspokemon",
@@ -3589,7 +3589,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 375
+      "line": 379
     },
     {
       "id": "jev-askable-arm",
@@ -3606,7 +3606,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 376
+      "line": 380
     },
     {
       "id": "quackd",
@@ -3623,7 +3623,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 377
+      "line": 381
     },
     {
       "id": "snake-jev",
@@ -3640,7 +3640,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 378
+      "line": 382
     },
     {
       "id": "jevpilot",
@@ -3657,7 +3657,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 379
+      "line": 383
     },
     {
       "id": "live-jev",
@@ -3674,7 +3674,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 380
+      "line": 384
     },
     {
       "id": "jev-plays-pokemon-red",
@@ -3691,7 +3691,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 381
+      "line": 385
     },
     {
       "id": "jev-trader",
@@ -3708,7 +3708,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 387
+      "line": 391
     },
     {
       "id": "trade-jev",
@@ -3725,7 +3725,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 388
+      "line": 392
     },
     {
       "id": "jev-trades",
@@ -3742,7 +3742,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 389
+      "line": 393
     },
     {
       "id": "jev-trade",
@@ -3759,7 +3759,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 390
+      "line": 394
     },
     {
       "id": "jev-benchmarks",
@@ -3776,7 +3776,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 396
+      "line": 400
     },
     {
       "id": "jevcal",
@@ -3793,7 +3793,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 397
+      "line": 401
     },
     {
       "id": "jev-harness",
@@ -3810,7 +3810,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 398
+      "line": 402
     },
     {
       "id": "jev-rerank-bench",
@@ -3827,7 +3827,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 399
+      "line": 403
     },
     {
       "id": "jev-search-rerank-eval",
@@ -3844,7 +3844,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 400
+      "line": 404
     },
     {
       "id": "jev-sec-bench",
@@ -3861,7 +3861,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 401
+      "line": 405
     },
     {
       "id": "jev-phishing-bench",
@@ -3878,7 +3878,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 402
+      "line": 406
     },
     {
       "id": "jev-spam-eval",
@@ -3895,7 +3895,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 403
+      "line": 407
     },
     {
       "id": "jev-agent-failure-benchmark",
@@ -3912,7 +3912,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 404
+      "line": 408
     },
     {
       "id": "jev-korean-benchmark",
@@ -3929,7 +3929,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 405
+      "line": 409
     },
     {
       "id": "jev-behavior-study",
@@ -3946,7 +3946,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 406
+      "line": 410
     },
     {
       "id": "jev-report",
@@ -3963,7 +3963,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 407
+      "line": 411
     },
     {
       "id": "jev-benchmark-wondertwins",
@@ -3980,7 +3980,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 408
+      "line": 412
     },
     {
       "id": "jev-dspy-lab",
@@ -3997,7 +3997,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 409
+      "line": 413
     },
     {
       "id": "jev-eval-agent",
@@ -4014,7 +4014,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 410
+      "line": 414
     },
     {
       "id": "jev-synergy-screening",
@@ -4031,7 +4031,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 411
+      "line": 415
     },
     {
       "id": "jev-orderby-bench",
@@ -4048,7 +4048,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": "pre-registered",
-      "line": 412
+      "line": 416
     },
     {
       "id": "cultivar",
@@ -4065,7 +4065,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 413
+      "line": 417
     },
     {
       "id": "jev-eval",
@@ -4082,7 +4082,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 414
+      "line": 418
     },
     {
       "id": "jev-benchmark-themsquared",
@@ -4099,7 +4099,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 415
+      "line": 419
     },
     {
       "id": "jev-research-eval",
@@ -4116,7 +4116,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 416
+      "line": 420
     },
     {
       "id": "jev-playground-hegargarcia",
@@ -4133,7 +4133,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 417
+      "line": 421
     },
     {
       "id": "typesafe-playground-typesafeai",
@@ -4150,7 +4150,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 423
+      "line": 427
     },
     {
       "id": "typesafe-playground-kavehmz",
@@ -4167,7 +4167,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 424
+      "line": 428
     },
     {
       "id": "jev-experiments",
@@ -4184,7 +4184,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 425
+      "line": 429
     },
     {
       "id": "typesafe-typewriter",
@@ -4201,7 +4201,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 426
+      "line": 430
     },
     {
       "id": "yes-no",
@@ -4218,7 +4218,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 427
+      "line": 431
     },
     {
       "id": "jev-pac-man",
@@ -4235,7 +4235,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 428
+      "line": 432
     },
     {
       "id": "jev-tetris",
@@ -4252,7 +4252,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 429
+      "line": 433
     },
     {
       "id": "hollow-creek",
@@ -4269,7 +4269,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 430
+      "line": 434
     },
     {
       "id": "crowdcheck",
@@ -4286,7 +4286,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 431
+      "line": 435
     },
     {
       "id": "magic-8-ball",
@@ -4303,7 +4303,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 432
+      "line": 436
     },
     {
       "id": "typesafe-ai-playground",
@@ -4320,7 +4320,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 433
+      "line": 437
     },
     {
       "id": "jev-playground-wustep",
@@ -4337,7 +4337,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 434
+      "line": 438
     },
     {
       "id": "typesafe-jev-workflow",
@@ -4354,7 +4354,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 435
+      "line": 439
     },
     {
       "id": "jev-little-airways",
@@ -4371,7 +4371,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 436
+      "line": 440
     },
     {
       "id": "jev-demos",
@@ -4388,7 +4388,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 437
+      "line": 441
     },
     {
       "id": "jev-classifier",
@@ -4405,7 +4405,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 438
+      "line": 442
     },
     {
       "id": "jev-guard-demo",
@@ -4422,7 +4422,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 439
+      "line": 443
     },
     {
       "id": "companion",
@@ -4439,7 +4439,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 440
+      "line": 444
     },
     {
       "id": "jev-system-one",
@@ -4456,7 +4456,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 441
+      "line": 445
     },
     {
       "id": "jev-axi",
@@ -4473,7 +4473,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 447
+      "line": 451
     },
     {
       "id": "semdecide",
@@ -4490,7 +4490,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 448
+      "line": 452
     },
     {
       "id": "every",
@@ -4507,7 +4507,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 449
+      "line": 453
     },
     {
       "id": "typesafe-cli",
@@ -4524,7 +4524,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 450
+      "line": 454
     },
     {
       "id": "jev-shell-history",
@@ -4541,7 +4541,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 451
+      "line": 455
     },
     {
       "id": "jgrep",
@@ -4558,7 +4558,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 452
+      "line": 456
     },
     {
       "id": "jev-cli-jtsang4",
@@ -4575,7 +4575,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 453
+      "line": 457
     },
     {
       "id": "jev-cli-tumf",
@@ -4592,7 +4592,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 454
+      "line": 458
     },
     {
       "id": "jev-cli-nasrallah-al",
@@ -4609,7 +4609,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 455
+      "line": 459
     },
     {
       "id": "jev-go-gaurav-gosain",
@@ -4626,7 +4626,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 459
+      "line": 463
     },
     {
       "id": "typesafe-go",
@@ -4643,7 +4643,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 460
+      "line": 464
     },
     {
       "id": "typesafe-ai",
@@ -4660,7 +4660,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 461
+      "line": 465
     },
     {
       "id": "typesafe-ai-rs",
@@ -4677,7 +4677,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 462
+      "line": 466
     },
     {
       "id": "jev-dannote",
@@ -4694,7 +4694,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 463
+      "line": 467
     },
     {
       "id": "typesafe-sdk-joshmn",
@@ -4711,7 +4711,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 464
+      "line": 468
     },
     {
       "id": "ruby-llm-typesafe",
@@ -4728,7 +4728,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 465
+      "line": 469
     },
     {
       "id": "laravel-typesafe-jev",
@@ -4745,7 +4745,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 466
+      "line": 470
     },
     {
       "id": "typesafe-sdk-java",
@@ -4762,7 +4762,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 467
+      "line": 471
     },
     {
       "id": "typesafe-sdk-swift",
@@ -4779,7 +4779,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 468
+      "line": 472
     },
     {
       "id": "typesafeai-net",
@@ -4796,7 +4796,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 469
+      "line": 473
     },
     {
       "id": "zio-typesafe-ai",
@@ -4813,7 +4813,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 470
+      "line": 474
     },
     {
       "id": "jev-dsl",
@@ -4830,7 +4830,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 471
+      "line": 475
     },
     {
       "id": "advocaat",
@@ -4847,7 +4847,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 472
+      "line": 476
     },
     {
       "id": "jod",
@@ -4864,7 +4864,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 473
+      "line": 477
     },
     {
       "id": "n8n-nodes-typesafe-ai",
@@ -4881,7 +4881,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 474
+      "line": 478
     },
     {
       "id": "jevclient",
@@ -4898,7 +4898,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 475
+      "line": 479
     },
     {
       "id": "s1-rs",
@@ -4915,7 +4915,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 476
+      "line": 480
     },
     {
       "id": "typesafe-rs",
@@ -4932,7 +4932,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 477
+      "line": 481
     },
     {
       "id": "kunobi-jev",
@@ -4949,7 +4949,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 478
+      "line": 482
     },
     {
       "id": "jev-go-stumble",
@@ -4966,7 +4966,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 479
+      "line": 483
     },
     {
       "id": "typesafe-ai-rails",
@@ -4983,7 +4983,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 480
+      "line": 484
     },
     {
       "id": "typesafe-sdk-nshkrdotcom",
@@ -5000,7 +5000,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 481
+      "line": 485
     },
     {
       "id": "ruby-decision-model",
@@ -5017,7 +5017,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 482
+      "line": 486
     },
     {
       "id": "zod-jev",
@@ -5034,7 +5034,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 483
+      "line": 487
     },
     {
       "id": "typesafeai-dotnet-sdk",
@@ -5051,7 +5051,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 484
+      "line": 488
     },
     {
       "id": "typesafe-sdk-go",
@@ -5068,7 +5068,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 485
+      "line": 489
     },
     {
       "id": "swift-typesafe",
@@ -5085,7 +5085,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 486
+      "line": 490
     },
     {
       "id": "typesafe-sdk-php",
@@ -5102,7 +5102,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 487
+      "line": 491
     },
     {
       "id": "introducing-system-one-models-and-jev",
@@ -5119,7 +5119,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 493
+      "line": 497
     },
     {
       "id": "launch-thread-by-diogo-almeida",
@@ -5136,7 +5136,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 494
+      "line": 498
     },
     {
       "id": "hacker-news-launch-thread",
@@ -5153,7 +5153,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 495
+      "line": 499
     },
     {
       "id": "the-register",
@@ -5170,7 +5170,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 496
+      "line": 500
     },
     {
       "id": "latent-space",
@@ -5187,7 +5187,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 497
+      "line": 501
     },
     {
       "id": "typesafe-ai-emerges-from-stealth-with-40m",
@@ -5204,7 +5204,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 498
+      "line": 502
     },
     {
       "id": "the-rundown",
@@ -5221,7 +5221,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 499
+      "line": 503
     },
     {
       "id": "datacamp",
@@ -5238,7 +5238,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 500
+      "line": 504
     },
     {
       "id": "how-does-jev-work-rlcd-and-parallel-inference",
@@ -5255,7 +5255,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 501
+      "line": 505
     },
     {
       "id": "typesafe-jev-the-first-decision-only-model-class",
@@ -5272,7 +5272,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 502
+      "line": 506
     },
     {
       "id": "techcrunch",
@@ -5289,7 +5289,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 503
+      "line": 507
     },
     {
       "id": "forkast",
@@ -5306,7 +5306,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 504
+      "line": 508
     },
     {
       "id": "testing-jev-on-public-and-private-data",
@@ -5323,7 +5323,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 508
+      "line": 512
     },
     {
       "id": "one-judge-call-or-twelve-dimension-scores",
@@ -5340,7 +5340,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 509
+      "line": 513
     },
     {
       "id": "jev-vs-mistral-and-gemini-for-event-validation",
@@ -5357,7 +5357,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 510
+      "line": 514
     },
     {
       "id": "mini-vibe-check",
@@ -5374,7 +5374,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 511
+      "line": 515
     },
     {
       "id": "typesafe-jev-played-chess",
@@ -5391,7 +5391,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 512
+      "line": 516
     },
     {
       "id": "jev-sorted",
@@ -5408,7 +5408,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 513
+      "line": 517
     },
     {
       "id": "typed-decisions-not-chat",
@@ -5425,7 +5425,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 514
+      "line": 518
     },
     {
       "id": "typesafe-jev-2",
@@ -5442,7 +5442,7 @@
       "maintainer": false,
       "languageHint": "Non-Latin title",
       "trustPhrase": null,
-      "line": 515
+      "line": 519
     },
     {
       "id": "typesafe-jev-vs-claude-code-4-models-2-real-jobs",
@@ -5459,7 +5459,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": "Pre-registered",
-      "line": 516
+      "line": 520
     },
     {
       "id": "jev-three-days-in",
@@ -5476,7 +5476,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 517
+      "line": 521
     },
     {
       "id": "building-a-harness-with-jev",
@@ -5493,7 +5493,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 521
+      "line": 525
     },
     {
       "id": "jev-from-a-developer-s-angle",
@@ -5510,7 +5510,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 522
+      "line": 526
     },
     {
       "id": "jev-is-the-fish-at-the-poker-table",
@@ -5527,7 +5527,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 523
+      "line": 527
     },
     {
       "id": "jev-as-a-command-safety-reviewer",
@@ -5544,7 +5544,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 524
+      "line": 528
     },
     {
       "id": "jev-typewriter",
@@ -5561,7 +5561,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 525
+      "line": 529
     },
     {
       "id": "he-says-he-co-invented-chatgpt-his-new-ai-will-not-write-a-word",
@@ -5578,7 +5578,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 526
+      "line": 530
     },
     {
       "id": "testing-jev-for-pi-extensions",
@@ -5595,7 +5595,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 527
+      "line": 531
     },
     {
       "id": "jev-2",
@@ -5612,7 +5612,7 @@
       "maintainer": false,
       "languageHint": "Non-Latin title",
       "trustPhrase": null,
-      "line": 528
+      "line": 532
     },
     {
       "id": "jev-s-architecture-unmasked",
@@ -5629,7 +5629,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 529
+      "line": 533
     },
     {
       "id": "openjev-on-hacker-news",
@@ -5646,7 +5646,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 530
+      "line": 534
     },
     {
       "id": "open-sourced-jev-architecture-last-year",
@@ -5663,7 +5663,7 @@
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
-      "line": 531
+      "line": 535
     }
   ]
 }

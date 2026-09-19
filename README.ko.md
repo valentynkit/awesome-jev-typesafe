@@ -61,6 +61,7 @@
 - [jev-pruner](https://github.com/tamaratran/jev-pruner) - 명령이 실행된 뒤 모델이 보기 전에 Jev로 긴 Bash 출력을 줄이며, 짧은 출력과 오류, 구조화된 형식은 손대지 않고 통과시킵니다.
 - [jev-rules](https://github.com/EliaAlberti/jev-rules) - 상시 규칙을 프롬프트마다 점수화하여 해당되는 것만 세션당 한 번 전달합니다.
 - [jev-belay](https://github.com/valentynkit/jev-belay) - 검증되지 않은 "완료"를 막는 Stop 훅입니다: 기록에서 증거를 읽고, 파일이 바뀐 뒤 통과한 검사가 없을 때만 질문 네 개짜리 Jev 호출을 한 번 쓰며, 모든 오류 경로에서는 열린 채로 실패합니다.
+- [jev-use](https://github.com/shitianfang/jev-use) - Claude Code, Codex, pi에서 텍스트 출력이 필요 없는 단계를 Jev에 맡기고, 결정해서는 안 되는 모든 사항에는 타입이 지정된 에스컬레이션 계약을 둡니다.
 ### Codex
 
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - Codex의 매 턴마다 모델, 사고 깊이, 속도 모드를 고릅니다.
@@ -147,6 +148,7 @@
 - [OpenJev by razorback16](https://github.com/razorback16/openjev) - vLLM을 통해 DiffusionGemma 26B에서 동작하는 Jev 호환 결정 서버이며, 이미지를 지원하고 [Codiv](https://codiv.ai)에서 무료로 호스팅됩니다.
 - [openjev by daseinlabs](https://github.com/daseinlabs/open-jev) - MLX로 Gemma 3 4B에서 한 번 prefill한 뒤 패딩된 패스 한 번으로 모든 선택지를 점수화하며, 데모에서는 터미널에서 Doom을 플레이합니다.
 - [jeff by logan-markewich](https://github.com/logan-markewich/jeff) - 400M GLiFormer에서 동작하는 자체 호스팅 System One API이며, 어디에서 Jev에 뒤처지는지 보여 주는 벤치마크를 함께 제공합니다.
+- [JevForge](https://github.com/zwliJay/jev-forge) - 감사 가능한 데이터 구축, Qwen3.5-0.8B 학습, 고정된 Mind2Web 및 OOD 평가, 로컬 서빙, 예비 RLCD 기준선까지 아우르는 엔드투엔드 스택입니다.
 
 ## 코드 리뷰와 품질
 

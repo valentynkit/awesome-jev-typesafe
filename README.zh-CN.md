@@ -61,6 +61,7 @@
 - [jev-pruner](https://github.com/tamaratran/jev-pruner) - 在命令执行后、模型看到前用 Jev 裁剪冗长的 Bash 输出；短输出、报错和结构化格式原样放行。
 - [jev-rules](https://github.com/EliaAlberti/jev-rules) - 针对每个提示词为你的常驻规则打分，每个会话只投送一次真正适用的那些。
 - [jev-belay](https://github.com/valentynkit/jev-belay) - Stop 钩子，拦截未经验证的“完成”：读取记录寻找证据，仅当文件有改动且此后没有通过的检查时，才花一次四问的 Jev 调用；所有错误路径均失败放行。
+- [jev-use](https://github.com/shitianfang/jev-use) - 把 Claude Code、Codex 和 pi 中无需文本输出的步骤交给 Jev 处理，并为所有它不该决定的事项提供类型化的升级契约。
 ### Codex
 
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - 为每个 Codex 回合选择模型、思考深度和速度模式。
@@ -147,6 +148,7 @@
 - [OpenJev by razorback16](https://github.com/razorback16/openjev) - 通过 vLLM 在 DiffusionGemma 26B 上运行的 Jev 兼容决策服务器，支持图像，由 [Codiv](https://codiv.ai) 免费托管。
 - [openjev by daseinlabs](https://github.com/daseinlabs/open-jev) - 在 Gemma 3 4B 上用 MLX 做一次 prefill，并在一次填充过的传播中为所有选项打分；演示中从终端玩 Doom。
 - [jeff by logan-markewich](https://github.com/logan-markewich/jeff) - 基于 400M 的 GLiFormer 自托管的 System One API，基准测试直言它在哪些地方落后于 Jev。
+- [JevForge](https://github.com/zwliJay/jev-forge) - 端到端技术栈：可审计的数据构建、Qwen3.5-0.8B 训练、固定的 Mind2Web 与 OOD 评测、本地部署，以及初步的 RLCD 基线。
 
 ## 代码审查与质量
 

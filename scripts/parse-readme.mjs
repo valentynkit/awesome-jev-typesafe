@@ -34,7 +34,7 @@ export function parseReadme(text) {
     if (line.startsWith("## ")) { section = { name: line.slice(3), image: null, subs: [] }; sections.push(section); sub = null; banner = null; return; }
     if (line.startsWith("### ")) { sub = line.slice(4); section.subs.push(sub); return; }
     const b = line.match(BANNER);
-    if (b) { banner = { url: b[1], image: b[2] }; if (!section.image) section.image = b[2]; return; }
+    if (b) { if (!section) return; banner = { url: b[1], image: b[2] }; if (!section.image) section.image = b[2]; return; }
     if (!line.startsWith("- ")) return;
     if (!section || SKIP.has(section.name) || PROSE.has(section.name)) {
       if (section && PROSE.has(section.name) && ENTRY.test(line)) throw new Error(`line ${n}: linked bullet inside prose section "${section.name}"`);

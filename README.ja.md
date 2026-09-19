@@ -61,6 +61,7 @@
 - [jev-pruner](https://github.com/tamaratran/jev-pruner) - コマンドの実行後、モデルが見る前に長い Bash 出力を Jev で削り、短い出力、エラー、構造化フォーマットはそのまま通します。
 - [jev-rules](https://github.com/EliaAlberti/jev-rules) - 常設のルールをプロンプトごとに採点し、該当するものだけをセッションに 1 回だけ届けます。
 - [jev-belay](https://github.com/valentynkit/jev-belay) - 未検証の「完了」をブロックする Stop フックで、トランスクリプトから根拠を読み取り、ファイルが変更されて以降に合格したチェックがない場合にのみ 4 問の Jev 呼び出しを 1 回使い、あらゆるエラー経路ではフェイルオープンします。
+- [jev-use](https://github.com/shitianfang/jev-use) - Claude Code、Codex、pi のうちテキスト出力が不要なステップを Jev に任せ、判断すべきでない事柄には型付きのエスカレーション契約を用意します。
 ### Codex
 
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - Codex のターンごとにモデル、思考の深さ、速度モードを選びます。
@@ -147,6 +148,7 @@
 - [OpenJev by razorback16](https://github.com/razorback16/openjev) - vLLM を通じた DiffusionGemma 26B 上の Jev 互換の判断サーバーで、画像にも対応し、[Codiv](https://codiv.ai) で無料ホストされています。
 - [openjev by daseinlabs](https://github.com/daseinlabs/open-jev) - MLX を使った Gemma 3 4B で一度 prefill し、パディングした 1 パスですべての選択肢を採点し、デモではターミナルから Doom をプレイします。
 - [jeff by logan-markewich](https://github.com/logan-markewich/jeff) - 400M の GLiFormer 上でセルフホストする System One API で、Jev に劣る部分を示すベンチマークが付いています。
+- [JevForge](https://github.com/zwliJay/jev-forge) - 監査可能なデータ構築、Qwen3.5-0.8B の学習、固定した Mind2Web と OOD の評価、ローカルでの提供、予備的な RLCD ベースラインまでを含むエンドツーエンドのスタックです。
 
 ## コードレビューと品質
 
