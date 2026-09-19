@@ -7,7 +7,7 @@
 
 [![Lint](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/lint.yml/badge.svg)](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/lint.yml)
 [![Links](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/links.yml/badge.svg)](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/links.yml)
-![Entries](https://img.shields.io/badge/entries-323-4CC9F0?style=flat-square&labelColor=0B0E11)
+![Entries](https://img.shields.io/badge/entries-325-4CC9F0?style=flat-square&labelColor=0B0E11)
 [![Last commit](https://img.shields.io/github/last-commit/valentynkit/awesome-jev-typesafe?style=flat-square&labelColor=0B0E11&color=E8EDF2)](https://github.com/valentynkit/awesome-jev-typesafe/commits/main)
 [![License](https://img.shields.io/github/license/valentynkit/awesome-jev-typesafe?style=flat-square&labelColor=0B0E11&color=E8EDF2)](license)
 
@@ -156,6 +156,7 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [jev-pruner](https://github.com/tamaratran/jev-pruner) - Trims long Bash output with Jev after the command runs and before the model sees it; short output, errors, and structured formats pass untouched.
 - [jev-rules](https://github.com/EliaAlberti/jev-rules) - Scores your standing rules against each prompt and delivers only the ones that apply, once per session.
 - [jev-belay](https://github.com/valentynkit/jev-belay) - Stop hook that blocks an unverified "done": reads the transcript for evidence and, only when files changed with no passing check since, spends one four-question Jev call; fails open on every error path.
+- [jev-use](https://github.com/shitianfang/jev-use) - Hands the Claude Code, Codex and pi steps that need no text output to Jev, with a typed escalation contract for everything it should not decide.
 
 ### Codex
 
