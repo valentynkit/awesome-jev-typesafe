@@ -122,6 +122,7 @@
 - [jev-browser-use](https://github.com/wy-coliney/jev-browser-use) - Jev가 탐색과 클릭, 스크롤을 맡고 Codex가 입력과 검증을 맡는 Codex 스킬 겸 플러그인이며, 브라우저 단계가 5~10배 빨라졌다고 보고합니다.
 - [Jev-cu](https://github.com/Sac-Y/Jev-cu) - Jev가 화면 텍스트에서 요소, 동작, 완료 여부, 위험도를 고르고 스크린샷은 보내지 않는 Codex 컴퓨터 사용이며, 중국어 readme입니다.
 - [JevScout](https://github.com/hqman/JevScout) - CDP로 Chrome을 조작하고 모든 링크와 공고를 Jev가 점수화하게 하는 구직 스킬입니다.
+- [Jev Social](https://github.com/socai-io/jev-social) - Lets Jev choose each read-only social research step while socai runs it in a real Chrome session and streams inspectable Instagram, TikTok, or LinkedIn evidence into a report.
 
 ## 오픈 모델과 재현 구현
 

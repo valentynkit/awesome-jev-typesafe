@@ -122,6 +122,7 @@
 - [jev-browser-use](https://github.com/wy-coliney/jev-browser-use) - Jev がナビゲーション、クリック、スクロールを担い、Codex が入力と検証を担当する Codex のスキルとプラグインで、ブラウザ操作が 5 倍から 10 倍速くなると報告しています。
 - [Jev-cu](https://github.com/Sac-Y/Jev-cu) - 画面上のテキストから Jev が要素、アクション、完了、リスクを選び、スクリーンショットは送らない Codex のコンピュータ操作で、中国語の readme です。
 - [JevScout](https://github.com/hqman/JevScout) - CDP 経由で Chrome を操作し、すべてのリンクと求人を Jev に採点させる求職スキルです。
+- [Jev Social](https://github.com/socai-io/jev-social) - Lets Jev choose each read-only social research step while socai runs it in a real Chrome session and streams inspectable Instagram, TikTok, or LinkedIn evidence into a report.
 
 ## オープンモデルと再現実装
 

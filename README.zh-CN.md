@@ -122,6 +122,7 @@
 - [jev-browser-use](https://github.com/wy-coliney/jev-browser-use) - Codex 技能与插件，Jev 负责导航、点击和滚动，Codex 保留输入和验证；据称浏览器步骤快 5 到 10 倍。
 - [Jev-cu](https://github.com/Sac-Y/Jev-cu) - Codex 的计算机操作，Jev 从屏幕文本中选出元素、动作、完成状态和风险，不发送截图；中文说明。
 - [JevScout](https://github.com/hqman/JevScout) - 求职技能，通过 CDP 驱动 Chrome，并让 Jev 为每个链接和职位打分。
+- [Jev Social](https://github.com/socai-io/jev-social) - Lets Jev choose each read-only social research step while socai runs it in a real Chrome session and streams inspectable Instagram, TikTok, or LinkedIn evidence into a report.
 
 ## 开源模型与复刻
 
