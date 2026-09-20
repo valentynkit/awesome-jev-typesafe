@@ -370,6 +370,7 @@
 - [typesafe-sdk-go by Tangerg](https://github.com/Tangerg/typesafe-sdk-go) - 서드파티 의존성이 없는 Go SDK입니다.
 - [swift-typesafe](https://github.com/ainame/swift-typesafe) - Python SDK의 API를 따르는 Swift 6.4 SDK이며, Apple 플랫폼과 Linux에서 동작합니다.
 - [typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) - 동기 호출, Guzzle 프로미스, PSR-3 로깅을 갖춘 PHP 클라이언트입니다.
+- [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL and client.
 
 ## 글과 발표
 

@@ -370,6 +370,7 @@
 - [typesafe-sdk-go by Tangerg](https://github.com/Tangerg/typesafe-sdk-go) - サードパーティ依存のない Go SDK です。
 - [swift-typesafe](https://github.com/ainame/swift-typesafe) - Python SDK の API に倣った Swift 6.4 の SDK で、Apple のプラットフォームと Linux に対応します。
 - [typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) - 同期呼び出し、Guzzle の promise、PSR-3 ロギングに対応した PHP クライアントです。
+- [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL and client.
 
 ## 記事と講演
 

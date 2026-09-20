@@ -370,6 +370,7 @@
 - [typesafe-sdk-go by Tangerg](https://github.com/Tangerg/typesafe-sdk-go) - 无第三方依赖的 Go SDK。
 - [swift-typesafe](https://github.com/ainame/swift-typesafe) - Swift 6.4 SDK，沿用 Python SDK 的 API，支持 Apple 平台和 Linux。
 - [typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) - PHP 客户端，支持同步调用、Guzzle promise 和 PSR-3 日志。
+- [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL and client.
 
 ## 文章与演讲
 
