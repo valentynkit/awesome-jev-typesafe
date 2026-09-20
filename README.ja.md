@@ -171,6 +171,7 @@
 - [jeff by Alurith](https://github.com/Alurith/jeff) - 隠れた副作用や弱いエラー処理といったコード化されたルールにファイルを照らして検査する、読み取り専用の Go CLI です。
 - [jev-pref](https://github.com/doeixd/jev-pref) - AGENTS.md に書いた好みを、コード変更時に実行されてエージェントに結果を返すリンターに変えます。
 - [jev-commit](https://github.com/valentynkit/jev-commit) - pre-commit フックで、1 回の Jev 呼び出しがコミットメッセージとステージ済み差分の一致に加え、デバッグの残骸、言及されていない作業、資格情報の混入を判定し、シークレット以外は警告にとどめ、シークレットはブロックします。
+- [slop-grader](https://github.com/lukstei/slop-grader) - Grades text and markdown files for AI slop, grammar, and technical documentation quality, and guides an AI agent to auto-fix violations.
 
 ## ルーティングとゲートウェイ
 

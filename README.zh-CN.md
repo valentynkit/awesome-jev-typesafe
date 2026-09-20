@@ -171,6 +171,7 @@
 - [jeff by Alurith](https://github.com/Alurith/jeff) - 只读的 Go CLI，按编码规则检查文件，例如隐藏的副作用和薄弱的错误处理。
 - [jev-pref](https://github.com/doeixd/jev-pref) - 把你 AGENTS.md 里的偏好变成一个 linter，在代码变更时运行并把结果回报给智能体。
 - [jev-commit](https://github.com/valentynkit/jev-commit) - 提交前钩子：一次 Jev 调用判断提交信息是否与暂存的 diff 相符，另查调试残留、未提及的改动和凭据带；一律只告警，唯有发现密钥时才阻断。
+- [slop-grader](https://github.com/lukstei/slop-grader) - Grades text and markdown files for AI slop, grammar, and technical documentation quality, and guides an AI agent to auto-fix violations.
 
 ## 路由与网关
 
