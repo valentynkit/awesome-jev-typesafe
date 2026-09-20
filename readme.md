@@ -260,6 +260,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [openjev by daseinlabs](https://github.com/daseinlabs/open-jev) - Prefills once and scores every option in one padded pass on Gemma 3 4B with MLX; plays Doom from the terminal in the demo.
 - [jeff by logan-markewich](https://github.com/logan-markewich/jeff) - Self-hosted System One API on the 400M GLiFormer, with benchmarks that say where it trails Jev.
 - [JevForge](https://github.com/zwliJay/jev-forge) - End-to-end stack for auditable data construction, Qwen3.5-0.8B training, fixed Mind2Web and OOD evaluation, local serving, and a preliminary RLCD baseline.
+- [PlayJev](https://github.com/OmniJev/PlayJev) - Plays ten browser games from the frame alone on a fine-tuned Qwen3.5-0.8B, one forward pass per move, open weights and a browser demo.
 
 ## Code review and quality
 
