@@ -499,6 +499,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [typesafe-sdk-go by Tangerg](https://github.com/Tangerg/typesafe-sdk-go) - Go SDK with no third-party dependencies.
 - [swift-typesafe](https://github.com/ainame/swift-typesafe) - Swift 6.4 SDK following the Python SDK's API, on Apple platforms and Linux.
 - [typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) - PHP client with sync calls, Guzzle promises, and PSR-3 logging.
+- [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL and client.
 
 ## Articles and talks
 
