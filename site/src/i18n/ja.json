@@ -82,9 +82,8 @@
   "risingNeedsData": "伸びの集計には日次スナップショットが 2 回必要です。明日またご覧ください。",
   "submit": "プロジェクトを登録",
   "submitTitle": "Jev で何か作りましたか。ぜひ追加してください。",
-  "submitLede": "どの項目も短い基準に沿って人が読みます。方法は 2 つ、どちらも 5 分かかりません。",
-  "submitIssue": "Issue フォームを開く",
-  "submitPr": "または pull request で 1 行追加する",
+  "submitLede": "方法は一つ、readme.md に 1 行を足す pull request です。5 分かからず、インストールは不要です。",
+  "submitPr": "pull request で 1 行追加する",
   "submitBar": "収録の基準",
   "submitBadge": "掲載されましたか。readme にバッジを貼ってください",
   "starRepo": "GitHub でスターする",
@@ -168,5 +167,14 @@
   "active": "活発",
   "quiet": "休止",
   "fromReadme": "readme より",
-  "radarHint": "ビームがリポジトリを捉えると一度光り、5 秒かけて薄れていきます。点にカーソルを重ねると表示が保持されます。"
+  "radarHint": "ビームがリポジトリを捉えると一度光り、5 秒かけて薄れていきます。点にカーソルを重ねると表示が保持されます。",
+  "projects": "プロジェクト",
+  "browseAll": "{n} 件のプロジェクトをすべて見る",
+  "projectsLede": "リストにあるすべてのプロジェクトを検索し、絞り込めます。ローカル検索が候補を見つけ、Jev が上位 30 件を並べ替えます。",
+  "searchButton": "検索",
+  "submitStep1": "GitHub のエディタで readme.md を開きます。フォークは GitHub が自動で作ります。",
+  "submitStep2": "最も具体的なセクションを見つけ、上の形式でその末尾に 1 行を足します。",
+  "submitStep3": "pull request を開きます。テンプレートがセクション、プロジェクトとの関係、三つの確認を尋ねます。形式は CI が確認し、残りは人が読みます。",
+  "submitWhy": "issue ではなく pull request である理由",
+  "submitWhyText": "pull request はその 1 行そのものです。履歴に名前が残り、チェックはその上で走り、レビューは diff です。issue はメンテナに代筆を頼むもので、その待ち行列こそリストが古くなる場所です。"
 }

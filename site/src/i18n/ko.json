@@ -82,9 +82,8 @@
   "risingNeedsData": "상승 집계에는 일일 스냅샷이 두 번 필요합니다. 내일 다시 확인해 주십시오.",
   "submit": "프로젝트 등록",
   "submitTitle": "Jev로 무언가 만드셨습니까? 추가해 주십시오.",
-  "submitLede": "모든 항목은 짧은 기준에 따라 사람이 직접 읽습니다. 방법은 두 가지이고 둘 다 5분이 걸리지 않습니다.",
-  "submitIssue": "이슈 양식 열기",
-  "submitPr": "또는 pull request로 한 줄 추가하기",
+  "submitLede": "방법은 하나, readme.md에 한 줄을 추가하는 pull request입니다. 5분이 걸리지 않고 설치할 것도 없습니다.",
+  "submitPr": "pull request로 한 줄 추가하기",
   "submitBar": "수록 기준",
   "submitBadge": "등록되셨습니까? readme에 배지를 달아 주십시오",
   "starRepo": "GitHub에서 스타 주기",
@@ -168,5 +167,14 @@
   "active": "활발",
   "quiet": "조용함",
   "fromReadme": "readme에서",
-  "radarHint": "빔이 저장소를 찾으면 한 번 반짝인 뒤 5초에 걸쳐 사라집니다. 점 위에 마우스를 올리면 계속 표시됩니다."
+  "radarHint": "빔이 저장소를 찾으면 한 번 반짝인 뒤 5초에 걸쳐 사라집니다. 점 위에 마우스를 올리면 계속 표시됩니다.",
+  "projects": "프로젝트",
+  "browseAll": "전체 {n}개 프로젝트 보기",
+  "projectsLede": "목록의 모든 프로젝트를 검색하고 필터링합니다. 로컬 검색이 후보를 찾고 Jev가 상위 30개를 재정렬합니다.",
+  "searchButton": "검색",
+  "submitStep1": "GitHub 편집기에서 readme.md를 엽니다. 포크는 GitHub가 대신 만듭니다.",
+  "submitStep2": "가장 구체적인 섹션을 찾아 위 형식으로 그 끝에 한 줄을 추가합니다.",
+  "submitStep3": "pull request를 엽니다. 템플릿이 섹션, 프로젝트와의 관계, 세 가지 확인을 묻습니다. 형식은 CI가 확인하고 나머지는 사람이 읽습니다.",
+  "submitWhy": "issue가 아니라 pull request인 이유",
+  "submitWhyText": "pull request는 그 한 줄 자체입니다. 이력에 이름이 남고, 검사가 그 위에서 돌며, 리뷰는 diff입니다. issue는 관리자에게 대신 써 달라는 요청이고, 그 대기열이 바로 목록이 낡아 가는 곳입니다."
 }

@@ -1,0 +1,40 @@
+---
+import { t, sect } from "../lib/i18n";
+import { jevText } from "../lib/data";
+interface Props { lang: string; facets: Record<string, [string, number][]> }
+const { lang, facets } = Astro.props;
+// Section chips carry readme headings; the Jev facets carry keys with their own labels.
+const label = (key: string, v: string) =>
+  key === "maintainer" ? t(lang, v === "yes" ? "yes" : "no")
+  : key === "section" ? sect(lang, v)
+  : key === "useCase" ? jevText(lang, "useCase", v)
+  : key === "form" ? jevText(lang, "form", v)
+  : key === "host" ? jevText(lang, "host", v)
+  : v;
+---
+<details class="filters" open>
+  <summary><span class="funnel" aria-hidden="true"></span>{t(lang, "filters")}</summary>
+  <div class="facets">
+    {Object.entries(facets).map(([key, vals]) => (
+      <details class="facet" open={key === "section"}>
+        <summary>{t(lang, `facets.${key}`)}</summary>
+        <div class="chips">
+          {vals.map(([v, n]) => (
+            <button class="chip" type="button" aria-pressed="false" data-facet={key} data-value={v}>
+              {label(key, v)} <span class="num muted">{n}</span>
+            </button>
+          ))}
+        </div>
+      </details>
+    ))}
+  </div>
+</details>
+
+<script>
+  // One filter drawer on phones, an always-open panel from 700px up.
+  const wide = matchMedia("(min-width: 700px)");
+  const filters = document.querySelector<HTMLDetailsElement>(".filters");
+  const sync = () => { if (filters && wide.matches) filters.open = true; };
+  wide.addEventListener("change", sync);
+  sync();
+</script>

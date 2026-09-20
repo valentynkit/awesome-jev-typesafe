@@ -19,7 +19,7 @@ A curated list of ${entries.length} things built on TypeSafe's Jev, ${projects.l
 
 ## Submitting
 
-The readme is the only hand-edited source. Open a pull request against \`readme.md\` with one entry, one sentence, and a link that resolves.
+Pull request only, never an issue. Open a pull request against \`readme.md\` with one entry, one sentence, and a link that resolves; CI checks the format and a person reads it.
 `;
 
 export const GET: APIRoute = ({ site }) => {

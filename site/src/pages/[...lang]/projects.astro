@@ -1,0 +1,59 @@
+---
+import Base from "../../layouts/Base.astro";
+import Card from "../../components/Card.astro";
+import SearchBox from "../../components/SearchBox.astro";
+import Facets from "../../components/Facets.astro";
+import { projects, hostOfJev, facetsFromJev, tally, starsBucket, type Entry } from "../../lib/data";
+import { t, localePath, langFromParams, staticLangs } from "../../lib/i18n";
+
+export const getStaticPaths = staticLangs;
+const lang = langFromParams(Astro.params);
+
+const jevFacets = facetsFromJev(projects);
+// Chip order is the order of this object. Use case first: it is the one a visitor
+// arrives with. A screenshot was never something anyone filtered by.
+const all: Record<string, [string, number][]> = {
+  section: tally(projects.map((e) => e.section)),
+  useCase: jevFacets.useCase,
+  form: jevFacets.form,
+  host: tally(projects.map((e) => hostOfJev(e))),
+  language: tally(projects.map((e) => e.github?.language ?? null)),
+  license: tally(projects.map((e) => e.github?.license ?? null)),
+  stars: tally(projects.map((e) => (e.github ? starsBucket(e.github.stars) : null))),
+};
+// Facets that GitHub metadata feeds are empty until the daily enrichment runs.
+const facets = Object.fromEntries(Object.entries(all).filter(([, v]) => v.length > 1));
+
+const title = `${t(lang, "allProjects")} · Awesome Jev`;
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Awesome Jev",
+  numberOfItems: projects.length,
+  itemListElement: projects.map((e, i) => ({
+    "@type": "ListItem", position: i + 1, name: e.name, url: e.url, description: e.description,
+  })),
+};
+---
+<Base title={title} description={t(lang, "projectsLede")} lang={lang} path="/projects/" jsonld={jsonld}>
+  <p class="crumbs"><a href={localePath(lang, "/")}>{t(lang, "home")}</a> / <span>{t(lang, "allProjects")}</span></p>
+
+  <section class="cat-hero">
+    <h1>{t(lang, "allProjects")}</h1>
+    <p class="lede">{t(lang, "projectsLede")}</p>
+  </section>
+
+  <SearchBox lang={lang} total={projects.length} />
+
+  <div class="browse">
+    <aside class="browse-side"><Facets lang={lang} facets={facets} /></aside>
+    <div class="browse-main">
+      <div id="results" class="grid">
+        {projects.map((e: Entry) => <Card e={e} lang={lang} />)}
+      </div>
+      <p class="no-results" hidden>
+        <span class="echo"></span> <button class="btn clear-filters" type="button">{t(lang, "clear")}</button>
+      </p>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,35 @@
+name: sync
+on:
+  push:
+    branches: [main]
+    paths: [readme.md]
+permissions:
+  contents: read
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm run parse
+      - run: node scripts/count-check.mjs --fix
+      - run: node scripts/build-readme-i18n.mjs
+      - run: node scripts/build-banner.mjs
+      # A pull request edited in the browser cannot run the parser, so main carries
+      # everything the readme implies. Pushes with the workflow token do not retrigger this.
+      - name: Commit what the readme implies
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add readme.md data media/banner-dark.svg media/banner-light.svg README.zh-CN.md README.ja.md README.ko.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Sync generated files with the readme"
+            git push origin HEAD:main
+          fi

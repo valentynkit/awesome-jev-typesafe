@@ -82,9 +82,8 @@
   "risingNeedsData": "Rising needs two daily snapshots. Check back tomorrow.",
   "submit": "Submit a project",
   "submitTitle": "Built something on Jev? Add it.",
-  "submitLede": "Every entry is read by a person against a short bar. Two ways in, both take under five minutes.",
-  "submitIssue": "Open the issue form",
-  "submitPr": "Or add one line by pull request",
+  "submitLede": "One way in: a pull request that adds one line to readme.md. Under five minutes, nothing to install.",
+  "submitPr": "Add one line by pull request",
   "submitBar": "The bar",
   "submitBadge": "Listed? Add the badge to your readme",
   "starRepo": "Star on GitHub",
@@ -168,5 +167,14 @@
   "active": "active",
   "quiet": "quiet",
   "fromReadme": "From the readme",
-  "radarHint": "The beam finds a repo, it blips, then fades over five seconds. Hover any dot to hold it."
+  "radarHint": "The beam finds a repo, it blips, then fades over five seconds. Hover any dot to hold it.",
+  "projects": "Projects",
+  "browseAll": "Browse all {n} projects",
+  "projectsLede": "Search and filter every project on the list. Local search finds candidates; Jev reorders the top 30.",
+  "searchButton": "Search",
+  "submitStep1": "Open readme.md in the GitHub editor. GitHub forks the repo for you.",
+  "submitStep2": "Find the most specific section and add your line at its bottom, in the format above.",
+  "submitStep3": "Open the pull request. The template asks for the section, your relation to the project, and three checks. CI checks the format; a person reads the rest.",
+  "submitWhy": "Why a pull request and not an issue",
+  "submitWhyText": "A pull request is the line itself: your name in the history, the checks run on it, the review is a diff. An issue asks a maintainer to write the line for you, and that queue is where lists go stale."
 }

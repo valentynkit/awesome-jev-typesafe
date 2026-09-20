@@ -7,7 +7,7 @@
 
 [![Lint](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/lint.yml/badge.svg)](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/lint.yml)
 [![Links](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/links.yml/badge.svg)](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/links.yml)
-![Entries](https://img.shields.io/badge/entries-325-4CC9F0?style=flat-square&labelColor=0B0E11)
+![Entries](https://img.shields.io/badge/entries-333-4CC9F0?style=flat-square&labelColor=0B0E11)
 [![Last commit](https://img.shields.io/github/last-commit/valentynkit/awesome-jev-typesafe?style=flat-square&labelColor=0B0E11&color=E8EDF2)](https://github.com/valentynkit/awesome-jev-typesafe/commits/main)
 [![License](https://img.shields.io/github/license/valentynkit/awesome-jev-typesafe?style=flat-square&labelColor=0B0E11&color=E8EDF2)](license)
 
@@ -179,6 +179,8 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [pi-typesafe-jev](https://github.com/legacybridge-tech/pi-typesafe-jev) - Pi extension exposing Jev judgments as five Pi tools.
 - [pi-typesafe](https://github.com/DevMortimer/pi-typesafe) - Batched evaluation tool, terminal playground, and a typed API for Pi extension authors.
 - [pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) - Checks every side-effecting tool call against what you said earlier in the session, so "review only" still holds after compaction.
+- [pi-jev-sentinel](https://github.com/harshwasan/pi-jev-sentinel) - Checks Pi tool calls, tool outputs, and replies for risky actions and prompt injection, with user approvals, context re-checks, secret scrubbing, and optional task pinning.
+- [pi-mcp-adapter](https://github.com/nicobailon/pi-mcp-adapter) - Opt-in typed evaluation and semantic search over MCP tool results, behind a per-server data-egress allowlist.
 
 ### Hermes
 
@@ -186,6 +188,8 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [jev-agent-skill-router](https://github.com/GodsBoy/jev-agent-skill-router) - Confidence-aware skill routing with an abstain path.
 - [hermes-jev](https://github.com/keeltrace/hermes-jev) - Typed decisions, ranking, verification, and an opt-in tool gate.
 - [ask-jev-skill](https://github.com/shantanugoel/ask-jev-skill) - Lets Hermes and similar agents ask Jev directly.
+- [hermes-jev-plugin](https://github.com/ajensenwaud/hermes-jev-plugin) - Four Hermes tools for atomic checks, routing, and rubric scoring; listed in the Hermes plugin catalog.
+- [hermes-jev-approvals](https://github.com/anpicasso/hermes-jev-approvals) - Approves, denies, or escalates flagged shell commands before they run; vendor-reported speedups.
 
 ### Agent Zero
 
@@ -365,6 +369,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) - Rust CLI and MCP server for SEO and GEO checks over DuckDuckGo results, scored by Jev.
 - [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim plugin: ask the buffer a plain-language question, Treesitter splits it into functions, Jev scores each one, and the answers land in quickfix ranked by probability.
 - [jev-skip](https://github.com/valentynkit/jev-skip) - Browser extension that reads the caption track and paints a per-segment sponsor probability on the seek bar before the intro ends, no crowd database; reports 77 percent of SponsorBlock's sponsor seconds caught over 23 videos at $0.0008 a video.
+- [openpoke-meets-jev](https://github.com/0xShin0221/openpoke-meets-jev) - OpenPoke fork that moves email screening, a tool-call guardrail, and search reranking onto Jev, with an A/B against the Sonnet call it replaced and an adversarial run on the injection gate.
 
 ## Games, robotics and simulation
 
@@ -445,6 +450,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [Jev Guard demo](https://guard-jev.vercel.app) - Hosted comment-moderation playground.
 - [Companion](https://jev-demo.vercel.app) - Hosted robot interface answering nine typed questions per turn to decide act, ask, or shrug, no generated text.
 - [Jev System One](https://github.com/haseeb-heaven/jev-system-one) - Terminal interface where OpenAI answers and Jev separately scores relevance, reliability, and quality.
+- [jev-web-analyzer](https://github.com/replynodes/jev-web-analyzer) - Turns a SaaS landing page into Markdown and asks Jev ten bounded Choice questions about what a first-time visitor understands, shown as a founder teardown.
 
 ## Command line
 
@@ -538,9 +544,17 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 
 ## Contributing
 
-[![Star history](https://api.star-history.com/svg?repos=valentynkit/awesome-jev-typesafe&type=Date)](https://star-history.com/#valentynkit/awesome-jev-typesafe&Date)
+<a href="https://star-history.com/#valentynkit/awesome-jev-typesafe&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=valentynkit/awesome-jev-typesafe&type=Date&t=2026-09-20&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=valentynkit/awesome-jev-typesafe&type=Date&t=2026-09-20" />
+    <img alt="Star history" src="https://api.star-history.com/svg?repos=valentynkit/awesome-jev-typesafe&type=Date&t=2026-09-20" width="720" />
+  </picture>
+</a>
 
 Read [contributing.md](contributing.md) first. Removal is as welcome as addition.
+
+To add a project, open a pull request that adds one line to this file; the template asks the rest and there is nothing to run. Issues are for problems with the site or the data, not for submissions.
 
 What "curated" means here: every link is checked weekly by CI, every entry is read by a person against the bar in contributing.md before it lands, and repos that look like a batch of same-day scaffolds are noted as such rather than listed as proven. Nothing here is a security review.
 

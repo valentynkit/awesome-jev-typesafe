@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Add a project
+    url: https://github.com/valentynkit/awesome-jev-typesafe/edit/main/readme.md
+    about: Submissions are pull requests. Add one line to readme.md in the format from contributing.md; the pull request template asks the rest.
+  - name: Fix or remove an entry
+    url: https://github.com/valentynkit/awesome-jev-typesafe/edit/main/readme.md
+    about: Same path. Change or delete the line and say why in the pull request.

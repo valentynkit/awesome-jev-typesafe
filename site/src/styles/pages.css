@@ -190,6 +190,10 @@
 /* ---------- submit ---------- */
 
 .routes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 30px 0 8px; }
+.routes.single { grid-template-columns: minmax(0, 720px); }
+.steps { margin: 22px 0 0; padding-left: 1.4em; display: grid; gap: 10px; max-width: 70ch; color: var(--muted); font-size: .95rem; }
+.steps li::marker { color: var(--accent); font-family: var(--mono); }
+.submit-why { max-width: 70ch; color: var(--muted); margin: 0; }
 .route {
   position: relative;
   display: flex;

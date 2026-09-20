@@ -323,5 +323,13 @@
  "openjev-on-hacker-news": "054d361d28",
  "open-sourced-jev-architecture-last-year": "02fbb3e0c8",
  "jev-use": "6a78a8539d",
- "jev-forge": "e36f3f4149"
+ "jev-forge": "e36f3f4149",
+ "pi-jev-sentinel": "6a3abf8cce",
+ "playjev": "306efcae43",
+ "jev-folio-recursive-classifier": "06cb213207",
+ "jev-web-analyzer": "4308351793",
+ "pi-mcp-adapter": "12862399d2",
+ "hermes-jev-plugin": "5a797f765e",
+ "hermes-jev-approvals": "472e35c4b0",
+ "openpoke-meets-jev": "86460bb477"
 }

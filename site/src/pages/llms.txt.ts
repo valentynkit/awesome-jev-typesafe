@@ -27,6 +27,10 @@ export const GET: APIRoute = ({ site }) => {
     `- [feed.xml](${origin}/feed.xml): the 50 most recent additions`,
     `- markdown twin of any page: /p/<id>.md, /c/<slug>.md`,
     "",
+    "## Submitting",
+    "",
+    "Pull request only: one line added to readme.md in the format from contributing.md, one project per pull request. Issues are not a submission path.",
+    "",
   ].join("\n");
   return new Response(body, { headers: { "content-type": "text/plain; charset=utf-8" } });
 };

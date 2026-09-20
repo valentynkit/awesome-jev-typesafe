@@ -4,6 +4,7 @@ import { compact, repoStars } from "../lib/data";
 interface Props { lang: string; path: string }
 const { lang, path } = Astro.props;
 const nav = [
+  ["projects", localePath(lang, "/projects/")],
   ["categories", localePath(lang, "/") + "#categories"],
   ["trending", localePath(lang, "/trending/")],
   ["radar", localePath(lang, "/radar/")],
@@ -94,13 +95,18 @@ const here = (href: string) => (path === href.replace(/^\/(zh|ja|ko)/, "") ? "pa
   });
   addEventListener("keydown", (e) => { if (e.key === "Escape" && menu?.open && !wide.matches) menu.open = false; });
 
-  // Surprise me: every card on the page already links to a project, so pick one and follow it.
+  // Surprise me: the English search index lists every project id and is cached after the first fetch.
+  const prefix = document.documentElement.lang === "en" ? "" : `/${document.documentElement.lang.slice(0, 2)}`;
   for (const b of document.querySelectorAll("[data-shuffle]"))
-    b.addEventListener("click", () => {
-      const cards = [...document.querySelectorAll<HTMLElement>("article.card[data-id]")];
-      const href = cards[Math.floor(Math.random() * cards.length)]?.querySelector<HTMLAnchorElement>("h3 a")?.href;
-      if (href) location.href = href;
-    });
+    b.addEventListener("click", () =>
+      fetch("/search-index.en.json")
+        .then((r) => r.json())
+        .then((docs: { id: string }[]) => {
+          const id = docs[Math.floor(Math.random() * docs.length)]?.id;
+          if (id) location.href = `${prefix}/p/${id}/`;
+        })
+        .catch(() => {}),
+    );
 
   const out = document.getElementById("star-count");
   const short = (n: number) => (n >= 1000 ? `${(n / 1000).toFixed(n >= 10000 ? 1 : 2).replace(/\.?0+$/, "")}k` : String(n));

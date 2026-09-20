@@ -1,23 +1,14 @@
 ---
-import { t, sect, localePath } from "../lib/i18n";
-import { jevText } from "../lib/data";
-interface Props { lang: string; total: number; facets: Record<string, [string, number][]> }
-const { lang, total, facets } = Astro.props;
-// Section chips carry readme headings; the Jev facets carry keys with their own labels.
-const label = (key: string, v: string) =>
-  key === "maintainer" ? t(lang, v === "yes" ? "yes" : "no")
-  : key === "section" ? sect(lang, v)
-  : key === "useCase" ? jevText(lang, "useCase", v)
-  : key === "form" ? jevText(lang, "form", v)
-  : key === "host" ? jevText(lang, "host", v)
-  : v;
+import { t, localePath } from "../lib/i18n";
+interface Props { lang: string; total: number }
+const { lang, total } = Astro.props;
 ---
 <search class="searchbox" data-results={t(lang, "results")} data-no-results={t(lang, "noResults")}>
   <div class="search-row">
     <span class="search-icon" aria-hidden="true">
       <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.6" /><path d="m10.6 10.6 3.4 3.4" /></svg>
     </span>
-    <input id="q" type="search" placeholder={t(lang, "search")} aria-label={t(lang, "search")} autocomplete="off" />
+    <input id="q" type="search" placeholder={t(lang, "search")} aria-label={t(lang, "search")} autocomplete="off" autofocus />
     <span class="muted hint"><kbd>/</kbd> {t(lang, "searchHint")}</span>
   </div>
   <div class="search-meta">
@@ -39,24 +30,6 @@ const label = (key: string, v: string) =>
   </div>
 </search>
 
-<details class="filters" open>
-  <summary><span class="funnel" aria-hidden="true"></span>{t(lang, "filters")}</summary>
-  <div class="facets">
-    {Object.entries(facets).map(([key, vals]) => (
-      <details class="facet" open={key === "section"}>
-        <summary>{t(lang, `facets.${key}`)}</summary>
-        <div class="chips">
-          {vals.map(([v, n]) => (
-            <button class="chip" type="button" aria-pressed="false" data-facet={key} data-value={v}>
-              {label(key, v)} <span class="num muted">{n}</span>
-            </button>
-          ))}
-        </div>
-      </details>
-    ))}
-  </div>
-</details>
-
 <dialog id="jev-dialog" class="sheet">
   <h2>{t(lang, "searchByJev")}</h2>
   <p>{t(lang, "searchByJevHint")}</p>
@@ -75,11 +48,4 @@ const label = (key: string, v: string) =>
   document.getElementById("why-jev")?.addEventListener("click", () => dialog?.showModal());
   document.getElementById("jev-close")?.addEventListener("click", () => dialog?.close());
   dialog?.addEventListener("click", (e) => { if (e.target === dialog) dialog.close(); });
-
-  // One filter drawer on phones, an always-open panel from 700px up.
-  const wide = matchMedia("(min-width: 700px)");
-  const filters = document.querySelector<HTMLDetailsElement>(".filters");
-  const sync = () => { if (filters && wide.matches) filters.open = true; };
-  wide.addEventListener("change", sync);
-  sync();
 </script>

@@ -42,21 +42,23 @@ const bar = (() => {
   <h1>{t(lang, "submitTitle")}</h1>
   <p class="lede">{t(lang, "submitLede")}</p>
 
-  <div class="routes">
-    <a class="route" href={`${REPO}/issues/new?template=add-project.yml`}>
-      <span class="micro">01</span>
-      <h2>{t(lang, "submitIssue")}</h2>
-      <p>Answer six fields and a maintainer writes the line for you. Best if you would rather not touch the readme.</p>
-      <span class="route-go micro">github.com/issues/new</span>
-    </a>
+  <div class="routes single">
     <a class="route" href={`${REPO}/edit/main/readme.md`}>
-      <span class="micro">02</span>
+      <span class="micro">readme.md</span>
       <h2>{t(lang, "submitPr")}</h2>
-      <p>Edit the readme in the browser, add one bullet at the bottom of the most specific section, open the pull request.</p>
       <code class="fmt">{ENTRY}</code>
       <span class="route-go micro">edit/main/readme.md</span>
     </a>
   </div>
+
+  <ol class="steps">
+    <li>{t(lang, "submitStep1")}</li>
+    <li>{t(lang, "submitStep2")}</li>
+    <li>{t(lang, "submitStep3")}</li>
+  </ol>
+
+  <div class="rule"><h2>{t(lang, "submitWhy")}</h2></div>
+  <p class="submit-why">{t(lang, "submitWhyText")}</p>
 
   <div class="rule"><h2>{t(lang, "submitBar")}</h2></div>
   <div class="bar-lists">
@@ -77,7 +79,7 @@ const bar = (() => {
     </div>
   </section>
 
-  <p class="thanks">Thanks for keeping the list worth reading. Everything else lives in <a href={REPO}>the repo</a>.</p>
+  <p class="thanks">Thanks for keeping the list worth reading. Everything else lives in <a href={`${REPO}/blob/main/contributing.md`}>contributing.md</a>.</p>
 </Base>
 <script>
   const btn = document.getElementById("copy-badge");

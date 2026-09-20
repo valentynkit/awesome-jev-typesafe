@@ -55,7 +55,8 @@ test("the boards read the repo data", () => {
 
 test("a sparkline has one point per snapshot holding that repo", () => {
   const snaps = snapshots();
-  const id = mostStarred(1)[0].id;
-  assert.equal(sparkline(id).length, snaps.length);
+  // A repo added after the first snapshot has fewer points, so pick one every snapshot holds.
+  const repo = Object.keys(snaps[0].stars).find((r) => snaps.every((s) => r in s.stars) && r in entriesByRepo);
+  assert.equal(sparkline(entriesByRepo[repo]).length, snaps.length);
   assert.deepEqual(sparkline("not-a-repo"), []);
 });

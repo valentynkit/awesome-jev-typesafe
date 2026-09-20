@@ -2,30 +2,14 @@
 import Base from "../../layouts/Base.astro";
 import Card from "../../components/Card.astro";
 import Radar from "../../components/Radar.astro";
-import SearchBox from "../../components/SearchBox.astro";
 import {
   projects, projectSections, resourceSections, gallery, entries, bySection,
-  newSince, hostOfJev, facetsFromJev, tally, starsBucket, stats, compact, topStarred, describe, type Entry,
+  newSince, stats, compact, topStarred, describe, type Entry,
 } from "../../lib/data";
 import { t, sect, localePath, langFromParams, staticLangs } from "../../lib/i18n";
 
 export const getStaticPaths = staticLangs;
 const lang = langFromParams(Astro.params);
-
-const jevFacets = facetsFromJev(projects);
-// Chip order is the order of this object. Use case first: it is the one a visitor
-// arrives with. A screenshot was never something anyone filtered by.
-const all: Record<string, [string, number][]> = {
-  section: tally(projects.map((e) => e.section)),
-  useCase: jevFacets.useCase,
-  form: jevFacets.form,
-  host: tally(projects.map((e) => hostOfJev(e))),
-  language: tally(projects.map((e) => e.github?.language ?? null)),
-  license: tally(projects.map((e) => e.github?.license ?? null)),
-  stars: tally(projects.map((e) => (e.github ? starsBucket(e.github.stars) : null))),
-};
-// Facets that GitHub metadata feeds are empty until the daily enrichment runs.
-const facets = Object.fromEntries(Object.entries(all).filter(([, v]) => v.length > 1));
 
 const fresh = newSince(7).filter((e) => e.type === "project").slice(-12).reverse();
 const trending = topStarred(6);
@@ -68,11 +52,15 @@ const jsonld = {
       </div>
       {stats.updated && <p class="figures-note micro">{t(lang, "updated")} {stats.updated} <span class="dot">·</span> {t(lang, "checkedWeekly")}</p>}
 
+      <form class="hero-search" action={localePath(lang, "/projects/")} method="get" role="search">
+        <span class="search-icon" aria-hidden="true">
+          <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.6" /><path d="m10.6 10.6 3.4 3.4" /></svg>
+        </span>
+        <input id="home-q" name="q" type="search" placeholder={t(lang, "search")} aria-label={t(lang, "search")} autocomplete="off" />
+        <button class="btn primary" type="submit">{t(lang, "searchButton")}</button>
+      </form>
       <div class="hero-cta">
-        <button class="btn primary" type="button" id="hero-search">
-          <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="7" cy="7" r="4.6" /><path d="m10.6 10.6 3.4 3.4" /></svg>
-          {t(lang, "search")}
-        </button>
+        <a class="btn" href={localePath(lang, "/projects/")}>{t(lang, "browseAll", { n: projects.length })} →</a>
         <a class="btn" href={localePath(lang, "/submit/")}>
           <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M8 3v10M3 8h10" /></svg>
           {t(lang, "submit")}
@@ -86,10 +74,6 @@ const jsonld = {
 
     <div class="hero-visual"><Radar lang={lang} size={520} labels={false} compact /></div>
   </section>
-
-  <div class="search-panel">
-    <SearchBox lang={lang} total={projects.length} facets={facets} />
-  </div>
 
   {trending.length > 0 && (
     <>
@@ -109,7 +93,10 @@ const jsonld = {
     </>
   )}
 
-  <div class="rule" id="categories"><h2>{t(lang, "categories")}</h2></div>
+  <div class="rule" id="categories">
+    <h2>{t(lang, "categories")}</h2>
+    <a class="rule-link" href={localePath(lang, "/projects/")}>{t(lang, "browseAll", { n: projects.length })} →</a>
+  </div>
   <div class="tiles">
     {projectSections.map((s) => {
       const share = Math.round((s.count / projects.length) * 100);
@@ -145,14 +132,6 @@ const jsonld = {
     ))}
   </div>
 
-  <div class="rule"><h2>{t(lang, "allProjects")}</h2></div>
-  <div id="results" class="grid">
-    {projects.map((e: Entry) => <Card e={e} lang={lang} />)}
-  </div>
-  <p class="no-results" hidden>
-    <span class="echo"></span> <button class="btn clear-filters" type="button">{t(lang, "clear")}</button>
-  </p>
-
   <div class="rule"><h2>{t(lang, "learn")}</h2></div>
   <div class="learn">
     {learn.map(({ s, items }) => (
@@ -180,9 +159,9 @@ const jsonld = {
   </section>
 </Base>
 <script>
-  document.getElementById("hero-search")?.addEventListener("click", () => {
-    const q = document.getElementById("q") as HTMLInputElement | null;
-    q?.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
-    q?.focus({ preventScroll: true });
+  const q = document.getElementById("home-q") as HTMLInputElement | null;
+  addEventListener("keydown", (e) => {
+    const target = e.target as HTMLElement | null;
+    if (e.key === "/" && q && !(target && /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName))) { e.preventDefault(); q.focus(); }
   });
 </script>

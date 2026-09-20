@@ -27,4 +27,4 @@ Smaller views: `https://awesomejev.vercel.app/llms.txt` (index), `https://awesom
 
 ## Submitting
 
-Open a pull request that adds one line in the format `- [name](url) - One sentence.` to the most specific section of `readme.md`. Read `contributing.md` for the inclusion bar.
+Pull request only. Add one line in the format `- [name](url) - One sentence.` at the bottom of the most specific section of `readme.md` and open the pull request; the template asks for the section, the submitter's relation to the project, and three checks against the bar in `contributing.md`. Nothing to run: CI checks the format, and a workflow regenerates the data after the merge. Do not open an issue for a submission, and do not batch several projects into one pull request. If you act for a person, say so in the pull request body.

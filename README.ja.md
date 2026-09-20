@@ -78,12 +78,16 @@
 - [pi-typesafe-jev](https://github.com/legacybridge-tech/pi-typesafe-jev) - Jev の判定を 5 つの Pi ツールとして公開する Pi 拡張です。
 - [pi-typesafe](https://github.com/DevMortimer/pi-typesafe) - バッチ評価ツール、ターミナルのプレイグラウンド、そして Pi 拡張の作者向けの型付き API です。
 - [pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) - 副作用のあるツール呼び出しをセッションの前半で述べた内容に照らして確認し、コンテキスト圧縮の後も「レビューのみ」が保たれるようにします。
+- [pi-jev-sentinel](https://github.com/harshwasan/pi-jev-sentinel) - Pi のツール呼び出し、ツール出力、返答を Jev で確認し、危険な操作とプロンプトインジェクションを検出します。ユーザー承認、コンテキストの再確認、シークレットの除去、任意のタスク固定を備えます。
+- [pi-mcp-adapter](https://github.com/nicobailon/pi-mcp-adapter) - MCP ツールの結果に対する任意の型付き評価とセマンティック検索で、サーバーごとのデータ送出許可リストで制御します。
 ### Hermes
 
 - [typesafe-skill-router](https://github.com/DECRUX9812/typesafe-skill-router) - モデル呼び出しの前に読み込む価値のあるスキルを 1 つだけ指名し、標準ライブラリのみで、1 ターンあたり約 0.1 セントです。
 - [jev-agent-skill-router](https://github.com/GodsBoy/jev-agent-skill-router) - 棄権の経路を備えた、confidence を考慮するスキルルーティングです。
 - [hermes-jev](https://github.com/keeltrace/hermes-jev) - 型付きの判断、ランキング、検証、そしてオプトインのツールゲートです。
 - [ask-jev-skill](https://github.com/shantanugoel/ask-jev-skill) - Hermes や同様のエージェントが Jev に直接尋ねられるようにします。
+- [hermes-jev-plugin](https://github.com/ajensenwaud/hermes-jev-plugin) - 原子的なチェック、ルーティング、ルーブリック採点のための四つの Hermes ツールです。Hermes のプラグインカタログに掲載されています。
+- [hermes-jev-approvals](https://github.com/anpicasso/hermes-jev-approvals) - フラグの付いたシェルコマンドを実行前に承認、拒否、またはエスカレーションします。高速化の数値はベンダー報告です。
 ### Agent Zero
 
 - [a0-typesafe-ai](https://github.com/3clyp50/a0-typesafe-ai) - Agent Zero 向けの型付きツールと確率カードです。
@@ -149,6 +153,7 @@
 - [openjev by daseinlabs](https://github.com/daseinlabs/open-jev) - MLX を使った Gemma 3 4B で一度 prefill し、パディングした 1 パスですべての選択肢を採点し、デモではターミナルから Doom をプレイします。
 - [jeff by logan-markewich](https://github.com/logan-markewich/jeff) - 400M の GLiFormer 上でセルフホストする System One API で、Jev に劣る部分を示すベンチマークが付いています。
 - [JevForge](https://github.com/zwliJay/jev-forge) - 監査可能なデータ構築、Qwen3.5-0.8B の学習、固定した Mind2Web と OOD の評価、ローカルでの提供、予備的な RLCD ベースラインまでを含むエンドツーエンドのスタックです。
+- [PlayJev](https://github.com/OmniJev/PlayJev) - 微調整した Qwen3.5-0.8B でフレームだけを見て十種類のブラウザゲームを遊びます。一手ごとに一回の順伝播で、重みは公開、ブラウザデモ付きです。
 
 ## コードレビューと品質
 
@@ -184,6 +189,7 @@
 - [reranker](https://github.com/hev/reranker) - 較正されたリランカーとしての Jev で、1 回の呼び出しで最大 30 件の文書を扱い、文書ごとに確率を返します。
 - [llama-index-jev](https://github.com/WiktorB2004/llama-index-jev) - LlamaIndex のリランカーとルーターで、LLM の判定より安価です。
 - [jev-tree](https://github.com/reachjalil/jev-tree) - 分類体系に対する再帰的な選択で、255 選択肢の上限を超えられます。
+- [jev-folio-recursive-classifier](https://github.com/mttrbrts/jev-folio-recursive-classifier) - OCR した法律契約書を FOLIO 文書タイプのオントロジーに沿って分類します。再帰的な Jev Choice、ビームサーチ、信頼度に応じた葉での停止、コンテキスト長のベンチマークを備えます。
 - [neo4jev](https://github.com/jexp/neo4jev) - 隣接する関係を分類しながら Neo4j のグラフを辿ります。
 - [jev-sift](https://github.com/kbhuw/jev-sift) - ファイル、URL、スニペットのバッチを関連度で採点する MCP ツールで、エージェントは重要なものだけを開きます。
 - [jev-scout](https://github.com/AkashPriyadarshii/jev-scout) - 平易な言葉のリクエストに対して実在し保守されているリポジトリやクレートを見つける Rust の CLI と MCP サーバーで、候補の採点は Jev が行います。
@@ -244,6 +250,7 @@
 - [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) - DuckDuckGo の検索結果に対する SEO と GEO のチェックを行う Rust の CLI と MCP サーバーで、採点は Jev が行います。
 - [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim プラグインで、バッファに平易な言葉の質問を投げると Treesitter が関数単位に分割し、Jev がそれぞれを採点し、回答は確率順に quickfix に並びます。
 - [jev-skip](https://github.com/valentynkit/jev-skip) - 字幕トラックを読み、イントロが終わる前にセグメントごとのスポンサー確率をシークバーに描くブラウザ拡張で、クラウドソースのデータベースは使わず、23 本の動画で SponsorBlock のスポンサー秒数の 77 パーセントを捉え、1 本あたり $0.0008 と報告しています。
+- [openpoke-meets-jev](https://github.com/0xShin0221/openpoke-meets-jev) - OpenPoke のフォークで、メール選別、ツール呼び出しのガードレール、検索の再ランキングを Jev に移します。置き換えた Sonnet 呼び出しとの A/B と、インジェクションゲートへの攻撃実験を含みます。
 
 ## ゲーム・ロボティクス・シミュレーション
 
@@ -316,6 +323,7 @@
 - [Jev Guard demo](https://guard-jev.vercel.app) - ホスト済みのコメントモデレーションのプレイグラウンドです。
 - [Companion](https://jev-demo.vercel.app) - 1 ターンあたり 9 つの型付き質問に答えて実行、確認、放棄を決めるホスト済みのロボットインターフェースで、生成テキストは使いません。
 - [Jev System One](https://github.com/haseeb-heaven/jev-system-one) - OpenAI が回答し、Jev が別途、関連性、信頼性、品質を採点するターミナルインターフェースです。
+- [jev-web-analyzer](https://github.com/replynodes/jev-web-analyzer) - SaaS のランディングページを Markdown に変換し、初回訪問者が何を理解できるかについて Jev に十個の限定された Choice の質問をして、創業者向けの分析として表示します。
 
 ## コマンドライン
 

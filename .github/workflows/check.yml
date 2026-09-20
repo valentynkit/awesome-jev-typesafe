@@ -18,6 +18,3 @@ jobs:
       - run: npm ci
       - run: node scripts/parse-readme.mjs
       - run: npm test
-      - run: npm run count-check
-      - name: Parsed entries must match committed data
-        run: git diff --exit-code -- data/projects.json || (echo "::error::data/projects.json is stale, run npm run parse and commit" && exit 1)

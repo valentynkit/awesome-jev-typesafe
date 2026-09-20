@@ -82,9 +82,8 @@
   "risingNeedsData": "上升榜需要两次每日快照，明天再来看。",
   "submit": "提交项目",
   "submitTitle": "用 Jev 做了东西？加进来。",
-  "submitLede": "每一条都由人按一条简短的标准读过。两种方式，都用不到五分钟。",
-  "submitIssue": "打开 issue 表单",
-  "submitPr": "或者用 pull request 加一行",
+  "submitLede": "只有一条路：一个给 readme.md 加一行的 pull request。不到五分钟，无需安装任何东西。",
+  "submitPr": "用 pull request 加一行",
   "submitBar": "收录标准",
   "submitBadge": "已收录？把徽章加到你的 readme 里",
   "starRepo": "在 GitHub 上加星",
@@ -168,5 +167,14 @@
   "active": "活跃",
   "quiet": "沉寂",
   "fromReadme": "来自 readme",
-  "radarHint": "扫描线找到一个仓库时它会闪亮一下，随后在五秒内淡去。悬停任意圆点可让它保持显示。"
+  "radarHint": "扫描线找到一个仓库时它会闪亮一下，随后在五秒内淡去。悬停任意圆点可让它保持显示。",
+  "projects": "项目",
+  "browseAll": "浏览全部 {n} 个项目",
+  "projectsLede": "搜索并筛选列表中的每一个项目。本地搜索找出候选，Jev 对前 30 个重新排序。",
+  "searchButton": "搜索",
+  "submitStep1": "在 GitHub 编辑器中打开 readme.md，GitHub 会自动为你 fork。",
+  "submitStep2": "找到最贴切的小节，按上面的格式把你的一行加到末尾。",
+  "submitStep3": "打开 pull request。模板会询问小节、你与项目的关系和三项检查。CI 检查格式，其余由人来读。",
+  "submitWhy": "为什么是 pull request 而不是 issue",
+  "submitWhyText": "pull request 就是那一行本身：历史里有你的名字，检查跑在它上面，评审就是一个 diff。issue 是请维护者替你写这一行，而那条队列正是列表变旧的地方。"
 }
