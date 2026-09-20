@@ -229,6 +229,7 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [jev-browser-use](https://github.com/wy-coliney/jev-browser-use) - Codex skill and plugin where Jev handles navigation, clicks, and scrolling and Codex keeps typing and verification; reports browser steps 5 to 10 times faster.
 - [Jev-cu](https://github.com/Sac-Y/Jev-cu) - Codex computer use where Jev picks the element, action, completion, and risk from on-screen text, no screenshots sent; Chinese readme.
 - [JevScout](https://github.com/hqman/JevScout) - Job-hunting skill that drives Chrome over CDP and has Jev score every link and listing.
+- [Jev Social](https://github.com/socai-io/jev-social) - Lets Jev choose each read-only social research step while socai runs it in a real Chrome session and streams inspectable Instagram, TikTok, or LinkedIn evidence into a report.
 
 ## Open models and replicas
 
