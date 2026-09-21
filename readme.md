@@ -279,6 +279,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 
 ## Code review and quality
 
+- [software-factory](https://github.com/stratonext/software-factory) - Local Software Factory, to run multiple agents with JEV as judge and orchestrator
 - [jev-review by devagrawal09](https://github.com/devagrawal09/jev-review) - Staged code-review workflow with a local dashboard.
 - [jev-review by NiazMorshed2007](https://github.com/NiazMorshed2007/jev-review) - Local-first MCP plugin for continuous quality review by coding agents.
 - [foreman](https://github.com/thruwire/foreman) - Supervises a software factory of agents, with Jev making the go and no-go calls.
