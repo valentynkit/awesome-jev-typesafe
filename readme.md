@@ -473,7 +473,8 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-cli by jtsang4](https://github.com/jtsang4/jev-cli) - Typed questions in, structured JSON answers out.
 - [jev-cli by tumf](https://github.com/tumf/jev-cli) - Dependency-free Python CLI wrapping Choice, Score, and Noul.
 - [jevctl](https://github.com/Nasrallah-AL/jev-cli) - npm CLI with the key in the OS keychain; typed judgments from the shell.
-- [watfile](https://github.com/jexp/watfile) - PDF, Text file sorting/classification using Jev or Laya
+- [watfile](https://github.com/jexp/watfile) - Sorts PDFs and text files into category folders, one Jev Choice per document, with a local Laya backend as the alternative.
+- [jeq](https://github.com/cristianoliveira/jeq) - Pipes and composes Jev judgments over JSON and NDJSON with map, reduce, rank, and rate, then applies policy through an explicit offline gate.
 
 ## Community clients
 
