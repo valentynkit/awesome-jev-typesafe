@@ -107,6 +107,9 @@
 - [jev-judgment](https://github.com/HyunjunJeon/jev-judgment) - 코딩 에이전트의 닫힌 판단을 챗 모델 대신 Jev로 보냅니다.
 - [skills by fabricioctelles](https://github.com/fabricioctelles/skills) - 주관적 평가 기준을 Jev로 점수화할 수 있는 에이전트 스킬 디렉터리입니다.
 - [Augustus](https://github.com/24601/Augustus) - 타입 지정 판단이 애초에 어디에 속하고 무엇이 코드에 남을지 결정하기 위한 스킬이며, 공식 스킬의 대체가 아니라 동반 도구입니다.
+- [hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) - 에이전트의 작은 결정을 Jev에게 맡깁니다. 이번 턴에 어떤 모델이 답할지, 어떤 스킬을 불러올지, 어떤 검색 구절이 중요한지, 어떤 턴이 압축 뒤에도 남을지를 정합니다.
+- [Stanley](https://github.com/devagrawal09/stanley-code) - 코딩용 CLI입니다. 평문 요청을 Jev가 하나의 결정적 워크플로로 보내고, 그 워크플로가 모은 근거를 두고 Jev에게 선택지가 고정된 질문을 던집니다.
+- [JevHarness](https://github.com/TianyuCodings/JevHarness) - 관측을 Jev 질문으로 바꾸는 과제 전용 하네스를 LLM이 작성하게 하고, 이를 고정한 뒤 보상과 전체 실행 트레이스로 개선합니다.
 
 ## 브라우저와 컴퓨터 사용
 
@@ -123,6 +126,9 @@
 - [Jev-cu](https://github.com/Sac-Y/Jev-cu) - Jev가 화면 텍스트에서 요소, 동작, 완료 여부, 위험도를 고르고 스크린샷은 보내지 않는 Codex 컴퓨터 사용이며, 중국어 readme입니다.
 - [JevScout](https://github.com/hqman/JevScout) - CDP로 Chrome을 조작하고 모든 링크와 공고를 Jev가 점수화하게 하는 구직 스킬입니다.
 - [Jev Social](https://github.com/socai-io/jev-social) - 읽기 전용 소셜 리서치의 각 단계를 Jev가 고르고, socai가 실제 Chrome 세션에서 실행해 확인 가능한 Instagram, TikTok, LinkedIn 근거를 보고서로 모읍니다.
+- [jev-use by savka777](https://github.com/savka777/jev-use) - macOS용 음성 및 타이핑 컴퓨터 조작입니다. 스크린샷 없이 접근성 트리에서 다음 화면 동작을 Jev가 고릅니다.
+- [jev-mobile by xinwang-nwpu](https://github.com/xinwang-nwpu/jev-mobile) - Android 자동화입니다. 한 번의 Jev 요청으로 접근성 트리에서 동작과 대상 요소를 함께 고르고 ADB로 실행합니다.
+- [jev-browser-use by imanshu03](https://github.com/imanshu03/jev-browser-use) - 평문 지시로 브라우저 작업을 CDP 또는 Vercel의 agent-browser로 실행합니다. 동작과 대상은 Jev가 고르고, 실행 전에 코드가 확신도를 확인합니다.
 
 ## 오픈 모델과 재현 구현
 
@@ -155,6 +161,12 @@
 - [jeff by logan-markewich](https://github.com/logan-markewich/jeff) - 400M GLiFormer에서 동작하는 자체 호스팅 System One API이며, 어디에서 Jev에 뒤처지는지 보여 주는 벤치마크를 함께 제공합니다.
 - [JevForge](https://github.com/zwliJay/jev-forge) - 감사 가능한 데이터 구축, Qwen3.5-0.8B 학습, 고정된 Mind2Web 및 OOD 평가, 로컬 서빙, 예비 RLCD 기준선까지 아우르는 엔드투엔드 스택입니다.
 - [PlayJev](https://github.com/OmniJev/PlayJev) - 미세 조정한 Qwen3.5-0.8B로 화면만 보고 열 가지 브라우저 게임을 플레이하며, 한 수마다 순전파 한 번, 공개 가중치와 브라우저 데모를 제공합니다.
+- [openJev-verdict-2.0](https://github.com/Heman10x-NGU/openJev-verdict-2.0) - WebGPU 브라우저 런타임을 갖춘 151M 비자기회귀 결정 엔진으로, 자체 벤치마크에서 top-1 77.1퍼센트와 보정 오차 1.44퍼센트를 보고합니다.
+- [LLM2Jev](https://github.com/Yinsongxu/LLM2Jev) - 로컬 언어 모델을 런타임에 정의한 Choice, Score, Noul 질문에 맞추고 확률이 붙은 타입 지정 답변을 돌려줍니다.
+- [local-jev](https://github.com/amithgc/local-jev) - System One 엔드포인트와 와이어 호환인 오프라인 서버이며 공식 SDK로 확인했습니다. JevBench 공개 항목에서 80.5퍼센트로, 호스팅 API의 공개 수치 86.6퍼센트와 비교해 보고합니다.
+- [Jev-Compatible](https://github.com/David-Lolly/Jev-Compatible) - 기존 SGLang 또는 vLLM 배포를 후보 토큰 점수화로 Jev 호환 결정 서비스로 바꾸는 게이트웨이입니다. 학습도 모델 변경도 필요 없습니다.
+- [Rizzo Flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) - System One 아이디어를 로컬 우선으로 구현했습니다. 비정형 상태를 넣으면 토큰을 전혀 생성하지 않고 확률이 붙은 타입 지정 결정을 돌려줍니다.
+- [metask-jev](https://github.com/metask-ai/metask-jev) - Qwen3.5 기반의 공개 가중치 타입 결정 모델로, 한 번의 순전파로 선택지별 보정 확률을 냅니다. JevBench에서 80.1퍼센트로, Jev 1.13의 75.3과 비교해 보고합니다.
 
 ## 코드 리뷰와 품질
 
@@ -175,6 +187,7 @@
 - [slop-grader](https://github.com/lukstei/slop-grader) - 텍스트와 Markdown 파일을 AI 슬롭, 문법, 기술 문서 품질 기준으로 채점하고 AI 에이전트가 위반을 자동으로 고치도록 안내합니다.
 - [JevPR](https://github.com/HexyeDEV/JevPR) - 풀 리퀘스트를 안전하게 승인할 수 있는지 전문가 검토가 필요한지 Jev에게 묻고 그 판정을 check run으로 옮기는 GitHub App입니다.
 - [jevopt](https://github.com/Ramneet-Singh/jevopt) - LLVM IR과 원본 소스를 바탕으로 재량적 호출 지점마다 인라인 여부를 Jev에게 묻는 C/C++ 컴파일러 드라이버입니다.
+- [jev-spec](https://github.com/nozomi-koborinai/jev-spec) - 커밋할 때마다 코드를 Markdown 명세의 요구사항과 대조하고, 둘이 어긋나면 빌드를 실패시킵니다.
 
 ## 라우팅과 게이트웨이
 
@@ -185,6 +198,7 @@
 - [hono-jev-router](https://github.com/yusukebe/hono-jev-router) - Hono에서 HTTP 요청을 의미에 따라 라우팅합니다.
 - [JevRouter](https://github.com/BillionsBobby/JevRouter) - 모델, 서브에이전트, 스킬, MCP 도구, CLI를 하나의 후보 집합으로 두어 Jev가 고르고 라우터가 권한과 위험을 강제하며, Toolathlon에서 첫 다섯 도구 호출 적중률 44퍼센트로 DeepSeek의 24퍼센트를 앞섰다고 보고합니다.
 - [jev-gateway](https://github.com/vinilana/jev-gateway) - "다음에 어떤 도구를 쓸지" 결정은 Jev로, 나머지는 평소 쓰던 모델로 보내는 Codex와 Claude Code용 로컬 게이트웨이입니다.
+- [jev-router by daviddl9](https://github.com/daviddl9/jev-router) - OMP와 Pi에서 각 단계의 작업 모델 등급을 Jev가 고릅니다. 계획과 검토는 강한 모델에, 범위가 정해진 작업은 저렴한 모델에 맡깁니다.
 
 ## 검색, 리랭킹, RAG
 
@@ -197,6 +211,9 @@
 - [neo4jev](https://github.com/jexp/neo4jev) - 이웃 관계를 분류하며 Neo4j 그래프를 탐색합니다.
 - [jev-sift](https://github.com/kbhuw/jev-sift) - 파일, URL, 스니펫 묶음의 관련도를 점수화하여 에이전트가 중요한 것만 열도록 하는 MCP 도구입니다.
 - [jev-scout](https://github.com/AkashPriyadarshii/jev-scout) - 평이한 언어로 된 요청에 맞는 실제로 유지 보수되는 저장소와 크레이트를 찾아 주는 Rust CLI 겸 MCP 서버이며, 후보 점수화는 Jev가 맡습니다.
+- [jev-semgrep](https://github.com/uehaj/jev-semgrep) - 정규식 대신 의미로 grep합니다. 각 줄마다 Jev가 확률을 주고, 의미는 AND, OR, NOT으로 조합합니다.
+- [jev-search by kylemclaren](https://github.com/kylemclaren/jev-search) - shadcn/ui 레지스트리 블록입니다. 첫 타이핑에 키워드 결과를 보여주고 잠시 뒤 Jev가 재정렬하며, 호출이 실패하면 키워드 순서를 그대로 둡니다.
+- [Senseek](https://github.com/liou666/senseek) - 읽고 있는 페이지를 의미로 검색하는 브라우저 확장입니다. Ctrl+F 방식의 검색창을 쓰고, 자신의 키만 있으면 되며 백엔드가 필요 없습니다.
 
 ## 데이터와 운영
 
@@ -233,6 +250,8 @@
 - [jev-audio-beeper](https://github.com/santos-sanz/jev-audio-beeper) - 저지연 오디오 검열 개념 증명입니다: Jev의 타입 지정 결정이 ffmpeg를 구동합니다.
 - [is-malicious](https://github.com/luantak/is-malicious) - 실행하기 전에 코드베이스에서 숨은 동작이나 데이터 탈취 행위를 검사하며, 깨끗한 보고서가 증거는 아니라고 스스로 밝힙니다.
 - [tripwire](https://github.com/noelzappy/tripwire) - 사용자가 보기 전에 모든 LLM 응답에 일곱 가지 Jev 검사를 실행하는 AI SDK 미들웨어 겸 프록시이며, 아직 정확도 수치가 없다고 스스로 밝힙니다.
+- [SkillCheck](https://github.com/paulgoodchild/SkillsCheck) - 에이전트 스킬을 설치하기 전에 본문을 Jev로 보내 범주별 점수가 담긴 판정을 돌려줍니다. 스킬을 에이전트 컨텍스트에 불러오지 않으며, 보내는 텍스트의 비밀값은 가려지지 않습니다.
+- [StopSpam](https://github.com/hteariH/stopspam-jev-bot) - 보정된 확신도 기반 분류로 그룹 채팅에서 스팸과 사기 메시지를 지우는 Telegram 봇입니다.
 
 ## 애플리케이션과 확장
 
@@ -257,6 +276,12 @@
 - [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim 플러그인입니다: 버퍼에 평이한 언어로 질문하면 Treesitter가 함수 단위로 쪼개고 Jev가 각각을 점수화하며, 답변은 확률 순으로 quickfix에 쌓입니다.
 - [jev-skip](https://github.com/valentynkit/jev-skip) - 자막 트랙을 읽어 인트로가 끝나기 전에 구간별 협찬 확률을 탐색 바에 그리는 브라우저 확장이며, 크라우드 데이터베이스 없이 영상 23개에서 영상당 $0.0008로 SponsorBlock 협찬 구간 초의 77퍼센트를 잡았다고 보고합니다.
 - [openpoke-meets-jev](https://github.com/0xShin0221/openpoke-meets-jev) - OpenPoke 포크로, 이메일 선별, 도구 호출 가드레일, 검색 재순위를 Jev로 옮기며, 대체한 Sonnet 호출과의 A/B 비교와 인젝션 게이트에 대한 공격 실험을 포함합니다.
+- [Jevmail](https://github.com/fazlerocks/jevmail) - 읽기 전용 Gmail 분류입니다. 메일 한 통마다 Jev 질문 세 개로 다섯 개 보관함 중 하나에 넣고 긴급도 점수를 매깁니다.
+- [jev-mail-classifier](https://github.com/parth-kp/jev-mail-classifier) - 설정으로 움직이는 받은편지함 분류입니다. 라벨, 이동, 플래그, 알림을 처리하며 TypeSafe에 직접 또는 OpenRouter를 거쳐 연결합니다.
+- [crush-monitor](https://github.com/FerryCorleone/crush-monitor) - 채팅 기록을 로컬에서 읽고 12가지 감정과 35가지 의도 가운데 확률이 높은 세 개를 메시지마다 붙입니다.
+- [Jev Voice](https://github.com/kevinbadi/jev-voice) - macOS에 말을 겁니다. 로컬 whisper.cpp가 받아쓰고, 한 번의 팬아웃 Jev 호출이 동작과 타입이 지정된 인자를 고르며, 코드가 실행합니다.
+- [dasheng](https://github.com/wquguru/dasheng) - 영어를 소리 내어 읽으면 점수가 나옵니다. 스트리밍 ASR이 듣고 Jev가 단어마다 판정하며, 총점은 코드의 산술로 계산합니다.
+- [Jev Chat](https://github.com/w3cj/jev-chat) - 채팅 형태의 명령 바입니다. 도구와 인자, 답변 형식을 Jev가 고르고 코드가 도구의 데이터로 답을 만들기 때문에 모델이 글을 쓰지 않습니다.
 
 ## 게임, 로보틱스, 시뮬레이션
 
@@ -276,6 +301,8 @@
 - [live-jev](https://github.com/vinilana/live-jev) - 브라우저에서 200 ms마다 타입 지정 질문 네 개를 보내는 탑다운 자동차이며, 신뢰도로 게이트된 재정의는 코드에 둡니다.
 - [jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red) - PyBoy로 돌리는 Pokemon Red입니다: 경로와 연산은 코드가 맡고 Jev는 분기에서만 고르며, 전투 턴마다 기절 예측을 기록해 RAM이 말하는 값과 Brier 점수로 비교합니다.
 - [clashroyale-jev](https://github.com/vishxrad/clashroyale-jev) - Qwen이 전장을 읽고 로컬 OpenCV가 손패와 엘릭서를 인식하면 Jev가 카드와 배치를 골라 Clash Royale을 플레이합니다.
+- [Astra and JEV Minecraft agent](https://github.com/rmalde/minecraft-agent) - 바닐라 서버에서 엔더 드래곤을 잡습니다. 계획은 프런티어 모델이 세우고 플레이어 동작은 모두 Jev가 고르며, 기록된 실행에서는 Jev 결정 131회와 플래너 호출 35회가 들었습니다.
+- [EmbodiedJev](https://github.com/FBddcz/embodied-jev) - MuJoCo에서 구현 실험을 돌리는 브라우저 작업대입니다. 로봇의 모든 단계가 눈에 보이는 Jev 결정이며, 뒤에는 로컬 모델이나 클라우드 API를 붙입니다.
 
 ## 금융과 트레이딩
 
@@ -309,6 +336,8 @@
 - [jev-research-eval](https://github.com/jgridifier/jev-research-eval) - 고정된 jev-ultrafast 커밋 위에서 동작하는 재현 가능한 하네스이며, 기준선 및 스트레스 스위트를 포함합니다.
 - [jev-playground by hegargarcia](https://github.com/hegargarcia/jev-playground) - 명시적 상태, 합법 행동, 측정 가능한 결과를 갖춘 게임에서 Jev를 다른 모델과 비교합니다.
 - [JevArena](https://github.com/chenmingtang830/jevarena) - 직접 연결한 상대 심판과 Jev를 맞붙이는 호스팅 아레나입니다. 어느 쪽인지 밝히기 전에 투표를 받고 지연 시간, 비용 출처, 모델이 스스로 보고한 확신도를 보여줍니다. 투표가 기록하는 것은 선호이지 검증된 정답이 아닙니다.
+- [JevBench](https://github.com/fstandhartinger/jevbench) - Jev 계열 결정 모델용 벤치마크입니다. 범위가 정해진 루브릭을 넣으면 선택지별 확률이 붙은 타입 지정 답변이 나오고, 캐스케이드와 위원회 실험은 따로 보고합니다.
+- [jev-align](https://github.com/sutro-sh/jev-align) - Jev 함수가 가장 확신하지 못하는 예시를 찾아 라벨을 요청하고, GEPA로 함수를 개선합니다.
 
 ## 플레이그라운드와 데모
 
@@ -332,6 +361,7 @@
 - [Companion](https://jev-demo.vercel.app) - 턴마다 아홉 개의 타입 지정 질문에 답해 실행, 질문, 보류를 결정하는 호스팅 로봇 인터페이스이며, 생성된 텍스트는 없습니다.
 - [Jev System One](https://github.com/haseeb-heaven/jev-system-one) - OpenAI가 답하고 Jev가 별도로 관련성, 신뢰성, 품질을 점수화하는 터미널 인터페이스입니다.
 - [jev-web-analyzer](https://github.com/replynodes/jev-web-analyzer) - SaaS 랜딩 페이지를 Markdown으로 바꾸고 첫 방문자가 무엇을 이해하는지 Jev에 열 가지 제한된 Choice 질문을 던진 뒤, 창업자 관점의 분석으로 보여줍니다.
+- [hn-thread-judge](https://github.com/rishi-raj-jain/hn-thread-judge) - Hacker News에서 가장 많이 논의된 스레드를 Jev가 댓글 단위로 읽고 각각을 하나의 판정으로 요약해 Postgres에서 바로 제공합니다.
 
 ## 커맨드 라인
 
@@ -379,6 +409,7 @@
 - [swift-typesafe](https://github.com/ainame/swift-typesafe) - Python SDK의 API를 따르는 Swift 6.4 SDK이며, Apple 플랫폼과 Linux에서 동작합니다.
 - [typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) - 동기 호출, Guzzle 프로미스, PSR-3 로깅을 갖춘 PHP 클라이언트입니다.
 - [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL과 클라이언트입니다.
+- [JevSharp](https://github.com/bariskisir/JevSharp) - TypeSafe, OpenRouter, Vercel AI Gateway 및 호환 엔드포인트로 Jev 판정을 다루는 .NET 10 SDK입니다.
 
 ## 글과 발표
 
