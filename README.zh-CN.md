@@ -200,6 +200,7 @@
 - [JevRouter](https://github.com/BillionsBobby/JevRouter) - 把模型、子智能体、技能、MCP 工具和 CLI 统一为一个候选集；Jev 挑选，路由器负责权限和风险的执行；据报在 Toolathlon 上前五次工具调用命中率 44%，DeepSeek 为 24%。
 - [jev-gateway](https://github.com/vinilana/jev-gateway) - 面向 Codex 和 Claude Code 的本地网关，把“下一步用哪个工具”的决策交给 Jev，其余都交给你平常的模型。
 - [jev-router by daviddl9](https://github.com/daviddl9/jev-router) - 在 OMP 和 Pi 中由 Jev 为每一步选择工作模型档位，规划和复核留给强模型，有边界的执行交给更便宜的模型。
+- [Jevonian](https://github.com/xinyao27/jevonian) - Local OpenAI, Anthropic, and Responses-compatible proxy that serves one Jev call per turn to answer both the model route and the thinking level for its virtual model jevonian/auto, with code filtering candidates by protocol, context window, effort floor, and spent quota windows first, and pinned models or explicit routes skipping Jev entirely.
 
 ## 搜索、重排与 RAG
 
