@@ -332,7 +332,8 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jevql](https://github.com/kylemclaren/jevql) - Semantic SQL for PostgreSQL, with Jev answering the predicates.
 - [duckdb-jev](https://github.com/colliber/duckdb-jev) - DuckDB extension that asks a question of every row and returns a real SQL type.
 - [invalidate](https://github.com/chopratejas/invalidate) - Gives every stored agent memory a lease and asks Jev whether new evidence ends it; [live demo](https://invalidate-playground.vercel.app).
-- [jevgraph](https://github.com/chenmingtang830/jevgraph) - Document-to-graph pipeline that parses PDF, DOCX, PPTX, or text locally, blocks candidate entity pairs by ontology type, then asks Jev for a closed-set relation per pair with per-edge probabilities, page evidence offsets, and JSON, CSV, or Neo4j output; reports 87.5 percent planned-case accuracy on 160 pinned FewRel cases at 313 ms p50, against 89.4 percent at 1,164 ms for GPT-5.6 Luna.
+- [jevgraph](https://github.com/chenmingtang830/jevgraph) - Parses PDF, DOCX, PPTX, or text locally, then asks Jev one closed-set relation question per candidate entity pair and exports a graph with per-edge probabilities and page evidence to JSON, CSV, or Neo4j.
+- [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - Packs 32 items into one request for bulk classification and calibrates the confidence cut that sends the least-sure rows to a person, reporting 533 items a second at 89.2 percent agreement with human labels.
 
 ## Safety, moderation and verification
 
