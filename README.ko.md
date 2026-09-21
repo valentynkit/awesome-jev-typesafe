@@ -200,6 +200,7 @@
 - [JevRouter](https://github.com/BillionsBobby/JevRouter) - 모델, 서브에이전트, 스킬, MCP 도구, CLI를 하나의 후보 집합으로 두어 Jev가 고르고 라우터가 권한과 위험을 강제하며, Toolathlon에서 첫 다섯 도구 호출 적중률 44퍼센트로 DeepSeek의 24퍼센트를 앞섰다고 보고합니다.
 - [jev-gateway](https://github.com/vinilana/jev-gateway) - "다음에 어떤 도구를 쓸지" 결정은 Jev로, 나머지는 평소 쓰던 모델로 보내는 Codex와 Claude Code용 로컬 게이트웨이입니다.
 - [jev-router by daviddl9](https://github.com/daviddl9/jev-router) - OMP와 Pi에서 각 단계의 작업 모델 등급을 Jev가 고릅니다. 계획과 검토는 강한 모델에, 범위가 정해진 작업은 저렴한 모델에 맡깁니다.
+- [Jevonian](https://github.com/xinyao27/jevonian) - Local OpenAI, Anthropic, and Responses-compatible proxy that serves one Jev call per turn to answer both the model route and the thinking level for its virtual model jevonian/auto, with code filtering candidates by protocol, context window, effort floor, and spent quota windows first, and pinned models or explicit routes skipping Jev entirely.
 
 ## 검색, 리랭킹, RAG
 
