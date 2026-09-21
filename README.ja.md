@@ -380,6 +380,7 @@
 - [jevctl](https://github.com/Nasrallah-AL/jev-cli) - キーを OS のキーチェーンに保存する npm 製 CLI で、シェルから型付きの判定を得られます。
 - [watfile](https://github.com/jexp/watfile) - PDF とテキストファイルをカテゴリ別のフォルダに振り分けます。1 文書につき 1 回の Jev Choice で、代わりにローカルの Laya バックエンドも使えます。
 - [jeq](https://github.com/cristianoliveira/jeq) - JSON と NDJSON に対する Jev の判断を map、reduce、rank、rate でパイプしてつなぎ、明示的なオフラインのゲートでポリシーを適用します。
+- [jevgrep by allebee](https://github.com/allebee/jevgrep) - Filters log lines and other text streams by meaning, one Noul per line in micro-batches, streaming from `tail -f` with grep's flags and exit codes.
 
 ## コミュニティクライアント
 

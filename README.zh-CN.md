@@ -380,6 +380,7 @@
 - [jevctl](https://github.com/Nasrallah-AL/jev-cli) - npm CLI，密钥存在操作系统钥匙串里；从 shell 获取带类型的判断。
 - [watfile](https://github.com/jexp/watfile) - 把 PDF 和文本文件分类归入对应文件夹，每份文档一个 Jev Choice，也可改用本地的 Laya 后端。
 - [jeq](https://github.com/cristianoliveira/jeq) - 在 JSON 和 NDJSON 上以管道方式组合 Jev 判断，提供 map、reduce、rank 和 rate，再通过显式的离线闸门应用策略。
+- [jevgrep by allebee](https://github.com/allebee/jevgrep) - Filters log lines and other text streams by meaning, one Noul per line in micro-batches, streaming from `tail -f` with grep's flags and exit codes.
 
 ## 社区客户端
 
