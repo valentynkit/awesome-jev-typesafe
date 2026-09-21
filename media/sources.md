@@ -17,11 +17,10 @@ Most files in this directory are copied from the project they illustrate, under 
 | `jevibe-check.png` | [sriganesh/jevibe-check](https://github.com/sriganesh/jevibe-check) | MIT | one frame of `docs/jevibecheck.gif` |
 | `jev-trades.png` | [zadescoxp/Jev-Trades](https://github.com/zadescoxp/Jev-Trades) | Apache-2.0 | one frame of `assets/Jev_making_trade.gif` |
 | `jev-axi.png` | [shiftynick/jev-axi](https://github.com/shiftynick/jev-axi) | MIT | one frame of `scripts/demo/safety.gif`, cropped to the terminal text |
-| `jev-ultralightspeed.png` | [collapseindex/jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) | Apache-2.0 | `docs/infographic.png` |
-| `jevbench.png` | [fstandhartinger/jevbench](https://github.com/fstandhartinger/jevbench) | MIT | `results/charts/quality-cost.png` |
-| `local-jev.png` | [amithgc/local-jev](https://github.com/amithgc/local-jev) | MIT | `docs/assets/hero.png` |
 | `hermes-jev-skills.png` | [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | MIT | `docs/images/model-routing-dashboard.png`, cropped to the live routing table |
-| `jev-use.png` | [savka777/jev-use](https://github.com/savka777/jev-use) | MIT | `docs/banner.png` |
+| `kev.png` | [jaredpalmer/kev](https://github.com/jaredpalmer/kev) | Apache-2.0 | `docs/playground.png` |
+| `jev-review.png` | [devagrawal09/jev-review](https://github.com/devagrawal09/jev-review) | MIT | `docs/dashboard.png` |
+| `nanojev.png` | [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | MIT | `assets/side_by_side_maze.png` |
 | `banner-dark.svg` | this list | CC0 | original work, no external source |
 | `banner-light.svg` | this list | CC0 | original work, no external source |
 | `social-preview.png` | this list | CC0 | original work, no external source |

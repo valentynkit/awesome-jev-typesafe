@@ -27,13 +27,13 @@ Seventeen seconds of the site; the [full-size MP4](media/awesome-jev-promo.mp4) 
 <table>
   <tr>
     <td align="center"><a href="https://github.com/browser-use/jev-ultrafast"><img src="media/jev-ultrafast.png" width="300" alt="jev-ultrafast booking a flight in 7.1 seconds"><br><sub>jev-ultrafast</sub></a></td>
-    <td align="center"><a href="https://github.com/collapseindex/jev-ultralightspeed"><img src="media/jev-ultralightspeed.png" width="300" alt="jev-ultralightspeed: 533 items a second packed, against 16.7 one at a time"><br><sub>jev-ultralightspeed</sub></a></td>
-    <td align="center"><a href="https://github.com/fstandhartinger/jevbench"><img src="media/jevbench.png" width="300" alt="JevBench plotting quality against cost for Jev-class decision models"><br><sub>JevBench</sub></a></td>
+    <td align="center"><a href="https://github.com/TheoLeeCJ/SemIf"><img src="media/semif.png" width="300" alt="SemIf running a System One replica in the browser, no waitlist"><br><sub>SemIf</sub></a></td>
+    <td align="center"><a href="https://github.com/jaredpalmer/kev"><img src="media/kev.png" width="300" alt="kev playground: six typed questions answered in one forward pass on a laptop"><br><sub>kev</sub></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/amithgc/local-jev"><img src="media/local-jev.png" width="300" alt="local-jev answering typed questions offline"><br><sub>local-jev</sub></a></td>
+    <td align="center"><a href="https://github.com/TianyuCodings/NanoJev"><img src="media/nanojev.png" width="300" alt="NanoJev solving a maze beside Jev and an untuned Qwen"><br><sub>NanoJev</sub></a></td>
+    <td align="center"><a href="https://github.com/devagrawal09/jev-review"><img src="media/jev-review.png" width="300" alt="jev-review dashboard scoring a pull request file by file"><br><sub>jev-review</sub></a></td>
     <td align="center"><a href="https://github.com/kerpopule/hermes-jev-skills"><img src="media/hermes-jev-skills.png" width="300" alt="hermes-jev-skills logging every routing decision with its confidence and latency"><br><sub>hermes-jev-skills</sub></a></td>
-    <td align="center"><a href="https://github.com/savka777/jev-use"><img src="media/jev-use.png" width="300" alt="jev-use driving macOS from the Accessibility tree"><br><sub>jev-use by savka777</sub></a></td>
   </tr>
 </table>
 
@@ -238,8 +238,6 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [jev-browser-use by imanshu03](https://github.com/imanshu03/jev-browser-use) - Runs browser tasks from a plain-language instruction over CDP or Vercel's agent-browser, with Jev selecting operations and targets and code checking confidence before it acts.
 
 ## Open models and replicas
-
-<a href="https://github.com/TheoLeeCJ/SemIf"><img src="media/semif.png" width="400" alt="SemIf: no waitlist, runs in your browser"></a>
 
 None of these ship TypeSafe's weights. They reproduce the interface, the parallel scoring trick, or both, on open models.
 
