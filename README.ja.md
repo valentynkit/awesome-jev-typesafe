@@ -304,6 +304,7 @@
 - [clashroyale-jev](https://github.com/vishxrad/clashroyale-jev) - Qwen による戦場の認識とローカルの OpenCV による手札とエリクサーの認識をもとに、Jev がカードと配置を選んで Clash Royale をプレイします。
 - [Astra and JEV Minecraft agent](https://github.com/rmalde/minecraft-agent) - バニラのサーバーでドラゴンを倒します。計画はフロンティアモデルが立て、プレイヤーの動作はすべて Jev が選びます。記録された実行では Jev の判断が 131 回、プランナーの呼び出しが 35 回でした。
 - [EmbodiedJev](https://github.com/FBddcz/embodied-jev) - MuJoCo で身体性のある実験を行うブラウザ上のワークベンチです。ロボットの各ステップが目に見える Jev の判断になり、背後にはローカルモデルかクラウド API を使えます。
+- [jev-connect4](https://github.com/hazlema/jev-connect4) - Connect Four with nine swappable query strategies for the same model, every answer graded against engine ground truth in a live inspector, and a match runner that plays 100 games a minute: representation changes alone moved the win rate 52 points.
 
 ## 金融とトレーディング
 
