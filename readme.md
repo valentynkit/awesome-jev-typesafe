@@ -27,13 +27,13 @@ Seventeen seconds of the site; the [full-size MP4](media/awesome-jev-promo.mp4) 
 <table>
   <tr>
     <td align="center"><a href="https://github.com/browser-use/jev-ultrafast"><img src="media/jev-ultrafast.png" width="300" alt="jev-ultrafast booking a flight in 7.1 seconds"><br><sub>jev-ultrafast</sub></a></td>
-    <td align="center"><a href="https://github.com/ChetasLua/jevmeter"><img src="media/jevmeter.png" width="300" alt="jevmeter scoring every sentence of a debate"><br><sub>jevmeter</sub></a></td>
-    <td align="center"><a href="https://github.com/RomanSlack/jev-drone"><img src="media/jev-drone.png" width="300" alt="jev-drone chasing through a course"><br><sub>jev-drone</sub></a></td>
+    <td align="center"><a href="https://github.com/collapseindex/jev-ultralightspeed"><img src="media/jev-ultralightspeed.png" width="300" alt="jev-ultralightspeed: 533 items a second packed, against 16.7 one at a time"><br><sub>jev-ultralightspeed</sub></a></td>
+    <td align="center"><a href="https://github.com/fstandhartinger/jevbench"><img src="media/jevbench.png" width="300" alt="JevBench plotting quality against cost for Jev-class decision models"><br><sub>JevBench</sub></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/devagrawal09/jev-review"><img src="media/jev-review.png" width="300" alt="jev-review dashboard"><br><sub>jev-review</sub></a></td>
-    <td align="center"><a href="https://github.com/jaredpalmer/kev"><img src="media/kev.png" width="300" alt="kev playground: six typed questions answered in one forward pass on a laptop"><br><sub>kev</sub></a></td>
-    <td align="center"><a href="https://github.com/AbdelStark/heist-one"><img src="media/heist-one.png" width="300" alt="heist-one stealth game"><br><sub>heist-one</sub></a></td>
+    <td align="center"><a href="https://github.com/amithgc/local-jev"><img src="media/local-jev.png" width="300" alt="local-jev answering typed questions offline"><br><sub>local-jev</sub></a></td>
+    <td align="center"><a href="https://github.com/kerpopule/hermes-jev-skills"><img src="media/hermes-jev-skills.png" width="300" alt="hermes-jev-skills logging every routing decision with its confidence and latency"><br><sub>hermes-jev-skills</sub></a></td>
+    <td align="center"><a href="https://github.com/savka777/jev-use"><img src="media/jev-use.png" width="300" alt="jev-use driving macOS from the Accessibility tree"><br><sub>jev-use by savka777</sub></a></td>
   </tr>
 </table>
 

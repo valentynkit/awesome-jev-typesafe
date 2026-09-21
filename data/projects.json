@@ -119,24 +119,24 @@
       "image": "media/jev-ultrafast.png"
     },
     {
-      "url": "https://github.com/ChetasLua/jevmeter",
-      "image": "media/jevmeter.png"
+      "url": "https://github.com/collapseindex/jev-ultralightspeed",
+      "image": "media/jev-ultralightspeed.png"
     },
     {
-      "url": "https://github.com/RomanSlack/jev-drone",
-      "image": "media/jev-drone.png"
+      "url": "https://github.com/fstandhartinger/jevbench",
+      "image": "media/jevbench.png"
     },
     {
-      "url": "https://github.com/devagrawal09/jev-review",
-      "image": "media/jev-review.png"
+      "url": "https://github.com/amithgc/local-jev",
+      "image": "media/local-jev.png"
     },
     {
-      "url": "https://github.com/jaredpalmer/kev",
-      "image": "media/kev.png"
+      "url": "https://github.com/kerpopule/hermes-jev-skills",
+      "image": "media/hermes-jev-skills.png"
     },
     {
-      "url": "https://github.com/AbdelStark/heist-one",
-      "image": "media/heist-one.png"
+      "url": "https://github.com/savka777/jev-use",
+      "image": "media/jev-use.png"
     }
   ],
   "entries": [
@@ -1528,7 +1528,7 @@
       "subsection": "Skills for writing Jev code",
       "order": 81,
       "type": "project",
-      "image": null,
+      "image": "media/hermes-jev-skills.png",
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
@@ -1800,7 +1800,7 @@
       "subsection": null,
       "order": 97,
       "type": "project",
-      "image": null,
+      "image": "media/jev-use.png",
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
@@ -2225,7 +2225,7 @@
       "subsection": null,
       "order": 122,
       "type": "project",
-      "image": "media/kev.png",
+      "image": null,
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
@@ -2378,7 +2378,7 @@
       "subsection": null,
       "order": 131,
       "type": "project",
-      "image": null,
+      "image": "media/local-jev.png",
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
@@ -2446,7 +2446,7 @@
       "subsection": null,
       "order": 135,
       "type": "project",
-      "image": "media/jev-review.png",
+      "image": null,
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
@@ -3398,7 +3398,7 @@
       "subsection": null,
       "order": 191,
       "type": "project",
-      "image": null,
+      "image": "media/jev-ultralightspeed.png",
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
@@ -3721,7 +3721,7 @@
       "subsection": null,
       "order": 210,
       "type": "project",
-      "image": "media/jevmeter.png",
+      "image": null,
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
@@ -4112,7 +4112,7 @@
       "subsection": null,
       "order": 233,
       "type": "project",
-      "image": "media/jev-drone.png",
+      "image": null,
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
@@ -4860,7 +4860,7 @@
       "subsection": null,
       "order": 277,
       "type": "project",
-      "image": null,
+      "image": "media/jevbench.png",
       "maintainer": false,
       "languageHint": null,
       "trustPhrase": null,
