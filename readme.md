@@ -284,7 +284,8 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-pref](https://github.com/doeixd/jev-pref) - Turns the preferences in your AGENTS.md into a linter that runs on code changes and reports back to the agent.
 - [jev-commit](https://github.com/valentynkit/jev-commit) - Pre-commit hook: one Jev call judges whether the commit message matches the staged diff, plus debug leftovers, unmentioned work, and a credential belt; warns except on a secret, which it blocks.
 - [slop-grader](https://github.com/lukstei/slop-grader) - Grades text and markdown files for AI slop, grammar, and technical documentation quality, and guides an AI agent to auto-fix violations.
-- [JevPR](https://github.com/HexyeDEV/JevPR) - Analyze your Pull Requests: Jev judges wether the pull request is safe to approve or requires more in depth review.
+- [JevPR](https://github.com/HexyeDEV/JevPR) - GitHub App that asks Jev whether a pull request is safe to approve or needs a specialist, then maps the verdict to a check run.
+- [jevopt](https://github.com/Ramneet-Singh/jevopt) - C/C++ compiler driver that asks Jev whether to inline each discretionary call site, from the LLVM IR and the original source.
 
 ## Routing and gateways
 
