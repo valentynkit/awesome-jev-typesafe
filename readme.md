@@ -298,6 +298,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [JevPR](https://github.com/HexyeDEV/JevPR) - GitHub App that asks Jev whether a pull request is safe to approve or needs a specialist, then maps the verdict to a check run.
 - [jevopt](https://github.com/Ramneet-Singh/jevopt) - C/C++ compiler driver that asks Jev whether to inline each discretionary call site, from the LLVM IR and the original source.
 - [jev-spec](https://github.com/nozomi-koborinai/jev-spec) - Checks the code against the requirements in a Markdown spec on every commit and fails the build when the two drift apart.
+- [pytest-jev](https://github.com/allebee/pytest-jev) - Pytest plugin that asks Jev whether plain-English claims about a test's text hold, all in one request, and fails the test with each claim's probability unless Jev is at least 80 percent sure.
 
 ## Routing and gateways
 
