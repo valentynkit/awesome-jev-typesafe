@@ -469,6 +469,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-cli by jtsang4](https://github.com/jtsang4/jev-cli) - Typed questions in, structured JSON answers out.
 - [jev-cli by tumf](https://github.com/tumf/jev-cli) - Dependency-free Python CLI wrapping Choice, Score, and Noul.
 - [jevctl](https://github.com/Nasrallah-AL/jev-cli) - npm CLI with the key in the OS keychain; typed judgments from the shell.
+- [watfile](https://github.com/jexp/watfile) - PDF, Text file sorting/classification using Jev or Laya
 
 ## Community clients
 
