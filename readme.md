@@ -330,6 +330,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jevql](https://github.com/kylemclaren/jevql) - Semantic SQL for PostgreSQL, with Jev answering the predicates.
 - [duckdb-jev](https://github.com/colliber/duckdb-jev) - DuckDB extension that asks a question of every row and returns a real SQL type.
 - [invalidate](https://github.com/chopratejas/invalidate) - Gives every stored agent memory a lease and asks Jev whether new evidence ends it; [live demo](https://invalidate-playground.vercel.app).
+- [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - Packs 32 items into one request for bulk classification and calibrates the confidence cut that sends the least-sure rows to a person, reporting 533 items a second at 89.2 percent agreement with human labels.
 
 ## Safety, moderation and verification
 
