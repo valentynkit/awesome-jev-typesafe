@@ -422,6 +422,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [clashroyale-jev](https://github.com/vishxrad/clashroyale-jev) - Plays Clash Royale with Jev choosing cards and placements from Qwen battlefield vision and local OpenCV hand and elixir recognition.
 - [Astra and JEV Minecraft agent](https://github.com/rmalde/minecraft-agent) - Kills the dragon on a vanilla server with a frontier model planning and Jev selecting every player action; the logged run took 131 Jev decisions and 35 planner calls.
 - [EmbodiedJev](https://github.com/FBddcz/embodied-jev) - Browser workbench for embodied experiments in MuJoCo where every robot step is a visible Jev decision, backed by a local model or a cloud API.
+- [jev-connect4](https://github.com/hazlema/jev-connect4) - Connect Four with nine swappable query strategies for the same model, every answer graded against engine ground truth in a live inspector, and a match runner that plays 100 games a minute: representation changes alone moved the win rate 52 points.
 
 ## Finance and trading
 
