@@ -304,6 +304,7 @@
 - [clashroyale-jev](https://github.com/vishxrad/clashroyale-jev) - 用 Jev 玩《皇室战争》：Qwen 识别战场，本地 OpenCV 识别手牌和圣水，Jev 选择出牌和落点。
 - [Astra and JEV Minecraft agent](https://github.com/rmalde/minecraft-agent) - 在原版服务器上击杀末影龙：前沿模型负责规划，Jev 选择每一个玩家动作；记录在案的那次运行用了 131 次 Jev 决策和 35 次规划调用。
 - [EmbodiedJev](https://github.com/FBddcz/embodied-jev) - 在浏览器里做 MuJoCo 具身实验的工作台，机器人的每一步都是看得见的 Jev 决策，背后可接本地模型或云端 API。
+- [jev-connect4](https://github.com/hazlema/jev-connect4) - Connect Four with nine swappable query strategies for the same model, every answer graded against engine ground truth in a live inspector, and a match runner that plays 100 games a minute: representation changes alone moved the win rate 52 points.
 
 ## 金融与交易
 
