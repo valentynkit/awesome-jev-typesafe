@@ -430,6 +430,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-benchmark by themsquared](https://github.com/themsquared/jev-benchmark) - Tool-call risk classification with the run-to-run variance reported; every wrong answer came with hedged confidence.
 - [jev-research-eval](https://github.com/jgridifier/jev-research-eval) - Reproducible harness over a pinned jev-ultrafast commit, with baseline and stress suites.
 - [jev-playground by hegargarcia](https://github.com/hegargarcia/jev-playground) - Jev against other models in games with explicit states, legal actions, and a measurable outcome.
+- [JevArena](https://github.com/chenmingtang830/jevarena) - Hosted arena that sends one question and its candidate answers to Jev and to an opponent model you connect through OpenRouter, takes your vote before revealing which judge was which, then shows latency, whether the cost is provider-reported, estimated, or unknown, and the provider's own confidence where it returns one; a vote records preference, not verified correctness, and the same repo carries a diagnostic pairwise harness over pinned JudgeBench, RM-Bench, and RewardBench 2 data whose scores are not the upstream leaderboards.
 
 ## Playgrounds and demos
 
