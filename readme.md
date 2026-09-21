@@ -310,6 +310,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [JevRouter](https://github.com/BillionsBobby/JevRouter) - Models, subagents, skills, MCP tools, and CLIs as one candidate set; Jev picks, the router enforces permissions and risk; reports 44 percent first-five tool-call hits against 24 for DeepSeek on Toolathlon.
 - [jev-gateway](https://github.com/vinilana/jev-gateway) - Local gateway for Codex and Claude Code that sends the "which tool next" decision to Jev and everything else to your usual model.
 - [jev-router by daviddl9](https://github.com/daviddl9/jev-router) - Jev picks the worker tier for each step in OMP and Pi, keeping planning and review on a strong model and bounded work on cheaper ones.
+- [Jevonian](https://github.com/xinyao27/jevonian) - Local OpenAI, Anthropic, and Responses-compatible proxy that serves one Jev call per turn to answer both the model route and the thinking level for its virtual model jevonian/auto, with code filtering candidates by protocol, context window, effort floor, and spent quota windows first, and pinned models or explicit routes skipping Jev entirely.
 
 ## Search, reranking and RAG
 
