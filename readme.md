@@ -7,7 +7,7 @@
 
 [![Lint](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/lint.yml/badge.svg)](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/lint.yml)
 [![Links](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/links.yml/badge.svg)](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/links.yml)
-![Entries](https://img.shields.io/badge/entries-336-4CC9F0?style=flat-square&labelColor=0B0E11)
+![Entries](https://img.shields.io/badge/entries-344-4CC9F0?style=flat-square&labelColor=0B0E11)
 [![Last commit](https://img.shields.io/github/last-commit/valentynkit/awesome-jev-typesafe?style=flat-square&labelColor=0B0E11&color=E8EDF2)](https://github.com/valentynkit/awesome-jev-typesafe/commits/main)
 [![License](https://img.shields.io/github/license/valentynkit/awesome-jev-typesafe?style=flat-square&labelColor=0B0E11&color=E8EDF2)](license)
 
@@ -433,7 +433,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-benchmark by themsquared](https://github.com/themsquared/jev-benchmark) - Tool-call risk classification with the run-to-run variance reported; every wrong answer came with hedged confidence.
 - [jev-research-eval](https://github.com/jgridifier/jev-research-eval) - Reproducible harness over a pinned jev-ultrafast commit, with baseline and stress suites.
 - [jev-playground by hegargarcia](https://github.com/hegargarcia/jev-playground) - Jev against other models in games with explicit states, legal actions, and a measurable outcome.
-- [JevArena](https://github.com/chenmingtang830/jevarena) - Hosted arena that sends one question and its candidate answers to Jev and to an opponent model you connect through OpenRouter, takes your vote before revealing which judge was which, then shows latency, whether the cost is provider-reported, estimated, or unknown, and the provider's own confidence where it returns one; a vote records preference, not verified correctness, and the same repo carries a diagnostic pairwise harness over pinned JudgeBench, RM-Bench, and RewardBench 2 data whose scores are not the upstream leaderboards.
+- [JevArena](https://github.com/chenmingtang830/jevarena) - Hosted arena that puts Jev against an opponent judge you connect and takes your vote before revealing which was which, with latency, cost provenance, and self-reported confidence; a vote records preference, not verified correctness.
 
 ## Playgrounds and demos
 

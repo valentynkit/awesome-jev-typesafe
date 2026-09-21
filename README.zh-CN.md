@@ -122,7 +122,7 @@
 - [jev-browser-use](https://github.com/wy-coliney/jev-browser-use) - Codex 技能与插件，Jev 负责导航、点击和滚动，Codex 保留输入和验证；据称浏览器步骤快 5 到 10 倍。
 - [Jev-cu](https://github.com/Sac-Y/Jev-cu) - Codex 的计算机操作，Jev 从屏幕文本中选出元素、动作、完成状态和风险，不发送截图；中文说明。
 - [JevScout](https://github.com/hqman/JevScout) - 求职技能，通过 CDP 驱动 Chrome，并让 Jev 为每个链接和职位打分。
-- [Jev Social](https://github.com/socai-io/jev-social) - Lets Jev choose each read-only social research step while socai runs it in a real Chrome session and streams inspectable Instagram, TikTok, or LinkedIn evidence into a report.
+- [Jev Social](https://github.com/socai-io/jev-social) - 由 Jev 选择每一步只读的社交调研动作，socai 在真实 Chrome 会话中执行，并把可核查的 Instagram、TikTok 或 LinkedIn 证据汇入报告。
 
 ## 开源模型与复刻
 
@@ -172,7 +172,9 @@
 - [jeff by Alurith](https://github.com/Alurith/jeff) - 只读的 Go CLI，按编码规则检查文件，例如隐藏的副作用和薄弱的错误处理。
 - [jev-pref](https://github.com/doeixd/jev-pref) - 把你 AGENTS.md 里的偏好变成一个 linter，在代码变更时运行并把结果回报给智能体。
 - [jev-commit](https://github.com/valentynkit/jev-commit) - 提交前钩子：一次 Jev 调用判断提交信息是否与暂存的 diff 相符，另查调试残留、未提及的改动和凭据带；一律只告警，唯有发现密钥时才阻断。
-- [slop-grader](https://github.com/lukstei/slop-grader) - Grades text and markdown files for AI slop, grammar, and technical documentation quality, and guides an AI agent to auto-fix violations.
+- [slop-grader](https://github.com/lukstei/slop-grader) - 为文本和 Markdown 文件在 AI 废话、语法和技术文档质量上打分，并引导 AI 智能体自动修复问题。
+- [JevPR](https://github.com/HexyeDEV/JevPR) - GitHub App：让 Jev 判断某个拉取请求可以安全批准还是需要专人审查，再把结论映射为一次 check run。
+- [jevopt](https://github.com/Ramneet-Singh/jevopt) - C/C++ 编译器驱动：依据 LLVM IR 和原始源码，让 Jev 决定每个可选调用点是否内联。
 
 ## 路由与网关
 
@@ -215,6 +217,8 @@
 - [jevql](https://github.com/kylemclaren/jevql) - 面向 PostgreSQL 的语义 SQL，由 Jev 回答其中的谓词。
 - [duckdb-jev](https://github.com/colliber/duckdb-jev) - DuckDB 扩展，向每一行提一个问题并返回真正的 SQL 类型。
 - [invalidate](https://github.com/chopratejas/invalidate) - 给每条存下的智能体记忆一个租约，并询问 Jev 新证据是否让它失效；[在线演示](https://invalidate-playground.vercel.app)。
+- [jevgraph](https://github.com/chenmingtang830/jevgraph) - 在本地解析 PDF、DOCX、PPTX 或文本，对每个候选实体对向 Jev 提出一个闭集关系问题，并把带逐边概率和页面证据的图导出为 JSON、CSV 或 Neo4j。
+- [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - 把 32 条内容打包进一次请求做批量分类，并校准把最不确定的行交给人工的置信度阈值，报告每秒 533 条、与人工标注一致率 89.2 个百分点。
 
 ## 安全、内容审核与校验
 
@@ -271,6 +275,7 @@
 - [JevPilot](https://github.com/standardagents/jevpilot) - Three.js 驾驶模拟器，Jev 每秒最多四次从采样路径中选出转向和速度；[上手开](https://jevpilot.standardagents.ai)。
 - [live-jev](https://github.com/vinilana/live-jev) - 浏览器里的俯视视角汽车，每 200 ms 发出四个带类型的问题，覆盖逻辑由代码按置信度门禁执行。
 - [jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red) - 在 PyBoy 上玩《宝可梦红》：路线和算术由代码掌控，Jev 只在分支处做选择，每个战斗回合都记录一条倒下预测，并用 Brier 分数对照 RAM 的实际值。
+- [clashroyale-jev](https://github.com/vishxrad/clashroyale-jev) - 用 Jev 玩《皇室战争》：Qwen 识别战场，本地 OpenCV 识别手牌和圣水，Jev 选择出牌和落点。
 
 ## 金融与交易
 
@@ -303,6 +308,7 @@
 - [jev-benchmark by themsquared](https://github.com/themsquared/jev-benchmark) - 工具调用风险分类，附多次运行的方差；每一个错误答案都伴随着含糊的置信度。
 - [jev-research-eval](https://github.com/jgridifier/jev-research-eval) - 基于钉住的 jev-ultrafast 提交的可复现载体，含基线套件和压力套件。
 - [jev-playground by hegargarcia](https://github.com/hegargarcia/jev-playground) - 在状态明确、合法动作明确、结果可衡量的游戏中把 Jev 与其他模型作对比。
+- [JevArena](https://github.com/chenmingtang830/jevarena) - 在线竞技场：让 Jev 与你接入的对手裁判对战，先投票再揭晓谁是谁，并给出延迟、成本来源和模型自报的置信度；投票记录的是偏好，不是经过验证的正确性。
 
 ## 演练场与演示
 
@@ -338,6 +344,8 @@
 - [jev-cli by jtsang4](https://github.com/jtsang4/jev-cli) - 输入带类型的问题，输出结构化的 JSON 答案。
 - [jev-cli by tumf](https://github.com/tumf/jev-cli) - 零依赖的 Python CLI，封装 Choice、Score 和 Noul。
 - [jevctl](https://github.com/Nasrallah-AL/jev-cli) - npm CLI，密钥存在操作系统钥匙串里；从 shell 获取带类型的判断。
+- [watfile](https://github.com/jexp/watfile) - 把 PDF 和文本文件分类归入对应文件夹，每份文档一个 Jev Choice，也可改用本地的 Laya 后端。
+- [jeq](https://github.com/cristianoliveira/jeq) - 在 JSON 和 NDJSON 上以管道方式组合 Jev 判断，提供 map、reduce、rank 和 rate，再通过显式的离线闸门应用策略。
 
 ## 社区客户端
 
@@ -370,7 +378,7 @@
 - [typesafe-sdk-go by Tangerg](https://github.com/Tangerg/typesafe-sdk-go) - 无第三方依赖的 Go SDK。
 - [swift-typesafe](https://github.com/ainame/swift-typesafe) - Swift 6.4 SDK，沿用 Python SDK 的 API，支持 Apple 平台和 Linux。
 - [typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) - PHP 客户端，支持同步调用、Guzzle promise 和 PSR-3 日志。
-- [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL and client.
+- [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL 和客户端。
 
 ## 文章与演讲
 

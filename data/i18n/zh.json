@@ -331,5 +331,16 @@
  "pi-mcp-adapter": "对 MCP 工具结果做可选的带类型评估和语义搜索，受按服务器配置的数据外发白名单约束。",
  "hermes-jev-plugin": "四个 Hermes 工具，用于原子检查、路由和量表打分；已收录于 Hermes 插件目录。",
  "hermes-jev-approvals": "在被标记的 shell 命令运行前予以批准、拒绝或升级；提速数据为厂商自报。",
- "openpoke-meets-jev": "OpenPoke 分支，把邮件筛选、工具调用护栏和搜索重排序移到 Jev 上，附带与被替换的 Sonnet 调用的 A/B 对比，以及对注入门控的对抗测试。"
+ "openpoke-meets-jev": "OpenPoke 分支，把邮件筛选、工具调用护栏和搜索重排序移到 Jev 上，附带与被替换的 Sonnet 调用的 A/B 对比，以及对注入门控的对抗测试。",
+ "jev-social": "由 Jev 选择每一步只读的社交调研动作，socai 在真实 Chrome 会话中执行，并把可核查的 Instagram、TikTok 或 LinkedIn 证据汇入报告。",
+ "slop-grader": "为文本和 Markdown 文件在 AI 废话、语法和技术文档质量上打分，并引导 AI 智能体自动修复问题。",
+ "jevpr": "GitHub App：让 Jev 判断某个拉取请求可以安全批准还是需要专人审查，再把结论映射为一次 check run。",
+ "jevopt": "C/C++ 编译器驱动：依据 LLVM IR 和原始源码，让 Jev 决定每个可选调用点是否内联。",
+ "jevgraph": "在本地解析 PDF、DOCX、PPTX 或文本，对每个候选实体对向 Jev 提出一个闭集关系问题，并把带逐边概率和页面证据的图导出为 JSON、CSV 或 Neo4j。",
+ "jev-ultralightspeed": "把 32 条内容打包进一次请求做批量分类，并校准把最不确定的行交给人工的置信度阈值，报告每秒 533 条、与人工标注一致率 89.2 个百分点。",
+ "clashroyale-jev": "用 Jev 玩《皇室战争》：Qwen 识别战场，本地 OpenCV 识别手牌和圣水，Jev 选择出牌和落点。",
+ "jevarena": "在线竞技场：让 Jev 与你接入的对手裁判对战，先投票再揭晓谁是谁，并给出延迟、成本来源和模型自报的置信度；投票记录的是偏好，不是经过验证的正确性。",
+ "watfile": "把 PDF 和文本文件分类归入对应文件夹，每份文档一个 Jev Choice，也可改用本地的 Laya 后端。",
+ "jeq": "在 JSON 和 NDJSON 上以管道方式组合 Jev 判断，提供 map、reduce、rank 和 rate，再通过显式的离线闸门应用策略。",
+ "jev4k": "Kotlin DSL 和客户端。"
 }

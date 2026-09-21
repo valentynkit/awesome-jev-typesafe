@@ -331,5 +331,16 @@
  "pi-mcp-adapter": "MCP 도구 결과에 대한 선택적 타입 평가와 시맨틱 검색을 서버별 데이터 반출 허용 목록 뒤에서 제공합니다.",
  "hermes-jev-plugin": "원자적 검사, 라우팅, 루브릭 점수화를 위한 Hermes 도구 네 개이며, Hermes 플러그인 카탈로그에 등재되어 있습니다.",
  "hermes-jev-approvals": "플래그가 붙은 셸 명령을 실행 전에 승인, 거부 또는 상신하며, 속도 향상 수치는 벤더 보고입니다.",
- "openpoke-meets-jev": "OpenPoke 포크로, 이메일 선별, 도구 호출 가드레일, 검색 재순위를 Jev로 옮기며, 대체한 Sonnet 호출과의 A/B 비교와 인젝션 게이트에 대한 공격 실험을 포함합니다."
+ "openpoke-meets-jev": "OpenPoke 포크로, 이메일 선별, 도구 호출 가드레일, 검색 재순위를 Jev로 옮기며, 대체한 Sonnet 호출과의 A/B 비교와 인젝션 게이트에 대한 공격 실험을 포함합니다.",
+ "jev-social": "읽기 전용 소셜 리서치의 각 단계를 Jev가 고르고, socai가 실제 Chrome 세션에서 실행해 확인 가능한 Instagram, TikTok, LinkedIn 근거를 보고서로 모읍니다.",
+ "slop-grader": "텍스트와 Markdown 파일을 AI 슬롭, 문법, 기술 문서 품질 기준으로 채점하고 AI 에이전트가 위반을 자동으로 고치도록 안내합니다.",
+ "jevpr": "풀 리퀘스트를 안전하게 승인할 수 있는지 전문가 검토가 필요한지 Jev에게 묻고 그 판정을 check run으로 옮기는 GitHub App입니다.",
+ "jevopt": "LLVM IR과 원본 소스를 바탕으로 재량적 호출 지점마다 인라인 여부를 Jev에게 묻는 C/C++ 컴파일러 드라이버입니다.",
+ "jevgraph": "PDF, DOCX, PPTX, 텍스트를 로컬에서 파싱하고 후보 엔티티 쌍마다 닫힌 집합의 관계 질문을 Jev에게 던진 뒤, 간선별 확률과 페이지 근거가 담긴 그래프를 JSON, CSV, Neo4j로 내보냅니다.",
+ "jev-ultralightspeed": "32개 항목을 한 요청에 묶어 대량 분류하고, 가장 불확실한 행을 사람에게 넘기는 신뢰도 기준을 보정합니다. 초당 533개, 사람 라벨과 89.2퍼센트 일치로 보고합니다.",
+ "clashroyale-jev": "Qwen이 전장을 읽고 로컬 OpenCV가 손패와 엘릭서를 인식하면 Jev가 카드와 배치를 골라 Clash Royale을 플레이합니다.",
+ "jevarena": "직접 연결한 상대 심판과 Jev를 맞붙이는 호스팅 아레나입니다. 어느 쪽인지 밝히기 전에 투표를 받고 지연 시간, 비용 출처, 모델이 스스로 보고한 확신도를 보여줍니다. 투표가 기록하는 것은 선호이지 검증된 정답이 아닙니다.",
+ "watfile": "PDF와 텍스트 파일을 범주별 폴더로 정리합니다. 문서 한 건당 Jev Choice 한 번을 쓰며, 대안으로 로컬 Laya 백엔드를 쓸 수 있습니다.",
+ "jeq": "JSON과 NDJSON에 대한 Jev 판정을 map, reduce, rank, rate로 파이프하고 조합한 뒤, 명시적인 오프라인 게이트로 정책을 적용합니다.",
+ "jev4k": "Kotlin DSL과 클라이언트입니다."
 }

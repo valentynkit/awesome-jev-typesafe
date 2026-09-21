@@ -122,7 +122,7 @@
 - [jev-browser-use](https://github.com/wy-coliney/jev-browser-use) - Jev がナビゲーション、クリック、スクロールを担い、Codex が入力と検証を担当する Codex のスキルとプラグインで、ブラウザ操作が 5 倍から 10 倍速くなると報告しています。
 - [Jev-cu](https://github.com/Sac-Y/Jev-cu) - 画面上のテキストから Jev が要素、アクション、完了、リスクを選び、スクリーンショットは送らない Codex のコンピュータ操作で、中国語の readme です。
 - [JevScout](https://github.com/hqman/JevScout) - CDP 経由で Chrome を操作し、すべてのリンクと求人を Jev に採点させる求職スキルです。
-- [Jev Social](https://github.com/socai-io/jev-social) - Lets Jev choose each read-only social research step while socai runs it in a real Chrome session and streams inspectable Instagram, TikTok, or LinkedIn evidence into a report.
+- [Jev Social](https://github.com/socai-io/jev-social) - 読み取り専用のソーシャル調査の各ステップを Jev が選び、socai が実際の Chrome セッションで実行して、検証可能な Instagram、TikTok、LinkedIn の証拠をレポートに流し込みます。
 
 ## オープンモデルと再現実装
 
@@ -172,7 +172,9 @@
 - [jeff by Alurith](https://github.com/Alurith/jeff) - 隠れた副作用や弱いエラー処理といったコード化されたルールにファイルを照らして検査する、読み取り専用の Go CLI です。
 - [jev-pref](https://github.com/doeixd/jev-pref) - AGENTS.md に書いた好みを、コード変更時に実行されてエージェントに結果を返すリンターに変えます。
 - [jev-commit](https://github.com/valentynkit/jev-commit) - pre-commit フックで、1 回の Jev 呼び出しがコミットメッセージとステージ済み差分の一致に加え、デバッグの残骸、言及されていない作業、資格情報の混入を判定し、シークレット以外は警告にとどめ、シークレットはブロックします。
-- [slop-grader](https://github.com/lukstei/slop-grader) - Grades text and markdown files for AI slop, grammar, and technical documentation quality, and guides an AI agent to auto-fix violations.
+- [slop-grader](https://github.com/lukstei/slop-grader) - テキストと Markdown のファイルを AI スロップ、文法、技術文書としての品質で採点し、AI エージェントに違反の自動修正を指示します。
+- [JevPR](https://github.com/HexyeDEV/JevPR) - プルリクエストを安全に承認できるか専門家のレビューが必要かを Jev に判断させ、その結果を check run に対応付ける GitHub App です。
+- [jevopt](https://github.com/Ramneet-Singh/jevopt) - LLVM IR と元のソースをもとに、任意判断のコールサイトごとにインライン化するかどうかを Jev に尋ねる C/C++ コンパイラドライバです。
 
 ## ルーティングとゲートウェイ
 
@@ -215,6 +217,8 @@
 - [jevql](https://github.com/kylemclaren/jevql) - PostgreSQL 向けの意味的な SQL で、述語には Jev が答えます。
 - [duckdb-jev](https://github.com/colliber/duckdb-jev) - すべての行に質問を投げ、実際の SQL 型を返す DuckDB 拡張です。
 - [invalidate](https://github.com/chopratejas/invalidate) - 保存されたエージェントの記憶それぞれにリースを与え、新しい証拠がそれを終わらせるかどうかを Jev に尋ねる仕組みで、[ライブデモ](https://invalidate-playground.vercel.app)があります。
+- [jevgraph](https://github.com/chenmingtang830/jevgraph) - PDF、DOCX、PPTX、テキストをローカルで解析し、候補となるエンティティの組ごとに閉じた選択肢の関係質問を Jev に投げ、辺ごとの確率とページ証拠を持つグラフを JSON、CSV、Neo4j に書き出します。
+- [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - 32 件を 1 リクエストにまとめて一括分類し、最も確信度の低い行を人に回す閾値を較正します。毎秒 533 件、人手ラベルとの一致率 89.2 パーセントと報告しています。
 
 ## 安全性・モデレーション・検証
 
@@ -271,6 +275,7 @@
 - [JevPilot](https://github.com/standardagents/jevpilot) - Three.js の運転シミュレータで、Jev がサンプリングされた経路からステアリングと速度を毎秒最大 4 回選び、[こちらで運転できます](https://jevpilot.standardagents.ai)。
 - [live-jev](https://github.com/vinilana/live-jev) - ブラウザ上の見下ろし視点の車が 200 ms ごとに 4 つの型付き質問を送り、confidence でゲートされた上書きはコード側で行います。
 - [jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red) - PyBoy 上のポケモン赤で、経路と計算はコードが担い、Jev は分岐でのみ選択し、戦闘の各ターンでひんしの予測を記録して RAM の内容に対する Brier スコアで採点します。
+- [clashroyale-jev](https://github.com/vishxrad/clashroyale-jev) - Qwen による戦場の認識とローカルの OpenCV による手札とエリクサーの認識をもとに、Jev がカードと配置を選んで Clash Royale をプレイします。
 
 ## 金融とトレーディング
 
@@ -303,6 +308,7 @@
 - [jev-benchmark by themsquared](https://github.com/themsquared/jev-benchmark) - ツール呼び出しのリスク分類を実行ごとの分散付きで報告し、誤答はいずれも confidence が低めに出ていました。
 - [jev-research-eval](https://github.com/jgridifier/jev-research-eval) - jev-ultrafast の特定コミットに固定した再現可能なハーネスで、ベースラインとストレスのスイートを備えます。
 - [jev-playground by hegargarcia](https://github.com/hegargarcia/jev-playground) - 状態、合法な行動、測定可能な結果が明示されたゲームで、Jev と他のモデルを比較します。
+- [JevArena](https://github.com/chenmingtang830/jevarena) - Jev と、自分で接続した対戦相手の判定モデルを戦わせるホスト型アリーナです。どちらがどちらかを明かす前に投票させ、レイテンシ、コストの出どころ、モデルの自己申告の確信度を示します。投票が記録するのは好みであり、検証された正しさではありません。
 
 ## プレイグラウンドとデモ
 
@@ -338,6 +344,8 @@
 - [jev-cli by jtsang4](https://github.com/jtsang4/jev-cli) - 型付きの質問を入力すると、構造化された JSON の回答が返ります。
 - [jev-cli by tumf](https://github.com/tumf/jev-cli) - Choice、Score、Noul をラップする、依存関係なしの Python CLI です。
 - [jevctl](https://github.com/Nasrallah-AL/jev-cli) - キーを OS のキーチェーンに保存する npm 製 CLI で、シェルから型付きの判定を得られます。
+- [watfile](https://github.com/jexp/watfile) - PDF とテキストファイルをカテゴリ別のフォルダに振り分けます。1 文書につき 1 回の Jev Choice で、代わりにローカルの Laya バックエンドも使えます。
+- [jeq](https://github.com/cristianoliveira/jeq) - JSON と NDJSON に対する Jev の判断を map、reduce、rank、rate でパイプしてつなぎ、明示的なオフラインのゲートでポリシーを適用します。
 
 ## コミュニティクライアント
 
@@ -370,7 +378,7 @@
 - [typesafe-sdk-go by Tangerg](https://github.com/Tangerg/typesafe-sdk-go) - サードパーティ依存のない Go SDK です。
 - [swift-typesafe](https://github.com/ainame/swift-typesafe) - Python SDK の API に倣った Swift 6.4 の SDK で、Apple のプラットフォームと Linux に対応します。
 - [typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) - 同期呼び出し、Guzzle の promise、PSR-3 ロギングに対応した PHP クライアントです。
-- [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL and client.
+- [jev4k](https://github.com/pambrose/jev4k) - Kotlin の DSL とクライアントです。
 
 ## 記事と講演
 

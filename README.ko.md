@@ -122,7 +122,7 @@
 - [jev-browser-use](https://github.com/wy-coliney/jev-browser-use) - Jev가 탐색과 클릭, 스크롤을 맡고 Codex가 입력과 검증을 맡는 Codex 스킬 겸 플러그인이며, 브라우저 단계가 5~10배 빨라졌다고 보고합니다.
 - [Jev-cu](https://github.com/Sac-Y/Jev-cu) - Jev가 화면 텍스트에서 요소, 동작, 완료 여부, 위험도를 고르고 스크린샷은 보내지 않는 Codex 컴퓨터 사용이며, 중국어 readme입니다.
 - [JevScout](https://github.com/hqman/JevScout) - CDP로 Chrome을 조작하고 모든 링크와 공고를 Jev가 점수화하게 하는 구직 스킬입니다.
-- [Jev Social](https://github.com/socai-io/jev-social) - Lets Jev choose each read-only social research step while socai runs it in a real Chrome session and streams inspectable Instagram, TikTok, or LinkedIn evidence into a report.
+- [Jev Social](https://github.com/socai-io/jev-social) - 읽기 전용 소셜 리서치의 각 단계를 Jev가 고르고, socai가 실제 Chrome 세션에서 실행해 확인 가능한 Instagram, TikTok, LinkedIn 근거를 보고서로 모읍니다.
 
 ## 오픈 모델과 재현 구현
 
@@ -172,7 +172,9 @@
 - [jeff by Alurith](https://github.com/Alurith/jeff) - 숨은 부수 효과나 허술한 오류 처리 같은 규칙에 따라 파일을 검사하는 읽기 전용 Go CLI입니다.
 - [jev-pref](https://github.com/doeixd/jev-pref) - AGENTS.md에 적힌 선호 사항을, 코드 변경 시 실행되어 결과를 에이전트에 돌려주는 린터로 바꿉니다.
 - [jev-commit](https://github.com/valentynkit/jev-commit) - 커밋 전 훅입니다: Jev 호출 한 번으로 커밋 메시지가 스테이징된 diff와 맞는지, 디버그 잔재와 언급되지 않은 작업이 있는지, 자격 증명이 섞였는지 판정하며, 비밀 정보만 차단하고 나머지는 경고합니다.
-- [slop-grader](https://github.com/lukstei/slop-grader) - Grades text and markdown files for AI slop, grammar, and technical documentation quality, and guides an AI agent to auto-fix violations.
+- [slop-grader](https://github.com/lukstei/slop-grader) - 텍스트와 Markdown 파일을 AI 슬롭, 문법, 기술 문서 품질 기준으로 채점하고 AI 에이전트가 위반을 자동으로 고치도록 안내합니다.
+- [JevPR](https://github.com/HexyeDEV/JevPR) - 풀 리퀘스트를 안전하게 승인할 수 있는지 전문가 검토가 필요한지 Jev에게 묻고 그 판정을 check run으로 옮기는 GitHub App입니다.
+- [jevopt](https://github.com/Ramneet-Singh/jevopt) - LLVM IR과 원본 소스를 바탕으로 재량적 호출 지점마다 인라인 여부를 Jev에게 묻는 C/C++ 컴파일러 드라이버입니다.
 
 ## 라우팅과 게이트웨이
 
@@ -215,6 +217,8 @@
 - [jevql](https://github.com/kylemclaren/jevql) - PostgreSQL용 의미 기반 SQL이며, 술어는 Jev가 답합니다.
 - [duckdb-jev](https://github.com/colliber/duckdb-jev) - 모든 행에 질문을 던지고 실제 SQL 타입을 돌려주는 DuckDB 확장입니다.
 - [invalidate](https://github.com/chopratejas/invalidate) - 저장된 모든 에이전트 메모리에 임대 기간을 부여하고 새 증거가 그 기간을 끝내는지 Jev에 묻습니다. [라이브 데모](https://invalidate-playground.vercel.app).
+- [jevgraph](https://github.com/chenmingtang830/jevgraph) - PDF, DOCX, PPTX, 텍스트를 로컬에서 파싱하고 후보 엔티티 쌍마다 닫힌 집합의 관계 질문을 Jev에게 던진 뒤, 간선별 확률과 페이지 근거가 담긴 그래프를 JSON, CSV, Neo4j로 내보냅니다.
+- [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - 32개 항목을 한 요청에 묶어 대량 분류하고, 가장 불확실한 행을 사람에게 넘기는 신뢰도 기준을 보정합니다. 초당 533개, 사람 라벨과 89.2퍼센트 일치로 보고합니다.
 
 ## 안전, 모더레이션, 검증
 
@@ -271,6 +275,7 @@
 - [JevPilot](https://github.com/standardagents/jevpilot) - 샘플링된 경로에서 Jev가 초당 최대 네 번까지 조향과 속도를 고르는 Three.js 운전 시뮬레이터입니다. [직접 운전해 보십시오](https://jevpilot.standardagents.ai).
 - [live-jev](https://github.com/vinilana/live-jev) - 브라우저에서 200 ms마다 타입 지정 질문 네 개를 보내는 탑다운 자동차이며, 신뢰도로 게이트된 재정의는 코드에 둡니다.
 - [jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red) - PyBoy로 돌리는 Pokemon Red입니다: 경로와 연산은 코드가 맡고 Jev는 분기에서만 고르며, 전투 턴마다 기절 예측을 기록해 RAM이 말하는 값과 Brier 점수로 비교합니다.
+- [clashroyale-jev](https://github.com/vishxrad/clashroyale-jev) - Qwen이 전장을 읽고 로컬 OpenCV가 손패와 엘릭서를 인식하면 Jev가 카드와 배치를 골라 Clash Royale을 플레이합니다.
 
 ## 금융과 트레이딩
 
@@ -303,6 +308,7 @@
 - [jev-benchmark by themsquared](https://github.com/themsquared/jev-benchmark) - 실행 간 분산을 함께 보고하는 도구 호출 위험 분류이며, 오답은 모두 유보적인 신뢰도를 동반했습니다.
 - [jev-research-eval](https://github.com/jgridifier/jev-research-eval) - 고정된 jev-ultrafast 커밋 위에서 동작하는 재현 가능한 하네스이며, 기준선 및 스트레스 스위트를 포함합니다.
 - [jev-playground by hegargarcia](https://github.com/hegargarcia/jev-playground) - 명시적 상태, 합법 행동, 측정 가능한 결과를 갖춘 게임에서 Jev를 다른 모델과 비교합니다.
+- [JevArena](https://github.com/chenmingtang830/jevarena) - 직접 연결한 상대 심판과 Jev를 맞붙이는 호스팅 아레나입니다. 어느 쪽인지 밝히기 전에 투표를 받고 지연 시간, 비용 출처, 모델이 스스로 보고한 확신도를 보여줍니다. 투표가 기록하는 것은 선호이지 검증된 정답이 아닙니다.
 
 ## 플레이그라운드와 데모
 
@@ -338,6 +344,8 @@
 - [jev-cli by jtsang4](https://github.com/jtsang4/jev-cli) - 타입 지정 질문이 들어가고 구조화된 JSON 답변이 나옵니다.
 - [jev-cli by tumf](https://github.com/tumf/jev-cli) - Choice, Score, Noul을 감싼 의존성 없는 Python CLI입니다.
 - [jevctl](https://github.com/Nasrallah-AL/jev-cli) - 키를 OS 키체인에 두는 npm CLI이며, 셸에서 타입 지정 판정을 받습니다.
+- [watfile](https://github.com/jexp/watfile) - PDF와 텍스트 파일을 범주별 폴더로 정리합니다. 문서 한 건당 Jev Choice 한 번을 쓰며, 대안으로 로컬 Laya 백엔드를 쓸 수 있습니다.
+- [jeq](https://github.com/cristianoliveira/jeq) - JSON과 NDJSON에 대한 Jev 판정을 map, reduce, rank, rate로 파이프하고 조합한 뒤, 명시적인 오프라인 게이트로 정책을 적용합니다.
 
 ## 커뮤니티 클라이언트
 
@@ -370,7 +378,7 @@
 - [typesafe-sdk-go by Tangerg](https://github.com/Tangerg/typesafe-sdk-go) - 서드파티 의존성이 없는 Go SDK입니다.
 - [swift-typesafe](https://github.com/ainame/swift-typesafe) - Python SDK의 API를 따르는 Swift 6.4 SDK이며, Apple 플랫폼과 Linux에서 동작합니다.
 - [typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) - 동기 호출, Guzzle 프로미스, PSR-3 로깅을 갖춘 PHP 클라이언트입니다.
-- [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL and client.
+- [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL과 클라이언트입니다.
 
 ## 글과 발표
 
