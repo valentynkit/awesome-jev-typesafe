@@ -392,6 +392,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [JevPilot](https://github.com/standardagents/jevpilot) - Three.js driving simulator where Jev picks steering and speed from sampled paths up to four times a second; [drive it](https://jevpilot.standardagents.ai).
 - [live-jev](https://github.com/vinilana/live-jev) - Top-down car in the browser sending four typed questions every 200 ms, with confidence-gated overrides in code.
 - [jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red) - Pokemon Red on PyBoy: code owns the route and the arithmetic, Jev picks only at branches, and every battle turn logs a faint prediction scored by Brier against what the RAM says.
+- [clashroyale-jev](https://github.com/vishxrad/clashroyale-jev) - Plays Clash Royale with Jev choosing cards and placements from Qwen battlefield vision and local OpenCV hand and elixir recognition.
 
 ## Finance and trading
 
