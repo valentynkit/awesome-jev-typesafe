@@ -507,6 +507,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jevctl](https://github.com/Nasrallah-AL/jev-cli) - npm CLI with the key in the OS keychain; typed judgments from the shell.
 - [watfile](https://github.com/jexp/watfile) - Sorts PDFs and text files into category folders, one Jev Choice per document, with a local Laya backend as the alternative.
 - [jeq](https://github.com/cristianoliveira/jeq) - Pipes and composes Jev judgments over JSON and NDJSON with map, reduce, rank, and rate, then applies policy through an explicit offline gate.
+- [jevgrep by allebee](https://github.com/allebee/jevgrep) - Filters log lines and other text streams by meaning, one Noul per line in micro-batches, streaming from `tail -f` with grep's flags and exit codes.
 
 ## Community clients
 
