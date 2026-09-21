@@ -170,6 +170,7 @@
 
 ## 代码审查与质量
 
+- [software-factory](https://github.com/stratonext/software-factory) - Local Software Factory, to run multiple agents with JEV as judge and orchestrator
 - [jev-review by devagrawal09](https://github.com/devagrawal09/jev-review) - 分阶段的代码评审工作流，带本地看板。
 - [jev-review by NiazMorshed2007](https://github.com/NiazMorshed2007/jev-review) - 本地优先的 MCP 插件，供编码智能体做持续质量评审。
 - [foreman](https://github.com/thruwire/foreman) - 监管一整座智能体软件工厂，由 Jev 做放行与否的判定。

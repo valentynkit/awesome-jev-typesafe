@@ -170,6 +170,7 @@
 
 ## コードレビューと品質
 
+- [software-factory](https://github.com/stratonext/software-factory) - Local Software Factory, to run multiple agents with JEV as judge and orchestrator
 - [jev-review by devagrawal09](https://github.com/devagrawal09/jev-review) - ローカルのダッシュボードを備えた段階的なコードレビューのワークフローです。
 - [jev-review by NiazMorshed2007](https://github.com/NiazMorshed2007/jev-review) - コーディングエージェントによる継続的な品質レビューのための、ローカルファーストな MCP プラグインです。
 - [foreman](https://github.com/thruwire/foreman) - エージェントによるソフトウェア工場を監督し、可否の判断は Jev が行います。
