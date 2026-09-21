@@ -170,6 +170,7 @@
 
 ## 코드 리뷰와 품질
 
+- [software-factory](https://github.com/stratonext/software-factory) - Local Software Factory, to run multiple agents with JEV as judge and orchestrator
 - [jev-review by devagrawal09](https://github.com/devagrawal09/jev-review) - 로컬 대시보드를 갖춘 단계별 코드 리뷰 워크플로입니다.
 - [jev-review by NiazMorshed2007](https://github.com/NiazMorshed2007/jev-review) - 코딩 에이전트의 지속적 품질 검토를 위한 로컬 우선 MCP 플러그인입니다.
 - [foreman](https://github.com/thruwire/foreman) - 에이전트로 이루어진 소프트웨어 공장을 감독하며, 진행과 중단 판단은 Jev가 내립니다.
