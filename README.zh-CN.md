@@ -189,6 +189,7 @@
 - [JevPR](https://github.com/HexyeDEV/JevPR) - GitHub App：让 Jev 判断某个拉取请求可以安全批准还是需要专人审查，再把结论映射为一次 check run。
 - [jevopt](https://github.com/Ramneet-Singh/jevopt) - C/C++ 编译器驱动：依据 LLVM IR 和原始源码，让 Jev 决定每个可选调用点是否内联。
 - [jev-spec](https://github.com/nozomi-koborinai/jev-spec) - 每次提交都拿代码对照 Markdown 规格里的需求，两者出现偏离时让构建失败。
+- [pytest-jev](https://github.com/allebee/pytest-jev) - Pytest plugin that asks Jev whether plain-English claims about a test's text hold, all in one request, and fails the test with each claim's probability unless Jev is at least 80 percent sure.
 
 ## 路由与网关
 

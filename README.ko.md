@@ -189,6 +189,7 @@
 - [JevPR](https://github.com/HexyeDEV/JevPR) - 풀 리퀘스트를 안전하게 승인할 수 있는지 전문가 검토가 필요한지 Jev에게 묻고 그 판정을 check run으로 옮기는 GitHub App입니다.
 - [jevopt](https://github.com/Ramneet-Singh/jevopt) - LLVM IR과 원본 소스를 바탕으로 재량적 호출 지점마다 인라인 여부를 Jev에게 묻는 C/C++ 컴파일러 드라이버입니다.
 - [jev-spec](https://github.com/nozomi-koborinai/jev-spec) - 커밋할 때마다 코드를 Markdown 명세의 요구사항과 대조하고, 둘이 어긋나면 빌드를 실패시킵니다.
+- [pytest-jev](https://github.com/allebee/pytest-jev) - Pytest plugin that asks Jev whether plain-English claims about a test's text hold, all in one request, and fails the test with each claim's probability unless Jev is at least 80 percent sure.
 
 ## 라우팅과 게이트웨이
 
