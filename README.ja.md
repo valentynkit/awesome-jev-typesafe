@@ -189,6 +189,7 @@
 - [JevPR](https://github.com/HexyeDEV/JevPR) - プルリクエストを安全に承認できるか専門家のレビューが必要かを Jev に判断させ、その結果を check run に対応付ける GitHub App です。
 - [jevopt](https://github.com/Ramneet-Singh/jevopt) - LLVM IR と元のソースをもとに、任意判断のコールサイトごとにインライン化するかどうかを Jev に尋ねる C/C++ コンパイラドライバです。
 - [jev-spec](https://github.com/nozomi-koborinai/jev-spec) - コミットのたびにコードを Markdown の仕様にある要件と突き合わせ、ずれたらビルドを失敗させます。
+- [pytest-jev](https://github.com/allebee/pytest-jev) - Pytest plugin that asks Jev whether plain-English claims about a test's text hold, all in one request, and fails the test with each claim's probability unless Jev is at least 80 percent sure.
 
 ## ルーティングとゲートウェイ
 
