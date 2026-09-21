@@ -380,6 +380,7 @@
 - [jevctl](https://github.com/Nasrallah-AL/jev-cli) - 키를 OS 키체인에 두는 npm CLI이며, 셸에서 타입 지정 판정을 받습니다.
 - [watfile](https://github.com/jexp/watfile) - PDF와 텍스트 파일을 범주별 폴더로 정리합니다. 문서 한 건당 Jev Choice 한 번을 쓰며, 대안으로 로컬 Laya 백엔드를 쓸 수 있습니다.
 - [jeq](https://github.com/cristianoliveira/jeq) - JSON과 NDJSON에 대한 Jev 판정을 map, reduce, rank, rate로 파이프하고 조합한 뒤, 명시적인 오프라인 게이트로 정책을 적용합니다.
+- [jevgrep by allebee](https://github.com/allebee/jevgrep) - Filters log lines and other text streams by meaning, one Noul per line in micro-batches, streaming from `tail -f` with grep's flags and exit codes.
 
 ## 커뮤니티 클라이언트
 
