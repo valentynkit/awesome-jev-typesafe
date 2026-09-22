@@ -328,6 +328,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-semgrep](https://github.com/uehaj/jev-semgrep) - Greps by meaning instead of by regex: every line gets a probability from Jev, and meanings combine with AND, OR, and NOT.
 - [jev-search by kylemclaren](https://github.com/kylemclaren/jev-search) - A shadcn/ui registry block: keyword hits on the first keystroke, re-ranked by Jev a moment later, and keyword order stands if the call fails.
 - [Senseek](https://github.com/liou666/senseek) - Browser extension that searches the page you are reading by meaning, in a Ctrl+F style box, with your own key and no backend.
+- [Milvus Search with Jev](https://github.com/milvus-io/bootcamp/tree/master/bootcamp/RAG/search_with_jev) - Nine runnable notebooks combining Gemini embeddings and Milvus retrieval with Jev decisions for reranking, filtering, search stopping, routing, cache reuse, curation, guardrails, and evaluation.
 
 ## Data and ops
 
