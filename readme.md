@@ -465,6 +465,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [JevArena](https://github.com/chenmingtang830/jevarena) - Hosted arena that puts Jev against an opponent judge you connect and takes your vote before revealing which was which, with latency, cost provenance, and self-reported confidence; a vote records preference, not verified correctness.
 - [JevBench](https://github.com/fstandhartinger/jevbench) - Benchmark for Jev-class decision models: bounded rubric in, typed answer with a probability per option out, with cascade and committee experiments reported separately.
 - [jev-align](https://github.com/sutro-sh/jev-align) - Finds the examples a Jev function is least sure about, asks you to label them, and improves the function with GEPA.
+- [jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) - Measures what a Jev request is billed and how its answers hold up: batched versus one-question-per-call cost, per-question and per-language token costs, the 32,768 and 65,536 token limits, and answer shifts under translation and rewording, from 3,455 billed requests with public raw logs.
 
 ## Playgrounds and demos
 
