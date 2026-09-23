@@ -299,6 +299,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jevopt](https://github.com/Ramneet-Singh/jevopt) - C/C++ compiler driver that asks Jev whether to inline each discretionary call site, from the LLVM IR and the original source.
 - [jev-spec](https://github.com/nozomi-koborinai/jev-spec) - Checks the code against the requirements in a Markdown spec on every commit and fails the build when the two drift apart.
 - [pytest-jev](https://github.com/allebee/pytest-jev) - Pytest plugin that asks Jev whether plain-English claims about a test's text hold, all in one request, and fails the test with each claim's probability unless Jev is at least 80 percent sure.
+- [jgrep by kyu1204](https://github.com/kyu1204/jgrep) - `--diff` gates a PR in CI on a rule written in English, `--tests` lists the test files a diff can affect, and plain `jgrep` greps code by what it does; one Noul per chunk, 16 chunks per request.
 
 ## Routing and gateways
 
