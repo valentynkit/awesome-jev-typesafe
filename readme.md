@@ -165,6 +165,7 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 ### Codex
 
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - Picks model, thinking depth, and speed mode for every Codex turn.
+- [codex-jev-router](https://github.com/suenot/codex-jev-router) - Uses Jev to select the model and reasoning effort for Codex subagents, with confidence gates and a Sol fallback.
 
 ### Pi
 
