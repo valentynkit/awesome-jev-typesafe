@@ -402,7 +402,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [Jev Voice](https://github.com/kevinbadi/jev-voice) - Talk to macOS: local whisper.cpp transcribes, one fan-out Jev call picks the action and its typed arguments, and code runs it.
 - [dasheng](https://github.com/wquguru/dasheng) - Read English aloud and see it scored: streaming ASR listens, Jev judges word by word, and the total is arithmetic in code.
 - [Jev Chat](https://github.com/w3cj/jev-chat) - Chat-shaped command bar where Jev picks the tool, the arguments, and the reply shape, and code builds the answer from the tools' own data, so no model writes the text.
-- [Refix](https://refix.ai/?utm_source=awesome-jev&utm_medium=github&utm_campaign=valentynkit) - Growth: AI that helps your product grow faster on autopilot by running product experiments, SEO, content, and ads.
+- [Refix](https://refix.ai) - Growth: AI that helps your product grow faster on autopilot by running product experiments, SEO, content, and ads.
 
 ## Games, robotics and simulation
 
