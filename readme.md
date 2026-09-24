@@ -562,6 +562,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 
 ### Independent measurements
 
+- [Jev in Search: Three Practical Evaluations](https://zc277584121.github.io/rag/2026/09/22/jev-search-deep-evaluation.html) - Independent experiments on search stopping, memory reranking, and multi-hop relation selection, with implementation links and limitations including private data, unequal sample counts, and a simulated speed illustration.
 - [Testing Jev on public and private data](https://amankumar.ai/blogs/jev-measured) - 16,000 calls against two GPT models: where it wins, where it breaks, and a threshold procedure.
 - [One judge call, or twelve dimension scores?](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/) - Three classification tasks, one direct question against a dozen scored dimensions with fitted weights.
 - [Jev vs Mistral and Gemini for event validation](https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation) - Head to head on local event listings, with cost and latency.
