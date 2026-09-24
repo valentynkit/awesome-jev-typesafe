@@ -512,6 +512,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 ## Community clients
 
 - [jev-go](https://github.com/Gaurav-Gosain/jev-go) - Go client that returns typed judgments and probabilities.
+- [Milvus Model](https://github.com/milvus-io/milvus-model) - Python reranker adapter that sends candidate documents as Jev Noul questions in one request, then sorts the returned scores and preserves original document indices.
 - [typesafe-go](https://github.com/zhirschtritt/typesafe-go) - Idiomatic Go SDK for the TypeSafe API.
 - [typesafe-ai](https://github.com/Twister915/typesafe-ai) - Rust client with async and blocking backends and observable retries.
 - [typesafe-ai-rs](https://github.com/gilljon/typesafe-ai-rs) - Independent async and blocking Rust SDK.
