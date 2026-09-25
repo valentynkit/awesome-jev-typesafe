@@ -542,6 +542,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) - PHP client with sync calls, Guzzle promises, and PSR-3 logging.
 - [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL and client.
 - [JevSharp](https://github.com/bariskisir/JevSharp) - .NET 10 SDK for Jev decisions through TypeSafe, OpenRouter, Vercel AI Gateway, and compatible endpoints.
+- [hunch](https://github.com/steven-shoemaker/hunch) - Turns Choice, Score, and Noul questions into Python functions over lists and DataFrames, with deduplication, caching, and optional escalation of unsure rows to an LLM that must pick from the same labels. A TypeScript port is published to npm as hunch-jev.
 
 ## Articles and talks
 
