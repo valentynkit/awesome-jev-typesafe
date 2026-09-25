@@ -402,6 +402,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [Jev Voice](https://github.com/kevinbadi/jev-voice) - Talk to macOS: local whisper.cpp transcribes, one fan-out Jev call picks the action and its typed arguments, and code runs it.
 - [dasheng](https://github.com/wquguru/dasheng) - Read English aloud and see it scored: streaming ASR listens, Jev judges word by word, and the total is arithmetic in code.
 - [Jev Chat](https://github.com/w3cj/jev-chat) - Chat-shaped command bar where Jev picks the tool, the arguments, and the reply shape, and code builds the answer from the tools' own data, so no model writes the text.
+- [jev-riffs](https://github.com/hazlema/jev-riffs) - Music pattern ripper: code mines repeating interval units from a MIDI melody, one batched Jev call scores every candidate on a four-level significance scale, and a piano-roll UI highlights, plays, and exports the passage it found; on an orchestral Swan Lake the top-ranked motif is the swan theme itself, five motifs from a single call.
 
 ## Games, robotics and simulation
 
