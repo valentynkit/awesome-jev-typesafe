@@ -370,6 +370,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [tripwire](https://github.com/noelzappy/tripwire) - AI SDK middleware and proxy that runs seven Jev checks on every LLM response before the user sees it; no accuracy numbers yet, and it says so.
 - [SkillCheck](https://github.com/paulgoodchild/SkillsCheck) - Sends an agent skill's text to Jev before installation and returns a verdict with category scores, without loading the skill into the agent's context; the submitted text is not redacted for secrets.
 - [StopSpam](https://github.com/hteariH/stopspam-jev-bot) - Telegram bot that removes spam and scam messages from group chats on calibrated-confidence classification.
+- [Fake / Real](https://github.com/DansiDanutz/fake-real-jev) - Checks claims against cited excerpts with Jev in an English and Romanian fact-checking site, with a public integration example and a closed-source full application.
 
 ## Applications and extensions
 
