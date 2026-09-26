@@ -11,15 +11,15 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
-    "@astrojs/vercel": "^11.0.10",
+    "@astrojs/vercel": "^11.0.11",
     "@fontsource-variable/fira-code": "^5.3.0",
     "@fontsource-variable/public-sans": "^5.3.0",
     "@fontsource-variable/space-grotesk": "^5.3.0",
     "@fontsource/space-grotesk": "^5.2.0",
     "@resvg/resvg-js": "^2.6.2",
-    "astro": "^7.3.3",
+    "astro": "^7.3.4",
     "minisearch": "^7.2.0",
-    "satori": "^0.33.4"
+    "satori": "^0.33.5"
   },
   "allowScripts": {
     "esbuild@0.28.2": true
@@ -27,6 +27,6 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "sharp": "^0.35.4",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.2"
   }
 }
