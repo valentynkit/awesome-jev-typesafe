@@ -377,5 +377,20 @@
  "jevbench": "面向 Jev 类决策模型的基准：输入有边界的评分标准，输出每个选项带概率的带类型答案，级联和委员会实验另行报告。",
  "jev-align": "找出 Jev 函数最不确定的样例，请你标注，再用 GEPA 改进这个函数。",
  "hn-thread-judge": "用 Jev 逐条读完 Hacker News 上讨论最多的帖子，把每个帖子归结为一个结论，由 Postgres 实时提供。",
- "jevsharp": "面向 Jev 决策的 .NET 10 SDK，支持 TypeSafe、OpenRouter、Vercel AI Gateway 及兼容端点。"
+ "jevsharp": "面向 Jev 决策的 .NET 10 SDK，支持 TypeSafe、OpenRouter、Vercel AI Gateway 及兼容端点。",
+ "codex-jev-router": "用 Jev 为 Codex 子代理选择模型和推理强度，带置信度门槛，并以 Sol 兜底。",
+ "software-factory": "在本地运行多个编码代理，由 Jev 担任评判和调度者。",
+ "pytest-jev": "Pytest 插件：用一次请求让 Jev 判断关于测试文本的若干自然语言断言是否成立，只要 Jev 的把握不到 80%，就让测试失败并列出每条断言的概率。",
+ "jgrep-kyu1204": "`--diff` 在 CI 中按英文写成的规则把关 PR，`--tests` 列出某个 diff 可能影响的测试文件，普通的 `jgrep` 则按代码的功能来搜索；每个代码块一个 Noul，每次请求 16 个块。",
+ "jevonian": "本地代理，兼容 OpenAI、Anthropic 和 Responses 接口：每轮只发一次 Jev 调用，为虚拟模型 jevonian/auto 同时决定模型路由和思考级别；代码先按协议、上下文窗口、最低推理强度和已用配额窗口筛选候选，固定模型或显式路由则完全跳过 Jev。",
+ "milvus-search-with-jev": "九个可运行的 notebook，把 Gemini 嵌入、Milvus 检索和 Jev 决策结合起来，用于重排、过滤、搜索停止、路由、缓存复用、数据整理、护栏和评估。",
+ "jevpdf": "在浏览器里按含义搜索 PDF：pdf.js 在本地提取文本行，Jev 以每批 16 行、每行一个 Noul 作答，匹配的行按概率排序并逐页高亮。",
+ "fake-real-jev": "一个英语和罗马尼亚语的事实核查网站，用 Jev 对照引用摘录核查说法；公开的是集成示例，完整应用闭源。",
+ "jev-riffs": "从 MIDI 旋律中挖掘重复动机，用一次批量 Jev 调用给所有候选打分，并在钢琴卷帘上高亮和播放胜出者；在管弦乐版《天鹅湖》上，排名第一的动机正是天鹅主题。",
+ "jev-connect4": "四子棋：同一个模型可切换九种提问策略，每个回答都在实时检查器中对照引擎的标准答案评分，对局器每分钟下 100 局；仅改变表示方式就让胜率变动了 52 个百分点。",
+ "jev-fanout-bench": "测量一次 Jev 请求的计费方式，以及答案在批处理、翻译和改写下是否稳定，基于 3,455 次计费请求，原始日志公开。",
+ "jgrep-keltokhy": "打印符合一段自然语言描述的行，可在花费上限内从 `tail -f` 流式处理；在短信垃圾检测上报告 F1 0.91，而关键词 grep 为 0.72。",
+ "jevgrep": "按含义过滤日志行和其他文本流，每行一个 Noul、以微批次发送，可从 `tail -f` 流式处理，并沿用 grep 的参数和退出码。",
+ "hunch": "把 Choice、Score 和 Noul 问题变成作用于列表和 DataFrame 的 Python 函数，支持去重、缓存，并可把没把握的行升级给一个必须从同一组标签中选择的 LLM；TypeScript 移植版以 hunch-jev 发布在 npm 上。",
+ "jev-in-search-three-practical-evaluations": "针对搜索停止、记忆重排和多跳关系选择的独立实验，附实现链接，并说明了局限：私有数据、样本量不一致，以及一段模拟的速度演示。"
 }

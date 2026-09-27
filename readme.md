@@ -7,7 +7,7 @@
 
 [![Lint](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/lint.yml/badge.svg)](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/lint.yml)
 [![Links](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/links.yml/badge.svg)](https://github.com/valentynkit/awesome-jev-typesafe/actions/workflows/links.yml)
-![Entries](https://img.shields.io/badge/entries-380-4CC9F0?style=flat-square&labelColor=0B0E11)
+![Entries](https://img.shields.io/badge/entries-389-4CC9F0?style=flat-square&labelColor=0B0E11)
 [![Last commit](https://img.shields.io/github/last-commit/valentynkit/awesome-jev-typesafe?style=flat-square&labelColor=0B0E11&color=E8EDF2)](https://github.com/valentynkit/awesome-jev-typesafe/commits/main)
 [![License](https://img.shields.io/github/license/valentynkit/awesome-jev-typesafe?style=flat-square&labelColor=0B0E11&color=E8EDF2)](license)
 
@@ -407,7 +407,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [Jev Voice](https://github.com/kevinbadi/jev-voice) - Talk to macOS: local whisper.cpp transcribes, one fan-out Jev call picks the action and its typed arguments, and code runs it.
 - [dasheng](https://github.com/wquguru/dasheng) - Read English aloud and see it scored: streaming ASR listens, Jev judges word by word, and the total is arithmetic in code.
 - [Jev Chat](https://github.com/w3cj/jev-chat) - Chat-shaped command bar where Jev picks the tool, the arguments, and the reply shape, and code builds the answer from the tools' own data, so no model writes the text.
-- [jev-riffs](https://github.com/hazlema/jev-riffs) - Music pattern ripper: code mines repeating interval units from a MIDI melody, one batched Jev call scores every candidate on a four-level significance scale, and a piano-roll UI highlights, plays, and exports the passage it found; on an orchestral Swan Lake the top-ranked motif is the swan theme itself, five motifs from a single call.
+- [jev-riffs](https://github.com/hazlema/jev-riffs) - Mines repeating motifs from a MIDI melody, scores every candidate in one batched Jev call, and highlights and plays the winner on a piano roll; on an orchestral Swan Lake the top motif is the swan theme.
 
 ## Games, robotics and simulation
 
@@ -471,7 +471,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [JevArena](https://github.com/chenmingtang830/jevarena) - Hosted arena that puts Jev against an opponent judge you connect and takes your vote before revealing which was which, with latency, cost provenance, and self-reported confidence; a vote records preference, not verified correctness.
 - [JevBench](https://github.com/fstandhartinger/jevbench) - Benchmark for Jev-class decision models: bounded rubric in, typed answer with a probability per option out, with cascade and committee experiments reported separately.
 - [jev-align](https://github.com/sutro-sh/jev-align) - Finds the examples a Jev function is least sure about, asks you to label them, and improves the function with GEPA.
-- [jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) - Measures what a Jev request is billed and how its answers hold up: batched versus one-question-per-call cost, per-question and per-language token costs, the 32,768 and 65,536 token limits, and answer shifts under translation and rewording, from 3,455 billed requests with public raw logs.
+- [jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) - Measures what a Jev request is billed and how its answers hold up under batching, translation, and rewording, from 3,455 billed requests with public raw logs.
 
 ## Playgrounds and demos
 
@@ -549,7 +549,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) - PHP client with sync calls, Guzzle promises, and PSR-3 logging.
 - [jev4k](https://github.com/pambrose/jev4k) - Kotlin DSL and client.
 - [JevSharp](https://github.com/bariskisir/JevSharp) - .NET 10 SDK for Jev decisions through TypeSafe, OpenRouter, Vercel AI Gateway, and compatible endpoints.
-- [hunch](https://github.com/steven-shoemaker/hunch) - Turns Choice, Score, and Noul questions into Python functions over lists and DataFrames, with deduplication, caching, and optional escalation of unsure rows to an LLM that must pick from the same labels. A TypeScript port is published to npm as hunch-jev.
+- [hunch](https://github.com/steven-shoemaker/hunch) - Turns Choice, Score, and Noul questions into Python functions over lists and DataFrames, with deduplication, caching, escalation of unsure rows to an LLM held to the same labels, and a TypeScript port on npm as hunch-jev.
 
 ## Articles and talks
 

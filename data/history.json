@@ -431,6 +431,16 @@
     "jev-connect4": "2026-09-21",
     "jevonian": "2026-09-21",
     "pytest-jev": "2026-09-21",
-    "jevgrep": "2026-09-21"
+    "jevgrep": "2026-09-21",
+    "codex-jev-router": "2026-09-27",
+    "jgrep-kyu1204": "2026-09-27",
+    "milvus-search-with-jev": "2026-09-27",
+    "jevpdf": "2026-09-27",
+    "fake-real-jev": "2026-09-27",
+    "jev-riffs": "2026-09-27",
+    "jev-fanout-bench": "2026-09-27",
+    "jgrep-keltokhy": "2026-09-27",
+    "hunch": "2026-09-27",
+    "jev-in-search-three-practical-evaluations": "2026-09-27"
   }
 }

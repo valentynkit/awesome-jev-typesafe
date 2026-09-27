@@ -377,5 +377,20 @@
  "jevbench": "90a76c6cf2",
  "jev-align": "076b638fc6",
  "hn-thread-judge": "8a87c5f71e",
- "jevsharp": "6e8233cd4f"
+ "jevsharp": "6e8233cd4f",
+ "codex-jev-router": "3645f45073",
+ "software-factory": "7699425787",
+ "pytest-jev": "8b3ebdcd20",
+ "jgrep-kyu1204": "24c05d05a9",
+ "jevonian": "f08ae5e4f8",
+ "milvus-search-with-jev": "718bb0e100",
+ "jevpdf": "d4ba5a1e3a",
+ "fake-real-jev": "a4f8ea6521",
+ "jev-riffs": "730da4bf4f",
+ "jev-connect4": "e117c4948f",
+ "jev-fanout-bench": "de885d1a8f",
+ "jgrep-keltokhy": "82e0e087d2",
+ "jevgrep": "665f93164e",
+ "hunch": "5f696c613d",
+ "jev-in-search-three-practical-evaluations": "b794e966d7"
 }
