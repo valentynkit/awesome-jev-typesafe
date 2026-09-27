@@ -276,6 +276,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [Jev-Compatible](https://github.com/David-Lolly/Jev-Compatible) - Gateway that turns an existing SGLang or vLLM deployment into a Jev-compatible decision service by scoring candidate tokens, with no training and no model changes.
 - [Rizzo Flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) - Local-first take on the System One idea: unstructured state in, typed probabilistic decisions out, without generating a token.
 - [metask-jev](https://github.com/metask-ai/metask-jev) - Open-weight typed-decision models on Qwen3.5 with calibrated per-option probabilities in one forward pass; reports 80.1 percent on JevBench against 75.3 for Jev 1.13.
+- [jevos](https://github.com/feder-cr/jev) - Runs a MiniCPM5-1B model cut to 17 layers through llama.cpp on CPU only, answering yes or no questions over Jev's own wire format in 54 to 220 milliseconds; reports 81.5 percent accuracy on 2,000 unseen yes or no questions against 92.7 percent for Jev.
 
 ## Code review and quality
 
