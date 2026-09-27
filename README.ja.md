@@ -66,6 +66,7 @@
 
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - Codex のターンごとにモデル、思考の深さ、速度モードを選びます。
 - [codex-jev-router](https://github.com/suenot/codex-jev-router) - Jev で Codex サブエージェントのモデルと推論強度を選びます。信頼度ゲートと Sol へのフォールバック付き。
+- [Astra-Ares](https://github.com/miuuyy/Astra-Ares) - 実行中の Codex タスクについて、推論強度とそれをどれだけ維持するかを Jev に選ばせます。上流ソースからビルドしたパッチ版 Codex CLI 上で動きます。
 ### Pi
 
 - [pi-jev by y0usaf](https://github.com/y0usaf/pi-jev) - 実測されたツール呼び出しのゲートと、Pi の中で型付き回答を得る `jev_ask` ツールです。
@@ -130,6 +131,7 @@
 - [jev-use by savka777](https://github.com/savka777/jev-use) - macOS 向けの音声と入力によるコンピュータ操作です。スクリーンショットを使わず、アクセシビリティツリーから次の画面操作を Jev が選びます。
 - [jev-mobile by xinwang-nwpu](https://github.com/xinwang-nwpu/jev-mobile) - Android の自動化です。1 回の Jev リクエストでアクセシビリティツリーから操作と対象要素の両方を選び、ADB で実行します。
 - [jev-browser-use by imanshu03](https://github.com/imanshu03/jev-browser-use) - 自然言語の指示でブラウザ操作を CDP または Vercel の agent-browser 経由で実行します。操作と対象は Jev が選び、実行前にコードが確信度を確かめます。
+- [jev-gui-delegate](https://github.com/YUTA-fywoo/jev-gui-delegate) - 実際の Chrome セッションまたは Windows UI Automation を通じて Codex から委任された GUI タスクを実行し、各ステップで Jev が操作するコントロールを選びます。
 
 ## オープンモデルと再現実装
 
@@ -168,6 +170,13 @@
 - [Jev-Compatible](https://github.com/David-Lolly/Jev-Compatible) - 既存の SGLang や vLLM のデプロイを、候補トークンのスコアリングによって Jev 互換の決定サービスに変えるゲートウェイです。学習もモデルの変更も不要です。
 - [Rizzo Flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) - System One の考え方をローカル優先で実装したものです。非構造の状態を入力し、トークンを一切生成せずに確率つきの型付き判断を返します。
 - [metask-jev](https://github.com/metask-ai/metask-jev) - Qwen3.5 をベースにしたオープンウェイトの型付き決定モデルで、1 回の順伝播で選択肢ごとの較正済み確率を出します。JevBench で 80.1 パーセント、Jev 1.13 の 75.3 に対する結果と報告しています。
+- [AnyJev](https://github.com/nokia-applied-research/AnyJev) - 任意のオープンな Hugging Face モデルを、vLLM で提供される校正済みの判定エンドポイントに変えます。最初の 2 段階ではファインチューニング不要。
+- [ollaya](https://github.com/ollaya-dev/ollaya) - Laya、kev、JevK5 などのオープンな判定モデルを取得し、TypeSafe 互換のローカルエンドポイントで提供します。Ollama が LLM を提供するのと同じ要領です。
+- [AgentJev](https://github.com/malevrigns/agent-jev) - Qwen3-0.6B ベースの判定モデルで、トークンをデコードせずに答えます。公開 Typed Decisions ベンチマークで top-1 79.25% と報告。
+- [Valen](https://github.com/Liuziyu77/Valen) - Qwen3.5 ベースのマルチモーダル判定モデル。テキストに加えて画像や動画に照らして候補を採点します。学習コードとオープンウェイト付き。
+- [tev1](https://github.com/togethercomputer/tev1) - Together AI 上で Qwen3.5-4B をオープンウェイトの判定モデルにファインチューニングするデータレシピと学習コード。
+- [JevK5](https://github.com/allebee/jevk5) - 蒸留 LoRA ウェイト付きの Qwen3.5 レプリカ。JevBench v1.4 で 76 システム中 2 位、オープンなものでは 1 位。
+- [djev](https://github.com/mmastrac/djev) - DiffusionGemma 上で `/v1/systemone` を提供し、シード付きで固定したキャンバスから型付きの答えとテキスト範囲を読み取ります。生成は行いません。
 
 ## コードレビューと品質
 
@@ -204,6 +213,7 @@
 - [jev-gateway](https://github.com/vinilana/jev-gateway) - Codex と Claude Code 向けのローカルゲートウェイで、「次にどのツールを使うか」の判断を Jev に送り、それ以外はいつものモデルに送ります。
 - [jev-router by daviddl9](https://github.com/daviddl9/jev-router) - OMP と Pi の各ステップでワーカーの階層を Jev が選び、計画とレビューは強いモデルに、範囲の限られた作業は安いモデルに残します。
 - [Jevonian](https://github.com/xinyao27/jevonian) - OpenAI、Anthropic、Responses 互換のローカルプロキシ。1 ターンにつき Jev 呼び出し 1 回で、仮想モデル jevonian/auto のモデルルートと思考レベルを同時に決めます。候補はまずコードがプロトコル、コンテキスト長、推論強度の下限、使用済みクォータ枠で絞り、固定モデルや明示ルートは Jev を完全に飛ばします。
+- [neurolink](https://github.com/juspay/neurolink) - TypeScript AI SDK。Jev による decide が generate や stream と並ぶ一級の機能で、型付き判定 1 回でモデル選択のルーティング、コンテキストの刈り込み、MCP ツールの選択を行います。
 
 ## 検索・リランキング・RAG
 
@@ -243,6 +253,7 @@
 - [invalidate](https://github.com/chopratejas/invalidate) - 保存されたエージェントの記憶それぞれにリースを与え、新しい証拠がそれを終わらせるかどうかを Jev に尋ねる仕組みで、[ライブデモ](https://invalidate-playground.vercel.app)があります。
 - [jevgraph](https://github.com/chenmingtang830/jevgraph) - PDF、DOCX、PPTX、テキストをローカルで解析し、候補となるエンティティの組ごとに閉じた選択肢の関係質問を Jev に投げ、辺ごとの確率とページ証拠を持つグラフを JSON、CSV、Neo4j に書き出します。
 - [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - 32 件を 1 リクエストにまとめて一括分類し、最も確信度の低い行を人に回す閾値を較正します。毎秒 533 件、人手ラベルとの一致率 89.2 パーセントと報告しています。
+- [jev-seo by AgriciDaniel](https://github.com/AgriciDaniel/jev-seo) - サイトをクロールして 52 の SEO ルールで検査し、Jev が各ページを判定して、PDF、スプレッドシート、Markdown のレポートを書き出します。
 
 ## 安全性・モデレーション・検証
 
@@ -280,7 +291,7 @@
 - [super-jev](https://github.com/kevthetech143/super-jev) - 証拠、Jev の判定、許可された行動、検証済みの結果をつなぐ小さなハーネスです。
 - [safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) - Neon AI Gateway 向けの Neon Function プロキシで、前段に Jev のルーティングを置きます。
 - [Sponsor Skip](https://github.com/trungdq88/youtube-sponsor-detection) - トランスクリプトやライブ音声からスポンサーの読み上げを見つけて飛ばす Chrome 拡張で、タイムスタンプはすべてコードが管理し、トランスクリプトモードでは 1 時間あたり 1 セント未満です。
-- [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) - DuckDuckGo の検索結果に対する SEO と GEO のチェックを行う Rust の CLI と MCP サーバーで、採点は Jev が行います。
+- [jev-seo by AkashPriyadarshii](https://github.com/AkashPriyadarshii/jev-seo) - DuckDuckGo の検索結果に対する SEO と GEO のチェックを行う Rust の CLI と MCP サーバーで、採点は Jev が行います。
 - [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim プラグインで、バッファに平易な言葉の質問を投げると Treesitter が関数単位に分割し、Jev がそれぞれを採点し、回答は確率順に quickfix に並びます。
 - [jev-skip](https://github.com/valentynkit/jev-skip) - 字幕トラックを読み、イントロが終わる前にセグメントごとのスポンサー確率をシークバーに描くブラウザ拡張で、クラウドソースのデータベースは使わず、23 本の動画で SponsorBlock のスポンサー秒数の 77 パーセントを捉え、1 本あたり $0.0008 と報告しています。
 - [openpoke-meets-jev](https://github.com/0xShin0221/openpoke-meets-jev) - OpenPoke のフォークで、メール選別、ツール呼び出しのガードレール、検索の再ランキングを Jev に移します。置き換えた Sonnet 呼び出しとの A/B と、インジェクションゲートへの攻撃実験を含みます。
@@ -291,6 +302,7 @@
 - [dasheng](https://github.com/wquguru/dasheng) - 英語を音読すると採点されます。ストリーミングの ASR が聞き取り、Jev が単語ごとに判定し、合計はコードの計算で出します。
 - [Jev Chat](https://github.com/w3cj/jev-chat) - チャットの形をしたコマンドバーです。ツール、引数、返答の形を Jev が選び、コードがツール自身のデータから返答を組み立てるので、文章はモデルが書きません。
 - [jev-riffs](https://github.com/hazlema/jev-riffs) - MIDI の旋律から繰り返すモチーフを掘り出し、1 回のバッチ Jev 呼び出しで全候補を採点し、勝者をピアノロール上でハイライトして再生します。オーケストラ版『白鳥の湖』では首位のモチーフが白鳥のテーマそのものでした。
+- [shapeshift](https://github.com/anishfn/shapeshift) - 入力に合わせて 1 つのテキストボックスを該当するカードに変えます。判定は並列 Jev 呼び出し 1 回で、キー未設定時はキーワードにフォールバック。
 
 ## ゲーム・ロボティクス・シミュレーション
 
@@ -320,6 +332,7 @@
 - [trade-jev](https://github.com/justinhe16/trade-jev) - NQ の板情報データ上で、買い、売り、保持を判断する Jev のトレーダーをバックテストします。
 - [Jev-Trades](https://github.com/zadescoxp/Jev-Trades) - バックテスト機能を備えた暗号資産の取引ボットです。
 - [jev-trade](https://github.com/aowang-ai/jev-trade) - Hyperliquid 上で稼働する Jev のトレーダーです。
+- [beebots](https://github.com/imikerussell/beebots) - OKX の無期限先物で Jev 駆動の取引ボット 3 体を動かし、ライブダッシュボード付き。既定はペーパートレードで、実資金は明示的なフラグの後ろにあります。
 
 ## ベンチマーク・評価・較正
 
@@ -349,6 +362,7 @@
 - [JevBench](https://github.com/fstandhartinger/jevbench) - Jev クラスの決定モデル向けのベンチマークです。範囲の定まったルーブリックを入力し、選択肢ごとの確率つきの型付き回答を得ます。カスケードと委員会の実験は別に報告されています。
 - [jev-align](https://github.com/sutro-sh/jev-align) - Jev の関数がもっとも自信のない事例を見つけ、ラベル付けを求め、GEPA で関数を改善します。
 - [jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) - Jev リクエストがどう課金されるか、そして回答がバッチ化、翻訳、言い換えでどこまで保たれるかを測ります。課金済み 3,455 リクエストに基づき、生ログを公開。
+- [jevals](https://github.com/openlayer-ai/jevals) - トレースのエージェント、品質、セキュリティ評価を、個別の LLM ジャッジ呼び出しではなく型付き Jev 質問の 1 バッチとして実行します。
 
 ## プレイグラウンドとデモ
 
@@ -388,10 +402,13 @@
 - [watfile](https://github.com/jexp/watfile) - PDF とテキストファイルをカテゴリ別のフォルダに振り分けます。1 文書につき 1 回の Jev Choice で、代わりにローカルの Laya バックエンドも使えます。
 - [jeq](https://github.com/cristianoliveira/jeq) - JSON と NDJSON に対する Jev の判断を map、reduce、rank、rate でパイプしてつなぎ、明示的なオフラインのゲートでポリシーを適用します。
 - [jevgrep by allebee](https://github.com/allebee/jevgrep) - ログ行などのテキストストリームを意味でフィルタします。1 行 1 Noul をマイクロバッチで送り、`tail -f` からストリーム処理し、grep のフラグと終了コードに従います。
+- [jevgrep by dzhng](https://github.com/dzhng/jevgrep) - リポジトリについての平易な質問にどの宣言が答えるかを Jev に尋ね、コーディングエージェントが必要とするファイル、宣言、原文の抜粋を見つけます。
+- [webctl](https://github.com/dorkitude/webctl) - エージェントのためにウェブを検索し、結果とページの断片を Jev に採点、重複排除させて、関連するテキストだけをモデルに渡します。
 
 ## コミュニティクライアント
 
 - [jev-go](https://github.com/Gaurav-Gosain/jev-go) - 型付きの判定と確率を返す Go クライアントです。
+- [Milvus Model](https://github.com/milvus-io/milvus-model) - 再ランキングパッケージ。Jev アダプタが各候補文書を Noul 質問として 1 リクエストで送り、返った確率で並べ替え、元のインデックスを保持します。v0.3.4 リリースに収録。
 - [typesafe-go](https://github.com/zhirschtritt/typesafe-go) - TypeSafe API 向けの Go らしい SDK です。
 - [typesafe-ai](https://github.com/Twister915/typesafe-ai) - 非同期とブロッキングのバックエンド、そして観測可能なリトライを備えた Rust クライアントです。
 - [typesafe-ai-rs](https://github.com/gilljon/typesafe-ai-rs) - 非同期とブロッキングに対応した独立系の Rust SDK です。

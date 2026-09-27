@@ -4,10 +4,18 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
   - package-ecosystem: npm
     directory: /site
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
+    ignore:
+      # @astrojs/check peers typescript ^5 || ^6
+      - dependency-name: typescript
+        update-types: ["version-update:semver-major"]
     groups:
       all:
         patterns: ["*"]

@@ -66,6 +66,7 @@
 
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - Codex의 매 턴마다 모델, 사고 깊이, 속도 모드를 고릅니다.
 - [codex-jev-router](https://github.com/suenot/codex-jev-router) - Jev로 Codex 서브에이전트의 모델과 추론 강도를 고르며, 신뢰도 게이트와 Sol 폴백을 갖췄습니다.
+- [Astra-Ares](https://github.com/miuuyy/Astra-Ares) - 실행 중인 Codex 작업의 추론 강도와 그 유지 기간을 Jev가 고르게 합니다. 업스트림 소스로 빌드한 패치된 Codex CLI에서 동작합니다.
 ### Pi
 
 - [pi-jev by y0usaf](https://github.com/y0usaf/pi-jev) - 측정된 도구 호출 게이트와 Pi 안에서 타입 지정 답변을 얻는 `jev_ask` 도구입니다.
@@ -130,6 +131,7 @@
 - [jev-use by savka777](https://github.com/savka777/jev-use) - macOS용 음성 및 타이핑 컴퓨터 조작입니다. 스크린샷 없이 접근성 트리에서 다음 화면 동작을 Jev가 고릅니다.
 - [jev-mobile by xinwang-nwpu](https://github.com/xinwang-nwpu/jev-mobile) - Android 자동화입니다. 한 번의 Jev 요청으로 접근성 트리에서 동작과 대상 요소를 함께 고르고 ADB로 실행합니다.
 - [jev-browser-use by imanshu03](https://github.com/imanshu03/jev-browser-use) - 평문 지시로 브라우저 작업을 CDP 또는 Vercel의 agent-browser로 실행합니다. 동작과 대상은 Jev가 고르고, 실행 전에 코드가 확신도를 확인합니다.
+- [jev-gui-delegate](https://github.com/YUTA-fywoo/jev-gui-delegate) - 실제 Chrome 세션이나 Windows UI 자동화로 Codex가 위임한 GUI 작업을 실행하며, 단계마다 Jev가 조작할 컨트롤을 고릅니다.
 
 ## 오픈 모델과 재현 구현
 
@@ -168,6 +170,13 @@
 - [Jev-Compatible](https://github.com/David-Lolly/Jev-Compatible) - 기존 SGLang 또는 vLLM 배포를 후보 토큰 점수화로 Jev 호환 결정 서비스로 바꾸는 게이트웨이입니다. 학습도 모델 변경도 필요 없습니다.
 - [Rizzo Flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) - System One 아이디어를 로컬 우선으로 구현했습니다. 비정형 상태를 넣으면 토큰을 전혀 생성하지 않고 확률이 붙은 타입 지정 결정을 돌려줍니다.
 - [metask-jev](https://github.com/metask-ai/metask-jev) - Qwen3.5 기반의 공개 가중치 타입 결정 모델로, 한 번의 순전파로 선택지별 보정 확률을 냅니다. JevBench에서 80.1퍼센트로, Jev 1.13의 75.3과 비교해 보고합니다.
+- [AnyJev](https://github.com/nokia-applied-research/AnyJev) - 공개 Hugging Face 모델을 vLLM으로 서비스되는 보정된 판정 엔드포인트로 바꿉니다. 처음 두 단계는 파인튜닝이 필요 없습니다.
+- [ollaya](https://github.com/ollaya-dev/ollaya) - Laya, kev, JevK5 같은 공개 판정 모델을 받아 TypeSafe 호환 로컬 엔드포인트로 서비스합니다. Ollama가 LLM을 서비스하는 방식과 같습니다.
+- [AgentJev](https://github.com/malevrigns/agent-jev) - Qwen3-0.6B 기반 판정 모델로 토큰을 디코딩하지 않고 답합니다. 공개 Typed Decisions 벤치마크에서 top-1 79.25%를 보고합니다.
+- [Valen](https://github.com/Liuziyu77/Valen) - Qwen3.5 기반 멀티모달 판정 모델로, 텍스트뿐 아니라 이미지와 영상에 비추어 후보를 채점합니다. 학습 코드와 공개 가중치 포함.
+- [tev1](https://github.com/togethercomputer/tev1) - Together AI에서 Qwen3.5-4B를 공개 가중치 판정 모델로 파인튜닝하는 데이터 레시피와 학습 코드.
+- [JevK5](https://github.com/allebee/jevk5) - 증류된 LoRA 가중치를 갖춘 Qwen3.5 복제본. JevBench v1.4에서 76개 시스템 중 2위, 공개 시스템 중 1위.
+- [djev](https://github.com/mmastrac/djev) - DiffusionGemma에서 `/v1/systemone`을 제공하며, 시드를 주고 고정한 캔버스에서 타입이 있는 답과 텍스트 구간을 읽어냅니다. 생성은 하지 않습니다.
 
 ## 코드 리뷰와 품질
 
@@ -204,6 +213,7 @@
 - [jev-gateway](https://github.com/vinilana/jev-gateway) - "다음에 어떤 도구를 쓸지" 결정은 Jev로, 나머지는 평소 쓰던 모델로 보내는 Codex와 Claude Code용 로컬 게이트웨이입니다.
 - [jev-router by daviddl9](https://github.com/daviddl9/jev-router) - OMP와 Pi에서 각 단계의 작업 모델 등급을 Jev가 고릅니다. 계획과 검토는 강한 모델에, 범위가 정해진 작업은 저렴한 모델에 맡깁니다.
 - [Jevonian](https://github.com/xinyao27/jevonian) - OpenAI, Anthropic, Responses 호환 로컬 프록시. 턴마다 Jev 호출 한 번으로 가상 모델 jevonian/auto의 모델 경로와 사고 수준을 함께 정합니다. 후보는 먼저 코드가 프로토콜, 컨텍스트 창, 최소 추론 강도, 소진된 할당량 창으로 거르고, 고정 모델이나 명시적 경로는 Jev를 아예 건너뜁니다.
+- [neurolink](https://github.com/juspay/neurolink) - TypeScript AI SDK로, Jev를 통한 decide가 generate, stream과 나란히 있습니다. 타입 판정 호출 한 번으로 모델 선택을 라우팅하고, 컨텍스트를 줄이고, MCP 도구를 고릅니다.
 
 ## 검색, 리랭킹, RAG
 
@@ -243,6 +253,7 @@
 - [invalidate](https://github.com/chopratejas/invalidate) - 저장된 모든 에이전트 메모리에 임대 기간을 부여하고 새 증거가 그 기간을 끝내는지 Jev에 묻습니다. [라이브 데모](https://invalidate-playground.vercel.app).
 - [jevgraph](https://github.com/chenmingtang830/jevgraph) - PDF, DOCX, PPTX, 텍스트를 로컬에서 파싱하고 후보 엔티티 쌍마다 닫힌 집합의 관계 질문을 Jev에게 던진 뒤, 간선별 확률과 페이지 근거가 담긴 그래프를 JSON, CSV, Neo4j로 내보냅니다.
 - [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - 32개 항목을 한 요청에 묶어 대량 분류하고, 가장 불확실한 행을 사람에게 넘기는 신뢰도 기준을 보정합니다. 초당 533개, 사람 라벨과 89.2퍼센트 일치로 보고합니다.
+- [jev-seo by AgriciDaniel](https://github.com/AgriciDaniel/jev-seo) - 사이트를 크롤링해 52개 SEO 규칙으로 점검하고, Jev가 각 페이지를 판정해 PDF, 스프레드시트, Markdown 보고서를 만듭니다.
 
 ## 안전, 모더레이션, 검증
 
@@ -280,7 +291,7 @@
 - [super-jev](https://github.com/kevthetech143/super-jev) - 증거, Jev 판정, 허용된 동작, 검증된 결과를 잇는 작은 하네스입니다.
 - [safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) - 앞단에 Jev 라우팅을 둔 Neon AI Gateway용 Neon Function 프록시입니다.
 - [Sponsor Skip](https://github.com/trungdq88/youtube-sponsor-detection) - 자막이나 실시간 오디오에서 협찬 멘트를 찾아 건너뛰는 Chrome 확장이며, 모든 타임스탬프는 코드가 관리하고 자막 모드에서는 시간당 1센트 미만이 듭니다.
-- [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) - DuckDuckGo 결과에 대한 SEO 및 GEO 점검을 수행하는 Rust CLI 겸 MCP 서버이며, 점수는 Jev가 매깁니다.
+- [jev-seo by AkashPriyadarshii](https://github.com/AkashPriyadarshii/jev-seo) - DuckDuckGo 결과에 대한 SEO 및 GEO 점검을 수행하는 Rust CLI 겸 MCP 서버이며, 점수는 Jev가 매깁니다.
 - [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim 플러그인입니다: 버퍼에 평이한 언어로 질문하면 Treesitter가 함수 단위로 쪼개고 Jev가 각각을 점수화하며, 답변은 확률 순으로 quickfix에 쌓입니다.
 - [jev-skip](https://github.com/valentynkit/jev-skip) - 자막 트랙을 읽어 인트로가 끝나기 전에 구간별 협찬 확률을 탐색 바에 그리는 브라우저 확장이며, 크라우드 데이터베이스 없이 영상 23개에서 영상당 $0.0008로 SponsorBlock 협찬 구간 초의 77퍼센트를 잡았다고 보고합니다.
 - [openpoke-meets-jev](https://github.com/0xShin0221/openpoke-meets-jev) - OpenPoke 포크로, 이메일 선별, 도구 호출 가드레일, 검색 재순위를 Jev로 옮기며, 대체한 Sonnet 호출과의 A/B 비교와 인젝션 게이트에 대한 공격 실험을 포함합니다.
@@ -291,6 +302,7 @@
 - [dasheng](https://github.com/wquguru/dasheng) - 영어를 소리 내어 읽으면 점수가 나옵니다. 스트리밍 ASR이 듣고 Jev가 단어마다 판정하며, 총점은 코드의 산술로 계산합니다.
 - [Jev Chat](https://github.com/w3cj/jev-chat) - 채팅 형태의 명령 바입니다. 도구와 인자, 답변 형식을 Jev가 고르고 코드가 도구의 데이터로 답을 만들기 때문에 모델이 글을 쓰지 않습니다.
 - [jev-riffs](https://github.com/hazlema/jev-riffs) - MIDI 선율에서 반복되는 모티프를 캐내고, 배치 Jev 호출 한 번으로 모든 후보를 채점해 승자를 피아노 롤에서 강조하고 재생합니다. 관현악 「백조의 호수」에서는 1위 모티프가 바로 백조 테마였습니다.
+- [shapeshift](https://github.com/anishfn/shapeshift) - 입력하는 대로 텍스트 상자 하나를 알맞은 카드로 바꿉니다. 판정은 병렬 Jev 호출 한 번이며, 키가 없으면 키워드로 대체합니다.
 
 ## 게임, 로보틱스, 시뮬레이션
 
@@ -320,6 +332,7 @@
 - [trade-jev](https://github.com/justinhe16/trade-jev) - NQ 호가창 데이터에서 Jev를 매수, 매도, 보유 트레이더로 백테스트합니다.
 - [Jev-Trades](https://github.com/zadescoxp/Jev-Trades) - 백테스트를 지원하는 암호화폐 트레이딩 봇입니다.
 - [jev-trade](https://github.com/aowang-ai/jev-trade) - Hyperliquid에서 실시간으로 거래하는 Jev 트레이더입니다.
+- [beebots](https://github.com/imikerussell/beebots) - OKX 무기한 선물에서 Jev로 움직이는 트레이딩 봇 3개를 실시간 대시보드와 함께 돌립니다. 기본은 모의 거래이고 실제 자금은 명시적 플래그 뒤에 있습니다.
 
 ## 벤치마크, 평가, 보정
 
@@ -349,6 +362,7 @@
 - [JevBench](https://github.com/fstandhartinger/jevbench) - Jev 계열 결정 모델용 벤치마크입니다. 범위가 정해진 루브릭을 넣으면 선택지별 확률이 붙은 타입 지정 답변이 나오고, 캐스케이드와 위원회 실험은 따로 보고합니다.
 - [jev-align](https://github.com/sutro-sh/jev-align) - Jev 함수가 가장 확신하지 못하는 예시를 찾아 라벨을 요청하고, GEPA로 함수를 개선합니다.
 - [jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) - Jev 요청이 어떻게 과금되는지, 그리고 답이 배치, 번역, 바꿔 쓰기에서 얼마나 유지되는지 측정합니다. 과금된 요청 3,455건 기반이며 원시 로그를 공개합니다.
+- [jevals](https://github.com/openlayer-ai/jevals) - 트레이스의 에이전트, 품질, 보안 평가를 개별 LLM 심판 호출 대신 타입이 있는 Jev 질문 한 배치로 실행합니다.
 
 ## 플레이그라운드와 데모
 
@@ -388,10 +402,13 @@
 - [watfile](https://github.com/jexp/watfile) - PDF와 텍스트 파일을 범주별 폴더로 정리합니다. 문서 한 건당 Jev Choice 한 번을 쓰며, 대안으로 로컬 Laya 백엔드를 쓸 수 있습니다.
 - [jeq](https://github.com/cristianoliveira/jeq) - JSON과 NDJSON에 대한 Jev 판정을 map, reduce, rank, rate로 파이프하고 조합한 뒤, 명시적인 오프라인 게이트로 정책을 적용합니다.
 - [jevgrep by allebee](https://github.com/allebee/jevgrep) - 로그 줄 등 텍스트 스트림을 의미로 거릅니다. 줄마다 Noul 하나를 마이크로 배치로 보내고, `tail -f`로부터 스트리밍하며, grep의 플래그와 종료 코드를 따릅니다.
+- [jevgrep by dzhng](https://github.com/dzhng/jevgrep) - 저장소에 관한 평이한 질문에 어떤 선언이 답하는지 Jev에 물어, 코딩 에이전트에 필요한 파일, 선언, 원문 발췌를 찾습니다.
+- [webctl](https://github.com/dorkitude/webctl) - 에이전트를 위해 웹을 검색하고, Jev가 결과와 페이지 조각을 채점하고 중복을 없애 관련 텍스트만 모델에 전달합니다.
 
 ## 커뮤니티 클라이언트
 
 - [jev-go](https://github.com/Gaurav-Gosain/jev-go) - 타입 지정 판정과 확률을 돌려주는 Go 클라이언트입니다.
+- [Milvus Model](https://github.com/milvus-io/milvus-model) - 재순위 패키지로, Jev 어댑터가 모든 후보 문서를 한 번의 요청에 Noul 질문으로 보내고 반환된 확률로 정렬하며 원래 인덱스를 유지합니다. v0.3.4 릴리스에 포함.
 - [typesafe-go](https://github.com/zhirschtritt/typesafe-go) - TypeSafe API를 위한 관용적인 Go SDK입니다.
 - [typesafe-ai](https://github.com/Twister915/typesafe-ai) - 비동기 및 블로킹 백엔드와 관찰 가능한 재시도를 갖춘 Rust 클라이언트입니다.
 - [typesafe-ai-rs](https://github.com/gilljon/typesafe-ai-rs) - 독립적으로 만든 비동기 및 블로킹 Rust SDK입니다.

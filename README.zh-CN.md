@@ -66,6 +66,7 @@
 
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - 为每个 Codex 回合选择模型、思考深度和速度模式。
 - [codex-jev-router](https://github.com/suenot/codex-jev-router) - 用 Jev 为 Codex 子代理选择模型和推理强度，带置信度门槛，并以 Sol 兜底。
+- [Astra-Ares](https://github.com/miuuyy/Astra-Ares) - 让 Jev 为运行中的 Codex 任务选择推理强度及其保持时长，运行在一个由上游源码构建的修补版 Codex CLI 上。
 ### Pi
 
 - [pi-jev by y0usaf](https://github.com/y0usaf/pi-jev) - 一个经过实测的工具调用门禁，外加一个在 Pi 内给出带类型答案的 `jev_ask` 工具。
@@ -130,6 +131,7 @@
 - [jev-use by savka777](https://github.com/savka777/jev-use) - macOS 上的语音和文字电脑操作：Jev 从辅助功能树里选出下一个屏幕操作，不使用截图。
 - [jev-mobile by xinwang-nwpu](https://github.com/xinwang-nwpu/jev-mobile) - Android 自动化：一次 Jev 请求同时从辅助功能树里选出操作和目标元素，再经 ADB 执行。
 - [jev-browser-use by imanshu03](https://github.com/imanshu03/jev-browser-use) - 用自然语言指令驱动浏览器任务，走 CDP 或 Vercel 的 agent-browser：Jev 选择操作和目标，代码先校验置信度再执行。
+- [jev-gui-delegate](https://github.com/YUTA-fywoo/jev-gui-delegate) - 通过真实的 Chrome 会话或 Windows UI 自动化为 Codex 执行委派的 GUI 任务，每一步由 Jev 选择要操作的控件。
 
 ## 开源模型与复刻
 
@@ -168,6 +170,13 @@
 - [Jev-Compatible](https://github.com/David-Lolly/Jev-Compatible) - 把已有的 SGLang 或 vLLM 部署变成 Jev 兼容决策服务的网关，靠候选 token 打分实现，无需训练，也不改模型。
 - [Rizzo Flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) - System One 思路的本地优先实现：输入非结构化状态，输出带概率的带类型决策，不生成任何 token。
 - [metask-jev](https://github.com/metask-ai/metask-jev) - 基于 Qwen3.5 的开放权重带类型决策模型，一次前向输出每个选项的校准概率；在 JevBench 上报告 80.1%，对比 Jev 1.13 的 75.3。
+- [AnyJev](https://github.com/nokia-applied-research/AnyJev) - 把任意开源 Hugging Face 模型变成通过 vLLM 提供服务的校准决策端点，前两个级别无需微调。
+- [ollaya](https://github.com/ollaya-dev/ollaya) - 拉取并运行 Laya、kev、JevK5 等开源决策模型，通过兼容 TypeSafe 的本地端点提供服务，就像 Ollama 服务 LLM 一样。
+- [AgentJev](https://github.com/malevrigns/agent-jev) - 基于 Qwen3-0.6B 的决策模型，无需解码 token 即可作答，在公开的 Typed Decisions 基准上报告 79.25% 的 top-1 准确率。
+- [Valen](https://github.com/Liuziyu77/Valen) - 基于 Qwen3.5 的多模态决策模型，除文本外还能对照图像和视频为候选打分，附训练代码和开放权重。
+- [tev1](https://github.com/togethercomputer/tev1) - 数据配方和训练代码，在 Together AI 上把 Qwen3.5-4B 微调成开放权重的决策模型。
+- [JevK5](https://github.com/allebee/jevk5) - 带蒸馏 LoRA 权重的 Qwen3.5 复刻，在 JevBench v1.4 上于 76 个系统中排名第二，开源系统中排名第一。
+- [djev](https://github.com/mmastrac/djev) - 在 DiffusionGemma 上提供 `/v1/systemone`，从带种子、固定的画布上读出类型化答案和文本片段，不做生成。
 
 ## 代码审查与质量
 
@@ -204,6 +213,7 @@
 - [jev-gateway](https://github.com/vinilana/jev-gateway) - 面向 Codex 和 Claude Code 的本地网关，把“下一步用哪个工具”的决策交给 Jev，其余都交给你平常的模型。
 - [jev-router by daviddl9](https://github.com/daviddl9/jev-router) - 在 OMP 和 Pi 中由 Jev 为每一步选择工作模型档位，规划和复核留给强模型，有边界的执行交给更便宜的模型。
 - [Jevonian](https://github.com/xinyao27/jevonian) - 本地代理，兼容 OpenAI、Anthropic 和 Responses 接口：每轮只发一次 Jev 调用，为虚拟模型 jevonian/auto 同时决定模型路由和思考级别；代码先按协议、上下文窗口、最低推理强度和已用配额窗口筛选候选，固定模型或显式路由则完全跳过 Jev。
+- [neurolink](https://github.com/juspay/neurolink) - TypeScript AI SDK，其中通过 Jev 实现的 decide 与 generate、stream 并列：一次类型化判断调用即可路由模型选择、裁剪上下文并挑选 MCP 工具。
 
 ## 搜索、重排与 RAG
 
@@ -243,6 +253,7 @@
 - [invalidate](https://github.com/chopratejas/invalidate) - 给每条存下的智能体记忆一个租约，并询问 Jev 新证据是否让它失效；[在线演示](https://invalidate-playground.vercel.app)。
 - [jevgraph](https://github.com/chenmingtang830/jevgraph) - 在本地解析 PDF、DOCX、PPTX 或文本，对每个候选实体对向 Jev 提出一个闭集关系问题，并把带逐边概率和页面证据的图导出为 JSON、CSV 或 Neo4j。
 - [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - 把 32 条内容打包进一次请求做批量分类，并校准把最不确定的行交给人工的置信度阈值，报告每秒 533 条、与人工标注一致率 89.2 个百分点。
+- [jev-seo by AgriciDaniel](https://github.com/AgriciDaniel/jev-seo) - 爬取网站，对照 52 条 SEO 规则检查，由 Jev 评判每个页面，并生成 PDF、电子表格和 Markdown 报告。
 
 ## 安全、内容审核与校验
 
@@ -280,7 +291,7 @@
 - [super-jev](https://github.com/kevthetech143/super-jev) - 把证据、Jev 判断、允许的动作和已验证的结果串起来的小型载体。
 - [safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) - 面向 Neon AI Gateway 的 Neon Function 代理，前置 Jev 路由。
 - [Sponsor Skip](https://github.com/trungdq88/youtube-sponsor-detection) - Chrome 扩展，从字幕或实时音频中找出口播广告并跳过；所有时间戳都由代码掌控，字幕模式下每小时不到一美分。
-- [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) - 面向 SEO 和 GEO 检查的 Rust CLI 与 MCP 服务器，基于 DuckDuckGo 结果，由 Jev 打分。
+- [jev-seo by AkashPriyadarshii](https://github.com/AkashPriyadarshii/jev-seo) - 面向 SEO 和 GEO 检查的 Rust CLI 与 MCP 服务器，基于 DuckDuckGo 结果，由 Jev 打分。
 - [jev.nvim](https://github.com/valentynkit/jev.nvim) - Neovim 插件：用自然语言向缓冲区提问，Treesitter 把它切成函数，Jev 为每个函数打分，答案按概率排序落入 quickfix。
 - [jev-skip](https://github.com/valentynkit/jev-skip) - 浏览器扩展，读取字幕轨道并在片头结束前把每段的赞助概率画在进度条上，不依赖众包数据库；在 23 个视频上报告捕获了 SponsorBlock 赞助秒数的 77%，每个视频 $0.0008。
 - [openpoke-meets-jev](https://github.com/0xShin0221/openpoke-meets-jev) - OpenPoke 分支，把邮件筛选、工具调用护栏和搜索重排序移到 Jev 上，附带与被替换的 Sonnet 调用的 A/B 对比，以及对注入门控的对抗测试。
@@ -291,6 +302,7 @@
 - [dasheng](https://github.com/wquguru/dasheng) - 朗读英文并看到评分：流式 ASR 负责听，Jev 逐词判断，总分由代码算术得出。
 - [Jev Chat](https://github.com/w3cj/jev-chat) - 聊天形态的命令栏：由 Jev 选择工具、参数和回复形式，代码再用工具自身的数据拼出回答，全程没有模型写文本。
 - [jev-riffs](https://github.com/hazlema/jev-riffs) - 从 MIDI 旋律中挖掘重复动机，用一次批量 Jev 调用给所有候选打分，并在钢琴卷帘上高亮和播放胜出者；在管弦乐版《天鹅湖》上，排名第一的动机正是天鹅主题。
+- [shapeshift](https://github.com/anishfn/shapeshift) - 输入时把一个文本框变成对应的卡片，由一次并行 Jev 调用判断；未设置密钥时回退到关键词匹配。
 
 ## 游戏、机器人与仿真
 
@@ -320,6 +332,7 @@
 - [trade-jev](https://github.com/justinhe16/trade-jev) - 在 NQ 订单簿数据上回测把 Jev 当作买入、卖出或持有的交易者。
 - [Jev-Trades](https://github.com/zadescoxp/Jev-Trades) - 带回测的加密货币交易机器人。
 - [jev-trade](https://github.com/aowang-ai/jev-trade) - 运行在 Hyperliquid 上的实盘 Jev 交易者。
+- [beebots](https://github.com/imikerussell/beebots) - 在 OKX 永续合约上运行三个由 Jev 驱动的交易机器人，带实时仪表盘，默认模拟交易，真实资金需显式开关才能启用。
 
 ## 基准、评测与校准
 
@@ -349,6 +362,7 @@
 - [JevBench](https://github.com/fstandhartinger/jevbench) - 面向 Jev 类决策模型的基准：输入有边界的评分标准，输出每个选项带概率的带类型答案，级联和委员会实验另行报告。
 - [jev-align](https://github.com/sutro-sh/jev-align) - 找出 Jev 函数最不确定的样例，请你标注，再用 GEPA 改进这个函数。
 - [jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) - 测量一次 Jev 请求的计费方式，以及答案在批处理、翻译和改写下是否稳定，基于 3,455 次计费请求，原始日志公开。
+- [jevals](https://github.com/openlayer-ai/jevals) - 把一条 trace 的代理、质量和安全评估作为一批类型化 Jev 问题一次运行，取代多次独立的 LLM 评判调用。
 
 ## 演练场与演示
 
@@ -388,10 +402,13 @@
 - [watfile](https://github.com/jexp/watfile) - 把 PDF 和文本文件分类归入对应文件夹，每份文档一个 Jev Choice，也可改用本地的 Laya 后端。
 - [jeq](https://github.com/cristianoliveira/jeq) - 在 JSON 和 NDJSON 上以管道方式组合 Jev 判断，提供 map、reduce、rank 和 rate，再通过显式的离线闸门应用策略。
 - [jevgrep by allebee](https://github.com/allebee/jevgrep) - 按含义过滤日志行和其他文本流，每行一个 Noul、以微批次发送，可从 `tail -f` 流式处理，并沿用 grep 的参数和退出码。
+- [jevgrep by dzhng](https://github.com/dzhng/jevgrep) - 向 Jev 询问哪些声明能回答关于仓库的自然语言问题，从而为编码代理找出所需的文件、声明和原文摘录。
+- [webctl](https://github.com/dorkitude/webctl) - 为代理搜索网页，并让 Jev 对结果和页面片段打分、去重，只把相关文本交给模型。
 
 ## 社区客户端
 
 - [jev-go](https://github.com/Gaurav-Gosain/jev-go) - Go 客户端，返回带类型的判断和概率。
+- [Milvus Model](https://github.com/milvus-io/milvus-model) - 重排序包，其 Jev 适配器在一次请求中把每个候选文档作为 Noul 问题发送，按返回的概率排序并保留原始索引；已随 v0.3.4 版本发布。
 - [typesafe-go](https://github.com/zhirschtritt/typesafe-go) - 符合 Go 习惯的 TypeSafe API SDK。
 - [typesafe-ai](https://github.com/Twister915/typesafe-ai) - Rust 客户端，提供异步和阻塞两种后端以及可观测的重试。
 - [typesafe-ai-rs](https://github.com/gilljon/typesafe-ai-rs) - 独立的异步与阻塞 Rust SDK。
