@@ -286,6 +286,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [tev1](https://github.com/togethercomputer/tev1) - Data recipe and training code that fine-tune Qwen3.5-4B into an open-weight decision model on Together AI.
 - [JevK5](https://github.com/allebee/jevk5) - Qwen3.5 replica with distilled LoRA weights, ranked second of 76 systems and first among open ones on JevBench v1.4.
 - [djev](https://github.com/mmastrac/djev) - Serves `/v1/systemone` on DiffusionGemma by reading typed answers and text spans off a seeded, pinned canvas, with no generation.
+- [OneJev](https://github.com/OmniJev/OneJev) - Open multimodal System One model, 0.8B to 27B, for screenshots, photos, video and text.
 
 ## Code review and quality
 
