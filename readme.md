@@ -367,6 +367,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jevgraph](https://github.com/chenmingtang830/jevgraph) - Parses PDF, DOCX, PPTX, or text locally, then asks Jev one closed-set relation question per candidate entity pair and exports a graph with per-edge probabilities and page evidence to JSON, CSV, or Neo4j.
 - [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - Packs 32 items into one request for bulk classification and calibrates the confidence cut that sends the least-sure rows to a person, reporting 533 items a second at 89.2 percent agreement with human labels.
 - [jev-seo by AgriciDaniel](https://github.com/AgriciDaniel/jev-seo) - Crawls a site, checks it against 52 SEO rules, has Jev judge every page, and writes PDF, spreadsheet, and Markdown reports.
+- [JevSpan](https://github.com/lzq-0529/jev-span) - Zero-shot named entity recognition for Chinese and English: code proposes candidate spans at punctuation and Jev choice questions nominate, verify, and fix the boundary of each entity; reports 73.7 average strict F1 on 12 NER benchmarks against 72.1 for Qwen3.8-27B.
 
 ## Safety, moderation and verification
 
