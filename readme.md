@@ -342,6 +342,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [Senseek](https://github.com/liou666/senseek) - Browser extension that searches the page you are reading by meaning, in a Ctrl+F style box, with your own key and no backend.
 - [Milvus Search with Jev](https://github.com/milvus-io/bootcamp/tree/master/bootcamp/RAG/search_with_jev) - Nine runnable notebooks combining Gemini embeddings and Milvus retrieval with Jev decisions for reranking, filtering, search stopping, routing, cache reuse, curation, guardrails, and evaluation.
 - [JevPDF](https://github.com/kylemclaren/jevpdf) - Searches a PDF by meaning in the browser: pdf.js extracts the lines locally, Jev answers one Noul per line in batches of 16, and matching lines light up page by page, ranked by probability.
+- [Jev RAG](https://github.com/aifabrice/jev-rag) - Searches local documents with BM25 or hybrid retrieval, reranks candidate passages with batched Jev Noul judgments, and measures seven retrieval pipelines on BEIR NFCorpus.
 
 ## Data and ops
 
