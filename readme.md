@@ -183,6 +183,7 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) - Checks every side-effecting tool call against what you said earlier in the session, so "review only" still holds after compaction.
 - [pi-jev-sentinel](https://github.com/harshwasan/pi-jev-sentinel) - Checks Pi tool calls, tool outputs, and replies for risky actions and prompt injection, with user approvals, context re-checks, secret scrubbing, and optional task pinning.
 - [pi-mcp-adapter](https://github.com/nicobailon/pi-mcp-adapter) - Opt-in typed evaluation and semantic search over MCP tool results, behind a per-server data-egress allowlist.
+- [mu](https://github.com/qybaihe/mu) - Coding agent and desktop app built on Pi that hands 38 routine decisions to Jev, from which tool output enters the context to prompt-injection screening and checking a "done", each one switchable between active, shadow and off with every verdict in a local ledger; pre-release.
 
 ### Hermes
 
