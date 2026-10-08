@@ -62,6 +62,7 @@
 - [jev-rules](https://github.com/EliaAlberti/jev-rules) - 상시 규칙을 프롬프트마다 점수화하여 해당되는 것만 세션당 한 번 전달합니다.
 - [jev-belay](https://github.com/valentynkit/jev-belay) - 검증되지 않은 "완료"를 막는 Stop 훅입니다: 기록에서 증거를 읽고, 파일이 바뀐 뒤 통과한 검사가 없을 때만 질문 네 개짜리 Jev 호출을 한 번 쓰며, 모든 오류 경로에서는 열린 채로 실패합니다.
 - [jev-use](https://github.com/shitianfang/jev-use) - Claude Code, Codex, pi에서 텍스트 출력이 필요 없는 단계를 Jev에 맡기고, 결정해서는 안 되는 모든 사항에는 타입이 지정된 에스컬레이션 계약을 둡니다.
+- [jev-skill-router](https://github.com/shimo4228/jev-skill-router) - Hook that asks Jev which installed skill fits each prompt and logs the answer; in the author's week of shadow mode, 28 of 539 suggestions were followed by a call of that skill, and the author then removed it.
 ### Codex
 
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - Codex의 매 턴마다 모델, 사고 깊이, 속도 모드를 고릅니다.

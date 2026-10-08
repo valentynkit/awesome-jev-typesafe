@@ -62,6 +62,7 @@
 - [jev-rules](https://github.com/EliaAlberti/jev-rules) - 针对每个提示词为你的常驻规则打分，每个会话只投送一次真正适用的那些。
 - [jev-belay](https://github.com/valentynkit/jev-belay) - Stop 钩子，拦截未经验证的“完成”：读取记录寻找证据，仅当文件有改动且此后没有通过的检查时，才花一次四问的 Jev 调用；所有错误路径均失败放行。
 - [jev-use](https://github.com/shitianfang/jev-use) - 把 Claude Code、Codex 和 pi 中无需文本输出的步骤交给 Jev 处理，并为所有它不该决定的事项提供类型化的升级契约。
+- [jev-skill-router](https://github.com/shimo4228/jev-skill-router) - Hook that asks Jev which installed skill fits each prompt and logs the answer; in the author's week of shadow mode, 28 of 539 suggestions were followed by a call of that skill, and the author then removed it.
 ### Codex
 
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - 为每个 Codex 回合选择模型、思考深度和速度模式。

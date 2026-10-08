@@ -62,6 +62,7 @@
 - [jev-rules](https://github.com/EliaAlberti/jev-rules) - 常設のルールをプロンプトごとに採点し、該当するものだけをセッションに 1 回だけ届けます。
 - [jev-belay](https://github.com/valentynkit/jev-belay) - 未検証の「完了」をブロックする Stop フックで、トランスクリプトから根拠を読み取り、ファイルが変更されて以降に合格したチェックがない場合にのみ 4 問の Jev 呼び出しを 1 回使い、あらゆるエラー経路ではフェイルオープンします。
 - [jev-use](https://github.com/shitianfang/jev-use) - Claude Code、Codex、pi のうちテキスト出力が不要なステップを Jev に任せ、判断すべきでない事柄には型付きのエスカレーション契約を用意します。
+- [jev-skill-router](https://github.com/shimo4228/jev-skill-router) - Hook that asks Jev which installed skill fits each prompt and logs the answer; in the author's week of shadow mode, 28 of 539 suggestions were followed by a call of that skill, and the author then removed it.
 ### Codex
 
 - [jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) - Codex のターンごとにモデル、思考の深さ、速度モードを選びます。
