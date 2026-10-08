@@ -217,6 +217,7 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) - Hands an agent's small decisions to Jev: which model answers the turn, which skills to load, which passages matter, which turns survive compaction.
 - [Stanley](https://github.com/devagrawal09/stanley-code) - Coding CLI where Jev routes a plain-language request to one deterministic workflow, and that workflow asks Jev fixed-choice questions about the evidence it gathered.
 - [JevHarness](https://github.com/TianyuCodings/JevHarness) - Has an LLM write a task-specific harness that turns observations into Jev questions, then freezes it and improves it from rewards and full execution traces.
+- [building-with-typesafe-jev](https://github.com/aaddrick/building-with-typesafe-jev) - Skill that packs the Choice, Score, and Noul API shapes, confidence thresholds, and 150+ community projects with a code sketch each, so an agent can design without fetching the docs.
 
 ## Browser and computer use
 
