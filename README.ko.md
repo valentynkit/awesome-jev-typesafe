@@ -82,6 +82,7 @@
 - [pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) - 부수 효과가 있는 모든 도구 호출을 세션 앞부분에서 한 말과 대조하여, 컨텍스트 압축 이후에도 "검토만"이 유지되게 합니다.
 - [pi-jev-sentinel](https://github.com/harshwasan/pi-jev-sentinel) - Pi의 도구 호출, 도구 출력, 응답을 Jev로 검사하여 위험한 작업과 프롬프트 인젝션을 잡아내며, 사용자 승인, 컨텍스트 재검사, 시크릿 제거, 선택적 작업 고정을 제공합니다.
 - [pi-mcp-adapter](https://github.com/nicobailon/pi-mcp-adapter) - MCP 도구 결과에 대한 선택적 타입 평가와 시맨틱 검색을 서버별 데이터 반출 허용 목록 뒤에서 제공합니다.
+- [mu](https://github.com/qybaihe/mu) - Coding agent and desktop app built on Pi that hands 38 routine decisions to Jev, from which tool output enters the context to prompt-injection screening and checking a "done", each one switchable between active, shadow and off with every verdict in a local ledger; pre-release.
 ### Hermes
 
 - [typesafe-skill-router](https://github.com/DECRUX9812/typesafe-skill-router) - 모델 호출 전에 불러올 가치가 있는 스킬 하나를 지목하며, 표준 라이브러리만 쓰고 턴당 약 0.1센트가 듭니다.

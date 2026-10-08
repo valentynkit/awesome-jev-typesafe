@@ -82,6 +82,7 @@
 - [pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) - 副作用のあるツール呼び出しをセッションの前半で述べた内容に照らして確認し、コンテキスト圧縮の後も「レビューのみ」が保たれるようにします。
 - [pi-jev-sentinel](https://github.com/harshwasan/pi-jev-sentinel) - Pi のツール呼び出し、ツール出力、返答を Jev で確認し、危険な操作とプロンプトインジェクションを検出します。ユーザー承認、コンテキストの再確認、シークレットの除去、任意のタスク固定を備えます。
 - [pi-mcp-adapter](https://github.com/nicobailon/pi-mcp-adapter) - MCP ツールの結果に対する任意の型付き評価とセマンティック検索で、サーバーごとのデータ送出許可リストで制御します。
+- [mu](https://github.com/qybaihe/mu) - Coding agent and desktop app built on Pi that hands 38 routine decisions to Jev, from which tool output enters the context to prompt-injection screening and checking a "done", each one switchable between active, shadow and off with every verdict in a local ledger; pre-release.
 ### Hermes
 
 - [typesafe-skill-router](https://github.com/DECRUX9812/typesafe-skill-router) - モデル呼び出しの前に読み込む価値のあるスキルを 1 つだけ指名し、標準ライブラリのみで、1 ターンあたり約 0.1 セントです。

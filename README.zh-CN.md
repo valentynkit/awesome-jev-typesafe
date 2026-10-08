@@ -82,6 +82,7 @@
 - [pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) - 把每次有副作用的工具调用对照你在会话前面说过的话做检查，这样“只做复核”在上下文压缩后依然成立。
 - [pi-jev-sentinel](https://github.com/harshwasan/pi-jev-sentinel) - 用 Jev 检查 Pi 的工具调用、工具输出和回复中的风险操作与提示注入，带用户审批、上下文复检、密钥擦除和可选的任务锁定。
 - [pi-mcp-adapter](https://github.com/nicobailon/pi-mcp-adapter) - 对 MCP 工具结果做可选的带类型评估和语义搜索，受按服务器配置的数据外发白名单约束。
+- [mu](https://github.com/qybaihe/mu) - Coding agent and desktop app built on Pi that hands 38 routine decisions to Jev, from which tool output enters the context to prompt-injection screening and checking a "done", each one switchable between active, shadow and off with every verdict in a local ledger; pre-release.
 ### Hermes
 
 - [typesafe-skill-router](https://github.com/DECRUX9812/typesafe-skill-router) - 在模型调用前指出唯一值得加载的那个技能；仅用标准库，每回合约千分之一美元。
