@@ -161,6 +161,7 @@ Copied from the vendor's pages on 2026-09-18; every page is linked under Start h
 - [jev-rules](https://github.com/EliaAlberti/jev-rules) - Scores your standing rules against each prompt and delivers only the ones that apply, once per session.
 - [jev-belay](https://github.com/valentynkit/jev-belay) - Stop hook that blocks an unverified "done": reads the transcript for evidence and, only when files changed with no passing check since, spends one four-question Jev call; fails open on every error path.
 - [jev-use](https://github.com/shitianfang/jev-use) - Hands the Claude Code, Codex and pi steps that need no text output to Jev, with a typed escalation contract for everything it should not decide.
+- [jev-skill-router](https://github.com/shimo4228/jev-skill-router) - Hook that asks Jev which installed skill fits each prompt and logs the answer; in the author's week of shadow mode, 28 of 539 suggestions were followed by a call of that skill, and the author then removed it.
 
 ### Codex
 
