@@ -517,6 +517,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [Jev System One](https://github.com/haseeb-heaven/jev-system-one) - Terminal interface where OpenAI answers and Jev separately scores relevance, reliability, and quality.
 - [jev-web-analyzer](https://github.com/replynodes/jev-web-analyzer) - Turns a SaaS landing page into Markdown and asks Jev ten bounded Choice questions about what a first-time visitor understands, shown as a founder teardown.
 - [hn-thread-judge](https://github.com/rishi-raj-jain/hn-thread-judge) - Reads the most-discussed Hacker News threads comment by comment with Jev and reduces each one to a single verdict, served live from Postgres.
+- [1 Million Emojis](https://github.com/cwdx/1-million-emojis) - Shared 1000 × 1000 emoji canvas where Jev joins each stroke with one Choice over named emoji and square pairs, its pick sampled from the probabilities; [paint on it](https://chriswijnia.com/lab/emoji).
 
 ## Command line
 
