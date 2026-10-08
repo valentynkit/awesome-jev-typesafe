@@ -177,6 +177,7 @@
 - [tev1](https://github.com/togethercomputer/tev1) - Together AI에서 Qwen3.5-4B를 공개 가중치 판정 모델로 파인튜닝하는 데이터 레시피와 학습 코드.
 - [JevK5](https://github.com/allebee/jevk5) - 증류된 LoRA 가중치를 갖춘 Qwen3.5 복제본. JevBench v1.4에서 76개 시스템 중 2위, 공개 시스템 중 1위.
 - [djev](https://github.com/mmastrac/djev) - DiffusionGemma에서 `/v1/systemone`을 제공하며, 시드를 주고 고정한 캔버스에서 타입이 있는 답과 텍스트 구간을 읽어냅니다. 생성은 하지 않습니다.
+- [OneJev](https://github.com/OmniJev/OneJev) - Open multimodal System One model, 0.8B to 27B, for screenshots, photos, video and text.
 
 ## 코드 리뷰와 품질
 

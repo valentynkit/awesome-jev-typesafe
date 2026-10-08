@@ -177,6 +177,7 @@
 - [tev1](https://github.com/togethercomputer/tev1) - Together AI 上で Qwen3.5-4B をオープンウェイトの判定モデルにファインチューニングするデータレシピと学習コード。
 - [JevK5](https://github.com/allebee/jevk5) - 蒸留 LoRA ウェイト付きの Qwen3.5 レプリカ。JevBench v1.4 で 76 システム中 2 位、オープンなものでは 1 位。
 - [djev](https://github.com/mmastrac/djev) - DiffusionGemma 上で `/v1/systemone` を提供し、シード付きで固定したキャンバスから型付きの答えとテキスト範囲を読み取ります。生成は行いません。
+- [OneJev](https://github.com/OmniJev/OneJev) - Open multimodal System One model, 0.8B to 27B, for screenshots, photos, video and text.
 
 ## コードレビューと品質
 
