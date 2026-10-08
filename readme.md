@@ -600,6 +600,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [TypeSafeのJevを正しく驚く](https://zenn.dev/nwn/articles/824026c76116e0) - Japanese; reproduces the logit shortcut on Gemma and compares against LLMs on the Mario harness.
 - [TypeSafe Jev vs Claude Code: 4 models, 2 real jobs](https://primeline.cc/blog/typesafe-jev-pre-registered-test) - Pre-registered test of about 9,750 calls: calibration error by question type, Jev ahead on commit classification and behind on knowledge-base filing, abstention closing the gap.
 - [Jev, three days in](https://aiwithmike.substack.com/p/jev-three-days-in-what-is-known-what) - What is known, what is guessed, and what it is good for, with the independent numbers pulled together.
+- [Jev in the Wild](https://arxiv.org/abs/2609.30216) - Surveys 2,170 public Jev projects and maps early growth, application domains, and how Choice, Noul, and Score support different decisions.
 
 ### Essays and threads
 
