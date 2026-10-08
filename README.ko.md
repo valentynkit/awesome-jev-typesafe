@@ -392,6 +392,7 @@
 - [Jev System One](https://github.com/haseeb-heaven/jev-system-one) - OpenAI가 답하고 Jev가 별도로 관련성, 신뢰성, 품질을 점수화하는 터미널 인터페이스입니다.
 - [jev-web-analyzer](https://github.com/replynodes/jev-web-analyzer) - SaaS 랜딩 페이지를 Markdown으로 바꾸고 첫 방문자가 무엇을 이해하는지 Jev에 열 가지 제한된 Choice 질문을 던진 뒤, 창업자 관점의 분석으로 보여줍니다.
 - [hn-thread-judge](https://github.com/rishi-raj-jain/hn-thread-judge) - Hacker News에서 가장 많이 논의된 스레드를 Jev가 댓글 단위로 읽고 각각을 하나의 판정으로 요약해 Postgres에서 바로 제공합니다.
+- [1 Million Emojis](https://github.com/cwdx/1-million-emojis) - Shared 1000 × 1000 emoji canvas where Jev joins each stroke with one Choice over named emoji and square pairs, its pick sampled from the probabilities; [paint on it](https://chriswijnia.com/lab/emoji).
 
 ## 커맨드 라인
 

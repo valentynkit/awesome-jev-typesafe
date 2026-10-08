@@ -392,6 +392,7 @@
 - [Jev System One](https://github.com/haseeb-heaven/jev-system-one) - 终端界面，由 OpenAI 作答，Jev 单独为相关性、可靠性和质量打分。
 - [jev-web-analyzer](https://github.com/replynodes/jev-web-analyzer) - 把 SaaS 落地页转成 Markdown，向 Jev 提十个有界的 Choice 问题，判断首次访客能理解什么，并以创始人视角的拆解呈现。
 - [hn-thread-judge](https://github.com/rishi-raj-jain/hn-thread-judge) - 用 Jev 逐条读完 Hacker News 上讨论最多的帖子，把每个帖子归结为一个结论，由 Postgres 实时提供。
+- [1 Million Emojis](https://github.com/cwdx/1-million-emojis) - Shared 1000 × 1000 emoji canvas where Jev joins each stroke with one Choice over named emoji and square pairs, its pick sampled from the probabilities; [paint on it](https://chriswijnia.com/lab/emoji).
 
 ## 命令行
 
