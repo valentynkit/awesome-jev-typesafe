@@ -112,6 +112,7 @@
 - [hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) - エージェントの小さな判断を Jev に任せます。そのターンにどのモデルが答えるか、どのスキルを読み込むか、どの検索結果が重要か、どのターンが要約後も残るかです。
 - [Stanley](https://github.com/devagrawal09/stanley-code) - コーディング用の CLI です。自然言語の要求を Jev が 1 つの決定的なワークフローに振り分け、そのワークフローが集めた証拠について Jev に選択肢固定の質問をします。
 - [JevHarness](https://github.com/TianyuCodings/JevHarness) - 観測を Jev への質問に変えるタスク専用のハーネスを LLM に書かせ、それを固定したうえで報酬と実行トレース全体から改善します。
+- [building-with-typesafe-jev](https://github.com/aaddrick/building-with-typesafe-jev) - Skill that packs the Choice, Score, and Noul API shapes, confidence thresholds, and 150+ community projects with a code sketch each, so an agent can design without fetching the docs.
 
 ## ブラウザとコンピュータ操作
 

@@ -112,6 +112,7 @@
 - [hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) - 에이전트의 작은 결정을 Jev에게 맡깁니다. 이번 턴에 어떤 모델이 답할지, 어떤 스킬을 불러올지, 어떤 검색 구절이 중요한지, 어떤 턴이 압축 뒤에도 남을지를 정합니다.
 - [Stanley](https://github.com/devagrawal09/stanley-code) - 코딩용 CLI입니다. 평문 요청을 Jev가 하나의 결정적 워크플로로 보내고, 그 워크플로가 모은 근거를 두고 Jev에게 선택지가 고정된 질문을 던집니다.
 - [JevHarness](https://github.com/TianyuCodings/JevHarness) - 관측을 Jev 질문으로 바꾸는 과제 전용 하네스를 LLM이 작성하게 하고, 이를 고정한 뒤 보상과 전체 실행 트레이스로 개선합니다.
+- [building-with-typesafe-jev](https://github.com/aaddrick/building-with-typesafe-jev) - Skill that packs the Choice, Score, and Noul API shapes, confidence thresholds, and 150+ community projects with a code sketch each, so an agent can design without fetching the docs.
 
 ## 브라우저와 컴퓨터 사용
 

@@ -112,6 +112,7 @@
 - [hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) - 把智能体的小决策交给 Jev：这一轮由哪个模型回答、加载哪些技能、哪些检索片段重要、哪些对话轮次能留到压缩之后。
 - [Stanley](https://github.com/devagrawal09/stanley-code) - 命令行编码工具：Jev 把自然语言请求路由到某个确定性工作流，该工作流再就自己收集的证据向 Jev 提出固定选项的问题。
 - [JevHarness](https://github.com/TianyuCodings/JevHarness) - 让 LLM 写出面向具体任务的 harness，把观测转成 Jev 问题，然后固定下来，再用奖励和完整执行轨迹改进它。
+- [building-with-typesafe-jev](https://github.com/aaddrick/building-with-typesafe-jev) - Skill that packs the Choice, Score, and Noul API shapes, confidence thresholds, and 150+ community projects with a code sketch each, so an agent can design without fetching the docs.
 
 ## 浏览器与计算机操作
 
