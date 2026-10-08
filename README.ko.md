@@ -235,6 +235,7 @@
 - [Senseek](https://github.com/liou666/senseek) - 읽고 있는 페이지를 의미로 검색하는 브라우저 확장입니다. Ctrl+F 방식의 검색창을 쓰고, 자신의 키만 있으면 되며 백엔드가 필요 없습니다.
 - [Milvus Search with Jev](https://github.com/milvus-io/bootcamp/tree/master/bootcamp/RAG/search_with_jev) - 실행 가능한 노트북 9개. Gemini 임베딩과 Milvus 검색에 Jev 판정을 결합해 재순위, 필터링, 검색 중단, 라우팅, 캐시 재사용, 큐레이션, 가드레일, 평가를 합니다.
 - [JevPDF](https://github.com/kylemclaren/jevpdf) - 브라우저에서 PDF를 의미로 검색합니다. pdf.js가 로컬에서 줄을 추출하고, Jev가 16줄씩 줄마다 Noul 하나로 답하며, 일치하는 줄이 확률순으로 페이지마다 강조됩니다.
+- [Jev RAG](https://github.com/aifabrice/jev-rag) - Searches local documents with BM25 or hybrid retrieval, reranks candidate passages with batched Jev Noul judgments, and measures seven retrieval pipelines on BEIR NFCorpus.
 
 ## 데이터와 운영
 

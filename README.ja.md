@@ -235,6 +235,7 @@
 - [Senseek](https://github.com/liou666/senseek) - 読んでいるページを意味で検索するブラウザ拡張です。Ctrl+F 風の検索ボックスで、自分のキーを使い、バックエンドは不要です。
 - [Milvus Search with Jev](https://github.com/milvus-io/bootcamp/tree/master/bootcamp/RAG/search_with_jev) - 実行可能な 9 本のノートブック。Gemini 埋め込みと Milvus 検索に Jev の判定を組み合わせ、再ランキング、フィルタリング、検索の打ち切り、ルーティング、キャッシュ再利用、キュレーション、ガードレール、評価を行います。
 - [JevPDF](https://github.com/kylemclaren/jevpdf) - ブラウザ内で PDF を意味で検索します。pdf.js がローカルで行を抽出し、Jev が 16 行ずつ 1 行 1 Noul で答え、一致した行が確率順にページごとにハイライトされます。
+- [Jev RAG](https://github.com/aifabrice/jev-rag) - Searches local documents with BM25 or hybrid retrieval, reranks candidate passages with batched Jev Noul judgments, and measures seven retrieval pipelines on BEIR NFCorpus.
 
 ## データと運用
 

@@ -235,6 +235,7 @@
 - [Senseek](https://github.com/liou666/senseek) - 浏览器扩展：用 Ctrl+F 式的搜索框按含义搜索当前页面，使用你自己的密钥，无需后端。
 - [Milvus Search with Jev](https://github.com/milvus-io/bootcamp/tree/master/bootcamp/RAG/search_with_jev) - 九个可运行的 notebook，把 Gemini 嵌入、Milvus 检索和 Jev 决策结合起来，用于重排、过滤、搜索停止、路由、缓存复用、数据整理、护栏和评估。
 - [JevPDF](https://github.com/kylemclaren/jevpdf) - 在浏览器里按含义搜索 PDF：pdf.js 在本地提取文本行，Jev 以每批 16 行、每行一个 Noul 作答，匹配的行按概率排序并逐页高亮。
+- [Jev RAG](https://github.com/aifabrice/jev-rag) - Searches local documents with BM25 or hybrid retrieval, reranks candidate passages with batched Jev Noul judgments, and measures seven retrieval pipelines on BEIR NFCorpus.
 
 ## 数据与运维
 
