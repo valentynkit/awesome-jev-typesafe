@@ -256,6 +256,7 @@
 - [jevgraph](https://github.com/chenmingtang830/jevgraph) - PDF, DOCX, PPTX, 텍스트를 로컬에서 파싱하고 후보 엔티티 쌍마다 닫힌 집합의 관계 질문을 Jev에게 던진 뒤, 간선별 확률과 페이지 근거가 담긴 그래프를 JSON, CSV, Neo4j로 내보냅니다.
 - [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - 32개 항목을 한 요청에 묶어 대량 분류하고, 가장 불확실한 행을 사람에게 넘기는 신뢰도 기준을 보정합니다. 초당 533개, 사람 라벨과 89.2퍼센트 일치로 보고합니다.
 - [jev-seo by AgriciDaniel](https://github.com/AgriciDaniel/jev-seo) - 사이트를 크롤링해 52개 SEO 규칙으로 점검하고, Jev가 각 페이지를 판정해 PDF, 스프레드시트, Markdown 보고서를 만듭니다.
+- [JevSpan](https://github.com/lzq-0529/jev-span) - Zero-shot named entity recognition for Chinese and English: code proposes candidate spans at punctuation and Jev choice questions nominate, verify, and fix the boundary of each entity; reports 73.7 average strict F1 on 12 NER benchmarks against 72.1 for Qwen3.8-27B.
 
 ## 안전, 모더레이션, 검증
 

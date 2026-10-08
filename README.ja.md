@@ -256,6 +256,7 @@
 - [jevgraph](https://github.com/chenmingtang830/jevgraph) - PDF、DOCX、PPTX、テキストをローカルで解析し、候補となるエンティティの組ごとに閉じた選択肢の関係質問を Jev に投げ、辺ごとの確率とページ証拠を持つグラフを JSON、CSV、Neo4j に書き出します。
 - [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - 32 件を 1 リクエストにまとめて一括分類し、最も確信度の低い行を人に回す閾値を較正します。毎秒 533 件、人手ラベルとの一致率 89.2 パーセントと報告しています。
 - [jev-seo by AgriciDaniel](https://github.com/AgriciDaniel/jev-seo) - サイトをクロールして 52 の SEO ルールで検査し、Jev が各ページを判定して、PDF、スプレッドシート、Markdown のレポートを書き出します。
+- [JevSpan](https://github.com/lzq-0529/jev-span) - Zero-shot named entity recognition for Chinese and English: code proposes candidate spans at punctuation and Jev choice questions nominate, verify, and fix the boundary of each entity; reports 73.7 average strict F1 on 12 NER benchmarks against 72.1 for Qwen3.8-27B.
 
 ## 安全性・モデレーション・検証
 

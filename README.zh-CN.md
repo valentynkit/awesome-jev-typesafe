@@ -256,6 +256,7 @@
 - [jevgraph](https://github.com/chenmingtang830/jevgraph) - 在本地解析 PDF、DOCX、PPTX 或文本，对每个候选实体对向 Jev 提出一个闭集关系问题，并把带逐边概率和页面证据的图导出为 JSON、CSV 或 Neo4j。
 - [jev-ultralightspeed](https://github.com/collapseindex/jev-ultralightspeed) - 把 32 条内容打包进一次请求做批量分类，并校准把最不确定的行交给人工的置信度阈值，报告每秒 533 条、与人工标注一致率 89.2 个百分点。
 - [jev-seo by AgriciDaniel](https://github.com/AgriciDaniel/jev-seo) - 爬取网站，对照 52 条 SEO 规则检查，由 Jev 评判每个页面，并生成 PDF、电子表格和 Markdown 报告。
+- [JevSpan](https://github.com/lzq-0529/jev-span) - Zero-shot named entity recognition for Chinese and English: code proposes candidate spans at punctuation and Jev choice questions nominate, verify, and fix the boundary of each entity; reports 73.7 average strict F1 on 12 NER benchmarks against 72.1 for Qwen3.8-27B.
 
 ## 安全、内容审核与校验
 
