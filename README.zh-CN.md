@@ -181,6 +181,7 @@
 - [JevK5](https://github.com/allebee/jevk5) - 带蒸馏 LoRA 权重的 Qwen3.5 复刻，在 JevBench v1.4 上于 76 个系统中排名第二，开源系统中排名第一。
 - [djev](https://github.com/mmastrac/djev) - 在 DiffusionGemma 上提供 `/v1/systemone`，从带种子、固定的画布上读出类型化答案和文本片段，不做生成。
 - [OneJev](https://github.com/OmniJev/OneJev) - Open multimodal System One model, 0.8B to 27B, for screenshots, photos, video and text.
+- [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) - Open-weight ModernBERT-base fine-tune that answers Noul, Choice, Score, and multi-label questions with a probability per option, serves `/v1/systemone` for the official Python SDK, and runs in the browser through ONNX; independent replica, not TypeSafe weights.
 
 ## 代码审查与质量
 

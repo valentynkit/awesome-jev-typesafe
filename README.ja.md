@@ -181,6 +181,7 @@
 - [JevK5](https://github.com/allebee/jevk5) - 蒸留 LoRA ウェイト付きの Qwen3.5 レプリカ。JevBench v1.4 で 76 システム中 2 位、オープンなものでは 1 位。
 - [djev](https://github.com/mmastrac/djev) - DiffusionGemma 上で `/v1/systemone` を提供し、シード付きで固定したキャンバスから型付きの答えとテキスト範囲を読み取ります。生成は行いません。
 - [OneJev](https://github.com/OmniJev/OneJev) - Open multimodal System One model, 0.8B to 27B, for screenshots, photos, video and text.
+- [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) - Open-weight ModernBERT-base fine-tune that answers Noul, Choice, Score, and multi-label questions with a probability per option, serves `/v1/systemone` for the official Python SDK, and runs in the browser through ONNX; independent replica, not TypeSafe weights.
 
 ## コードレビューと品質
 
