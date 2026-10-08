@@ -472,6 +472,7 @@
 - [TypeSafeのJevを正しく驚く](https://zenn.dev/nwn/articles/824026c76116e0) - 日语；在 Gemma 上复现了 logit 捷径，并在马里奥载体上与多款 LLM 作对比。
 - [TypeSafe Jev vs Claude Code: 4 models, 2 real jobs](https://primeline.cc/blog/typesafe-jev-pre-registered-test) - 约 9,750 次调用的预注册测试：按问题类型给出校准误差，Jev 在提交分类上领先、在知识库归档上落后，弃权把差距补了回来。
 - [Jev, three days in](https://aiwithmike.substack.com/p/jev-three-days-in-what-is-known-what) - 哪些已知、哪些是猜的、它适合做什么，把各方独立数字汇到一处。
+- [Jev in the Wild](https://arxiv.org/abs/2609.30216) - Surveys 2,170 public Jev projects and maps early growth, application domains, and how Choice, Noul, and Score support different decisions.
 ### 长文与推文串
 
 - [Building a harness with Jev](https://www.langchain.com/blog/building-a-harness-with-jev) - LangChain 谈模型路由，以及把危险的工具调用挡在一个带类型决策之后。

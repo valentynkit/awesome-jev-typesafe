@@ -472,6 +472,7 @@
 - [TypeSafeのJevを正しく驚く](https://zenn.dev/nwn/articles/824026c76116e0) - 일본어 글이며, Gemma에서 로짓 지름길을 재현하고 Mario 하네스에서 LLM과 비교합니다.
 - [TypeSafe Jev vs Claude Code: 4 models, 2 real jobs](https://primeline.cc/blog/typesafe-jev-pre-registered-test) - 약 9,750건 호출에 대한 사전 등록 테스트입니다: 질문 유형별 보정 오차를 보고, Jev는 커밋 분류에서 앞서고 지식 베이스 분류에서 뒤지며, 기권이 그 격차를 메웁니다.
 - [Jev, three days in](https://aiwithmike.substack.com/p/jev-three-days-in-what-is-known-what) - 무엇이 알려졌고 무엇이 추측이며 어디에 쓸모가 있는지를 독립적인 수치와 함께 정리합니다.
+- [Jev in the Wild](https://arxiv.org/abs/2609.30216) - Surveys 2,170 public Jev projects and maps early growth, application domains, and how Choice, Noul, and Score support different decisions.
 ### 에세이와 스레드
 
 - [Building a harness with Jev](https://www.langchain.com/blog/building-a-harness-with-jev) - 모델 라우팅과 위험한 도구 호출을 타입 지정 결정 뒤에 게이트하는 방법에 관한 LangChain의 글입니다.

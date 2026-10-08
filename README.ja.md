@@ -472,6 +472,7 @@
 - [TypeSafeのJevを正しく驚く](https://zenn.dev/nwn/articles/824026c76116e0) - 日本語の記事で、Gemma 上でロジットの近道を再現し、Mario のハーネスで LLM と比較します。
 - [TypeSafe Jev vs Claude Code: 4 models, 2 real jobs](https://primeline.cc/blog/typesafe-jev-pre-registered-test) - 約 9,750 回の呼び出しによる事前登録の検証で、質問の種類ごとの較正誤差、コミット分類では Jev が優勢、ナレッジベースへの仕分けでは劣勢、棄権がその差を埋めることを示します。
 - [Jev, three days in](https://aiwithmike.substack.com/p/jev-three-days-in-what-is-known-what) - 分かっていること、推測されていること、何に向いているかを、独立した数値とともにまとめます。
+- [Jev in the Wild](https://arxiv.org/abs/2609.30216) - Surveys 2,170 public Jev projects and maps early growth, application domains, and how Choice, Noul, and Score support different decisions.
 ### エッセイとスレッド
 
 - [Building a harness with Jev](https://www.langchain.com/blog/building-a-harness-with-jev) - モデルのルーティングと、危険なツール呼び出しを型付きの判断でゲートすることについての LangChain の記事です。
