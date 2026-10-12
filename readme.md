@@ -398,6 +398,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 
 <a href="https://github.com/sriganesh/jevibe-check"><img src="media/jevibe-check.png" width="300" alt="jevibe-check labelling the tone of every Bluesky post in the feed"></a>
 
+- [jev-chat-jarvis-mac](https://github.com/jev-chat/jev-chat-jarvis-mac) - macOS floating-window chat copilot; Jev (or a local 2B model for offline judging) scores intent and risk from the visible chat, drafted replies get filled into the input box, and nothing is ever sent by the tool.
 - [unclutter](https://github.com/kitze/unclutter) - Browser extension that removes page clutter with reusable template rules.
 - [typesafe-adblock](https://github.com/realZachi/typesafe-adblock) - Chrome extension that asks "is this element an ad?" per DOM node; a toy, and it says so.
 - [vibecheck](https://github.com/RafalWilinski/vibecheck) - Vibe-check your X post before you hit publish.
