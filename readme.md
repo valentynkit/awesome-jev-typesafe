@@ -427,6 +427,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [Jev Chat](https://github.com/w3cj/jev-chat) - Chat-shaped command bar where Jev picks the tool, the arguments, and the reply shape, and code builds the answer from the tools' own data, so no model writes the text.
 - [jev-riffs](https://github.com/hazlema/jev-riffs) - Mines repeating motifs from a MIDI melody, scores every candidate in one batched Jev call, and highlights and plays the winner on a piano roll; on an orchestral Swan Lake the top motif is the swan theme.
 - [shapeshift](https://github.com/anishfn/shapeshift) - Turns one text box into the matching card as you type, judged by a single parallel Jev call, with a keyword fallback when no key is set.
+- [jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) - Android overlay that reads the open QQ, X, Feishu/Lark or WhatsApp chat, asks Jev about intent, danger and the next move, ranks three drafted replies, and fills the pick into the input box without sending.
 
 ## Games, robotics and simulation
 
