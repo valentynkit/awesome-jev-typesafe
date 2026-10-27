@@ -291,6 +291,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [djev](https://github.com/mmastrac/djev) - Serves `/v1/systemone` on DiffusionGemma by reading typed answers and text spans off a seeded, pinned canvas, with no generation.
 - [OneJev](https://github.com/OmniJev/OneJev) - Open multimodal System One model, 0.8B to 27B, for screenshots, photos, video and text.
 - [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) - Open-weight ModernBERT-base fine-tune that answers Noul, Choice, Score, and multi-label questions with a probability per option, serves `/v1/systemone` for the official Python SDK, and runs in the browser through ONNX; independent replica, not TypeSafe weights.
+- [Flide](https://github.com/OmniJev/Flide) - Open-source inference engine for decision models, up to 9.4× faster than existing LLM inference frameworks while maintaining high precision, supporting 19 model families through `/v1/systemone`.
 
 ## Code review and quality
 
