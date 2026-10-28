@@ -493,6 +493,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-align](https://github.com/sutro-sh/jev-align) - Finds the examples a Jev function is least sure about, asks you to label them, and improves the function with GEPA.
 - [jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) - Measures what a Jev request is billed and how its answers hold up under batching, translation, and rewording, from 3,455 billed requests with public raw logs.
 - [jevals](https://github.com/openlayer-ai/jevals) - Runs a trace's agent, quality, and security evals as one batch of typed Jev questions instead of separate LLM-judge calls.
+- [s1kit](https://github.com/Eliot5566/s1kit) - Runs one YAML suite of labelled cases against Jev and other `/v1/systemone` servers side by side, picks per-question confidence cutoffs for a target precision, and fails CI when accuracy drops.
 
 ## Playgrounds and demos
 
