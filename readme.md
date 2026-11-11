@@ -393,6 +393,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [SkillCheck](https://github.com/paulgoodchild/SkillsCheck) - Sends an agent skill's text to Jev before installation and returns a verdict with category scores, without loading the skill into the agent's context; the submitted text is not redacted for secrets.
 - [StopSpam](https://github.com/hteariH/stopspam-jev-bot) - Telegram bot that removes spam and scam messages from group chats on calibrated-confidence classification.
 - [Fake / Real](https://github.com/DansiDanutz/fake-real-jev) - Checks claims against cited excerpts with Jev in an English and Romanian fact-checking site, with a public integration example and a closed-source full application.
+- [OnlyRead](https://github.com/onlyreadai/onlyread) - Keeps AI agents read-only on the sites you pick in Chrome, using Jev to judge whether each request would change data and should therefore be blocked.
 
 ## Applications and extensions
 
