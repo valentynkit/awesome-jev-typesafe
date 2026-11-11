@@ -292,6 +292,8 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [OneJev](https://github.com/OmniJev/OneJev) - Open multimodal System One model, 0.8B to 27B, for screenshots, photos, video and text.
 - [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) - Open-weight ModernBERT-base fine-tune that answers Noul, Choice, Score, and multi-label questions with a probability per option, serves `/v1/systemone` for the official Python SDK, and runs in the browser through ONNX; independent replica, not TypeSafe weights.
 
+- [MJev-Spatial](https://github.com/Fr0zenCrane/MJev-Spatial) - Scores spatial choices, numerical bins and image regions through pretrained attention projections, returning structured decisions and candidate scores.
+
 ## Code review and quality
 
 - [software-factory](https://github.com/stratonext/software-factory) - Runs several coding agents locally with Jev as judge and orchestrator.
