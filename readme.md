@@ -285,7 +285,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [AnyJev](https://github.com/nokia-applied-research/AnyJev) - Turns an open Hugging Face model into a calibrated decision endpoint served through vLLM, with no fine-tuning at the first two levels.
 - [ollaya](https://github.com/ollaya-dev/ollaya) - Pulls and serves open decision models such as Laya, kev, and JevK5 behind a TypeSafe-compatible local endpoint, the way Ollama serves LLMs.
 - [AgentJev](https://github.com/malevrigns/agent-jev) - Decision model on Qwen3-0.6B that answers without decoding tokens, reports 79.25 percent top-1 on the public Typed Decisions benchmark.
-- [Valen](https://github.com/Liuziyu77/Valen) - Multimodal decision model on Qwen3.5 that scores candidates against images and video as well as text, with training code and open weights.
+- [Valen](https://github.com/Valen-Team/Valen) - Multimodal decision models from 0.8B to 27B on Qwen3.5 and Qwen3.8 that score candidates against images and video as well as text and answer bbox questions, with training code and open weights in native, ONNX and GGUF formats.
 - [tev1](https://github.com/togethercomputer/tev1) - Data recipe and training code that fine-tune Qwen3.5-4B into an open-weight decision model on Together AI.
 - [JevK5](https://github.com/allebee/jevk5) - Qwen3.5 replica with distilled LoRA weights, ranked second of 76 systems and first among open ones on JevBench v1.4.
 - [djev](https://github.com/mmastrac/djev) - Serves `/v1/systemone` on DiffusionGemma by reading typed answers and text spans off a seeded, pinned canvas, with no generation.
