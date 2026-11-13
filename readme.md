@@ -427,6 +427,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [Jev Chat](https://github.com/w3cj/jev-chat) - Chat-shaped command bar where Jev picks the tool, the arguments, and the reply shape, and code builds the answer from the tools' own data, so no model writes the text.
 - [jev-riffs](https://github.com/hazlema/jev-riffs) - Mines repeating motifs from a MIDI melody, scores every candidate in one batched Jev call, and highlights and plays the winner on a piano roll; on an orchestral Swan Lake the top motif is the swan theme.
 - [shapeshift](https://github.com/anishfn/shapeshift) - Turns one text box into the matching card as you type, judged by a single parallel Jev call, with a keyword fallback when no key is set.
+- [VerdictAD](https://github.com/sgstq0811/VerdictAD-Jev-AD) - Refines few-shot industrial anomaly detectors with Noul decisions on the query image and its local windows against a few normal references, using Cloudflare's open Clef-Flash 9B, an independent replica of the System One interface; ships the paper's per-class logs and decision cache.
 
 ## Games, robotics and simulation
 
