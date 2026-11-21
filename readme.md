@@ -291,6 +291,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [djev](https://github.com/mmastrac/djev) - Serves `/v1/systemone` on DiffusionGemma by reading typed answers and text spans off a seeded, pinned canvas, with no generation.
 - [OneJev](https://github.com/OmniJev/OneJev) - Open multimodal System One model, 0.8B to 27B, for screenshots, photos, video and text.
 - [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) - Open-weight ModernBERT-base fine-tune that answers Noul, Choice, Score, and multi-label questions with a probability per option, serves `/v1/systemone` for the official Python SDK, and runs in the browser through ONNX; independent replica, not TypeSafe weights.
+- [Phocinae-Largha-150M](https://github.com/Phocinae/Phocinae-Largha-150M-v1) - A bilingual (English/Chinese) typed-decision model of 144.3M parameters on mmBERT-small that returns calibrated Choice, Score, and Noul probabilities in one forward pass and runs locally on CPU or a single consumer GPU; independent model, not TypeSafe weights.
 
 ## Code review and quality
 
