@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-26",
+ "fetchedAt": "2026-11-27",
  "repos": {
   "typesafe-ai/typesafe-sdk-js": {
    "stars": 288,
@@ -44,28 +44,28 @@
    "readmeExcerpt": "System One Adapter\nA drop-in replacement for typesafesdk's systemone evaluation API, backed by LLM\nAPIs instead of TypeSafe.\nUseful for comparing TypeSafe against an LLM on\ncost/speed/intelligence.\nInstall\nThe provider SDKs are optional extras — install the one(s) you use:\nUsage\nUnlike TypeSafeClient, the client is configured with how the LLM should answer, and\neach call names a provider alongside the model:\nprovider and model may also be set on the constructor as defaults. provider\nis required unless model is a provider instance (e.g. a custom OpenAI-compatible\nendpoint or a Gemini client):\nUse clients as context managers (with / async with), or call close() /\nawait aclose() after all evaluations finish. The adapter closes providers it\ncreates; provider instances passed as model remain caller-owned.\nOpenAI's endpoint uses the Responses API, with strict JSON Schema for structured\noutput "
   },
   "typesafe-ai/skills": {
-   "stars": 2924,
+   "stars": 2928,
    "forks": 189,
    "pushedAt": "2026-10-23T21:40:54Z",
    "createdAt": "2026-08-24T23:58:39Z",
    "language": null,
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/ea372f5d129e2fc3f4eb7ebb37eed50bb4d93a53b795da0d5228c2c0511f93e0/typesafe-ai/skills",
+   "ogImage": "https://opengraph.githubassets.com/e35343ed17302f7846a1127086ba79f975d53a3f64f9c63349629809416e1913/typesafe-ai/skills",
    "topics": [],
    "description": "Agent skills for building with TypeSafe's System One API",
    "homepage": "https://typesafe.ai",
    "readmeExcerpt": "TypeSafe Agent Skills\nAgent skills for building with TypeSafe: typed decisions and probabilities from System One models.\nYou can read SKILL.md on GitHub or fetch its raw Markdown.\nInstall\nClaude Code plugin\nRun in your terminal:\nOther agents via skills.sh\nSelect your agent when prompted. Installation is project-local by default; add -g to install globally.\nSee the installation guide for a prompt to copy to your agent, manual installation, and updates.\nUse\nAsk your agent, for example:\nUse TypeSafe to route incoming support tickets by department, with human review for uncertain decisions.\nIn Claude Code, you can explicitly invoke the plugin skill with /typesafe:typesafe-ai.\nSkill Purpose\n------\ntypesafe-ai Design TypeSafe integrations: state and questions, request composition, live probing, and pointers to current docs\nLicense\nMIT."
   },
   "vercel/eve": {
-   "stars": 6089,
-   "forks": 681,
-   "pushedAt": "2026-11-26T16:07:40Z",
+   "stars": 6096,
+   "forks": 682,
+   "pushedAt": "2026-11-27T15:04:48Z",
    "createdAt": "2026-06-16T10:51:20Z",
    "language": "TypeScript",
    "license": "Apache-2.0",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/a76b3bd453f10cd4e9d88a3781ae07000e17e39668934b130e57a8f35404adbb/vercel/eve",
+   "ogImage": "https://opengraph.githubassets.com/9362c5cb22f268b30de88aa3aa03b9fccebbca570871b0102f593e3e8edeb980/vercel/eve",
    "topics": [
     "agent",
     "framework",
@@ -96,14 +96,14 @@
    "readmeExcerpt": "packages/ai-cli/README.md"
   },
   "tamaratran/fast-jev-compaction": {
-   "stars": 8029,
-   "forks": 594,
+   "stars": 8032,
+   "forks": 593,
    "pushedAt": "2026-09-18T04:45:31Z",
    "createdAt": "2026-09-17T05:57:20Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/017599610816c92a1de1f6916549d9b7af5bb8c984839d4ff9e0e22cb929ec0f/tamaratran/fast-jev-compaction",
+   "ogImage": "https://opengraph.githubassets.com/915d3260b81d870af1e03a12515056fb1a557d716d64a8633e90da335b19749a/tamaratran/fast-jev-compaction",
    "topics": [],
    "description": "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.",
    "homepage": null,
@@ -279,7 +279,7 @@
   "notque/vexjoy-agent": {
    "stars": 452,
    "forks": 51,
-   "pushedAt": "2026-11-22T18:32:26Z",
+   "pushedAt": "2026-11-26T22:22:15Z",
    "createdAt": "2026-03-18T01:39:09Z",
    "language": "Python",
    "license": "MIT",
@@ -380,14 +380,14 @@
    "readmeExcerpt": "Jev Codex Router\nContributing? See CONTRIBUTING.md,\nSECURITY.md, and the release checklist.\nPer-call model routing for Codex, driven by Jev (TypeSafe System One).\nJev chooses a model and thinking effort together for each model call, including\ncontinuations after tools. Every route uses standard speed. The objective is\nsufficient capability for the next decision with no unnecessary quota consumption.\nHistorical simulation: ≈ −60 % vs full Astra on 237 turns under the old\npolicy. This is not measured Codex quota saved, nor evidence for the current\npolicy — protocol and limitations in BACKTEST.md.\nInstalling with an AI agent? Hand it AGENTS.md.\nThis repository is a self-contained monorepo. It embeds the maintained\nCodex Router fork under router/ and connects Jev through its generic-provider\nand curated-model extension points. No second Git checkout, submodule, or hidden\nsource clone is requ"
   },
   "y0usaf/pi-jev": {
-   "stars": 168,
+   "stars": 169,
    "forks": 16,
    "pushedAt": "2026-10-31T15:20:26Z",
    "createdAt": "2026-09-16T05:57:10Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/f1192f80413c6e59e1d1914657873183327c1e7a115199bf1b81ee7db95274f0/y0usaf/pi-jev",
+   "ogImage": "https://opengraph.githubassets.com/35ee8704ca454ea7a59007ec7567f594965c221e0c1b2f084c281d1e2a2cf6d6/y0usaf/pi-jev",
    "topics": [
     "guardrails",
     "jev",
@@ -401,8 +401,8 @@
   },
   "DevMortimer/pi-warden": {
    "stars": 199,
-   "forks": 31,
-   "pushedAt": "2026-11-26T14:58:33Z",
+   "forks": 32,
+   "pushedAt": "2026-11-27T00:48:19Z",
    "createdAt": "2026-09-16T03:58:46Z",
    "language": "TypeScript",
    "license": "MIT",
@@ -546,7 +546,7 @@
   "DevMortimer/pi-typesafe": {
    "stars": 50,
    "forks": 16,
-   "pushedAt": "2026-11-25T23:24:42Z",
+   "pushedAt": "2026-11-26T23:05:19Z",
    "createdAt": "2026-09-16T01:35:23Z",
    "language": "TypeScript",
    "license": "MIT",
@@ -580,14 +580,14 @@
    "readmeExcerpt": "pi-heed\nYour agent understood your instruction. pi-heed makes sure it still remembers.\nRuntime constraints for the pi coding agent: every side-effecting tool call is checked against what you said, before it runs.\nYou say \"review only, don't touch anything\". Forty tool calls and one context compaction later, the agent reaches for write. pi-heed stops it, with your own words as the reason:\nAnd when you did change your mind (\"I've changed my mind for notes.txt only\"), it lets that one file through and keeps everything else locked.\nConversational policy, not a keyword list\nWhat you say over a session is a policy that changes: \"don't touch src — but src/auth is fine — except secrets.ts\", \"this once you can edit package.json\", \"this round you can install deps\", \"never mind, revoke that\". pi-heed keeps it as structured state:\nYou say What happens\n------\n\"不要改测试\" ADD DENY modify tests\n\"现在测试可以改了\" "
   },
   "DECRUX9812/typesafe-skill-router": {
-   "stars": 21,
+   "stars": 22,
    "forks": 7,
    "pushedAt": "2026-09-21T15:09:15Z",
    "createdAt": "2026-09-16T05:14:02Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/ade789cb7d15bff311cca7032b1e3b985902ab67061e0934fdb41d3091918151/DECRUX9812/typesafe-skill-router",
+   "ogImage": "https://opengraph.githubassets.com/f0a9643b12222f60748fa36ff03a11e1daccad5b20eb45405208d9a57ae9c3e3/DECRUX9812/typesafe-skill-router",
    "topics": [
     "ai-agents",
     "hermes-agent",
@@ -671,7 +671,7 @@
   "kitze/skillbox": {
    "stars": 283,
    "forks": 27,
-   "pushedAt": "2026-11-26T07:41:09Z",
+   "pushedAt": "2026-11-27T15:56:21Z",
    "createdAt": "2026-09-17T17:23:37Z",
    "language": "TypeScript",
    "license": "MIT",
@@ -683,8 +683,8 @@
    "readmeExcerpt": "skillbox\nSelf\\-hosted, versioned skills library for AI agents\\. MCP, scoped clients, and optional Jev recommendations\\.\nMade by Kitze\nkitze.io · X · YouTube\nMore projects by Kitze\npwn.watch\nLive security incidents: CVEs, patch status, fixed versions and advisories.\nflavors.design\nCopy-pasteable design flavors. Pick a vibe, hand the markdown to your agent.\ngifs.so\nSearch, copy, and download reaction GIFs.\nShipper\nChangelog, roadmap, feature requests and tasks for every product you ship.\nKanso\nOne keyboard-first app for your todos, habits, routines, planner and saved stuff.\nHealthMaxx\nOne health log for everything you track: by hand, from wearables, or through your AI.\nZero To Shipped\nA full-stack starter kit for web and mobile apps.\nSotto\nVoice-to-text for macOS. Local AI, one-time purchase.\nTinkerer Club\nA private community for builders, self-hosters, and AI tinkerers.\nSizzy\nThe browser "
   },
   "jkudish/jev-mcp": {
-   "stars": 593,
-   "forks": 69,
+   "stars": 595,
+   "forks": 70,
    "pushedAt": "2026-11-20T01:00:26Z",
    "createdAt": "2026-09-17T02:25:38Z",
    "language": "JavaScript",
@@ -833,7 +833,7 @@
    "readmeExcerpt": "jev-judgment\nEnglish 한국어\nAn Agent Skill that sends closed judgments to\nTypeSafe Jev and acts on the probabilities. The\nmain coding model keeps writing code. Jev answers yes/no, choice, and\nscore questions in ~250 ms so the agent guesses less and interrupts the\nuser only when a person must decide.\nThis repository is the skill only. Install it with the\nskills CLI; it does not depend on any particular\nagent harness.\nInstall\nThen set TYPESAFEAPIKEY in the environment or in /.env.\nMint a key at console.typesafe.ai.\nWithout a key the bundled script fails open and the agent continues as\nif the skill were not installed.\nRequires python3 3.9+ (standard library only) and network access to\napi.typesafe.ai.\nWhat it does\nCall Jev at three points:\n1. Before asking the user a closed question — if the conversation\nalready determines the answer, proceed and say so; otherwise ask.\n2. Before a command that"
   },
   "fabricioctelles/skills": {
-   "stars": 147,
+   "stars": 149,
    "forks": 12,
    "pushedAt": "2026-11-25T23:30:44Z",
    "createdAt": "2026-02-21T01:54:39Z",
@@ -883,14 +883,14 @@
    "readmeExcerpt": "Augustus\nFind, build, evaluate, and improve systems with decision models.\nAugustus equips agents to find useful placements, build decision-driven\nsystems, create evaluations, and hill-climb them against real outcomes.\nReach for it when a step could be code, an LLM call, a classifier or ranker,\nor a person; when a confidence score needs a threshold, abstention, or a human\nfallback; or when a prompt or program needs an eval before you optimize it.\nIt draws on decision theory, value of information, multi-criteria analysis,\nsignal detection, search/control, and formal-methods boundaries across\nsoftware, business, organizations, research, and everyday decisions.\nTypeSafe Jev (Choice, Score, Noul) is the\ndefault hosted exemplar. The skill also covers classical classifiers,\nencoders, open decision heads, constrained readouts, rankers, and vision\nscorers. Choose the family by the task, then test"
   },
   "browser-use/jev-ultrafast": {
-   "stars": 24758,
-   "forks": 1903,
+   "stars": 24772,
+   "forks": 1904,
    "pushedAt": "2026-11-11T04:09:33Z",
    "createdAt": "2026-09-16T21:30:12Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/016a36a17feb03dc63c1e06519a236943bbca1368f5efe9c782f5f7537dac64e/browser-use/jev-ultrafast",
+   "ogImage": "https://opengraph.githubassets.com/8f3b30beeb73f6ec5757596cbdbc0664645996a90f1689f71e32733e89669fff/browser-use/jev-ultrafast",
    "topics": [],
    "description": "Fastest and cheapest web agent",
    "homepage": "https://browser-use.com",
@@ -1049,28 +1049,28 @@
    "readmeExcerpt": "jev-ego\nTypeScript browser agent for ego lite — Jev Ultrafast's indexed action space, without Chrome, Playwright, or Browser Harness.\nGive it one natural-language goal. A coding agent (or TypeSafe Jev) picks CLICK / TYPETEXT / SELECT on a numbered element table. The whole loop — TypeSafe, the text helper, and CDP — runs inside one ego-browser nodejs process.\nWho it's for. Every local agent and harness on this machine. Default browser is ego lite through jev-ego. Not a general web-automation SDK; uploads, tabs, dialogs, canvas, shadow DOM, and iframes stay on the ego-browser skill.\nThe policy matches browser-use/jev-ultrafast. The browser layer is ego lite. An agent can drive the page itself (observe / act) or ask Jev for ranked directions (suggest / step).\nThe action space\nEvery observation produces a new element table:\nThe operations are CLICK, TYPETEXT, SELECT, SCROLLUP, SCROLLDOWN, WA"
   },
   "wy-coliney/jev-browser-use": {
-   "stars": 1218,
+   "stars": 1217,
    "forks": 34,
    "pushedAt": "2026-10-19T07:05:21Z",
    "createdAt": "2026-09-18T06:58:34Z",
    "language": "JavaScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/ca9543e326dad6b89c5e4437aec1b6a152008be65859c193aff519af35fc831a/wy-coliney/jev-browser-use",
+   "ogImage": "https://opengraph.githubassets.com/d43085689fb8f39b26dcda0b7e6d782753f52c874ef03602e0c0b5ec359d8acc/wy-coliney/jev-browser-use",
    "topics": [],
    "description": "5–10x faster browser operations: Jev clicks, Codex thinks and verifies. Built at EZCollegeApp.",
    "homepage": null,
    "readmeExcerpt": "Jev Browser Use\nJev clicks. Codex thinks and verifies.\nA browser Skill powered by TypeSafe’s Jev. Hand off navigation, clicks, toggles, and scrolling; keep Codex in charge of text input, visual judgment, and the final check.\n~5–10× faster browser operations in our EZCollegeApp workflows. Your existing browser connection. No extra driver or npm dependencies.\nInstall · Try it · How it works · Real-world use · Cost · Official guides · Stars\nInstall\nCodex — one command:\nThen configure your Jev API and start a new Codex task.\nUpdate a Skill installed this way:\nStart a new Codex task after updating to load the new Skill instructions. The update does not change your ~/.config/jev-browser-use/config.json or credential file.\nChoose the provider that issued your API key. A TypeSafe key goes with provider: \"typesafe\" and TYPESAFEAPIKEY; an OpenRouter key goes with provider: \"openrouter\" and OPENROU"
   },
   "Sac-Y/Jev-cu": {
-   "stars": 632,
+   "stars": 633,
    "forks": 60,
    "pushedAt": "2026-09-22T03:08:17Z",
    "createdAt": "2026-09-18T16:56:08Z",
    "language": "JavaScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/2168c0bbd4009d88707e802f1bb8096d1d3359957ae3772bd74b5d03731e503d/Sac-Y/Jev-cu",
+   "ogImage": "https://opengraph.githubassets.com/1f0d468e2db14fe32c815ba7673366f5c88e32342efabe2f00a0ab9e3dba8d43/Sac-Y/Jev-cu",
    "topics": [],
    "description": null,
    "homepage": null,
@@ -1091,14 +1091,14 @@
    "readmeExcerpt": "Jev AI Job Hunter\nDemo MVP: a coding-agent skill that hunts AI/software jobs on real company sites.\nChrome sees and acts. Jev decides. The host CLI runs one command. jjh drives Chrome over CDP and calls Jev (TypeSafe System One) to score every link and job. The host LLM never picks what to click.\nSkill: skills/jev-job-hunter.\nWatch the demo\nSetup\nVisible Chrome (not headless). Chrome DevTools MCP is optional; jjh run talks to Chrome over CDP directly.\nOne-command hunt\nAny company homepage works. --companies openai is only a shortcut. Add --mock with no API key, --max-pages N, --tab reuse. Tests: uv run pytest -q.\nSlow-motion (fixtures / narrated demos)\nIf CDP is down: evaluatescript (no filePath) then uv run jjh step --page - <<'EOF' ... EOF."
   },
   "TheoLeeCJ/SemIf": {
-   "stars": 4983,
+   "stars": 4982,
    "forks": 355,
    "pushedAt": "2026-09-23T18:48:22Z",
    "createdAt": "2026-09-16T03:51:21Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/ca764cc6026ff78f4c4583a046fdc43a041d31e99928dc971640a27ac43eab89/TheoLeeCJ/SemIf-OpenJev",
+   "ogImage": "https://opengraph.githubassets.com/0d6b969fe3af3f8c3e0d4d7ebf9cd9efb23787149f1cd995c757ed8d03f0f437/TheoLeeCJ/SemIf-OpenJev",
    "topics": [],
    "description": "Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe.",
    "homepage": "openjev.com",
@@ -1119,14 +1119,14 @@
    "readmeExcerpt": "Jevlike\nTrain a small model that chooses among a changing list of text options.\nA Jev-like model takes a piece of text and a list of N text options. It returns one probability for each option. It does this in one pass instead of writing an answer word by word. Jev is TypeSafe's commercial model for this kind of task. TypeSafe has not published its design. This repository is an independent starter model with the same input and output shape.\nDemo\nThe same option-attention head can score controller buttons from image patches. This ten-second film joins two selected five-second windows: live deadlycorridor combat on the seven Doom buttons, then a chess controller walking to and playing moves with five keys. The diagram shows the tensors used for each decision. The Doom window came from the supplied joint checkpoint, which averaged 0.60 kills and -97.50 reward across its ten recorded episodes"
   },
   "TianyuCodings/NanoJev": {
-   "stars": 2603,
+   "stars": 2606,
    "forks": 262,
    "pushedAt": "2026-10-16T01:00:52Z",
    "createdAt": "2026-09-17T16:08:30Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/390d862d67c8884a657e6f811cc4ce25da6a1a26ef73a2b6a9ad6823d000cdea/TianyuCodings/NanoJev",
+   "ogImage": "https://opengraph.githubassets.com/510a2709135f1e55fd9ff4ac066fa99d5f264ea5549a11d6f8bfd85ae6cf6aa0/TianyuCodings/NanoJev",
    "topics": [],
    "description": "A nano replica of Jev: parallel decisions, dynamic candidates, and an end-to-end training pipeline.",
    "homepage": null,
@@ -1166,28 +1166,28 @@
    "readmeExcerpt": "Jev Visual\nEnglish · 简体中文\nA small, runnable project for learning vision-language model inference on Apple Silicon. Use Qwen3.5-0.8B with MLX to answer multiple questions about one image: choose an option, judge yes/no, or score ordered levels. Includes a local browser UI, CLI and HTTP API.\nThis project explores a Jev-like inference pattern for open multimodal language models. It avoids autoregressive structured generation by reusing shared multimodal context and directly scoring candidate outputs from model logits.\nThis is an independent community implementation and does not claim to reproduce TypeSafe Jev's proprietary model architecture, RLCD training, calibration, or serving system.\nVisual game demos\nAI sorting factory\nBreakout\nCamera gestures\nClassify conveyor objects and choose a sorting lane.\nWatch video\nLocate the ball in five regions to control the paddle.\nWatch video\nRecognize h"
   },
   "kshetrajna12/reflex": {
-   "stars": 175,
+   "stars": 176,
    "forks": 19,
    "pushedAt": "2026-10-06T22:21:57Z",
    "createdAt": "2026-09-17T23:03:08Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/0283161d1e8352810a1e97266689cd641f29077b060f2861a0e8d7b2530a46b4/kshetrajna12/reflex",
+   "ogImage": "https://opengraph.githubassets.com/ddd70fa53c02f06f57a5bc1f679501f0d0b193e0c066cc43c5478328de1bc17c/kshetrajna12/reflex",
    "topics": [],
    "description": "A small open decision model: state + typed questions -> calibrated probabilities. A Jev / System One re-creation on Qwen3.5.",
    "homepage": null,
    "readmeExcerpt": "reflex\nA tiny \"decision model\" you can run on your own GPU.\nYou give it some information (a support ticket, a document, a photo) and a list of\nquestions with fixed answer options. It answers all the questions at once and tells you\nhow sure it is about each option, as percentages. It never writes free text, so it can\nnever make up an answer that isn't on your list.\nIt is an open re-creation of Jev,\nthe \"System One\" model TypeSafe released in September 2026, built on top of a normal\nopen-weights model (Qwen3.5-4B by default).\nThat whole answer comes back in about 200 ms, and faster once the state is cached. Your\ncode then decides what to do with the numbers (\"auto-route if above 90 %, otherwise ask a\nhuman\").\nStatus\nWhat it is. One HTTP endpoint, POST /v1/systemone, answered by a single forward\npass over a frozen open-weights model. No decoding, no reasoning, no escalation: about\n200 ms, a"
   },
   "Mapika/decider": {
-   "stars": 1035,
+   "stars": 1034,
    "forks": 55,
    "pushedAt": "2026-10-20T12:35:02Z",
    "createdAt": "2026-09-16T07:15:09Z",
    "language": "Python",
    "license": "Apache-2.0",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/1fa89eb72116c1e65a1b2b60a67a88c183dc8a89ae35d6c6a2220053b3f25df9/Mapika/decider",
+   "ogImage": "https://opengraph.githubassets.com/bf811aa2aa8ab9d6dbef1578d014becc8fa59cd9a36188ade21ae30a48b414d0/Mapika/decider",
    "topics": [],
    "description": "A family of System One-style models fine-tuned from Qwen3.5, designed for one-pass typed decisions with calibrated probabilities.",
    "homepage": null,
@@ -1267,14 +1267,14 @@
    "readmeExcerpt": "OpenJev (Verdict): Non-Autoregressive Decision Engine (151M)\nOpenJev (Verdict) is an open-source, post-trained foundational decision model designed for structured software workflows, inspired by TypeSafe AI\\'s Jev and Reinforcement Learning for Calibrated Decisions (RLCD).\nInstead of generating free-form conversational text that software must parse and validate, OpenJev accepts unstructured input context and evaluates multiple typed questions in a single non-autoregressive forward pass. It returns discrete choices, ordinal scores, and binary probabilities with mathematically calibrated confidence values in under 35 milliseconds.\nWhat changed in the inference engine\nThese are inference fixes, not a retrain. The weights are byte-identical to the published checkpoint. Measured on the 231 public JevBench tasks.\nThe update addresses three defects in the inference engine:\n1. Calibrator auto-lo"
   },
   "kikoncuo/jevfire": {
-   "stars": 77,
+   "stars": 76,
    "forks": 9,
    "pushedAt": "2026-09-18T08:47:45Z",
    "createdAt": "2026-09-16T14:45:51Z",
    "language": "JavaScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/23626c2682113d18731f3ef7fe452de71523c8ecde01aeab399c85998a1d3763/kikoncuo/jevfire",
+   "ogImage": "https://opengraph.githubassets.com/72eaccdbddb10a29194d1b85df94828213e77a53dba05f854a2cfbe5bd5a9fd5/kikoncuo/jevfire",
    "topics": [
     "cuda",
     "game-ai",
@@ -1442,14 +1442,14 @@
    "readmeExcerpt": "Open Jev\nAn experimental inference harness for typed JSON decisions with DiffusionGemma. Denoise freely, then choose the most likely allowed tokens from the final logits. No training or fine-tuning.\nThe goal is to explore how close an open diffusion model can get to TypeSafe AI's Jev on structured judgments. This is an independent experiment, not a reproduction of Jev's architecture, training, calibrated probabilities, or published workflow scores.\nResults at a glance\nMeasured September 16, 2026 on one H100 80GB, BF16, using google/diffusiongemma-26B-A4B-it. Every results below use one denoising step; public-eval comparisons label each step budget.\nEvery's TypeSafe lab\nTask Data Result\n--- --- ---\nCode retrieval 8 documents × 6 questions 48/48 relevance labels; 6/6 top-1 retrieval\nCustomer voice 24 messages × 6 questions 138/144 (95.8%) agreement with saved TypeSafe decisions\nCustomer vo"
   },
   "jaredpalmer/kev": {
-   "stars": 10133,
-   "forks": 695,
+   "stars": 10141,
+   "forks": 698,
    "pushedAt": "2026-11-25T12:29:37Z",
    "createdAt": "2026-09-17T20:49:39Z",
    "language": "Python",
    "license": "Apache-2.0",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/f398c5947b2de9ff6642c23c111b2717b8492008e231e24d437f73fc62ea104e/jaredpalmer/kev",
+   "ogImage": "https://opengraph.githubassets.com/ba24a3e981998ecc977d5f80cb28b135b76c9a592a6c3bef6f242c7059d0d08f/jaredpalmer/kev",
    "topics": [
     "decision-model",
     "jev",
@@ -1474,14 +1474,14 @@
    "readmeExcerpt": "Simple Jev Project\nUse compatible open models from huggingface, for structured classification and scoring, without training a separate classifier head.\nExplore the demos, playground, and documentation at simple-jev.featherless.ai.\nSend shared context and a set of questions. Simple Jev reads the model's next-token logits for each question and builds a JSON response containing choices, rubric scores, or truth/support judgments. The model does not generate a JSON completion: the server constructs the response from the scores.\nThe current implementation runs locally with Hugging Face Transformers and PyTorch. Shared request validation, versioned prompt instructions, and response scoring live in the plain Python common/ folder so other inference implementations can use the same rules.\nTry it today\nTry the public demo API with no login, API key, or authentication required. The demo has a 2k-to"
   },
   "razorback16/openjev": {
-   "stars": 804,
+   "stars": 805,
    "forks": 74,
    "pushedAt": "2026-10-13T03:40:12Z",
    "createdAt": "2026-09-18T09:15:33Z",
    "language": "Python",
    "license": "Apache-2.0",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/452e3d17bba0df2a642a48bd3371cabf2056e77c1346d1c95099726b2fca87b7/razorback16/openjev",
+   "ogImage": "https://opengraph.githubassets.com/940d7ac47d3dc0514a05a5575f9e3ede0746be4d2162d6fd62c850229a0c676e/razorback16/openjev",
    "topics": [],
    "description": "Open, Jev-compatible System One decision server on DiffusionGemma",
    "homepage": "https://codiv.ai",
@@ -1489,7 +1489,7 @@
   },
   "daseinlabs/open-jev": {
    "stars": 139,
-   "forks": 26,
+   "forks": 27,
    "pushedAt": "2026-11-23T18:10:39Z",
    "createdAt": "2026-09-17T06:22:35Z",
    "language": "Python",
@@ -1522,14 +1522,14 @@
    "readmeExcerpt": "jeff\nA self-hosted implementation of TypeSafe's jev System One API,\npowered by GLiFormer (400M parameters).\nUse the official typesafe-sdk by pointing TYPESAFEBASEURL at jeff.\nSupports choice (pick an option), score (rate on ordered levels), and noul (probability of yes).\nCheaper to self-host, but less accurate than jev on reasoning-heavy tasks. See benchmarks.\nQuickstart · Deploy · Configuration · API · Development\nQuickstart\nRequires uv and Python 3.12. Run from the repository root:\nServes at http://localhost:8000. Device selection: CUDA → MPS → CPU.\nThe sync above also installs typesafe-sdk. Save this as example.py:\nIn another terminal:\nFor an existing SDK app, set TYPESAFEAPIKEY=devkey and\nTYPESAFEBASEURL=http://localhost:8000 instead of passing client arguments.\ncurl example\nDeploy on Modal\nUse L4 for the HTTP API. These commands download weights once and deploy with one warm contain"
   },
   "devagrawal09/jev-review": {
-   "stars": 707,
+   "stars": 709,
    "forks": 46,
    "pushedAt": "2026-09-17T00:29:25Z",
    "createdAt": "2026-09-16T21:45:36Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/fff08f5f32d3eba270834107535656d3369bde08ff62b10ddf750c776526fbd8/devagrawal09/jev-review",
+   "ogImage": "https://opengraph.githubassets.com/990f7ab71a95cd4c857878568bf73b9d1308a76c75025abe9e70f8cfc7ecf9e4/devagrawal09/jev-review",
    "topics": [
     "ai",
     "code-review",
@@ -1567,14 +1567,14 @@
    "readmeExcerpt": "Jev Review\nContinuous software-quality review for AI coding agents, powered by Jev.\nQuick start · Client setup · Quality dimensions · Security\nJev Review runs as a local MCP server and gives Claude Code, Codex, Cursor, and OpenCode structured quality scores while they work. Your coding agent remains responsible for diagnosing weaknesses and changing the code; Jev supplies a fast scalar signal across correctness, complexity, changeability, modularity, tests, security, and other independent quality dimensions.\n[!IMPORTANT]\nYour API key stays on your machine. Jev Review has no hosted backend, database, telemetry service, or author-operated proxy. The only remote request is sent directly to the configured Jev API.\nDemo\nhttps://github.com/user-attachments/assets/0ff9f873-0652-4826-af3d-6bb4f42c70b1\nAt a glance\n--- ---\nPurpose Continuous, structured software-quality evaluation\nSupported client"
   },
   "thruwire/foreman": {
-   "stars": 835,
+   "stars": 837,
    "forks": 69,
    "pushedAt": "2026-10-15T12:59:56Z",
    "createdAt": "2026-09-17T11:46:13Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/832a0f072e1317e10ce67fca45dca1f14af57e542190ed3da178fd4c0cd56970/thruwire/foreman",
+   "ogImage": "https://opengraph.githubassets.com/983c7d84267d638a742781008ae76a7bce4aae1c1544648b8fb4ce7acbe31ef6/thruwire/foreman",
    "topics": [
     "agent-supervision",
     "codex",
@@ -1591,7 +1591,7 @@
   "supercorp-ai/supercov": {
    "stars": 173,
    "forks": 8,
-   "pushedAt": "2026-11-26T15:57:23Z",
+   "pushedAt": "2026-11-27T15:23:03Z",
    "createdAt": "2026-08-23T16:12:35Z",
    "language": "Rust",
    "license": "MIT",
@@ -1907,14 +1907,14 @@
    "readmeExcerpt": "JevRouter\nFaster agent decisions. Models, subagents, skills, MCP tools, CLIs and plugins become one candidate set — Jev answers one typed Choice question, JevRouter enforces availability, permissions, risk and confirmation around it.\nWebsite · Quickstart · Benchmark · Cookbook · Documentation · 中文\nWhy JevRouter\nAgents waste reasoning tokens on a question a fast decision model answers better: which capability should handle this next? JevRouter puts Jev — a System One model that turns structured state into typed decisions with probability distributions — in front of your tools, while your reasoning model stays the execution and fallback layer.\nThe key contract is simple: Jev owns the decision probabilities; JevRouter owns availability, permissions, risk and confirmation. Router fields live under router, while the original probabilities, confidence, and complete provider response remain int"
   },
   "vinilana/jev-gateway": {
-   "stars": 326,
+   "stars": 324,
    "forks": 46,
    "pushedAt": "2026-11-23T00:22:40Z",
    "createdAt": "2026-09-18T18:30:56Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/5b188fdf25f00ae14aef9e5665fb9fbd36ac4d990178dc6f226d0e162da54695/vinilana/jev-gateway",
+   "ogImage": "https://opengraph.githubassets.com/b6e9f2ff774f021e3c554d4f261fa92cb409a5d9a4ceb7a7027b614ac2241739/vinilana/jev-gateway",
    "topics": [],
    "description": "An easy way to use jev with your coding agent for tool calling reasoning",
    "homepage": null,
@@ -1935,14 +1935,14 @@
    "readmeExcerpt": "Jev Search\nSearch the web in plain language. A decision model such as TypeSafe's Jev, Cloudflare's Clef or OpenAI's GPT-6 Luna chooses sources, time ranges and search terms, then ranks the results returned through Search1API. You get links and snippets, with visible relevance scores and editable filters. No generated answers.\nTry Jev Search\nInstall it from the browser as an app (Add to Home Screen on iOS, Install app on Chrome and Edge). Searches still need a network connection; the installed app caches only an offline page, not results.\nBuilt by Search1API. This is an independent project, not an official TypeSafe product.\nHow it works\n1. Understand. The configured decision model answers typed questions about your request to choose sources and a time range. Each chosen engine then gets its own query, always a span of your own words with nothing translated or added. For Hacker News, Reddi"
   },
   "ellipsis-dev/blink": {
-   "stars": 106,
-   "forks": 10,
+   "stars": 107,
+   "forks": 11,
    "pushedAt": "2026-09-16T17:00:30Z",
    "createdAt": "2026-09-16T14:30:49Z",
    "language": "TypeScript",
    "license": null,
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/37b43785fa727fac6f4224b3e395420da76e27223b51f6e90723b1a8c5c14143/ellipsis-dev/blink",
+   "ogImage": "https://opengraph.githubassets.com/a2dd2a8764dd792f84095e4d8c50a2840f6204d4158cfedaec6492073113d589/ellipsis-dev/blink",
    "topics": [],
    "description": "Codebase search powered by Jev from @typesafe-ai",
    "homepage": null,
@@ -1965,7 +1965,7 @@
   "WiktorB2004/llama-index-jev": {
    "stars": 8,
    "forks": 2,
-   "pushedAt": "2026-11-23T22:07:12Z",
+   "pushedAt": "2026-11-26T19:48:00Z",
    "createdAt": "2026-09-18T08:19:34Z",
    "language": "Python",
    "license": "MIT",
@@ -2059,14 +2059,14 @@
    "readmeExcerpt": "jev-scout\nSupport: fuel the next build —\nZero-hallucination open-source repo and crate discovery powered by TypeSafe AI Jev.\nAuthor: Akash Priyadarshi\nWhy • Quickstart • How it works • CLI Flags • Architecture • Non-Goals • Ecosystem\nWhy\nWhen developers and AI coding agents ask LLMs for open-source libraries, general-purpose models routinely hallucinate non-existent package names or recommend abandoned six-year-old repositories. GitHub's native search relies on rigid keyword matching that fails on conceptual queries.\njev-scout solves this by decoupling discovery from decision:\n- Grounding first: Queries real package registries (GitHub REST API, crates.io) to fetch actual live metadata.\n- System One scoring: Uses TypeSafe AI's jev-latest in a single speculative fan-out call (~1s API floor) to score architectural fit, license suitability, and maintenance freshness.\n- Zero hallucinated pack"
   },
   "realZachi/pg-jev": {
-   "stars": 1318,
+   "stars": 1319,
    "forks": 109,
    "pushedAt": "2026-10-06T13:55:50Z",
    "createdAt": "2026-09-17T20:04:00Z",
    "language": "Shell",
    "license": "NOASSERTION",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/1cb749a63ab4c2c12af4440991b9676cbfe05538783ac874d0023507e13d33c9/realZachi/pg-jev",
+   "ogImage": "https://opengraph.githubassets.com/6b1ca04a628ad5191fe4c3dbf6e0fcf09e608570a68a707d74e2ff06fba83c39/realZachi/pg-jev",
    "topics": [],
    "description": "Ask your Postgres tables questions in plain language. A PostgreSQL extension powered by TypeSafe's Jev.",
    "homepage": "https://pgjev.com",
@@ -2134,14 +2134,14 @@
    "readmeExcerpt": "sqlite-jev\nNatural-language predicates, classification, and scoring for SQLite, powered by\nTypeSafe Jev. It is inspired by\npg-jev, but shaped around SQLite's loadable-extension\nand virtual-table APIs.\njevrows reads the selected columns, puts up to 40 rows in one shared state, asks one\nquestion per row, and returns a virtual table that can be joined to the source by rowid.\nResults are cached for the lifetime of the SQLite connection.\nBuild\nRequirements:\n- SQLite 3.45 or newer, built with JSON support and loadable extensions\n- A C11 compiler and make\n- The libcurl runtime (libcurl.so.4 on Linux or libcurl.4.dylib on macOS)\n- A TypeSafe API key\nThe current development machine already has all of these; no extra system package is needed.\nInside SQLite:\nTYPESAFEAPIKEY is the only environment variable used for the API key.\nBatched table queries\nThe signature is:\nIt returns sourcerowid, answer, "
   },
   "reachjalil/jevlogs": {
-   "stars": 23,
+   "stars": 24,
    "forks": 4,
    "pushedAt": "2026-10-04T03:10:41Z",
    "createdAt": "2026-09-17T04:26:31Z",
    "language": "JavaScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/d54a75b0d683ad498556a1443710cd7573c21758be06a8f687ad1d7fa02c04d2/reachjalil/jevlogs",
+   "ogImage": "https://opengraph.githubassets.com/41f11291e41488e295eabdd5614842c45997ef2057beedc086e92e6d651b4e79/reachjalil/jevlogs",
    "topics": [],
    "description": "Open-source Jev log triage for OpenTelemetry. Score the signal before expensive LLM analysis.",
    "homepage": null,
@@ -2150,7 +2150,7 @@
   "AkashPriyadarshii/jev-curate": {
    "stars": 116,
    "forks": 16,
-   "pushedAt": "2026-11-26T15:39:16Z",
+   "pushedAt": "2026-11-27T15:42:21Z",
    "createdAt": "2026-09-18T06:36:41Z",
    "language": "Rust",
    "license": "MIT",
@@ -2425,14 +2425,14 @@
    "readmeExcerpt": "jev-guard\nA security hook for coding agents, powered by Jev.\nAuto mode, for every coding agent\nClaude Code's auto mode is described as: \"A separate classifier model reviews actions before they run, blocking anything that escalates beyond your request, targets unrecognized infrastructure, or appears driven by hostile content Claude read.\" That is exactly the job jev-guard does — as three typed questions to Jev (risk, userrequested, fromuntrusted) instead of a proprietary classifier — and it does it for Codex, Copilot, Gemini, Cursor, pi, OpenCode and ACP editors too, with the same policy and the same session memory everywhere. If you want auto mode outside Claude Code, or a second opinion inside it, this is the build.\nWhy Jev: price and speed, with sources\nFigure Source\n--- --- ---\nPrice $0.042 per 1M input tokens, $0 output — a typical jev-guard call is ~1k tokens, so ≈ $0.00004 per tool"
   },
   "brainstormity/Jev-Moderation-Bot": {
-   "stars": 51,
-   "forks": 6,
+   "stars": 52,
+   "forks": 8,
    "pushedAt": "2026-09-22T04:38:59Z",
    "createdAt": "2026-09-17T06:19:44Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/454e1544cb72d1aad118932caef39c6d6901df23f670b696665ab03c288d5eb8/brainstormity/Jev-Moderation-Bot",
+   "ogImage": "https://opengraph.githubassets.com/82b9075c84d7e62372b44419f685c0a83dbed4168b3d52a4300211d9e8d63909/brainstormity/Jev-Moderation-Bot",
    "topics": [],
    "description": "A Discord moderation bot that filters messages in real-time using a System 1 AI model",
    "homepage": null,
@@ -2525,14 +2525,14 @@
    "readmeExcerpt": "jev-secret-detection\nMeasures how well TypeSafe's Jev model spots real secret credentials in file snippets. Each test case is sent to\nJev as a single Noul question (\"does content contain a real secret\ncredential that someone reading it could use?\"), and the returned probability is compared with the expected label.\nThere is deliberately no regex matching or provider verification. The goal is to score Jev itself.\nUsage\nThe default run is the 100-case set. Add edge or config (uv run python main.py config) to run one of\nthe smaller batches instead.\nThe report shows one row per case (noul, band, round trip, and server time), then:\n- accuracy at a 0.5 threshold\n- AUC (how well the scores rank secrets above non-secrets, independent of any threshold)\n- recall (share of secrets flagged) and precision (share of flagged cases that are secrets)\n- mean noul for secrets and for non-secrets, and the Br"
   },
   "santos-sanz/jev-audio-beeper": {
-   "stars": 2,
-   "forks": 1,
+   "stars": 3,
+   "forks": 2,
    "pushedAt": "2026-09-17T09:17:46Z",
    "createdAt": "2026-09-17T09:04:43Z",
    "language": "TypeScript",
    "license": null,
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/b5887e55792e4e7dcf8f0ecb6347b807459d19f6478dd2f5d8169631b7ed787d/santos-sanz/jev-audio-beeper",
+   "ogImage": "https://opengraph.githubassets.com/5ca09efacef404f7c17395a9c7f23132b998d9e4db7a83d82e4b17cec26f1a34/santos-sanz/jev-audio-beeper",
    "topics": [],
    "description": "Low-latency audio censorship POC using Jev typed decisions and ffmpeg.",
    "homepage": null,
@@ -2586,7 +2586,7 @@
   "kitze/unclutter": {
    "stars": 395,
    "forks": 47,
-   "pushedAt": "2026-11-26T07:41:37Z",
+   "pushedAt": "2026-11-27T15:56:49Z",
    "createdAt": "2026-09-17T11:58:56Z",
    "language": "TypeScript",
    "license": "MIT",
@@ -2873,7 +2873,7 @@
   "AkashPriyadarshii/jev-seo": {
    "stars": 108,
    "forks": 19,
-   "pushedAt": "2026-11-26T07:40:23Z",
+   "pushedAt": "2026-11-27T15:57:21Z",
    "createdAt": "2026-09-18T13:02:32Z",
    "language": "Rust",
    "license": "MIT",
@@ -3086,14 +3086,14 @@
    "readmeExcerpt": "Askable arm\nZero-shot robot tasks with the TypeSafe Jev API.\nGive a goal in plain English. Jev chains a set of hardcoded primitives. The arm does the thing.\nNo training. No demos. No policy.\nJev never outputs torques or a trajectory. It picks one primitive per step. Python runs that move. Repeat.\nWhat it can do\nOn ManiSkill with a Franka Panda (PickCube-v1, ResetButton-v7), seed 0:\nGoal Chain Picks\n--- --- ---:\nPick up the red cube hoverover → descendonto → closegripper 3\nPlace it on the green target grasp, lift, hover target, press onto it 7\nPress blue, then red hover/press blue, hover/press red 4\n~1 second per Jev pick.\nType anything that the primitive set can cover, e.g.\n- Move the fingertip upward by at least 4 centimeters.\n- Press the red button first, then press the blue button.\nHow it works\n1. Catalog. ~30 mutually exclusive skills: opengripper, up1cm, hoverover, descendonto, pres"
   },
   "rokbenko/quackd": {
-   "stars": 298,
-   "forks": 30,
+   "stars": 300,
+   "forks": 32,
    "pushedAt": "2026-11-21T22:39:58Z",
    "createdAt": "2026-08-28T09:09:16Z",
    "language": "Python",
    "license": "Apache-2.0",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/9fdc70ab8d4edc63e7cf8cc8ca669dc36095d04a93ce2d69397c5085de7c009d/rokbenko/quackd",
+   "ogImage": "https://opengraph.githubassets.com/563d32dba0cf0acd2daa7e1ae9fae3da4585cf4a8331f7dbac45a4c975af1c00/rokbenko/quackd",
    "topics": [
     "mcp",
     "microduck",
@@ -3167,14 +3167,14 @@
    "readmeExcerpt": "jev-plays-pokemon-red\nPokemon Red played by a model that only outputs probabilities. Code reads the Game Boy's\nmemory into a typed snapshot and hands the model a menu of the moves that are actually\nlegal; it returns a probability for each one. The bars are those probabilities.\nuv run jpp play --rom /path/to/your/red.gb --overlay\nThat is a real cartridge under PyBoy, not a mockup. The agent walks out of the bedroom,\ncrosses Pallet Town, takes Charmander from Oak, and wins the rival battle without anyone\ntouching a key.\nThe numbers, and what is still blank\nMeasured over the calls that were answered on a cartridge, through the Vercel AI Gateway\nshim rather than the direct API:\nCalibration is not published yet, on purpose. The endpoint's free tier serves about\nfive calls per window, so the longest labelled run so far is n=5 turns with a confidence\ninterval that covers everything, including t"
   },
   "jarrodwatts/jev-trader": {
-   "stars": 3157,
+   "stars": 3158,
    "forks": 599,
    "pushedAt": "2026-10-13T04:21:31Z",
    "createdAt": "2026-09-16T21:36:20Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/f26f0d30ad228bd24147e27e71d1001381c6343c429772217eba6b04de2e48c9/jarrodwatts/jev-trader",
+   "ogImage": "https://opengraph.githubassets.com/61482a847cc86de569e77e1d71edd5aa343df0de67603ed947325aff8fafa739/jarrodwatts/jev-trader",
    "topics": [],
    "description": "One AI trade decision every Monad block. Jev on Kuru MON-USDC.",
    "homepage": "https://jev-trader.vercel.app",
@@ -3202,7 +3202,7 @@
    "language": "Python",
    "license": "Apache-2.0",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/cd9c396ad4570f903753eb02332eebec8a8eee5d93a546d40da9ec06f1f8ca96/zadescoxp/Jev-Trades",
+   "ogImage": "https://opengraph.githubassets.com/c9db08bfc1aab2efb95a3a0c197e50072053fcfd60dbc270ac22e9aba4b64d1b/zadescoxp/Jev-Trades",
    "topics": [
     "automated-testing",
     "backtesting",
@@ -3214,14 +3214,14 @@
    "readmeExcerpt": "Jev Trades\nA Next.js dashboard for live crypto market data and TypeSafe-powered trading.\nThe system streams live market data from Yahoo Finance through yfinance (default), calculates technical indicators across multiple timeframes, sends explicitly enabled trading states to TypeSafe, and applies the returned decisions to a portfolio powered by a local SQLite database. It features both autonomous trading by the Jev agent and a fully-featured manual trade desk with automatic Take Profit and Stop Loss execution.\nDefault mode: paper trading (no real money, no exchange keys required).\nFor Bybit live/testnet execution see LIVE.md.\nSee It In Action\nThe dashboard combines live market data, technical indicators, TypeSafe decisions, and a paper-trading portfolio in one workspace.\nTrading UI\nPortfolio position\nFeatures\n- Live Market Data & Dynamic Timeframes: Streams live market data via Yahoo Fina"
   },
   "aowang-ai/jev-trade": {
-   "stars": 228,
+   "stars": 229,
    "forks": 42,
    "pushedAt": "2026-11-12T04:32:58Z",
    "createdAt": "2026-09-17T16:33:05Z",
    "language": "TypeScript",
    "license": "NOASSERTION",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/89cd4f652ad40746c47cbfe2b4c86704b98d52bbb244a28676d0b6142dcd8751/aowang-ai/jev-trade",
+   "ogImage": "https://opengraph.githubassets.com/2cf64ff97d4d28c4574fe731442b336d301233f64978f68bd0b79b3684dc87ba/aowang-ai/jev-trade",
    "topics": [
     "hyperliquid",
     "jev",
@@ -3776,7 +3776,7 @@
   "shiftynick/jev-axi": {
    "stars": 49,
    "forks": 12,
-   "pushedAt": "2026-11-13T13:30:18Z",
+   "pushedAt": "2026-11-27T15:29:30Z",
    "createdAt": "2026-09-16T23:56:26Z",
    "language": "TypeScript",
    "license": "MIT",
@@ -3848,14 +3848,14 @@
    "readmeExcerpt": "typesafe-cli\nA shell command for Jev: state and typed questions in,\ntyped answers out. Jev does not write prose, so nothing here parses any. A noul\ncomes back as the probability that the answer is yes, a choice as one of the\noptions you supplied plus the confidence behind it, and a score as a position on\nyour rubric.\nJev evaluates the questions in one request in parallel and in isolation, so\nasking four costs one round trip of about 0.3s and not four. That is what ask\nis for: a whole document per call, not a loop.\nRun it\nNode 22.18 or newer. The checkout runs the TypeScript source directly, so\nnix run and node src/cli.ts need no build step. npm is the exception: Node\nrefuses to strip types under nodemodules, so npm publish compiles src/\nto dist/ first (tsc -p tsconfig.build.json).\nThe flake exposes packages.default, so a system or home configuration can\ntake this repository as an input a"
   },
   "mrnugget/jev-shell-history": {
-   "stars": 121,
+   "stars": 120,
    "forks": 10,
    "pushedAt": "2026-09-18T08:11:11Z",
    "createdAt": "2026-09-18T08:11:07Z",
    "language": "TypeScript",
    "license": null,
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/6f26e6d657135baaecc5187177d547053705f7ee0437c3abead0df21db20c357/mrnugget/jev-shell-history",
+   "ogImage": "https://opengraph.githubassets.com/ad1fd4ae25b14def827da6652548435bfbbbddaf6c87ce3c9045a967f33f6dff/mrnugget/jev-shell-history",
    "topics": [],
    "description": "Fish-style zsh history autosuggestions ranked by Jev (TypeSafe)",
    "homepage": null,
@@ -4153,14 +4153,14 @@
    "readmeExcerpt": "jev-dsl\nTyped semantic queries for Haskell, using TypeSafe’s Jev.\nAsk whether evidence supports a claim, select a candidate, or route a reply into\nan authored continuation. The answers retain the Haskell values you supplied:\nrows, domain values, functions, or actions.\nCompose queries with Applicative and Traversable, adapt assessments with\nStar, edit payloads with optics, and choose evaluation strategies with\nSelective. The library builds and validates requests, groups questions that\nshare a state, and decodes responses against the original alternatives. You\nsupply the transport and run any selected actions.\nEarly alpha, 0.2.0.0. Used by the examples here and Exomonad’s hosted Haskell\ninterface. Start with Jev.Operators for Aeson, or Jev.Core for your own JSON\ntype. See the authoring guide for the API and the\ncomposition guide for evaluation and replay contracts.\nCompose assessments over"
   },
   "pithings/advocaat": {
-   "stars": 102,
+   "stars": 103,
    "forks": 3,
    "pushedAt": "2026-09-18T17:55:50Z",
    "createdAt": "2026-09-16T21:23:24Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/31397daec5d870e17b11949d69c7b0e5692bedf91c039649ac9a3f2c39718483/pithings/advocaat",
+   "ogImage": "https://opengraph.githubassets.com/ab3ed950f1e87b6eb171b44f8cfd80c3dd775aed72ab480f1de6b66365d1cc4e/pithings/advocaat",
    "topics": [],
    "description": "A small, type-safe client for asking AI questions about your data, powered by TypeSafe Jev.",
    "homepage": null,
@@ -4258,7 +4258,7 @@
   "kunobi-ninja/kunobi-jev": {
    "stars": 1,
    "forks": 1,
-   "pushedAt": "2026-11-19T18:58:33Z",
+   "pushedAt": "2026-11-26T19:00:32Z",
    "createdAt": "2026-09-17T07:32:27Z",
    "language": "Rust",
    "license": "Apache-2.0",
@@ -4942,14 +4942,14 @@
    "readmeExcerpt": "JevForge\nAn end-to-end toolkit for synthesizing decision data, training calibrated\ncandidate scorers, evaluating them, and serving Jev-compatible inference for\ninteractive web decisions.\nData synthesis · training + calibration · evaluation · Jev-compatible serving\nInteractive demo · HF model · HF dataset · Dataset format · Chinese · Design · RLCD results\nJevForge turns structured decisions into one reproducible pipeline. Give it a\nstate, a question, and a candidate set; it builds training records, trains and\ncalibrates a scorer, evaluates fixed splits, and serves a complete probability\ndistribution through a Jev-compatible API. choice, noul, and ordered\nscore questions all use the same decision path.\nIts first proving ground is the interaction loop at the heart of Jev-style\nsystems: choosing the next click, navigation target, form control, route, or\nescalation from the elements currently"
   },
   "OmniJev/PlayJev": {
-   "stars": 69,
+   "stars": 70,
    "forks": 4,
    "pushedAt": "2026-09-24T11:19:41Z",
    "createdAt": "2026-09-17T20:37:50Z",
    "language": "JavaScript",
    "license": "Apache-2.0",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/b9a4d50e958f4d47e3006e4b4313e40b30f7bb7db9603e4a667978c04653a5d8/OmniJev/PlayJev",
+   "ogImage": "https://opengraph.githubassets.com/1832f5f3e345754f809107a78cbf5e6dd1dd63783ac6bf077912c3e4d06f9076/OmniJev/PlayJev",
    "topics": [
     "browser-games",
     "game-ai",
@@ -5281,14 +5281,14 @@
    "readmeExcerpt": "A coding agent with the IDE wired in.\nomp.sh\nFork of Pi by @mariozechner\nThe most capable agent surface that ships. Continuously tuned by real-world use — complete out of the box, open all the way down.\n60+ providers · 31 built-in tools · 14 lsp ops · 28 dap ops · ~80k lines of Rust core.\n[!NOTE]\nPull requests are temporarily open to everyone as a trial. We previously\nrequired a vouch before accepting PRs; that requirement is lifted for now\nwhile we evaluate how open contributions go. Depending on the results, the\nvouch system may return.\nInstall\nmacOS · Linux\nAlpine / musl: the prebuilt musl binary links libstdc++/libgcc dynamically, which stock Alpine does not ship. Install them first: apk add libstdc++ libgcc.\nHomebrew\nBun (recommended)\nNix\nFlake consumers can use packages..omp, overlays.default, nixosModules.default, or homeManagerModules.default. A Home Manager configuration can ins"
   },
   "nicobailon/pi-mcp-adapter": {
-   "stars": 1669,
+   "stars": 1670,
    "forks": 396,
    "pushedAt": "2026-11-21T08:16:20Z",
    "createdAt": "2026-01-19T23:23:58Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/4139dd39c6a505de25e3d82f6a55dbe87d9c3f8cac46f54bad8ec61c008f582b/nicobailon/pi-mcp-adapter",
+   "ogImage": "https://opengraph.githubassets.com/92e55f913610aa457049b32060a42da836e9d302f421e8b2175bd735be91ec5e/nicobailon/pi-mcp-adapter",
    "topics": [
     "ai",
     "claude",
@@ -5583,7 +5583,7 @@
    "readmeExcerpt": "openpoke-meets-jev\nA fork of OpenPoke that stops asking a chat model to make decisions.\nclaude-sonnet-4 jev-1.13.0\n--- --- ---\nLatency, mean 2,452 ms 424 ms\nLatency, p50 / p95 2,512 / 2,883 ms 306 / 1,110 ms\nInput cost, 36 screens $0.1667 $0.0018\nInput cost per 1,000 screens $4.63 $0.049\nDistinct probabilities across 36 answers 6 18\nAgreement at the 0.75 bar — 33 / 36\nRead those as per decision, not per pipeline. The cost ratio is arithmetic on list rates ($3.00 against $0.042 per million input tokens) over unequal token counts — 55,554 against 41,739, because the LLM arm carries a tool schema. The latency numbers came off one machine in one afternoon, one provider per arm; I'd read 6× as an order of magnitude and not much more. There is no labelled set in this repo, so the harness reports agreement, latency, cost and distribution, and refuses to print accuracy or Brier. Agreement isn't "
   },
   "socai-io/jev-social": {
-   "stars": 220,
+   "stars": 223,
    "forks": 43,
    "pushedAt": "2026-11-08T03:53:14Z",
    "createdAt": "2026-09-18T18:48:15Z",
@@ -5818,14 +5818,14 @@
    "readmeExcerpt": "jev4k\nA Kotlin Multiplatform DSL and client for TypeSafe's Jev model, for the JVM, Apple\nplatforms, Linux, Windows, and Node.js.\nJev is a System One model: it doesn't generate text. You give it a state (a message, a document, a record) and a\nset of typed questions, and it returns typed answers with calibrated probabilities that your code can branch on,\nsort by, and threshold. jev4k lets you declare those questions in Kotlin, send them in one request, and read the answers\nback as typed values, including enum-valued choices.\nContents\n- Documentation\n- Installation\n- Quick start\n- Questions and answers\n- Defining questions\n- State\n- Images\n- Reading results\n- Client and configuration\n- Embedding in an application\n- Errors\n- Testing code that uses jev4k\n- Writing good questions\n- Development\n- Thanks to TypeSafe\n- License\nDocumentation\n📖 The jev4k website is at . It has many more examples t"
   },
   "kerpopule/hermes-jev-skills": {
-   "stars": 1368,
-   "forks": 129,
+   "stars": 1371,
+   "forks": 130,
    "pushedAt": "2026-11-24T21:21:44Z",
    "createdAt": "2026-09-18T20:01:29Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/a3fe258610cdaac886159da66d7c0d8dd9f576ac453c8feb2861ba687605b7ea/kerpopule/hermes-jev-skills",
+   "ogImage": "https://opengraph.githubassets.com/5544507ea87c91fc9a492231f1fe833588ff9cc30bee251b9b7d34123ced729b/kerpopule/hermes-jev-skills",
    "topics": [],
    "description": "Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes agents (also Claude Code and Codex)",
    "homepage": null,
@@ -6126,14 +6126,14 @@
    "readmeExcerpt": "StopSpam\nStopSpam is a Telegram bot that removes spam and scam messages from group\nchats. It runs as @StopSpamjevbot.\nWhat it does, and what it does not\nThe bot looks for two things: unsolicited spam (advertising, mass-posted\npromotion, channel/bot pushing) and scam (fake earnings, crypto\ngiveaways, phishing, impersonated support, requests for credentials or a\nseed phrase). That is the whole scope.\nIt does not moderate toxicity, insults, off-topic chatter, or anything else\na group's own rules might cover. It does not enforce house rules a human\nadmin would need to interpret. If a message is rude but not spam or a scam,\nthe bot leaves it alone.\nIt also does not check everyone all the time. Members who have posted\ncleanly in the group for a while stop being checked at all, and only fall\nback under review if they trigger something suspicious (a link, an invite,\na forward, a long silence fol"
   },
   "fazlerocks/jevmail": {
-   "stars": 109,
+   "stars": 110,
    "forks": 9,
    "pushedAt": "2026-09-19T17:07:08Z",
    "createdAt": "2026-09-19T17:07:03Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/64c061069288d4cbb251b504df6c393acbfd3457a31aedb46bdc3842145076cf/fazlerocks/jevmail",
+   "ogImage": "https://opengraph.githubassets.com/3975b15ed845a15e2c2609388a1ad104e22cde58819d962c573e9dcd00a9d8ca/fazlerocks/jevmail",
    "topics": [
     "ai-email-assistant",
     "ai-sdk",
@@ -6171,14 +6171,14 @@
    "readmeExcerpt": "Your inbox, judged in milliseconds.\nTag, move, flag, and notify -- no LLM prompt engineering, no JSON parsing, no per-email API bill that adds up.\nhttps://github.com/user-attachments/assets/4604d2ff-6e59-4938-983e-305d355be5d2\nWhy\nClassifying email with a normal LLM means writing a prompt, hoping it returns valid\nJSON, and paying full chat-completion prices for what is really just \"does this apply:\nyes or no.\" Jev, TypeSafe's System One model, skips all of\nthat: you send it your inbox state and a set of yes/no questions, and it hands back\ncalibrated probabilities directly -- typically in well under a second, for a fraction of\na cent per email.\nWhat makes Jev different from calling an LLM\nChat LLMs are trained with RLHF to produce fluent, human-pleasing text -- great for\nconversation, but that same optimization is what makes them mode-drop, hedge, and\noverstate confidence when what you ac"
   },
   "FerryCorleone/crush-monitor": {
-   "stars": 338,
+   "stars": 339,
    "forks": 29,
    "pushedAt": "2026-11-02T17:29:00Z",
    "createdAt": "2026-09-20T12:46:10Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/6f8088d96db36dc8b588fb67d4bcc707278b288384aeea3ad00001ee91fd853b/FerryCorleone/crush-monitor",
+   "ogImage": "https://opengraph.githubassets.com/021b8db88a36a11ff09273667d3fed5f7be5ddaf01a595535f77f45578190331/FerryCorleone/crush-monitor",
    "topics": [],
    "description": "Crush 好感监控器：用 Jev 分析微信聊天的情绪、意图和回复表现。本机部署，使用自己的 API Key。",
    "homepage": null,
@@ -6234,7 +6234,7 @@
    "language": "JavaScript",
    "license": null,
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/f51dc5abbad426b78b6988ea887d2daa5bc66b5a3b9dd01485c18759b43be224/rmalde/minecraft-agent",
+   "ogImage": "https://opengraph.githubassets.com/882af5111f8c7682f6ef2290f5a9c765fbe126def97cd9e57421407ba80ac360/rmalde/minecraft-agent",
    "topics": [],
    "description": "Astra planner and JEV controller for Minecraft, with native recording, tested routes, and run verification.",
    "homepage": null,
@@ -6255,14 +6255,14 @@
    "readmeExcerpt": "🤖 EmbodiedJev · 行知\n🌐 点击进入在线实验展示 →\n🎬 直接看真实录像 · 🆚 对比模型决策 · ⚡ 看速度 · 💰 看费用\n无需安装，打开就能看。 🤝 欢迎分享你的复现，展示 名字 · GitHub 账号 · 日期 · 任务 · 方法 · 结果！\n🎥 浏览实验 · 🧑‍🔬 社区作品 · 📖 投稿与复现指南\n把具身 AI 实验，搬到你的浏览器里。\n📦 开箱体验三大仿真任务 · 🧠 本地小模型 / 云端 API · 🎮 看得见的每一步决策\n无需机械臂，无需先训练模型。跟着步骤启动，在自己的电脑上体验「观察 → 决策 → 执行 → 反馈」。\n🚀 快速上手 · 🧠 接入模型 · 📊 实测结果 · 🤝 一起维护\n行而有据，知而能行。\n如果这个项目帮你迈出了具身 AI 的第一步，欢迎点一颗 ⭐ Star，让更多人一起玩、一起改！\n✨ 打开行知，你能做什么？\n- 📦 先玩起来，再接模型：内置规则基线，无需 API Key、GPU 或模型权重，即可运行三个任务。首次安装依赖需要联网。\n- 🦾 真实物理交互：MuJoCo + Franka Panda，夹爪接触、抓取、搬运和放置都有物理反馈。\n- 🧠 模型入口放在界面里：可接 TypeSafe Jev、Claude 原生 API、OpenAI 兼容 API，以及本地 MiniCPM5-2B。\n- 👀 决策过程看得见：查看阶段或短步选择、公开的动作说明、调用次数与延迟；有原生候选概率的接口还会显示概率。\n- 🧭 逐步规划也能试：模型逐轮选择 XYZ 方向、步长和夹爪动作，执行后重新观测；可用原始图像输入并加入中途扰动。\n- 📷 相机自由组合：仅外部、仅腕部、双相机或无相机；启用的视角按动作边界更新，腕部相机随手移动。\n- 🆚 同一任务，不同模型：可选 2–3 路独立实验，统一任务和种子，真实运行后按仿真时间对齐回放。\n- 🧩 按自己的想法扩展：多套具名模型接口、任务/场景预设、JSON 导入导出与独立输入测试，方便二次开发。\n- 🧪 执行前先预演：在仿真副本里检查候选动作"
   },
   "fstandhartinger/jevbench": {
-   "stars": 355,
+   "stars": 356,
    "forks": 32,
    "pushedAt": "2026-10-15T04:07:55Z",
    "createdAt": "2026-09-19T07:07:36Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/b21d8ef38fa374c80ead049172dfa32d75c944232c5b8b5aa9f92a508b54b0a2/fstandhartinger/jevbench",
+   "ogImage": "https://opengraph.githubassets.com/4f45650cc2c8c6ab49ffa190d37c0b89c81983001af708465a883fcecbee07b1/fstandhartinger/jevbench",
    "topics": [
     "jev",
     "systemone",
@@ -6580,14 +6580,14 @@
    "readmeExcerpt": "Jev GUI Delegate\n面向 Codex 的 Windows / Chrome GUI 委派原型。主模型交付任务与验收条件，本地控制器执行确定性步骤，需要语义判断时调用 TypeSafe Jev，并在每一步核对实际结果。\n这是个人设计、借助 AI 实现并持续验收的工具项目。项目贡献包括任务契约、工具编排、低置信恢复、权限与状态检查、测试和反馈迭代；Jev 模型、TypeSafe SDK、Codex 和浏览器插件属于上游产品。\n当前版本 0.7.0：Windows 完整安装包 · 安装说明 · 改动记录 · 真实网站与回归验证。\n为什么做\n逐步操作网页会让主模型反复读取界面、选择控件和接收工具返回。这个项目把一段可明确验收的操作交给本地控制器，减少主模型在操作循环中的参与，同时保留状态检查、异常恢复和用户接管。\n已完成的设计\n- 公开网页目标模式：自动发现控件和候选；排名不确定时逐项判断可接受动作，保留全部候选以及原有概率、置信度和身份检查。\n- 真实页面适配：包含邻近作者信息、新标签接续、有限加载等待、正文与日期控件回传，以及重复导航和输出冲突恢复。\n- 两条执行路径：Chrome 复用宿主提供的官方浏览器会话；Windows 使用 UI Automation。没有复制个人浏览器配置或提取 Cookie。\n- 可检查的任务契约：目标、允许动作、范围、输入、步骤和成功条件显式定义。\n- 按需使用模型：确定性匹配由本地代码执行；语义选择调用 Jev。零模型调用按实际记录，不当作 Jev 推理成功。\n- 连续执行与恢复：保存进度，支持缺少输入的补充、局部选择修复、暂停、取消和用户接管；结果不明时不自动重放提交。\n- 结果核验：操作前核对身份和范围，操作后检查实际值或页面状态；使用量与失败原因分开记录。\n对照测试\n2026-09-23 的两轮合成任务记录，每轮都比较同样的 4 项任务、24 个动作。下表统计主模型 Astra 的输入和输出 token，包含缓存输入；Jev 的额外用量单列在测试说明。\n指标 第一轮 第二轮\n------:---:\nAstra 逐步执行 "
   },
   "nokia-applied-research/AnyJev": {
-   "stars": 1662,
+   "stars": 1666,
    "forks": 182,
    "pushedAt": "2026-10-21T20:30:58Z",
    "createdAt": "2026-09-21T05:55:40Z",
    "language": "Python",
    "license": "Apache-2.0",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/a2f04a0416ad71344f1442ea5ba9193bf7a2f1f4a2d4b9c0c096ce60a6e76f0e/nokia-applied-research/AnyJev",
+   "ogImage": "https://opengraph.githubassets.com/24c2fe70011eacaaf92a16f88c5c758b47b73594b0e200fccb95e6afc675540b/nokia-applied-research/AnyJev",
    "topics": [
     "calibration",
     "decision-model",
@@ -6603,8 +6603,8 @@
    "readmeExcerpt": "English · 简体中文 · ⚡ Serve it · 📊 Results · 🏆 Leaderboard · 🧭 Roadmap · 📖 Levels\nJiamu Zhang1 &nbsp;&nbsp;&nbsp; Tianze Yang1 &nbsp;&nbsp;&nbsp; Yucheng Shi2 &nbsp;&nbsp;&nbsp; Evan Chen1\nZixiang Nie1 &nbsp;&nbsp;&nbsp; Kelly Wan1 &nbsp;&nbsp;&nbsp; Liangjie Hong1 &nbsp;&nbsp;&nbsp; Ninghao Liu3 &nbsp;&nbsp;&nbsp; Liang Wu1\n1&nbsp;Nokia, Sunnyvale, CA, USA &nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;Tencent Hunyuan &nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;The Hong Kong Polytechnic University\nQwen3-8B on a real BANKING77 item. Every number is a model output.\n[!TIP]\n🆕 Tacit: AnyJev's self-distilled models, 1.7B to 9B, are on\nHugging Face. One\nforward pass per decision. With adaptive=True, a capped share of low-confidence decisions goes to\nthe model's own reasoning. They run on transformers, in-process vLLM or a stock vllm serve.\npip install \"anyjev[hf]\", then Tacit.frompretrained(\"morriszjm/Tacit-9B\").\nStar"
   },
   "ollaya-dev/ollaya": {
-   "stars": 1479,
-   "forks": 94,
+   "stars": 1481,
+   "forks": 95,
    "pushedAt": "2026-11-25T07:25:20Z",
    "createdAt": "2026-09-23T22:11:15Z",
    "language": "Rust",
@@ -6628,14 +6628,14 @@
    "readmeExcerpt": "ollaya\nThe decision layer for AI agents.\nOllaya runs open decision models on your own hardware, the way Ollama runs LLMs. Typed questions in, calibrated answers out, in milliseconds: routing, guardrails, triage and tool approval without an LLM call.\nWebsite ·\nModels ·\nBench ·\nDocs ·\nReleases ·\nHugging Face\nCreated and maintained by Mert Cobanov (@mertcobanov).\nA decision model reads a state (a message, an email, a ticket, any JSON) plus typed questions\n(choice, score, noul) and returns calibrated probabilities in a single forward pass, in\nmilliseconds. It never generates text. Ollaya pulls these models by name and serves them from a\nlocal daemon behind a self-hosted, Jev-compatible API (TypeSafe's /v1/systemone wire format),\nso the TypeSafe SDK and existing Jev clients work unchanged once they point at Ollaya and name an\nopen model.\nOr ask your own questions: ollaya run kev --ask \"Is a r"
   },
   "malevrigns/agent-jev": {
-   "stars": 372,
-   "forks": 40,
+   "stars": 373,
+   "forks": 41,
    "pushedAt": "2026-10-30T02:18:03Z",
    "createdAt": "2026-09-21T16:24:42Z",
    "language": "Python",
    "license": "Apache-2.0",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/0cd353cacaccce4f22f3037989a4aef148a44b3e9b977fd3f419a9d403f06ee4/malevrigns/agent-jev",
+   "ogImage": "https://opengraph.githubassets.com/393d6c036f72874ffd45b8e2bd3eaeb0c5e95573b0a7c422439e1984a93ad741/malevrigns/agent-jev",
    "topics": [
     "ai",
     "ai-agents",
@@ -6648,14 +6648,14 @@
    "readmeExcerpt": "Weights: https://huggingface.co/aimeigaoshou/agent-jev\n&nbsp;·&nbsp; Website: https://malevrigns.github.io/agent-jev/\nThe job\n&nbsp;&nbsp;·&nbsp;&nbsp;\nPrimitives\n&nbsp;&nbsp;·&nbsp;&nbsp;\nForward pass\n&nbsp;&nbsp;·&nbsp;&nbsp;\nResults\n&nbsp;&nbsp;·&nbsp;&nbsp;\nLatency\n&nbsp;&nbsp;·&nbsp;&nbsp;\nRun it\n&nbsp;&nbsp;·&nbsp;&nbsp;\nHTTP\n&nbsp;&nbsp;·&nbsp;&nbsp;\nRepository\nAgentJev-0.6B does not write. You hand it a state and questions you have already phrased. One forward pass returns a probability for every option. The number of decoded tokens is zero.\nUse it as a framework-independent decision service wherever an agent loop needs a gate, a route, or a score. Integrate through the HTTP API or the Python client; the Claude Code hook is one optional example. Leave prose generation to a larger model.\n▶ Watch the 82-second demo · MP4, 1920×1080, 8.9 MB · Original ambient soundtrack, no voice-ov"
   },
   "Liuziyu77/Valen": {
-   "stars": 939,
+   "stars": 938,
    "forks": 88,
    "pushedAt": "2026-11-15T17:45:29Z",
    "createdAt": "2026-09-23T02:48:02Z",
    "language": "Python",
    "license": "Apache-2.0",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/17ecb5c0368fbadae61119940c8a83b14b93c447192f84eb74de58a1631714c9/Valen-Team/Valen",
+   "ogImage": "https://opengraph.githubassets.com/d59117703aeac1c8d6c7abe607e468d0c78f6bbf24719f6e705fd5dc80e23743/Valen-Team/Valen",
    "topics": [
     "decision-model",
     "jev",
@@ -6750,14 +6750,14 @@
    "readmeExcerpt": "NeuroLink\nThe pipe layer for the AI nervous system.\nAI intelligence flows as streams — tokens, tool calls, memory, voice, documents.\nNeuroLink is the vascular layer that carries these streams from where they are\ngenerated (LLM providers: the neurons) to where they are needed (connectors: the organs).\n→ Docs · → Quick Start · → npm · → Blog\n🧠 What is NeuroLink?\nNeuroLink is the pipe layer of an AI nervous system. Providers — OpenAI, Anthropic, Google, AWS, Azure, Mistral, local runtimes like Ollama, and dozens more — are the neurons: each generates a different kind of intelligence, at a different cost and latency. NeuroLink is the vascular layer that carries that intelligence, as a stream, to the applications — the organs — that consume it, across three inference types: generate and stream produce text, decide produces a calibrated boolean/choice/score judgment instead. A curated model r"
   },
   "AgriciDaniel/jev-seo": {
-   "stars": 1047,
+   "stars": 1051,
    "forks": 149,
    "pushedAt": "2026-09-22T00:45:41Z",
    "createdAt": "2026-09-22T00:33:54Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/c0a42169fb107729186dcd51221b7bb01fd7504f2bbe3438849cb34670c70c94/AgriciDaniel/jev-seo",
+   "ogImage": "https://opengraph.githubassets.com/7a1c5efb8165d41e49d635c20ef477ab6ab3555070da8d9e73dfe7e24ad0e323/AgriciDaniel/jev-seo",
    "topics": [],
    "description": "Live SEO audit for any website from one homepage URL, judged by Jev. PDF, XLSX and Markdown reports.",
    "homepage": "skool.com/ai-marketing-hub-pro",
@@ -6815,14 +6815,14 @@
    "readmeExcerpt": "jevals\nEvals and guardrails for agents, using Jev-style decision models instead of an LLM judge. All the evals for a trace go out as one request that costs a few thousandths of a cent and comes back in a few hundred milliseconds, so you can run them on every trace and inside the agent loop.\nWorks with Jev through the TypeSafe or Vercel APIs, with any decision model on OpenRouter (Jev, Cloudflare's Clef, Liquid's d1 and more), with Kev or Laya running locally on a Mac, with Eikos on your own GPU, or with a regular chat LLM if that's all you have (slower, costs more).\nThat's one HTTP request for all eight, and those are the numbers Jev returned for the trace in examples/quickstart.py. messages is the OpenAI chat format (user, assistant with toolcalls, tool). If you have Anthropic content blocks or LangChain message objects you can pass those directly.\nThe problem\nMost teams eval a small sa"
   },
   "dzhng/jevgrep": {
-   "stars": 3270,
-   "forks": 250,
+   "stars": 3275,
+   "forks": 252,
    "pushedAt": "2026-11-12T18:29:23Z",
    "createdAt": "2026-09-26T04:06:56Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/74be771fc75df8e8feabb84357534e4e349fd201929468d80364f0c309a24ed2/dzhng/jevgrep",
+   "ogImage": "https://opengraph.githubassets.com/037e0cb08722530ad176f395bcaea4b3824efd8617f2434760faf57b5dd5c4ae/dzhng/jevgrep",
    "topics": [
     "ai-sdk",
     "claude-code",
@@ -6840,14 +6840,14 @@
    "readmeExcerpt": "jevgrep\nSame intelligence. ~30% lower cost.\nFind code by asking what it does. In our ten-task SWE-bench comparison, Jevgrep\nsuccessfully completed the same 8 of 10 tasks as the baseline, at lower cost.\nCoding agents spend part of every unfamiliar task finding the right files.\nJevgrep gives them a place to start: ask a repository question, and jg returns\nrelevant files, reading leads, and verbatim source excerpts in one stdout response.\nIt uses Jev to judge relevance across\nfolders, files, and declarations. Your coding agent then implements and tests the change.\nRequires Node.js 22+, macOS, Linux, or Windows, and a key for Vercel AI Gateway, TypeSafe, OpenRouter, OpenCode Zen, or a custom TypeSafe-compatible endpoint.\nNo separate Python, Bun, or ripgrep installation is required to use jg.\nInstall the agent skill — required for agent setup\nInstalling the CLI alone does not teach your codin"
   },
   "dorkitude/webctl": {
-   "stars": 167,
+   "stars": 168,
    "forks": 18,
    "pushedAt": "2026-11-07T15:09:08Z",
    "createdAt": "2026-09-20T07:27:00Z",
    "language": "Go",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/a60d8968c2df94e9b4974b967c75bfd015a33929a1bc0f8a8b17eebb2ddd9872/dorkitude/webctl",
+   "ogImage": "https://opengraph.githubassets.com/22fcb72d9ffa9d721aff718772f4d5ad0aeefdc4eb7323b1393e852b9b60e0ac/dorkitude/webctl",
    "topics": [],
    "description": "Smart web search CLI for agents, backed by Jev. Saves a lot of tokens.",
    "homepage": null,
@@ -6896,14 +6896,14 @@
    "readmeExcerpt": "English 日本語\njev-skill-router\nWhat happens when you add Jev to Claude Code as a skill router: the code, the log, and the week that ended with removing it.\njev-skill-router is a reference implementation for people building with TypeSafe's Jev, a model that writes no text and answers typed questions with probabilities. It is a Claude Code hook: on every prompt it asks Jev which installed skill fits and logs the answer. In shadow mode, the default, that is all it does; in inject mode it also gives Claude a one-line hint. Either way, Claude still sees every skill and makes the final pick. A bundled script checks that log against what Claude Code did next. It is Python 3.10+, standard library only, MIT licensed, version 0.2.0, and needs a paid TypeSafe API key.\nI ran it for a week and removed it from my own setup. Of 539 suggestions, 28 were followed by a call of the suggested skill. Inside an"
   },
   "qybaihe/mu": {
-   "stars": 620,
+   "stars": 621,
    "forks": 71,
    "pushedAt": "2026-11-24T10:43:54Z",
    "createdAt": "2026-09-22T11:56:05Z",
    "language": "TypeScript",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/3d2118b2c481ecb2037551e0e13d228be381c016bf3c2cfc0864430482009cec/qybaihe/mu",
+   "ogImage": "https://opengraph.githubassets.com/19e06724be4f847fb8f1b7c214ff229c919a24594597f45ce1669ef3644b8a9e/qybaihe/mu",
    "topics": [
     "agent-harness",
     "ai-agent",
@@ -6948,7 +6948,7 @@
   "OmniJev/OneJev": {
    "stars": 287,
    "forks": 31,
-   "pushedAt": "2026-11-26T13:57:58Z",
+   "pushedAt": "2026-11-27T13:57:03Z",
    "createdAt": "2026-09-27T14:27:14Z",
    "language": "Python",
    "license": "Apache-2.0",
@@ -7021,14 +7021,14 @@
    "readmeExcerpt": "Jev RAG\nJev RAG is an open-source local knowledge search engine with seven selectable pipelines: BM25 + Jev by default, agentic lexical search, embedding hybrid retrieval, multi-round Agentic Hybrid, taxonomy-routed hybrid retrieval, a unified Jev Passage Gate, and hierarchical Jev Line Search.\nUse Jev RAG to search a local document folder, rerank candidate passages with\nJev, and stream grounded answers with file citations. The default path is a\nvector-free RAG architecture: it requires neither embeddings nor a vector\ndatabase. Jev RAG is local-first rather than fully offline because selected\npassages are sent to the configured Jev and answer-model providers.\nListed in Awesome Jev\nNew here? Try the no-key demo · Star on GitHub · Fork the project · Contribute\n简体中文 · Seven-pipeline field report · Architecture · Security · Contributing\nProject website and interactive benchmark →\n· How to us"
   },
   "lzq-0529/jev-span": {
-   "stars": 15,
-   "forks": 2,
+   "stars": 16,
+   "forks": 3,
    "pushedAt": "2026-09-28T07:27:31Z",
    "createdAt": "2026-09-27T12:32:46Z",
    "language": "Python",
    "license": "MIT",
    "archived": false,
-   "ogImage": "https://opengraph.githubassets.com/7dd21e816e70308e7046effdbae89df43a428d8257df1b292514eefd7295b642/lzq-0529/jev-span",
+   "ogImage": "https://opengraph.githubassets.com/784ef0b8b054cd9ef09790b34947c595432fbbefa9f3472935a3225a36eef567/lzq-0529/jev-span",
    "topics": [
     "benchmark",
     "calibration",
