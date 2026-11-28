@@ -493,6 +493,7 @@ None of these ship TypeSafe's weights. They reproduce the interface, the paralle
 - [jev-align](https://github.com/sutro-sh/jev-align) - Finds the examples a Jev function is least sure about, asks you to label them, and improves the function with GEPA.
 - [jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) - Measures what a Jev request is billed and how its answers hold up under batching, translation, and rewording, from 3,455 billed requests with public raw logs.
 - [jevals](https://github.com/openlayer-ai/jevals) - Runs a trace's agent, quality, and security evals as one batch of typed Jev questions instead of separate LLM-judge calls.
+- [Decision Models as Guardrails](https://github.com/raxITlabs/decision-models-as-guardrails) - Scores Jev 1.13.0 and 1.14.0, 16 other decision models, and Amazon Bedrock Guardrails on the same 9,975 labelled guardrail checks with one fixed 0.5 block threshold; the authors, raxIT Labs, report Jev 1.14.0 at 88.7 balanced accuracy and Bedrock Guardrails at 79.0.
 
 ## Playgrounds and demos
 
